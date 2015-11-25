@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10DF52B41C03CCCD003361ED /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DF52B31C03CCCD003361ED /* CoreMotion.framework */; };
+		8F4F9C3C1C04036E00917067 /* armadillo in Resources */ = {isa = PBXBuildFile; fileRef = 8F4F9C3A1C04036E00917067 /* armadillo */; };
+		8F4F9C3D1C04036E00917067 /* armadillo_bits in Resources */ = {isa = PBXBuildFile; fileRef = 8F4F9C3B1C04036E00917067 /* armadillo_bits */; };
+		8F5319FB1BFE4C8D00DC249C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5319FA1BFE4C8D00DC249C /* main.m */; };
+		8F5319FE1BFE4C8D00DC249C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5319FD1BFE4C8D00DC249C /* AppDelegate.m */; };
+		8F531A011BFE4C8D00DC249C /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8F531A001BFE4C8D00DC249C /* ViewController.mm */; };
+		8F531A041BFE4C8D00DC249C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F531A021BFE4C8D00DC249C /* Main.storyboard */; };
+		8F531A071BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F531A051BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodeld */; };
+		8F531A091BFE4C8D00DC249C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F531A081BFE4C8D00DC249C /* Assets.xcassets */; };
+		8F531A0C1BFE4C8D00DC249C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F531A0A1BFE4C8D00DC249C /* LaunchScreen.storyboard */; };
+		8F531A171BFE4C8D00DC249C /* IOS_Lane_DetectionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F531A161BFE4C8D00DC249C /* IOS_Lane_DetectionUITests.m */; };
+		8F8C739F1C039FFC009DC381 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C739E1C039FFC009DC381 /* QuartzCore.framework */; };
+		8F8C73A11C03A004009DC381 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73A01C03A004009DC381 /* CoreImage.framework */; };
+		8F8C73A31C03A00E009DC381 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73A21C03A00E009DC381 /* CoreMedia.framework */; };
+		8F8C73A51C03A01A009DC381 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73A41C03A01A009DC381 /* CoreVideo.framework */; };
+		8F8C73A71C03A025009DC381 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73A61C03A025009DC381 /* Accelerate.framework */; };
+		8F8C73A91C03A02E009DC381 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73A81C03A02E009DC381 /* AssetsLibrary.framework */; };
+		8F8C73AB1C03A037009DC381 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73AA1C03A037009DC381 /* AVFoundation.framework */; };
+		8F8C73AD1C03A042009DC381 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73AC1C03A042009DC381 /* UIKit.framework */; };
+		8F8C73AF1C03A04B009DC381 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73AE1C03A04B009DC381 /* Foundation.framework */; };
+		8F8C73B11C03A053009DC381 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73B01C03A053009DC381 /* CoreGraphics.framework */; };
+		8F8C73B31C03A0D1009DC381 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73B21C03A0D1009DC381 /* opencv2.framework */; };
+		8FEDC7511C03A6850058E16A /* myfit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDC74F1C03A6850058E16A /* myfit.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F531A131BFE4C8D00DC249C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F5319EE1BFE4C8D00DC249C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F5319F51BFE4C8D00DC249C;
+			remoteInfo = "IOS-Lane-Detection";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10DF52B31C03CCCD003361ED /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		8F4F9C3A1C04036E00917067 /* armadillo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = armadillo; sourceTree = "<group>"; };
+		8F4F9C3B1C04036E00917067 /* armadillo_bits */ = {isa = PBXFileReference; lastKnownFileType = folder; path = armadillo_bits; sourceTree = "<group>"; };
+		8F5319F61BFE4C8D00DC249C /* IOS-Lane-Detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Lane-Detection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F5319FA1BFE4C8D00DC249C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8F5319FC1BFE4C8D00DC249C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F5319FD1BFE4C8D00DC249C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F5319FF1BFE4C8D00DC249C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8F531A001BFE4C8D00DC249C /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		8F531A031BFE4C8D00DC249C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F531A061BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IOS_Lane_Detection.xcdatamodel; sourceTree = "<group>"; };
+		8F531A081BFE4C8D00DC249C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F531A0B1BFE4C8D00DC249C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F531A0D1BFE4C8D00DC249C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F531A121BFE4C8D00DC249C /* IOS-Lane-DetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS-Lane-DetectionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F531A161BFE4C8D00DC249C /* IOS_Lane_DetectionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOS_Lane_DetectionUITests.m; sourceTree = "<group>"; };
+		8F531A181BFE4C8D00DC249C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F8C739E1C039FFC009DC381 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8F8C73A01C03A004009DC381 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		8F8C73A21C03A00E009DC381 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8F8C73A41C03A01A009DC381 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8F8C73A61C03A025009DC381 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		8F8C73A81C03A02E009DC381 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		8F8C73AA1C03A037009DC381 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8F8C73AC1C03A042009DC381 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8F8C73AE1C03A04B009DC381 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8F8C73B01C03A053009DC381 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8F8C73B21C03A0D1009DC381 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		8FEDC74F1C03A6850058E16A /* myfit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = myfit.cpp; sourceTree = "<group>"; };
+		8FEDC7501C03A6850058E16A /* myfit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myfit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F5319F31BFE4C8D00DC249C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DF52B41C03CCCD003361ED /* CoreMotion.framework in Frameworks */,
+				8F8C73B31C03A0D1009DC381 /* opencv2.framework in Frameworks */,
+				8F8C73B11C03A053009DC381 /* CoreGraphics.framework in Frameworks */,
+				8F8C73AF1C03A04B009DC381 /* Foundation.framework in Frameworks */,
+				8F8C73AD1C03A042009DC381 /* UIKit.framework in Frameworks */,
+				8F8C73AB1C03A037009DC381 /* AVFoundation.framework in Frameworks */,
+				8F8C73A91C03A02E009DC381 /* AssetsLibrary.framework in Frameworks */,
+				8F8C73A71C03A025009DC381 /* Accelerate.framework in Frameworks */,
+				8F8C73A51C03A01A009DC381 /* CoreVideo.framework in Frameworks */,
+				8F8C73A31C03A00E009DC381 /* CoreMedia.framework in Frameworks */,
+				8F8C73A11C03A004009DC381 /* CoreImage.framework in Frameworks */,
+				8F8C739F1C039FFC009DC381 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F531A0F1BFE4C8D00DC249C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F5319ED1BFE4C8D00DC249C = {
+			isa = PBXGroup;
+			children = (
+				10DF52B31C03CCCD003361ED /* CoreMotion.framework */,
+				8F8C73B21C03A0D1009DC381 /* opencv2.framework */,
+				8F8C73B01C03A053009DC381 /* CoreGraphics.framework */,
+				8F8C73AE1C03A04B009DC381 /* Foundation.framework */,
+				8F8C73AC1C03A042009DC381 /* UIKit.framework */,
+				8F8C73AA1C03A037009DC381 /* AVFoundation.framework */,
+				8F8C73A81C03A02E009DC381 /* AssetsLibrary.framework */,
+				8F8C73A61C03A025009DC381 /* Accelerate.framework */,
+				8F8C73A41C03A01A009DC381 /* CoreVideo.framework */,
+				8F8C73A21C03A00E009DC381 /* CoreMedia.framework */,
+				8F8C73A01C03A004009DC381 /* CoreImage.framework */,
+				8F8C739E1C039FFC009DC381 /* QuartzCore.framework */,
+				8F5319F81BFE4C8D00DC249C /* IOS-Lane-Detection */,
+				8F531A151BFE4C8D00DC249C /* IOS-Lane-DetectionUITests */,
+				8F5319F71BFE4C8D00DC249C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F5319F71BFE4C8D00DC249C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F5319F61BFE4C8D00DC249C /* IOS-Lane-Detection.app */,
+				8F531A121BFE4C8D00DC249C /* IOS-Lane-DetectionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F5319F81BFE4C8D00DC249C /* IOS-Lane-Detection */ = {
+			isa = PBXGroup;
+			children = (
+				8F4F9C3A1C04036E00917067 /* armadillo */,
+				8F4F9C3B1C04036E00917067 /* armadillo_bits */,
+				8FEDC74F1C03A6850058E16A /* myfit.cpp */,
+				8FEDC7501C03A6850058E16A /* myfit.h */,
+				8F5319FC1BFE4C8D00DC249C /* AppDelegate.h */,
+				8F5319FD1BFE4C8D00DC249C /* AppDelegate.m */,
+				8F5319FF1BFE4C8D00DC249C /* ViewController.h */,
+				8F531A001BFE4C8D00DC249C /* ViewController.mm */,
+				8F531A021BFE4C8D00DC249C /* Main.storyboard */,
+				8F531A081BFE4C8D00DC249C /* Assets.xcassets */,
+				8F531A0A1BFE4C8D00DC249C /* LaunchScreen.storyboard */,
+				8F531A0D1BFE4C8D00DC249C /* Info.plist */,
+				8F531A051BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodeld */,
+				8F5319F91BFE4C8D00DC249C /* Supporting Files */,
+			);
+			path = "IOS-Lane-Detection";
+			sourceTree = "<group>";
+		};
+		8F5319F91BFE4C8D00DC249C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F5319FA1BFE4C8D00DC249C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F531A151BFE4C8D00DC249C /* IOS-Lane-DetectionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F531A161BFE4C8D00DC249C /* IOS_Lane_DetectionUITests.m */,
+				8F531A181BFE4C8D00DC249C /* Info.plist */,
+			);
+			path = "IOS-Lane-DetectionUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F5319F51BFE4C8D00DC249C /* IOS-Lane-Detection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F531A1B1BFE4C8D00DC249C /* Build configuration list for PBXNativeTarget "IOS-Lane-Detection" */;
+			buildPhases = (
+				8F5319F21BFE4C8D00DC249C /* Sources */,
+				8F5319F31BFE4C8D00DC249C /* Frameworks */,
+				8F5319F41BFE4C8D00DC249C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IOS-Lane-Detection";
+			productName = "IOS-Lane-Detection";
+			productReference = 8F5319F61BFE4C8D00DC249C /* IOS-Lane-Detection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F531A111BFE4C8D00DC249C /* IOS-Lane-DetectionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F531A1E1BFE4C8D00DC249C /* Build configuration list for PBXNativeTarget "IOS-Lane-DetectionUITests" */;
+			buildPhases = (
+				8F531A0E1BFE4C8D00DC249C /* Sources */,
+				8F531A0F1BFE4C8D00DC249C /* Frameworks */,
+				8F531A101BFE4C8D00DC249C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F531A141BFE4C8D00DC249C /* PBXTargetDependency */,
+			);
+			name = "IOS-Lane-DetectionUITests";
+			productName = "IOS-Lane-DetectionUITests";
+			productReference = 8F531A121BFE4C8D00DC249C /* IOS-Lane-DetectionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F5319EE1BFE4C8D00DC249C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = geoffrey;
+				TargetAttributes = {
+					8F5319F51BFE4C8D00DC249C = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = V5SZFS7473;
+					};
+					8F531A111BFE4C8D00DC249C = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = V5SZFS7473;
+						TestTargetID = 8F5319F51BFE4C8D00DC249C;
+					};
+				};
+			};
+			buildConfigurationList = 8F5319F11BFE4C8D00DC249C /* Build configuration list for PBXProject "IOS-Lane-Detection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F5319ED1BFE4C8D00DC249C;
+			productRefGroup = 8F5319F71BFE4C8D00DC249C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F5319F51BFE4C8D00DC249C /* IOS-Lane-Detection */,
+				8F531A111BFE4C8D00DC249C /* IOS-Lane-DetectionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F5319F41BFE4C8D00DC249C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F531A0C1BFE4C8D00DC249C /* LaunchScreen.storyboard in Resources */,
+				8F4F9C3D1C04036E00917067 /* armadillo_bits in Resources */,
+				8F531A091BFE4C8D00DC249C /* Assets.xcassets in Resources */,
+				8F4F9C3C1C04036E00917067 /* armadillo in Resources */,
+				8F531A041BFE4C8D00DC249C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F531A101BFE4C8D00DC249C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F5319F21BFE4C8D00DC249C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F531A011BFE4C8D00DC249C /* ViewController.mm in Sources */,
+				8F5319FE1BFE4C8D00DC249C /* AppDelegate.m in Sources */,
+				8F5319FB1BFE4C8D00DC249C /* main.m in Sources */,
+				8F531A071BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodeld in Sources */,
+				8FEDC7511C03A6850058E16A /* myfit.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F531A0E1BFE4C8D00DC249C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F531A171BFE4C8D00DC249C /* IOS_Lane_DetectionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F531A141BFE4C8D00DC249C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F5319F51BFE4C8D00DC249C /* IOS-Lane-Detection */;
+			targetProxy = 8F531A131BFE4C8D00DC249C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F531A021BFE4C8D00DC249C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F531A031BFE4C8D00DC249C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F531A0A1BFE4C8D00DC249C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F531A0B1BFE4C8D00DC249C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F531A191BFE4C8D00DC249C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F531A1A1BFE4C8D00DC249C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F531A1C1BFE4C8D00DC249C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "IOS-Lane-Detection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yujun-Wang";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		8F531A1D1BFE4C8D00DC249C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "IOS-Lane-Detection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yujun-Wang";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		8F531A1F1BFE4C8D00DC249C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "IOS-Lane-DetectionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.IOS-Lane-DetectionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "IOS-Lane-Detection";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8F531A201BFE4C8D00DC249C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "IOS-Lane-DetectionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.IOS-Lane-DetectionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "IOS-Lane-Detection";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F5319F11BFE4C8D00DC249C /* Build configuration list for PBXProject "IOS-Lane-Detection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F531A191BFE4C8D00DC249C /* Debug */,
+				8F531A1A1BFE4C8D00DC249C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F531A1B1BFE4C8D00DC249C /* Build configuration list for PBXNativeTarget "IOS-Lane-Detection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F531A1C1BFE4C8D00DC249C /* Debug */,
+				8F531A1D1BFE4C8D00DC249C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F531A1E1BFE4C8D00DC249C /* Build configuration list for PBXNativeTarget "IOS-Lane-DetectionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F531A1F1BFE4C8D00DC249C /* Debug */,
+				8F531A201BFE4C8D00DC249C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8F531A051BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8F531A061BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodel */,
+			);
+			currentVersion = 8F531A061BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodel */;
+			path = IOS_Lane_Detection.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8F5319EE1BFE4C8D00DC249C /* Project object */;
+}

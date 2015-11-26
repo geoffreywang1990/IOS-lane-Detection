@@ -16,6 +16,10 @@ double currentMaxAccelZ;
 double currentMaxRotX;
 double currentMaxRotY;
 double currentMaxRotZ;
+double rollangle;
+double pitchangle;
+double yawangle;
+
 using namespace std;
 @interface ViewController : UIViewController<CvVideoCameraDelegate>
 {

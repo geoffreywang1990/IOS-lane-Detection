@@ -45,8 +45,12 @@ using namespace std;
     currentMaxRotZ = 0;
     
     self.motionManager = [[CMMotionManager alloc] init];
-    self.motionManager.accelerometerUpdateInterval = .2;
-    self.motionManager.gyroUpdateInterval = .2;
+    self.motionManager.deviceMotionUpdateInterval=1/60; //frequnence to update,60 Hz
+    [self.motionManager startDeviceMotionUpdates];
+    
+    self.motionManager.accelerometerUpdateInterval = .1;
+    self.motionManager.gyroUpdateInterval = .1;
+
     
     [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue]
                                              withHandler:^(CMAccelerometerData  *accelerometerData, NSError *error) {
@@ -62,7 +66,11 @@ using namespace std;
                                         [self outputRotationData:gyroData.rotationRate];
                                     }];
     
-
+    CMAttitude *attitude;
+    attitude= self.motionManager.deviceMotion.attitude;
+    rollangle=attitude.roll*180/M_PI;
+    yawangle=attitude.yaw*180/M_PI;
+    pitchangle=attitude.pitch*180/M_PI;
     
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:imageView];
     self.videoCamera.delegate = self;
@@ -115,6 +123,44 @@ using namespace std;
         std::cout<<"Y rot:"<<currentMaxRotY<<"Y acc:"<<currentMaxAccelY<<std::endl;
         std::cout<<"Z rot:"<<currentMaxRotZ<<"Z acc:"<<currentMaxAccelZ<<std::endl;*/
 
+    
+    std::ostringstream strsroll,strspitch,strsyaw;
+    strsroll << rollangle;
+    std::string strroll = strsroll.str();
+    cv::putText(finalFrame, strroll,cv::Point(30, 30), cv::FONT_HERSHEY_COMPLEX_SMALL,0.8, cv::Scalar::all(255));
+    strsyaw << yawangle;
+    std::string stryaw = strsyaw.str();
+    cv::putText(finalFrame, stryaw,cv::Point(50, 50), cv::FONT_HERSHEY_COMPLEX_SMALL,0.8, cv::Scalar::all(255));
+    strspitch << pitchangle;
+    std::string strpitch = strspitch.str();
+    cv::putText(finalFrame, strpitch,cv::Point(100, 100), cv::FONT_HERSHEY_COMPLEX_SMALL,0.8, cv::Scalar::all(255));
+    /*  finalFrame.copyTo(image);
+     std::cout<<"X rot:"<<currentMaxRotX<<"X acc:"<<currentMaxAccelX<<std::endl;
+     std::cout<<"Y rot:"<<currentMaxRotY<<"Y acc:"<<currentMaxAccelY<<std::endl;
+     std::cout<<"Z rot:"<<currentMaxRotZ<<"Z acc:"<<currentMaxAccelZ<<std::endl;*/
+    double thetaX=cosh(currentMaxAccelX);
+    double thetaY=cosh(currentMaxAccelY);
+    double thetaZ=cosh(currentMaxAccelZ);
+    /* arma::fmat Rx;
+     Ry,Rz,Rotation;
+     Rx<<1<<0<<0<<endr
+     <<0<<cos(thetaX)<<sin(thetaX)<<endr
+     <<0<<-sin(thetaX)<<cos(thetaX);
+     Ry<<cos(thetaY)<<0<<-sin(thetaY)<<endr
+     <<0<<1<<0<<endr
+     <<sin(thetaY)<<0<<cos(thetaY);
+     Rz<<cos(thetaZ)<<sin(thetaZ)<<0<<endr
+     <<-sin(thetaZ)<<cos(thetaZ)<<0<<endr
+     <<0<<0<<1;
+     Rotation=Rz*Ry*Rx;*/
+    
+    finalFrame.copyTo(image);
+
+    
+    
+   /*
+    
+    
    arma::fmat Rotation;
     Rotation = getRotationMatrix(currentMaxAccelX,currentMaxAccelY,currentMaxAccelZ);
     
@@ -130,7 +176,7 @@ using namespace std;
 
     finalFrame.copyTo(image);
     
-    
+   */
     
     
     

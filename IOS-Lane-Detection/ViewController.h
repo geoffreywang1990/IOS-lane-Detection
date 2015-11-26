@@ -25,13 +25,13 @@ using namespace std;
 }
 @property (nonatomic, strong) CvVideoCamera* videoCamera;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
-@property (strong, nonatomic) IBOutlet UIToolbar *toolbar;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *startCaptureButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *stopCaptureButton;
 
-
+@property (strong, nonatomic) IBOutlet UIButton *startCaptureButton;
+@property (weak, nonatomic) IBOutlet UIButton *stopCaptureButton;
 - (IBAction)startCaptureButtonPressed:(id)sender;
+
 - (IBAction)stopCaptureButtonPressed:(id)sender;
+
 
 @property (strong, nonatomic) CMMotionManager *motionManager;
 @end

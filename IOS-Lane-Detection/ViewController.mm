@@ -30,7 +30,7 @@ using namespace std;
 @implementation ViewController
 @synthesize imageView;
 @synthesize startCaptureButton;
-@synthesize toolbar;
+
 @synthesize videoCamera;
 
 - (void)viewDidLoad {
@@ -67,7 +67,7 @@ using namespace std;
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:imageView];
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
-    self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset640x480;
+    self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPresetMedium;
     self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
     self.videoCamera.defaultFPS = 30;
     isCapturing = NO;
@@ -78,22 +78,20 @@ using namespace std;
     return UIInterfaceOrientationMaskPortrait;
 }
 
--(IBAction)startCaptureButtonPressed:(id)sender
-{
+- (IBAction)startCaptureButtonPressed:(id)sender {
     [videoCamera start];
     isCapturing = YES;
     framesize=cv::Size(videoCamera.imageWidth,videoCamera.imageHeight);
     std::cout<<"capturing"<<std::endl;
+
 }
 
-
-
--(IBAction)stopCaptureButtonPressed:(id)sender
-{
+- (IBAction)stopCaptureButtonPressed:(id)sender {
     [videoCamera stop];
     isCapturing = NO;
     std::cout<<"stop"<<std::endl;
 }
+
 
 
 - (void)processImage:(cv::Mat&)image
@@ -116,17 +114,16 @@ using namespace std;
    std::cout<<"X rot:"<<currentMaxRotX<<"X acc:"<<currentMaxAccelX<<std::endl;
         std::cout<<"Y rot:"<<currentMaxRotY<<"Y acc:"<<currentMaxAccelY<<std::endl;
         std::cout<<"Z rot:"<<currentMaxRotZ<<"Z acc:"<<currentMaxAccelZ<<std::endl;*/
-    double thetaX=cosh(currentMaxAccelX);
-    double thetaY=cosh(currentMaxAccelY);
-    double thetaZ=cosh(currentMaxAccelZ);
-
 
    arma::fmat Rotation;
     Rotation = getRotationMatrix(currentMaxAccelX,currentMaxAccelY,currentMaxAccelZ);
     
+    std::cout<<Rotation;
+    
+    
     cv::Mat cvR = Arma2Cv(Rotation);
     
-    cv::warpAffine(inputFrame,finalFrame,cvR, framesize);
+  //  cv::warpPerspective(finalFrame,finalFrame,cvR, framesize);
     
     arma::fmat birdView = Cv2Arma(finalFrame);
   //  LineDetection(birdView);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="2048" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
@@ -10,48 +10,46 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="NQs-Sv-3yz"/>
+                        <viewControllerLayoutGuide type="bottom" id="cKD-FM-5In"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SkT-Rv-v8S">
-                                <rect key="frame" x="150" y="0.0" width="300" height="556"/>
+                                <rect key="frame" x="20" y="16" width="320" height="568"/>
                                 <animations/>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4L2-Gq-ObD">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEw-yi-j2R">
+                                <rect key="frame" x="20" y="507" width="164" height="98"/>
                                 <animations/>
-                                <items>
-                                    <barButtonItem title="Start" width="63" id="Dma-yO-CId">
-                                        <connections>
-                                            <action selector="startCaptureButtonPressed:" destination="BYZ-38-t0r" id="tAP-Kx-EES"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Stop" id="Jcm-D6-Sns">
-                                        <connections>
-                                            <action selector="stopCaptureButtonPressed:" destination="BYZ-38-t0r" id="6TE-8U-yYU"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startCaptureButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gh8-Jd-kPW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcT-sn-KGy">
+                                <rect key="frame" x="183" y="505" width="148" height="95"/>
+                                <animations/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopCaptureButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5P-wz-DWF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="StopCaptureButton" destination="Jcm-D6-Sns" id="ykj-p8-Eyj"/>
                         <outlet property="imageView" destination="SkT-Rv-v8S" id="E1U-1y-Kd1"/>
-                        <outlet property="startCaptureButton" destination="Dma-yO-CId" id="5Ms-Tg-Hx5"/>
-                        <outlet property="stopCaptureButton" destination="Jcm-D6-Sns" id="aZw-IT-mwH"/>
-                        <outlet property="toolbar" destination="4L2-Gq-ObD" id="3oL-qa-uJN"/>
+                        <outlet property="startCaptureButton" destination="gEw-yi-j2R" id="EgQ-CG-hGj"/>
+                        <outlet property="stopCaptureButton" destination="mcT-sn-KGy" id="aP2-g5-c7a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="387"/>
+            <point key="canvasLocation" x="303.75" y="386.61971830985914"/>
         </scene>
     </scenes>
 </document>

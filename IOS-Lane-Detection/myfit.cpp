@@ -145,7 +145,7 @@ fmat myproj_homography(fmat &W, fmat &H) {
 arma::fmat getRotationMatrix(double currentMaxAccelX,double currentMaxAccelY,double currentMaxAccelZ){
     double thetaX=cosh(currentMaxAccelX);
     double thetaY=cosh(currentMaxAccelY);
-    double thetaZ=cosh(currentMaxAccelZ);
+    double thetaZ=-cosh(currentMaxAccelZ);
     
     arma::fmat Rx;
     Rx  << 1.0 << 0.0 << 0.0 << arma::endr

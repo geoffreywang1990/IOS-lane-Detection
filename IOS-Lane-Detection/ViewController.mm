@@ -69,9 +69,9 @@ using namespace std;
     
     CMAttitude *attitude;
     attitude= self.motionManager.deviceMotion.attitude;
-    rollangle=attitude.roll*180/M_PI;
-    yawangle=attitude.yaw*180/M_PI;
-    pitchangle=attitude.pitch*180/M_PI;
+    rollangle=90-attitude.roll*180/M_PI;
+    yawangle=90-attitude.yaw*180/M_PI;
+    pitchangle=90-attitude.pitch*180/M_PI;
     
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:imageView];
     self.videoCamera.delegate = self;

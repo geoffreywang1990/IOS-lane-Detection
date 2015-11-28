@@ -16,7 +16,7 @@ cv::Mat getLines(cv::Mat frame)
     cv::resize(frame, newFrame, newFrame.size());
     cv::Mat temp = cv::Mat(newFrame.rows, newFrame.cols, CV_8UC1,0.0);//stores possible lane markings
     int halfRows = newFrame.rows - newFrame.rows/2;          //rows in region of interest
-    float maxLaneWidth = 0.25 * newFrame.cols;                     //approximate max lane width based on image size
+    float maxLaneWidth = 0.08 * newFrame.cols;                     //approximate max lane width based on image size
     
 
 
@@ -24,7 +24,7 @@ cv::Mat getLines(cv::Mat frame)
     medianBlur(newFrame,newFrame,5 );
    // process ROI(bottom half)
     for(int i=newFrame.rows/2; i<newFrame.rows; i++){
-        int laneWidth = 5+ maxLaneWidth*(i-newFrame.rows/2)/halfRows;
+        int laneWidth = 10+ maxLaneWidth*(i-newFrame.rows/2)/halfRows;
         for(int j=laneWidth; j<newFrame.cols- laneWidth; j++){
             int leftDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j-laneWidth);
             int rightDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j+laneWidth);
@@ -44,7 +44,7 @@ cv::Mat getLines(cv::Mat frame)
     }
    
     cv::Mat lane =deNoise(temp, newFrame);
-    return lane;
+    return newFrame;
 }
 
 cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
@@ -52,7 +52,7 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
     cv::Mat temp = cv::Mat(frame.rows, frame.cols, CV_8UC1,0.0);//stores finally selected lane marks
     cv::Mat binary_image; //used for blob removal
     int longLane       = 0.3 * frame.rows;
-    int minRegionSize  = 0.0015 * (frame.cols*frame.rows);  //min size of any region to be selected as lane
+    int minRegionSize  = 0.002 * (frame.cols*frame.rows);  //min size of any region to be selected as lane
     int smallLaneArea  = 7 * minRegionSize;
     int ratio          = 4;
     
@@ -81,7 +81,7 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
         for (int i=0; i<contours.size(); ++i)
         {
             float contour_area = contourArea(contours[i]) ;
-            float mincontour = 0.00015 * (frame.cols*frame.rows);
+            float mincontour = 0.003 * (frame.cols*frame.rows);
             
             //blob size should not be less than lower threshold
             if(contour_area > mincontour)
@@ -101,7 +101,7 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
                 // line longer than longLane must be road mark.
                 if(contour_length>longLane || contour_width >longLane)
                 {
-                //    drawContours(newFrame, contours,i, Scalar(0), CV_FILLED, 8);
+                    drawContours(frame, contours,i, cvScalar(255), CV_FILLED, 8);
                     drawContours(temp, contours,i, cvScalar(255), CV_FILLED, 8);
                 }
                 
@@ -120,7 +120,7 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
                         ||(contour_area< smallLaneArea &&  ((contour_area/(contour_width*contour_length)) > .75) &&
                            ((contour_length/contour_width)>=2 || (contour_width/contour_length)>=2)))
                     {
-                        //drawContours(newFrame, contours,i, Scalar(0), CV_FILLED, 8);
+                        drawContours(frame, contours,i, cvScalar(255), CV_FILLED, 8);
                         drawContours(temp, contours,i, cvScalar(255), CV_FILLED, 8);
                     }
                 }

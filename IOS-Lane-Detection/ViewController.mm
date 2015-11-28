@@ -83,7 +83,7 @@ using namespace std;
 }
 - (NSInteger)supportedInterfaceOrientations
 {
-    // Only portrait orientation
+    // Only LandscapeRight orientation
     return UIInterfaceOrientationMaskLandscapeRight;
 }
 
@@ -106,7 +106,9 @@ using namespace std;
 - (void)processImage:(cv::Mat&)image
 {
     cv::Mat inputFrame = image.clone();
+    //process 640*480 image
     cv::resize(inputFrame,inputFrame, cv::Size(640,480));
+    
     BOOL isNeedRotation = image.size() != framesize;
     if (isNeedRotation)
         inputFrame = inputFrame.t();
@@ -160,9 +162,10 @@ using namespace std;
      Rotation=Rz*Ry*Rx;*/
     
     
-    
+    //cvt to gray
     cv::Mat gray;
     cv::cvtColor(inputFrame, gray,CV_RGB2GRAY);
+    
     cv::Mat finalFrame;
     finalFrame = getLines(gray);
     finalFrame.copyTo(image);

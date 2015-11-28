@@ -106,6 +106,7 @@ using namespace std;
 - (void)processImage:(cv::Mat&)image
 {
     cv::Mat inputFrame = image.clone();
+   // std::cout<<inputFrame.size()<<endl;
     //process 640*480 image
     cv::resize(inputFrame,inputFrame, cv::Size(640,480));
     

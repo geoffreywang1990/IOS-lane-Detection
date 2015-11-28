@@ -20,7 +20,6 @@ cv::Mat getLines(cv::Mat frame)
     
 
 
-    
     medianBlur(newFrame,newFrame,5 );
    // process ROI(bottom half)
     for(int i=newFrame.rows/2; i<newFrame.rows; i++){
@@ -101,7 +100,7 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
                 // line longer than longLane must be road mark.
                 if(contour_length>longLane || contour_width >longLane)
                 {
-                    drawContours(frame, contours,i, cvScalar(255), CV_FILLED, 8);
+                    drawContours(frame, contours,i, cvScalar(0), CV_FILLED, 8);
                     drawContours(temp, contours,i, cvScalar(255), CV_FILLED, 8);
                 }
                 
@@ -120,7 +119,7 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
                         ||(contour_area< smallLaneArea &&  ((contour_area/(contour_width*contour_length)) > .75) &&
                            ((contour_length/contour_width)>=2 || (contour_width/contour_length)>=2)))
                     {
-                        drawContours(frame, contours,i, cvScalar(255), CV_FILLED, 8);
+                        drawContours(frame, contours,i, cvScalar(0), CV_FILLED, 8);
                         drawContours(temp, contours,i, cvScalar(255), CV_FILLED, 8);
                     }
                 }

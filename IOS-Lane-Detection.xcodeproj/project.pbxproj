@@ -29,6 +29,7 @@
 		8F8C73AF1C03A04B009DC381 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73AE1C03A04B009DC381 /* Foundation.framework */; };
 		8F8C73B11C03A053009DC381 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73B01C03A053009DC381 /* CoreGraphics.framework */; };
 		8F8C73B31C03A0D1009DC381 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73B21C03A0D1009DC381 /* opencv2.framework */; };
+		8FD747681C0913CA00E62ACB /* detectLane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FD747661C0913CA00E62ACB /* detectLane.cpp */; };
 		8FEDC7511C03A6850058E16A /* myfit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDC74F1C03A6850058E16A /* myfit.cpp */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,8 @@
 		8F8C73AE1C03A04B009DC381 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8F8C73B01C03A053009DC381 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8F8C73B21C03A0D1009DC381 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		8FD747661C0913CA00E62ACB /* detectLane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = detectLane.cpp; sourceTree = "<group>"; };
+		8FD747671C0913CA00E62ACB /* detectLane.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = detectLane.hpp; sourceTree = "<group>"; };
 		8FEDC74F1C03A6850058E16A /* myfit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = myfit.cpp; sourceTree = "<group>"; };
 		8FEDC7501C03A6850058E16A /* myfit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myfit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +155,8 @@
 				8F531A0D1BFE4C8D00DC249C /* Info.plist */,
 				8F531A051BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodeld */,
 				8F5319F91BFE4C8D00DC249C /* Supporting Files */,
+				8FD747661C0913CA00E62ACB /* detectLane.cpp */,
+				8FD747671C0913CA00E62ACB /* detectLane.hpp */,
 			);
 			path = "IOS-Lane-Detection";
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 			files = (
 				8F531A011BFE4C8D00DC249C /* ViewController.mm in Sources */,
 				8F5319FE1BFE4C8D00DC249C /* AppDelegate.m in Sources */,
+				8FD747681C0913CA00E62ACB /* detectLane.cpp in Sources */,
 				8F5319FB1BFE4C8D00DC249C /* main.m in Sources */,
 				8F531A071BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodeld in Sources */,
 				8FEDC7511C03A6850058E16A /* myfit.cpp in Sources */,

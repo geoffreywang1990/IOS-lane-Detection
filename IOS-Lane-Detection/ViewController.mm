@@ -8,7 +8,8 @@
 
 #ifdef __cplusplus
 #import "armadillo"
-#import "myfit.h"
+//#import "myfit.h"
+#import "detectLane.hpp"
 #import <opencv2/opencv.hpp>        // Includes the opencv library
 #import "opencv2/highgui/ios.h"
 
@@ -75,15 +76,15 @@ using namespace std;
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:imageView];
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
-    self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPresetMedium;
-    self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
+    self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset640x480;
+    self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationLandscapeRight;
     self.videoCamera.defaultFPS = 30;
     isCapturing = NO;
 }
 - (NSInteger)supportedInterfaceOrientations
 {
     // Only portrait orientation
-    return UIInterfaceOrientationMaskPortrait;
+    return UIInterfaceOrientationMaskLandscapeRight;
 }
 
 - (IBAction)startCaptureButtonPressed:(id)sender {
@@ -104,24 +105,28 @@ using namespace std;
 
 - (void)processImage:(cv::Mat&)image
 {
-    cv::Mat inputFrame = image;
+    cv::Mat inputFrame = image.clone();
+    cv::resize(inputFrame,inputFrame, cv::Size(640,480));
     BOOL isNeedRotation = image.size() != framesize;
     if (isNeedRotation)
-        inputFrame = image.t();
-    // Apply filter
+        inputFrame = inputFrame.t();
+
+ 
+    
+   /*  // Apply filter
     cv::Mat finalFrame;
     finalFrame=inputFrame;
     if (isNeedRotation)
         finalFrame = finalFrame.t();
    
-  /*  std::ostringstream strs;
+   std::ostringstream strs;
     strs << currentMaxRotZ;
     std::string str = strs.str();
     cv::putText(finalFrame, str,cv::Point(30, 30), cv::FONT_HERSHEY_COMPLEX_SMALL,0.8, cv::Scalar::all(255));
     finalFrame.copyTo(image);
    std::cout<<"X rot:"<<currentMaxRotX<<"X acc:"<<currentMaxAccelX<<std::endl;
         std::cout<<"Y rot:"<<currentMaxRotY<<"Y acc:"<<currentMaxAccelY<<std::endl;
-        std::cout<<"Z rot:"<<currentMaxRotZ<<"Z acc:"<<currentMaxAccelZ<<std::endl;*/
+        std::cout<<"Z rot:"<<currentMaxRotZ<<"Z acc:"<<currentMaxAccelZ<<std::endl;
 
     
     std::ostringstream strsroll,strspitch,strsyaw;
@@ -134,14 +139,14 @@ using namespace std;
     strspitch << pitchangle;
     std::string strpitch = strspitch.str();
     cv::putText(finalFrame, strpitch,cv::Point(100, 100), cv::FONT_HERSHEY_COMPLEX_SMALL,0.8, cv::Scalar::all(255));
-    /*  finalFrame.copyTo(image);
+      finalFrame.copyTo(image);
      std::cout<<"X rot:"<<currentMaxRotX<<"X acc:"<<currentMaxAccelX<<std::endl;
      std::cout<<"Y rot:"<<currentMaxRotY<<"Y acc:"<<currentMaxAccelY<<std::endl;
-     std::cout<<"Z rot:"<<currentMaxRotZ<<"Z acc:"<<currentMaxAccelZ<<std::endl;*/
+     std::cout<<"Z rot:"<<currentMaxRotZ<<"Z acc:"<<currentMaxAccelZ<<std::endl;
     double thetaX=cosh(currentMaxAccelX);
     double thetaY=cosh(currentMaxAccelY);
     double thetaZ=cosh(currentMaxAccelZ);
-    /* arma::fmat Rx;
+     arma::fmat Rx;
      Ry,Rz,Rotation;
      Rx<<1<<0<<0<<endr
      <<0<<cos(thetaX)<<sin(thetaX)<<endr
@@ -154,6 +159,12 @@ using namespace std;
      <<0<<0<<1;
      Rotation=Rz*Ry*Rx;*/
     
+    
+    
+    cv::Mat gray;
+    cv::cvtColor(inputFrame, gray,CV_RGB2GRAY);
+    cv::Mat finalFrame;
+    finalFrame = getLines(gray);
     finalFrame.copyTo(image);
 
     

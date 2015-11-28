@@ -14,33 +14,35 @@
                         <viewControllerLayoutGuide type="bottom" id="cKD-FM-5In"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SkT-Rv-v8S">
-                                <rect key="frame" x="20" y="16" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEw-yi-j2R">
-                                <rect key="frame" x="20" y="507" width="164" height="98"/>
-                                <animations/>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <action selector="startCaptureButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gh8-Jd-kPW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcT-sn-KGy">
-                                <rect key="frame" x="183" y="505" width="148" height="95"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcT-sn-KGy">
+                                <rect key="frame" x="339" y="0.0" width="328" height="375"/>
                                 <animations/>
                                 <state key="normal" title="Stop"/>
                                 <connections>
                                     <action selector="stopCaptureButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5P-wz-DWF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEw-yi-j2R">
+                                <rect key="frame" x="0.0" y="0.0" width="331" height="375"/>
+                                <animations/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startCaptureButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gh8-Jd-kPW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="imageView" destination="SkT-Rv-v8S" id="E1U-1y-Kd1"/>
                         <outlet property="startCaptureButton" destination="gEw-yi-j2R" id="EgQ-CG-hGj"/>
@@ -49,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="303.75" y="386.61971830985914"/>
+            <point key="canvasLocation" x="303.5" y="386.5"/>
         </scene>
     </scenes>
 </document>

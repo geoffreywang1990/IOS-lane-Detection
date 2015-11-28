@@ -142,28 +142,29 @@ fmat myproj_homography(fmat &W, fmat &H) {
 //Input: IMU data
 
 
-arma::fmat getRotationMatrix(double currentMaxAccelX,double currentMaxAccelY,double currentMaxAccelZ){
-    double thetaX=cosh(currentMaxAccelX);
-    double thetaY=cosh(currentMaxAccelY);
-    double thetaZ=-cosh(currentMaxAccelZ);
+arma::fmat getRotationMatrix(double pitchangle,double rollangle,double yawangle){
+   // double thetaX=cosh(pitchangle);
+    //double thetaY=cosh(rollangle);
+    //double thetaZ=-cosh(yawangle);
     
-    arma::fmat Rx;
+arma::fmat Rx;
     Rx  << 1.0 << 0.0 << 0.0 << arma::endr
-    << 0.0 << float(cos(thetaX)) << float(sin(thetaX)) << arma::endr
-    << 0.0 << float(-sin(thetaX)) << float(cos(thetaX));
+    << 0.0 << float(cos(-pitchangle)) << float(sin(-pitchangle)) << arma::endr
+    << 0.0 << float(-sin(-pitchangle)) << float(cos(-pitchangle));
     
     arma::fmat Ry;
-    Ry<<float(cos(thetaY))<<0.0<<float(-sin(thetaY))<<arma::endr
+    Ry<<float(cos(rollangle))<<0.0<<float(-sin(rollangle))<<arma::endr
     <<0.0<<1.0<<0.0<<arma::endr
-    <<float(sin(thetaY))<<0.0<<float(cos(thetaY));
+    <<float(sin(rollangle))<<0.0<<float(cos(rollangle));
     
     arma::fmat Rz;
-    Rz<<float(cos(thetaZ))<<float(sin(thetaZ))<<0.0<<arma::endr
-    <<-float(sin(thetaZ))<<float(cos(thetaZ))<<0.0<<arma::endr
+    Rz<<float(cos(M_PI/2- rollangle))<<float(sin(M_PI/2-rollangle))<<0.0<<arma::endr
+    <<-float(sin(M_PI/2-rollangle))<<float(cos(M_PI/2-rollangle))<<0.0<<arma::endr
     <<0.0<<0.0<<1.0;
+
     
     arma::fmat Rotation;
-    Rotation=Rz*Ry*Rx;
+    Rotation=Rz;
     return Rotation;
 }
 
@@ -180,8 +181,86 @@ cv::Mat Arma2Cv(arma::fmat &X)
     cv::Mat cvX = cv::Mat(X.n_cols, X.n_rows,CV_32F, X.memptr()).clone();
     return cvX; // Return the new matrix (new memory allocated)
 }
-
-//arma::fmat lineDetection(arma::fmat birdView){
+ arma::fmat M2P(arma::fmat &M)
+{
+    arma::fmat P;
+    P.set_size(6,1);
+    P(0,0)=1-M(0,0);
+    P(1,0)=M(0,1);
+    P(2,0)=M(0,2);
+    P(3,0)=M(1,0);
+    P(4,0)=1-M(1,1);
+    P(5,0)=M(1,2);
+    return P;
+}
+arma::fmat P2M(arma::fmat P)
+{
+    arma::fmat M;
+    M<<1-P(0)<<P(1)<<P(2)<<arma::endr
+    <<P(3)<< 1-P(4)<<P(5)<<arma::endr
+    << 0<<0<<1;
+    return M;
+}
+arma::fmat lk(arma::fmat image,arma::fmat tempImage){
+    fmat H;
+    int cols = image.n_cols;
+    int rows = image.n_rows;
+    arma::fmat rect,tempSize;
+    //points of window in image
+    rect<<rows/2<<rows/2<<rows-1<< rows-1<<arma::endr
+    <<0<<cols-1<<0<<cols-1;
+    //points of template window
+    tempSize<<tempImage.n_rows/2<<tempImage.n_rows/2<<tempImage.n_rows-1<< tempImage.n_rows-1<<arma::endr
+    <<0<<tempImage.n_cols-1<<0<<tempImage.n_cols-1;
+    arma::fmat tempw;
+    tempw.set_size(2,3);
+    tempw.rows(0,1)=tempSize;
+    tempw.row(2).fill(1);
+    //lkIC
+    arma::fmat initM=myfit_affine(rect,tempSize);
+    arma::fmat templateReshap=tempImage;
+    templateReshap.reshape(tempImage.n_rows*tempImage.n_cols,1);
+    arma::fmat X,Y;
+    X.set_size(tempImage.n_rows*tempImage.n_cols,1);
+    Y.set_size(tempImage.n_rows*tempImage.n_cols,1);
+    for (int i=0;i<tempImage.n_rows;i++)
+    {
+        X.rows(i*tempImage.n_cols,tempImage.n_cols+i*tempImage.n_cols-1).fill(i);
+    }
+    for (int i=0;i<tempImage.n_cols;i++)
+    {
+        Y.rows(i*tempImage.n_rows,tempImage.n_rows+i*tempImage.n_rows-1).fill(i);
+    }
+    arma::fmat vzeros=zeros(3*X.n_cols,1);
+    arma::fmat vones=ones(X.n_cols,1);
+    arma::fmat dWx=join_cols(join_cols(-X, Y), join_cols(vones,vzeros)) ;
+    arma::fmat dWy=join_cols(join_cols(vzeros, X), join_cols(-Y,vones)) ;
+    cv::Mat templateImg=Arma2Cv(tempImage);
+    cv::Mat Xgrad,Ygrad;
+    cv::Sobel(templateImg, Xgrad, 3, 1, 0);
+    cv::Sobel(templateImg, Ygrad, 3, 0, 1);
+    arma::fmat Tx=Cv2Arma(Xgrad);
+    arma::fmat Ty=Cv2Arma(Ygrad);
+    arma::fmat J = dWx*repmat(Tx,1,6) + dWy*repmat(Ty,1,6);
+    arma::fmat R=inv(J.t()*J)*J.t();
+    arma::fmat P=M2P(initM);
+    arma::fmat M=initM;
+    cv::Size dsize=cv::Size(rows/2,cols);
+    cv::Mat dst,Image;
+    Image=Arma2Cv(image);
+    cv::Mat imgRoi=Image(cv::Rect(rows/2-1,0,cols,rows/2));
+    for(int j=1;j<50;j++)
+    {
+        cv::warpPerspective(imgRoi,dst, Arma2Cv(M), dsize,CV_INTER_LINEAR+CV_WARP_INVERSE_MAP+CV_WARP_FILL_OUTLIERS);
+        cv::Mat err=dst-templateImg;
+        arma::fmat error=Cv2Arma(err);
+        arma::fmat dp=R*error;
+        arma::fmat dM=P2M(dp);
+        M=M*inv(dM);
+        P=M2P(M);
+    }
     
-//}
+    
+    return H;
+}
 

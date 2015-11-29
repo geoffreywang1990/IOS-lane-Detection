@@ -202,7 +202,7 @@ arma::fmat P2M(arma::fmat P)
     return M;
 }
 
-arma::famt lk(arma::fmat image,arma::fmat tempImage){
+cv::Mat lk(arma::fmat image,arma::fmat tempImage){
 
     int cols = image.n_cols;
     int rows = image.n_rows;

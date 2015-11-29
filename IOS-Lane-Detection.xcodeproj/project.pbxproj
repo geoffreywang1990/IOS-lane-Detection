@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		10DF52B41C03CCCD003361ED /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DF52B31C03CCCD003361ED /* CoreMotion.framework */; };
-		8F4F9C3C1C04036E00917067 /* armadillo in Resources */ = {isa = PBXBuildFile; fileRef = 8F4F9C3A1C04036E00917067 /* armadillo */; };
-		8F4F9C3D1C04036E00917067 /* armadillo_bits in Resources */ = {isa = PBXBuildFile; fileRef = 8F4F9C3B1C04036E00917067 /* armadillo_bits */; };
 		8F5319FB1BFE4C8D00DC249C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5319FA1BFE4C8D00DC249C /* main.m */; };
 		8F5319FE1BFE4C8D00DC249C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5319FD1BFE4C8D00DC249C /* AppDelegate.m */; };
 		8F531A011BFE4C8D00DC249C /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8F531A001BFE4C8D00DC249C /* ViewController.mm */; };
@@ -29,8 +27,10 @@
 		8F8C73AF1C03A04B009DC381 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73AE1C03A04B009DC381 /* Foundation.framework */; };
 		8F8C73B11C03A053009DC381 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73B01C03A053009DC381 /* CoreGraphics.framework */; };
 		8F8C73B31C03A0D1009DC381 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73B21C03A0D1009DC381 /* opencv2.framework */; };
+		8F9CA9391C0BA835008D203B /* armadillo in Resources */ = {isa = PBXBuildFile; fileRef = 8F9CA9351C0BA835008D203B /* armadillo */; };
+		8F9CA93A1C0BA835008D203B /* armadillo_bits in Resources */ = {isa = PBXBuildFile; fileRef = 8F9CA9361C0BA835008D203B /* armadillo_bits */; };
+		8F9CA93B1C0BA835008D203B /* myfit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CA9371C0BA835008D203B /* myfit.cpp */; };
 		8FD747681C0913CA00E62ACB /* detectLane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FD747661C0913CA00E62ACB /* detectLane.cpp */; };
-		8FEDC7511C03A6850058E16A /* myfit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDC74F1C03A6850058E16A /* myfit.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,6 @@
 
 /* Begin PBXFileReference section */
 		10DF52B31C03CCCD003361ED /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		8F4F9C3A1C04036E00917067 /* armadillo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = armadillo; sourceTree = "<group>"; };
-		8F4F9C3B1C04036E00917067 /* armadillo_bits */ = {isa = PBXFileReference; lastKnownFileType = folder; path = armadillo_bits; sourceTree = "<group>"; };
 		8F5319F61BFE4C8D00DC249C /* IOS-Lane-Detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Lane-Detection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5319FA1BFE4C8D00DC249C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8F5319FC1BFE4C8D00DC249C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,10 +70,12 @@
 		8F8C73AE1C03A04B009DC381 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8F8C73B01C03A053009DC381 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8F8C73B21C03A0D1009DC381 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		8F9CA9351C0BA835008D203B /* armadillo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = armadillo; sourceTree = "<group>"; };
+		8F9CA9361C0BA835008D203B /* armadillo_bits */ = {isa = PBXFileReference; lastKnownFileType = folder; path = armadillo_bits; sourceTree = "<group>"; };
+		8F9CA9371C0BA835008D203B /* myfit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = myfit.cpp; sourceTree = "<group>"; };
+		8F9CA9381C0BA835008D203B /* myfit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myfit.h; sourceTree = "<group>"; };
 		8FD747661C0913CA00E62ACB /* detectLane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = detectLane.cpp; sourceTree = "<group>"; };
 		8FD747671C0913CA00E62ACB /* detectLane.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = detectLane.hpp; sourceTree = "<group>"; };
-		8FEDC74F1C03A6850058E16A /* myfit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = myfit.cpp; sourceTree = "<group>"; };
-		8FEDC7501C03A6850058E16A /* myfit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myfit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,10 +141,10 @@
 		8F5319F81BFE4C8D00DC249C /* IOS-Lane-Detection */ = {
 			isa = PBXGroup;
 			children = (
-				8F4F9C3A1C04036E00917067 /* armadillo */,
-				8F4F9C3B1C04036E00917067 /* armadillo_bits */,
-				8FEDC74F1C03A6850058E16A /* myfit.cpp */,
-				8FEDC7501C03A6850058E16A /* myfit.h */,
+				8F9CA9351C0BA835008D203B /* armadillo */,
+				8F9CA9361C0BA835008D203B /* armadillo_bits */,
+				8F9CA9371C0BA835008D203B /* myfit.cpp */,
+				8F9CA9381C0BA835008D203B /* myfit.h */,
 				8F5319FC1BFE4C8D00DC249C /* AppDelegate.h */,
 				8F5319FD1BFE4C8D00DC249C /* AppDelegate.m */,
 				8F5319FF1BFE4C8D00DC249C /* ViewController.h */,
@@ -227,7 +227,7 @@
 				TargetAttributes = {
 					8F5319F51BFE4C8D00DC249C = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = V5SZFS7473;
+						DevelopmentTeam = NGZY4R4V3W;
 					};
 					8F531A111BFE4C8D00DC249C = {
 						CreatedOnToolsVersion = 7.1;
@@ -261,9 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F531A0C1BFE4C8D00DC249C /* LaunchScreen.storyboard in Resources */,
-				8F4F9C3D1C04036E00917067 /* armadillo_bits in Resources */,
+				8F9CA93A1C0BA835008D203B /* armadillo_bits in Resources */,
 				8F531A091BFE4C8D00DC249C /* Assets.xcassets in Resources */,
-				8F4F9C3C1C04036E00917067 /* armadillo in Resources */,
+				8F9CA9391C0BA835008D203B /* armadillo in Resources */,
 				8F531A041BFE4C8D00DC249C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +287,7 @@
 				8FD747681C0913CA00E62ACB /* detectLane.cpp in Sources */,
 				8F5319FB1BFE4C8D00DC249C /* main.m in Sources */,
 				8F531A071BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodeld in Sources */,
-				8FEDC7511C03A6850058E16A /* myfit.cpp in Sources */,
+				8F9CA93B1C0BA835008D203B /* myfit.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +349,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -393,6 +394,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -424,7 +426,7 @@
 				);
 				INFOPLIST_FILE = "IOS-Lane-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Yujun-Wang";
+				PRODUCT_BUNDLE_IDENTIFIER = yujun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -443,7 +445,7 @@
 				);
 				INFOPLIST_FILE = "IOS-Lane-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Yujun-Wang";
+				PRODUCT_BUNDLE_IDENTIFIER = yujun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

@@ -43,7 +43,7 @@ cv::Mat getLines(cv::Mat frame)
     }
    
     cv::Mat lane =deNoise(temp, newFrame);
-    return newFrame;
+    return lane;
 }
 
 cv::Mat deNoise( cv::Mat lane,cv::Mat frame)

@@ -18,11 +18,8 @@ arma::fmat myfit_affine(arma::fmat &X, arma::fmat &W);
 arma::fmat myproj_affine(arma::fmat &W, arma::fmat &A);
 arma::fmat myfit_homography(arma::fmat &X, arma::fmat &W);
 arma::fmat myproj_homography(arma::fmat &W, arma::fmat &H);
-arma::fmat getRotationMatrix(double pitchangle,double rollangle,double yawangle);
+arma::fmat getRotationMatrix(double currentMaxAccelX,double currentMaxAccelY,double currentMaxAccelZ);
 arma::fmat Cv2Arma(cv::Mat &cvX);
 cv::Mat Arma2Cv(arma::fmat &X);
 arma::mat lineDetection(arma::fmat);
-arma::fmat lk(arma::fmat image,arma::fmat tempImage);
-arma::fmat P2M(arma::fmat P);
-arma::fmat M2P(arma::fmat &M);
 #endif /* defined(__Estimate_Homography__myfit__) */

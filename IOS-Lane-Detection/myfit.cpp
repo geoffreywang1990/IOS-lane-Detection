@@ -141,9 +141,8 @@ fmat myproj_homography(fmat &W, fmat &H) {
 //get rotation matrix based on IMU
 //Input: IMU data
 
-
 fmat getRotationMatrix(double pitchangle,double rollangle,double yawangle){
-
+    
     
     fmat Rx;
     Rx  << 1.0 << 0.0 << 0.0 << endr
@@ -155,17 +154,16 @@ fmat getRotationMatrix(double pitchangle,double rollangle,double yawangle){
     <<0.0<<1.0<<0.0<< endr
     <<float(sin(rollangle))<<0.0<<float(cos(rollangle));
     
-     fmat Rz;
+    fmat Rz;
     Rz<<float(cos(M_PI/2- rollangle))<<float(sin(M_PI/2-rollangle))<<0.0<<endr
     <<-float(sin(M_PI/2-rollangle))<<float(cos(M_PI/2-rollangle))<<0.0<< endr
     <<0.0<<0.0<<1.0;
-
     
-     fmat Rotation;
+    
+    fmat Rotation;
     Rotation=Rz;
     return Rotation;
 }
-
 // Quick function to convert to Armadillo matrix header
 fmat Cv2Arma(cv::Mat &cvX)
 {
@@ -191,7 +189,7 @@ fmat M2P( fmat &M)
     P(5,0)=M(1,2);
     return P;
 }
- fmat P2M( fmat P)
+fmat P2M( fmat P)
 {
     fmat M;
     M<<1-P(0)<<P(1)<<P(2)<< endr
@@ -215,10 +213,10 @@ cv::Mat lk(cv::Mat targetImage,cv::Mat templateImg)
     fmat rect,tempPts;
     //points of window in image
     rect<< rows/2 << rows/2 << rows-1 << rows-1 <<  endr
-        << 0 << cols-1 << 0 << cols-1;
+    << 0 << cols-1 << 0 << cols-1;
     //points of template window
     tempPts<< 0 << 0 << tempImage.n_rows-1 << tempImage.n_rows-1 <<  endr
-            << 0 << tempImage.n_cols-1 << 0 << tempImage.n_cols-1;
+    << 0 << tempImage.n_cols-1 << 0 << tempImage.n_cols-1;
     fmat tempw;
     tempw.ones(3,4);
     tempw.rows(0,1) = tempPts;
@@ -229,7 +227,7 @@ cv::Mat lk(cv::Mat targetImage,cv::Mat templateImg)
     initM(2,2) = 1;
     //matrix: template move to target position
     
-
+    
     //gradient of template
     fvec x,y;
     x<<-1<<1;
@@ -239,7 +237,7 @@ cv::Mat lk(cv::Mat targetImage,cv::Mat templateImg)
     fmat X,Y;
     fmat tempx,tempy;
     //_________________________________________________
-
+    
     tempx = linspace<fmat>(0, tempImage.n_rows-1,tempImage.n_rows);
     tempy = linspace<fmat>(0, tempImage.n_cols-1,tempImage.n_cols);
     fmat XX = repmat(tempx, tempImage.n_cols, 1);
@@ -254,7 +252,7 @@ cv::Mat lk(cv::Mat targetImage,cv::Mat templateImg)
     fmat dWy = join_rows(join_rows(vzeros, X), join_rows(-Y,vones));
     //_______________________________________________________________
     
-
+    
     
     //jacobian
     fmat T_x = vectorise(Tx);
@@ -265,7 +263,7 @@ cv::Mat lk(cv::Mat targetImage,cv::Mat templateImg)
     //start LK iteration
     fmat P = M2P(initM);
     fmat M = initM;
-  
+    
     //size of warped image
     cv::Size dsize = cv::Size(rows/2,cols);
     //dst is the warped image
@@ -287,6 +285,7 @@ cv::Mat lk(cv::Mat targetImage,cv::Mat templateImg)
     }
     cv::Mat H;  //H is a matrix from templet to Image
     H = Arma2Cv(M);
-
+    
     return H;
 }
+

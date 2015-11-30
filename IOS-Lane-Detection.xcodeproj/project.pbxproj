@@ -227,7 +227,7 @@
 				TargetAttributes = {
 					8F5319F51BFE4C8D00DC249C = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = NGZY4R4V3W;
+						DevelopmentTeam = V5SZFS7473;
 					};
 					8F531A111BFE4C8D00DC249C = {
 						CreatedOnToolsVersion = 7.1;
@@ -349,7 +349,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -394,7 +393,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -426,7 +424,7 @@
 				);
 				INFOPLIST_FILE = "IOS-Lane-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yujun;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yujun-Wang";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -445,7 +443,7 @@
 				);
 				INFOPLIST_FILE = "IOS-Lane-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yujun;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yujun-Wang";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

@@ -183,16 +183,13 @@ using namespace std;
     //arma::fmat warp = Cv2Arma(H);
     //warp_lane_1 = myproj_affine(lanepts_1, warp);
     //warp_lane_2 = myproj_affine(lanepts_2, warp);
-    cv::Mat dst;
-    cv::Size dsize = cv::Size(320, 480);
-    cv::warpPerspective(templateImage,dst, H, dsize,CV_INTER_LINEAR+CV_WARP_INVERSE_MAP+CV_WARP_FILL_OUTLIERS);
+    cv::Mat imgRoi = finalFrame(cv::Rect(0,0,240-1,639));
+
+    cv::Size dsize = cv::Size(240, 640);
+    cv::warpPerspective(templateImage,imgRoi, H, dsize,CV_INTER_LINEAR+CV_WARP_INVERSE_MAP+CV_WARP_FILL_OUTLIERS);
 
     
-
-    
-
-    
-    dst.copyTo(image);
+    finalFrame.copyTo(image);
 
     
     

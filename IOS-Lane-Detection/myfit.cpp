@@ -270,18 +270,25 @@ cv::Mat lk(cv::Mat targetImage,cv::Mat templateImg)
     cv::Mat dst;
     //region of interest
     cv::Mat imgRoi = targetImage(cv::Rect(rows/2-1,0,cols,rows/2));
-    for(int j=1;j<50;j++)
+    int interation=50;
+    int change = 1;
+    int i=1;
+    while(change > 0.1)
     {
+        
         fmat invM = inv(M);
         cv::warpPerspective(imgRoi,dst, Arma2Cv(invM), dsize,CV_INTER_LINEAR+CV_WARP_INVERSE_MAP+CV_WARP_FILL_OUTLIERS);
-        
         cv::Mat err = dst-templateImg;
         err.reshape(0,1);
         fmat error = Cv2Arma(err).t();
         fmat dp = R*error;
+        change = norm(abs(dp));
         fmat dM = P2M(dp);
         M = M*inv(dM);
         P = M2P(M);
+        i = i + 1;
+        if(i > interation)
+            break;
     }
     cv::Mat H;  //H is a matrix from templet to Image
     H = Arma2Cv(M);

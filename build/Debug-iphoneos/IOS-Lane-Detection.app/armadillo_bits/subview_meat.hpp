@@ -1,11 +1,13 @@
-// Copyright (C) 2008-2015 Conrad Sanderson
-// Copyright (C) 2008-2015 NICTA (www.nicta.com.au)
-// Copyright (C) 2011 James Sanders
-// Copyright (C) 2013 Ryan Curtin
+// Copyright (C) 2008-2015 National ICT Australia (NICTA)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
+// -------------------------------------------------------------------
+// 
+// Written by Conrad Sanderson - http://conradsanderson.id.au
+// Written by Ryan Curtin
+// Written by James Sanders
 
 
 //! \addtogroup subview
@@ -634,25 +636,25 @@ subview<eT>::operator%=(const SpBase<eT, T1>& x)
   typename SpProxy<T1>::const_iterator_type cit     = p.begin();
   typename SpProxy<T1>::const_iterator_type cit_end = p.end();
   
-  uword row = 0;
-  uword col = 0;
+  uword r = 0;
+  uword c = 0;
   
   while(cit != cit_end)
     {
     const uword cit_row = cit.row();
     const uword cit_col = cit.col();
     
-    while( ((row == cit_row) && (col == cit_col)) == false )
+    while( ((r == cit_row) && (c == cit_col)) == false )
       {
-      at(row,col) = eT(0);
+      at(r,c) = eT(0);
       
-      row++;  if(row >= s_n_rows)  { row = 0; col++; }
+      r++;  if(r >= s_n_rows)  { r = 0; c++; }
       }
     
-    at(row, col) *= (*cit); 
+    at(r, c) *= (*cit); 
     
     ++cit;
-    row++;  if(row >= s_n_rows)  { row = 0; col++; }
+    r++;  if(r >= s_n_rows)  { r = 0; c++; }
     }
   }
 

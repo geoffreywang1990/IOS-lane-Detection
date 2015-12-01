@@ -1,10 +1,12 @@
-// Copyright (C) 2013-2015 Ryan Curtin
-// Copyright (C) 2013-2015 Conrad Sanderson
-// Copyright (C) 2013-2015 NICTA
+// Copyright (C) 2013-2015 National ICT Australia (NICTA)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
+// -------------------------------------------------------------------
+// 
+// Written by Conrad Sanderson - http://conradsanderson.id.au
+// Written by Ryan Curtin
 
 
 //! \addtogroup sp_auxlib
@@ -79,10 +81,11 @@ sp_auxlib::eigs_sym(Col<eT>& eigval, Mat<eT>& eigvec, const SpBase<eT, T1>& X, c
     SpProxy<T1> p(X.get_ref());
     
     // Make sure it's square.
-    arma_debug_check( (p.get_n_rows() != p.get_n_cols()), "eigs_sym(): given sparse matrix is not square");
+    arma_debug_check( (p.get_n_rows() != p.get_n_cols()), "eigs_sym(): given matrix must be square sized" );
     
     // Make sure we aren't asking for every eigenvalue.
-    arma_debug_check( (n_eigvals + 1 >= p.get_n_rows()), "eigs_sym(): n_eigvals + 1 must be less than the number of rows in the matrix");
+    // The _saupd() functions allow asking for one more eigenvalue than the _naupd() functions.
+    arma_debug_check( (n_eigvals >= p.get_n_rows()), "eigs_sym(): n_eigvals must be less than the number of rows in the matrix" );
     
     // If the matrix is empty, the case is trivial.
     if(p.get_n_cols() == 0) // We already know n_cols == n_rows.
@@ -125,9 +128,7 @@ sp_auxlib::eigs_sym(Col<eT>& eigval, Mat<eT>& eigvec, const SpBase<eT, T1>& X, c
     // Check for errors.
     if(info != 0)
       {
-      std::stringstream tmp;
-      tmp << "eigs_sym(): ARPACK error " << info << " in seupd()";
-      arma_debug_warn(true, tmp.str());
+      arma_debug_warn("eigs_sym(): ARPACK error ", info, " in seupd()");
       return false;
       }
     
@@ -142,7 +143,7 @@ sp_auxlib::eigs_sym(Col<eT>& eigval, Mat<eT>& eigvec, const SpBase<eT, T1>& X, c
     arma_ignore(form_str);
     arma_ignore(default_tol);
     
-    arma_stop("eigs_sym(): use of ARPACK needs to be enabled");
+    arma_stop("eigs_sym(): use of ARPACK must be enabled");
     return false;
     }
   #endif
@@ -190,10 +191,10 @@ sp_auxlib::eigs_gen(Col< std::complex<T> >& eigval, Mat< std::complex<T> >& eigv
     SpProxy<T1> p(X.get_ref());
     
     // Make sure it's square.
-    arma_debug_check( (p.get_n_rows() != p.get_n_cols()), "eigs_gen(): given sparse matrix is not square");
+    arma_debug_check( (p.get_n_rows() != p.get_n_cols()), "eigs_gen(): given matrix must be square sized" );
     
     // Make sure we aren't asking for every eigenvalue.
-    arma_debug_check( (n_eigvals + 1 >= p.get_n_rows()), "eigs_gen(): n_eigvals + 1 must be less than the number of rows in the matrix");
+    arma_debug_check( (n_eigvals + 1 >= p.get_n_rows()), "eigs_gen(): n_eigvals + 1 must be less than the number of rows in the matrix" );
     
     // If the matrix is empty, the case is trivial.
     if(p.get_n_cols() == 0) // We already know n_cols == n_rows.
@@ -236,9 +237,7 @@ sp_auxlib::eigs_gen(Col< std::complex<T> >& eigval, Mat< std::complex<T> >& eigv
     // Check for errors.
     if(info != 0)
       {
-      std::stringstream tmp;
-      tmp << "eigs_gen(): ARPACK error " << info << " in neupd()";
-      arma_debug_warn(true, tmp.str());
+      arma_debug_warn("eigs_gen(): ARPACK error ", info, " in neupd()");
       return false;
       }
     
@@ -254,13 +253,13 @@ sp_auxlib::eigs_gen(Col< std::complex<T> >& eigval, Mat< std::complex<T> >& eigv
     // Now recover the eigenvectors.
     for (uword i = 0; i < n_eigvals; ++i)
       {
-      // ARPACK ?neupd lays things out kinda odd in memory; so does LAPACK
-      // ?geev (see auxlib::eig_gen()).
+      // ARPACK ?neupd lays things out kinda odd in memory;
+      // so does LAPACK ?geev -- see auxlib::eig_gen()
       if((i < n_eigvals - 1) && (eigval[i] == std::conj(eigval[i + 1])))
         {
-        for (uword j = 0; j < n; ++j)
+        for (uword j = 0; j < uword(n); ++j)
           {
-          eigvec.at(j, i)     = std::complex<T>(z[n * i + j], z[n * (i + 1) + j]);
+          eigvec.at(j, i)     = std::complex<T>(z[n * i + j],  z[n * (i + 1) + j]);
           eigvec.at(j, i + 1) = std::complex<T>(z[n * i + j], -z[n * (i + 1) + j]);
           }
         ++i; // Skip the next one.
@@ -269,7 +268,7 @@ sp_auxlib::eigs_gen(Col< std::complex<T> >& eigval, Mat< std::complex<T> >& eigv
       if((i == n_eigvals - 1) && (std::complex<T>(eigval[i]).imag() != 0.0))
         {
         // We don't have the matched conjugate eigenvalue.
-        for (uword j = 0; j < n; ++j)
+        for (uword j = 0; j < uword(n); ++j)
           {
           eigvec.at(j, i) = std::complex<T>(z[n * i + j], z[n * (i + 1) + j]);
           }
@@ -277,7 +276,7 @@ sp_auxlib::eigs_gen(Col< std::complex<T> >& eigval, Mat< std::complex<T> >& eigv
       else
         {
         // The eigenvector is entirely real.
-        for (uword j = 0; j < n; ++j)
+        for (uword j = 0; j < uword(n); ++j)
           {
           eigvec.at(j, i) = std::complex<T>(z[n * i + j], T(0));
           }
@@ -295,7 +294,7 @@ sp_auxlib::eigs_gen(Col< std::complex<T> >& eigval, Mat< std::complex<T> >& eigv
     arma_ignore(form_str);
     arma_ignore(default_tol);
     
-    arma_stop("eigs_gen(): use of ARPACK needs to be enabled");
+    arma_stop("eigs_gen(): use of ARPACK must be enabled");
     return false;
     }
   #endif
@@ -344,10 +343,10 @@ sp_auxlib::eigs_gen(Col< std::complex<T> >& eigval, Mat< std::complex<T> >& eigv
     SpProxy<T1> p(X.get_ref());
     
     // Make sure it's square.
-    arma_debug_check( (p.get_n_rows() != p.get_n_cols()), "eigs_gen(): given sparse matrix is not square");
+    arma_debug_check( (p.get_n_rows() != p.get_n_cols()), "eigs_gen(): given matrix must be square sized" );
     
     // Make sure we aren't asking for every eigenvalue.
-    arma_debug_check( (n_eigvals + 1 >= p.get_n_rows()), "eigs_gen(): n_eigvals + 1 must be less than the number of rows in the matrix");
+    arma_debug_check( (n_eigvals + 1 >= p.get_n_rows()), "eigs_gen(): n_eigvals + 1 must be less than the number of rows in the matrix" );
     
     // If the matrix is empty, the case is trivial.
     if(p.get_n_cols() == 0) // We already know n_cols == n_rows.
@@ -395,9 +394,7 @@ sp_auxlib::eigs_gen(Col< std::complex<T> >& eigval, Mat< std::complex<T> >& eigv
     // Check for errors.
     if(info != 0)
       {
-      std::stringstream tmp;
-      tmp << "eigs_gen(): ARPACK error " << info << " in neupd()";
-      arma_debug_warn(true, tmp.str());
+      arma_debug_warn("eigs_gen(): ARPACK error ", info, " in neupd()");
       return false;
       }
     
@@ -412,7 +409,7 @@ sp_auxlib::eigs_gen(Col< std::complex<T> >& eigval, Mat< std::complex<T> >& eigv
     arma_ignore(form_str);
     arma_ignore(default_tol);
     
-    arma_stop("eigs_gen(): use of ARPACK needs to be enabled");
+    arma_stop("eigs_gen(): use of ARPACK must be enabled");
     return false;
     }
   #endif
@@ -543,21 +540,21 @@ sp_auxlib::spsolve(Mat<typename T1::elem_type>& X, const SpBase<typename T1::ele
       {
       std::stringstream tmp;
       tmp << "spsolve(): could not solve system; LU factorisation completed, but detected zero in U(" << (info-1) << ',' << (info-1) << ')';
-      arma_debug_warn(true, tmp.str());
+      arma_debug_warn(tmp.str());
       }
     else
     if(info > int(A.n_cols))
       {
       std::stringstream tmp;
       tmp << "spsolve(): memory allocation failure: could not allocate " << (info - int(A.n_cols)) << " bytes";
-      arma_debug_warn(true, tmp.str());
+      arma_debug_warn(tmp.str());
       }
     else
     if(info < 0)
       {
       std::stringstream tmp;
       tmp << "spsolve(): unknown SuperLU error code from gssv(): " << info;
-      arma_debug_warn(true, tmp.str());
+      arma_debug_warn(tmp.str());
       }
     
     
@@ -580,7 +577,7 @@ sp_auxlib::spsolve(Mat<typename T1::elem_type>& X, const SpBase<typename T1::ele
     arma_ignore(A_expr);
     arma_ignore(B_expr);
     arma_ignore(user_opts);
-    arma_stop("spsolve(): use of SuperLU needs to be enabled");
+    arma_stop("spsolve(): use of SuperLU must be enabled");
     return false;
     }
   #endif
@@ -625,7 +622,7 @@ sp_auxlib::spsolve(Mat<typename T1::elem_type>& X, const SpBase<typename T1::ele
     // We have to actually create the object which stores the data.
     // This gets cleaned by destroy_supermatrix().
     // We have to use SuperLU's stupid memory allocation routines since they are
-    // not guaranteed to be new and delete.  See the comments in superlu_bones.hpp
+    // not guaranteed to be new and delete.  See the comments in def_superlu.hpp
     superlu::NCformat* nc = (superlu::NCformat*)superlu::malloc(sizeof(superlu::NCformat));
     
     if(nc == NULL)  { return false; }
@@ -753,7 +750,7 @@ sp_auxlib::spsolve(Mat<typename T1::elem_type>& X, const SpBase<typename T1::ele
       if(out.Stype == superlu::SLU_DN)      { tmp << "SLU_DN";     }
       if(out.Stype == superlu::SLU_NR_loc)  { tmp << "SLU_NR_loc"; }
       
-      arma_debug_warn(true, tmp.str());
+      arma_debug_warn(tmp.str());
       arma_bad("sp_auxlib::destroy_supermatrix(): internal error");
       }
     }
@@ -790,11 +787,18 @@ sp_auxlib::run_aupd
     
     resid.set_size(n);
     
-    // "NCV must satisfy the two inequalities 2 <= NCV-NEV and NCV <= N".
-    // "It is recommended that NCV >= 2 * NEV".
-    ncv = 2 + nev;
-    if (ncv < 2 * nev) { ncv = 2 * nev; }
-    if (ncv > n)       { ncv = n; }
+    // Two contraints on NCV: (NCV > NEV + 2) and (NCV <= N)
+    // 
+    // We're calling either arpack::saupd() or arpack::naupd(),
+    // which have slighly different minimum constraint and recommended value for NCV:
+    // http://www.caam.rice.edu/software/ARPACK/UG/node136.html
+    // http://www.caam.rice.edu/software/ARPACK/UG/node138.html
+    
+    ncv = nev + 2 + 1;
+    
+    if (ncv < (2 * nev + 1)) { ncv = 2 * nev + 1; }
+    if (ncv > n            ) { ncv = n;           }
+    
     v.set_size(n * ncv); // Array N by NCV (output).
     rwork.set_size(ncv); // Work array of size NCV for complex calls.
     ldv = n; // "Leading dimension of V exactly as declared in the calling program."
@@ -875,18 +879,15 @@ sp_auxlib::run_aupd
     if( (info != 0) && (info != 1) )
       {
       // Print warnings if there was a failure.
-      std::stringstream tmp;
       
       if(sym)
         {
-        tmp << "eigs_sym(): ARPACK error " << info << " in saupd()";
+        arma_debug_warn("eigs_sym(): ARPACK error ", info, " in saupd()");
         }
       else
         {
-        tmp << "eigs_gen(): ARPACK error " << info << " in naupd()";
+        arma_debug_warn("eigs_gen(): ARPACK error ", info, " in naupd()");
         }
-      
-      arma_debug_warn(true, tmp.str());
       
       return; // Parent frame can look at the value of info.
       }

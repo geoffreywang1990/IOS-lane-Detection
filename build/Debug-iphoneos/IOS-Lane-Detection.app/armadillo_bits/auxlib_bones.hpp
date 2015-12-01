@@ -1,19 +1,20 @@
-// Copyright (C) 2008-2014 Conrad Sanderson
-// Copyright (C) 2008-2014 NICTA (www.nicta.com.au)
-// Copyright (C) 2009 Edmund Highcock
-// Copyright (C) 2011 James Sanders
-// Copyright (C) 2012 Eric Jon Sundstrom
+// Copyright (C) 2008-2015 National ICT Australia (NICTA)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
+// -------------------------------------------------------------------
+// 
+// Written by Conrad Sanderson - http://conradsanderson.id.au
+// Written by James Sanders
+// Written by Eric Jon Sundstrom
 
 
 //! \addtogroup auxlib
 //! @{
 
 
-//! wrapper for accessing external functions defined in ATLAS, LAPACK or BLAS libraries
+//! interface functions for accessing decompositions in LAPACK and ATLAS
 class auxlib
   {
   public:
@@ -99,6 +100,32 @@ class auxlib
   
   
   //
+  // eig_gen
+  
+  template<typename T1>
+  inline static bool eig_gen(Mat< std::complex<typename T1::pod_type> >& vals, Mat< std::complex<typename T1::pod_type> >& vecs, const uword mode, const Base<typename T1::pod_type,T1>& expr);
+  
+  template<typename T1>
+  inline static bool eig_gen(Mat< std::complex<typename T1::pod_type> >& vals, Mat< std::complex<typename T1::pod_type> >& vecs, const uword mode, const Base< std::complex<typename T1::pod_type>, T1 >& expr);
+  
+  template<typename T1>
+  inline static bool eig_gen_dual(Mat< std::complex<typename T1::pod_type> >& vals, Mat<typename T1::pod_type>& vecs_l, Mat<typename T1::pod_type>& vecs_r, const Base<typename T1::pod_type,T1>& expr);
+  
+  template<typename T1>
+  inline static bool eig_gen_dual(Mat< std::complex<typename T1::pod_type> >& vals, Mat< std::complex<typename T1::pod_type> >& vecs_l, Mat< std::complex<typename T1::pod_type> >& vecs_r, const Base< std::complex<typename T1::pod_type>, T1 >& expr);
+  
+  
+  //
+  // eig_pair
+  
+  template<typename T1, typename T2>
+  inline static bool eig_pair(Mat< std::complex<typename T1::pod_type> >& vals, Mat< std::complex<typename T1::pod_type> >& vecs, const uword mode, const Base<typename T1::pod_type,T1>& A_expr, const Base<typename T1::pod_type,T2>& B_expr);
+  
+  template<typename T1, typename T2>
+  inline static bool eig_pair(Mat< std::complex<typename T1::pod_type> >& vals, Mat< std::complex<typename T1::pod_type> >& vecs, const uword mode, const Base< std::complex<typename T1::pod_type>, T1 >& A_expr, const Base< std::complex<typename T1::pod_type>, T2 >& B_expr);
+  
+  
+  //
   // eig_sym
   
   template<typename eT, typename T1> 
@@ -118,26 +145,6 @@ class auxlib
   
   template<typename T, typename T1>
   inline static bool eig_sym_dc(Col<T>& eigval, Mat< std::complex<T> >& eigvec, const Base<std::complex<T>,T1>& X);
-  
-  
-  //
-  // eig_gen
-  
-  template<typename T, typename T1>
-  inline static bool eig_gen(Col< std::complex<T> >& eigval, Mat<T>& l_eigvec, Mat<T>& r_eigvec, const Base<T,T1>& X, const char side);
-  
-  template<typename T, typename T1>
-  inline static bool eig_gen(Col< std::complex<T> >& eigval, Mat< std::complex<T> >& l_eigvec, Mat< std::complex<T> >& r_eigvec, const Base< std::complex<T>, T1 >& X, const char side);
-  
-  
-  //
-  // eig_pair
-  
-  template<typename T, typename T1, typename T2>
-  inline static bool eig_pair(Col< std::complex<T> >& eigval, Mat<T>& l_eigvec, Mat<T>& r_eigvec, const Base<T,T1>& X, const Base<T,T2>& Y, const char side);
-  
-  template<typename T, typename T1, typename T2>
-  inline static bool eig_pair(Col< std::complex<T> >& eigval, Mat< std::complex<T> >& l_eigvec, Mat< std::complex<T> >& r_eigvec, const Base< std::complex<T>, T1 >& X, const Base< std::complex<T>, T2 >& Y, const char side);
   
   
   //
@@ -185,19 +192,15 @@ class auxlib
   inline static bool svd_econ(Mat< std::complex<T> >& U, Col<T>& S, Mat< std::complex<T> >& V, const Base< std::complex<T>, T1>& X, const char mode);
   
   
-  // EXPERIMENTAL
   template<typename eT, typename T1>
   inline static bool svd_dc(Col<eT>& S, const Base<eT,T1>& X, uword& n_rows, uword& n_cols);
   
-  // EXPERIMENTAL
   template<typename T, typename T1>
   inline static bool svd_dc(Col<T>& S, const Base<std::complex<T>, T1>& X, uword& n_rows, uword& n_cols);
   
-  // EXPERIMENTAL
   template<typename eT, typename T1>
   inline static bool svd_dc(Col<eT>& S, const Base<eT,T1>& X);
   
-  // EXPERIMENTAL
   template<typename T, typename T1>
   inline static bool svd_dc(Col<T>& S, const Base<std::complex<T>, T1>& X);
   
@@ -233,16 +236,16 @@ class auxlib
   
   template<typename eT>
   inline static bool solve_tr(Mat<eT>& out, const Mat<eT>& A, const Mat<eT>& B, const uword layout);
-
-
+  
+  
   //
   // Schur decomposition
   
-  template<typename eT>
-  inline static bool schur_dec(Mat<eT>& Z, Mat<eT>& T, const Mat<eT>& A);
+  template<typename eT, typename T1>
+  inline static bool schur(Mat<eT>& U, Mat<eT>& S, const Base<eT,T1>& X, const bool calc_U = true);
   
-  template<typename cT>
-  inline static bool schur_dec(Mat<std::complex<cT> >& Z, Mat<std::complex<cT> >& T, const Mat<std::complex<cT> >& A);
+  template<typename  T, typename T1>
+  inline static bool schur(Mat<std::complex<T> >& U, Mat<std::complex<T> >& S, const Base<std::complex<T>,T1>& X, const bool calc_U = true);
   
   
   //
@@ -253,29 +256,13 @@ class auxlib
   
   
   //
-  // lyap (solution of the continuous Lyapunov equation AX + XA^H + Q = 0)
-  
-  template<typename eT>
-  inline static bool lyap(Mat<eT>& X, const Mat<eT>& A, const Mat<eT>& Q);
-  
-  
-  //
-  // dlyap (solution of the discrete Lyapunov equation AXA^H - X + Q = 0)
-  
-  template<typename eT>
-  inline static bool dlyap(Mat<eT>& X, const Mat<eT>& A, const Mat<eT>& Q);
-  
-  
-  //
   // QZ decomposition
   
   template<typename T, typename T1, typename T2>
-  inline static bool qz(Mat<T>& A, Mat<T>& B, Mat<T>& vsl, Mat<T>& vsr, const Base<T,T1>& X, const Base<T,T2>& Y, const char side);
+  inline static bool qz(Mat<T>& A, Mat<T>& B, Mat<T>& vsl, Mat<T>& vsr, const Base<T,T1>& X_expr, const Base<T,T2>& Y_expr);
   
   template<typename T, typename T1, typename T2>
-  inline static bool qz(Mat< std::complex<T> >& A, Mat< std::complex<T> >& B, Mat< std::complex<T> >& vsl, Mat< std::complex<T> >& vsr, const Base< std::complex<T>, T1 >& X, const Base< std::complex<T>, T2 >& Y, const char side);
-  
-  
+  inline static bool qz(Mat< std::complex<T> >& A, Mat< std::complex<T> >& B, Mat< std::complex<T> >& vsl, Mat< std::complex<T> >& vsr, const Base< std::complex<T>, T1 >& X_expr, const Base< std::complex<T>, T2 >& Y_expr);
   };
 
 

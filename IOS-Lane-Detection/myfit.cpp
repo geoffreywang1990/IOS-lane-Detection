@@ -229,21 +229,32 @@ cv::Mat lk(cv::Mat targetImage,cv::Mat templateImg)
     
     
     //gradient of template
+   /*
     fvec x,y;
-    x<<-1<<1;
+    x<<-1<<0<<1;
     y = x.t();
     fmat Tx = conv(tempImage,x);
-    fmat Ty = conv(tempImage,y);
-    fmat X,Y;
-    fmat tempx,tempy;
+    fmat Ty = conv(tempImage,y);*/
+    
+   
+    
+    cv::Mat Xgrad,Ygrad;
+    cv::Sobel(templateImg, Xgrad, 3, 1, 0);
+    cv::Sobel(templateImg, Ygrad, 3, 0, 1);
+    arma::fmat Tx=Cv2Arma(Xgrad);
+    arma::fmat Ty=Cv2Arma(Ygrad);
     //_________________________________________________
     
+    fmat X,Y;
+    fmat tempx,tempy;
     tempx = linspace<fmat>(0, tempImage.n_rows-1,tempImage.n_rows);
     tempy = linspace<fmat>(0, tempImage.n_cols-1,tempImage.n_cols);
     fmat XX = repmat(tempx, tempImage.n_cols, 1);
     fmat YY = repmat(tempy.t(), tempImage.n_rows, 1);
     X = vectorise(XX);
     Y = vectorise(YY);
+   
+    
     fmat vzeros;
     vzeros.zeros(X.n_rows,3);
     fmat vones;
@@ -265,11 +276,15 @@ cv::Mat lk(cv::Mat targetImage,cv::Mat templateImg)
     fmat M = initM;
     
     //size of warped image
-    cv::Size dsize = cv::Size(rows/2,cols);
+    cv::Size dsize = cv::Size(50,50);
     //dst is the warped image
     cv::Mat dst;
     //region of interest
-    cv::Mat imgRoi = targetImage(cv::Rect(rows/2-1,0,cols,rows/2));
+    cv::Rect rectangle = cv::Rect(round(targetImage.size().width/2)-1,1,round(targetImage.size().height),round(targetImage.size().width/2));
+
+  // cv::Mat imgRoi = targetImage(cv::Rect(round(targetImage.size().width/2)-1,1,round(targetImage.size().height),round(targetImage.size().width/2)));
+    //std::cout<<targetImage.size()<<std::endl;
+    cv::Mat imgRoi = targetImage(cv::Rect(240,0,240-1,639));
     int interation=50;
     int change = 1;
     int i=1;
@@ -279,8 +294,9 @@ cv::Mat lk(cv::Mat targetImage,cv::Mat templateImg)
         fmat invM = inv(M);
         cv::warpPerspective(imgRoi,dst, Arma2Cv(invM), dsize,CV_INTER_LINEAR+CV_WARP_INVERSE_MAP+CV_WARP_FILL_OUTLIERS);
         cv::Mat err = dst-templateImg;
-        err.reshape(0,1);
-        fmat error = Cv2Arma(err).t();
+        //err.reshape(0,1);
+        
+        fmat error = vectorise( Cv2Arma(err));
         fmat dp = R*error;
         change = norm(abs(dp));
         fmat dM = P2M(dp);
@@ -290,6 +306,8 @@ cv::Mat lk(cv::Mat targetImage,cv::Mat templateImg)
         if(i > interation)
             break;
     }
+    
+    
     cv::Mat H;  //H is a matrix from templet to Image
     H = Arma2Cv(M);
     

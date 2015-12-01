@@ -30,7 +30,6 @@
 		8F9CA9391C0BA835008D203B /* armadillo in Resources */ = {isa = PBXBuildFile; fileRef = 8F9CA9351C0BA835008D203B /* armadillo */; };
 		8F9CA93A1C0BA835008D203B /* armadillo_bits in Resources */ = {isa = PBXBuildFile; fileRef = 8F9CA9361C0BA835008D203B /* armadillo_bits */; };
 		8F9CA93B1C0BA835008D203B /* myfit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CA9371C0BA835008D203B /* myfit.cpp */; };
-		8FD747681C0913CA00E62ACB /* detectLane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FD747661C0913CA00E62ACB /* detectLane.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +73,6 @@
 		8F9CA9361C0BA835008D203B /* armadillo_bits */ = {isa = PBXFileReference; lastKnownFileType = folder; path = armadillo_bits; sourceTree = "<group>"; };
 		8F9CA9371C0BA835008D203B /* myfit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = myfit.cpp; sourceTree = "<group>"; };
 		8F9CA9381C0BA835008D203B /* myfit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myfit.h; sourceTree = "<group>"; };
-		8FD747661C0913CA00E62ACB /* detectLane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = detectLane.cpp; sourceTree = "<group>"; };
-		8FD747671C0913CA00E62ACB /* detectLane.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = detectLane.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,8 +152,6 @@
 				8F531A0D1BFE4C8D00DC249C /* Info.plist */,
 				8F531A051BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodeld */,
 				8F5319F91BFE4C8D00DC249C /* Supporting Files */,
-				8FD747661C0913CA00E62ACB /* detectLane.cpp */,
-				8FD747671C0913CA00E62ACB /* detectLane.hpp */,
 			);
 			path = "IOS-Lane-Detection";
 			sourceTree = "<group>";
@@ -227,7 +222,7 @@
 				TargetAttributes = {
 					8F5319F51BFE4C8D00DC249C = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = NGZY4R4V3W;
+						DevelopmentTeam = V5SZFS7473;
 					};
 					8F531A111BFE4C8D00DC249C = {
 						CreatedOnToolsVersion = 7.1;
@@ -284,7 +279,6 @@
 			files = (
 				8F531A011BFE4C8D00DC249C /* ViewController.mm in Sources */,
 				8F5319FE1BFE4C8D00DC249C /* AppDelegate.m in Sources */,
-				8FD747681C0913CA00E62ACB /* detectLane.cpp in Sources */,
 				8F5319FB1BFE4C8D00DC249C /* main.m in Sources */,
 				8F531A071BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodeld in Sources */,
 				8F9CA93B1C0BA835008D203B /* myfit.cpp in Sources */,
@@ -426,7 +420,7 @@
 				);
 				INFOPLIST_FILE = "IOS-Lane-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yujun;
+				PRODUCT_BUNDLE_IDENTIFIER = "-16423";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -445,7 +439,7 @@
 				);
 				INFOPLIST_FILE = "IOS-Lane-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yujun;
+				PRODUCT_BUNDLE_IDENTIFIER = "-16423";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

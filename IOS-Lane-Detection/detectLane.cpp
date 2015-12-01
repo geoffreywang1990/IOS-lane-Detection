@@ -36,7 +36,7 @@ cv::Mat getLines(cv::Mat frame)
     }
    
     cv::Mat lane =deNoise(temp, newFrame);  //eliminate lines we do not want
-    return newFrame;
+    return lane;
 }
 
 cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
@@ -55,7 +55,7 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
     
     cv::vector< cv::vector<cv::Point> > contours;
     cv::vector<cv::Vec4i> hierarchy;
-    cv::RotatedRect rotated_rect;
+    
     
     // find all contours in image
     lane.copyTo(binaryImage);
@@ -73,7 +73,7 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
             //find lines larger than threshold.
             if(contour_area > minRegionSize)
             {
-                rotated_rect = minAreaRect(contours[i]);
+                cv::RotatedRect rotated_rect = minAreaRect(contours[i]);
                 cv::Size2f sz = rotated_rect.size;
                 float contour_width  = sz.width;
                 float contour_length = sz.height;

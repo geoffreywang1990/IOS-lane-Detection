@@ -27,7 +27,7 @@ cv::Mat getLines(cv::Mat frame)
             int leftDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j-laneWidth);
             int rightDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j+laneWidth);
             int diff  =  leftDiff + rightDiff - abs(leftDiff-rightDiff);
-            int diffThresh = newFrame.at<uchar>(i,j)/2
+            int diffThresh = newFrame.at<uchar>(i,j)/2;
             if (leftDiff>0 && rightDiff >0 && diff>5)
                 if(diff>=diffThresh)
                     temp.at<uchar>(i,j)=255;

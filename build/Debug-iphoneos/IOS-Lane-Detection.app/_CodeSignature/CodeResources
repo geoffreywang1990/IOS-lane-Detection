@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/8V3vtvQWUliqjF9ukT9y1FMwwU=
+			HhYHfQ6NTzVShWGx5guDimsKaoM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,7 +26,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hnc4dWcd7rF/Dzcr4sYge/pBSWo=
+			D/xZW/aZvxMuA5T2wm1JlFVbzSw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,7 +35,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5a/EIDzYbu+A0KlMnnxOLlM4p3A=
+			TjRHQcqoDkFxhC8jwoewFf9cYEs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -53,7 +53,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lwc3LKPLDJcJujJgEryu1W56ilU=
+			ppG4tjTo8HBIIykzJroUeYjbuWE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -72,7 +72,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sKcEH2AH0miGNIhAt+8R3LUXpek=
+		1JOvQ/O2ekBHz//ICqs9H2IPi7A=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -80,1751 +80,1771 @@
 		</data>
 		<key>armadillo</key>
 		<data>
-		N+Wp6Y6+yhpuuVKGmJ0kBKbyzxA=
+		l3Bg0Y6xy6g/m5t3SmgD7Wi1wDM=
 		</data>
 		<key>armadillo_bits/BaseCube_bones.hpp</key>
 		<data>
-		AYHd1fmryf4LJHULLnztNOJ6aiA=
+		2LkrlGNd/usqUcRmmxPUEiYLSt4=
 		</data>
 		<key>armadillo_bits/BaseCube_meat.hpp</key>
 		<data>
-		DbahrXieVNi/uPVq58cq1nQqHEQ=
+		rdkS8eAj7yIhseNRYYDNpVuAXM8=
 		</data>
 		<key>armadillo_bits/Base_bones.hpp</key>
 		<data>
-		wByV60f65QlnBeGyVGoJXL7Ywuc=
+		G2Ad3nDXuij+WHX5x0PZH93r1nA=
 		</data>
 		<key>armadillo_bits/Base_meat.hpp</key>
 		<data>
-		vz2gYMtmuzqpN1RdeFF3ETrSff0=
+		6ITgxA12CQwYF5eahK8vPrG96HU=
 		</data>
 		<key>armadillo_bits/Col_bones.hpp</key>
 		<data>
-		Iy+oDmfBqDuvfVE2SmryY6OmxWA=
+		fiydGbWuTwjl/TOdjniqHogAnX8=
 		</data>
 		<key>armadillo_bits/Col_meat.hpp</key>
 		<data>
-		EDxEij08vmlMY1yNdW6s3lFSDfA=
+		T6rL/qEF/eRdXQ6uUOEBF8pDErI=
 		</data>
 		<key>armadillo_bits/Cube_bones.hpp</key>
 		<data>
-		Gj7FAVVtRMVAcGpZwtN0Ql60K6c=
+		CK6y6SyzSbw7e3MbztjSW/XToDs=
 		</data>
 		<key>armadillo_bits/Cube_meat.hpp</key>
 		<data>
-		7F3okK4A/7s6c6TwB0Ylp5K2gqg=
+		IY5r61aX5CStVeMTfu4SunVk7rY=
 		</data>
 		<key>armadillo_bits/GenCube_bones.hpp</key>
 		<data>
-		msvccAMa17SIQ78zV77XwTSdUDc=
+		Nbb1dmROQR5JOsRGirbAF9dDxmE=
 		</data>
 		<key>armadillo_bits/GenCube_meat.hpp</key>
 		<data>
-		4bngIjWS6gvD2fI7NYcu/FfLahc=
+		+9aU4UGjsOkbNfuJW4VEGBlfgUQ=
 		</data>
 		<key>armadillo_bits/Gen_bones.hpp</key>
 		<data>
-		Kg5zcHsNvj/RdoGedChEDYyK4L8=
+		UQ9VncDtd1T4djuH6tLyE0zP+60=
 		</data>
 		<key>armadillo_bits/Gen_meat.hpp</key>
 		<data>
-		7H5o3NvpWgTLOmXNQQ3TgX7+jVE=
+		AFgZx6y7LxYgGsvFwPXcKoTXfag=
 		</data>
 		<key>armadillo_bits/GlueCube_bones.hpp</key>
 		<data>
-		YlVY3K9sPRg4O9xkIo8iNywPEjQ=
+		FjJFnB0nEODPipdJJfwXq0ScrJo=
 		</data>
 		<key>armadillo_bits/GlueCube_meat.hpp</key>
 		<data>
-		pqmRN15b7gElpoYzkav5yjlo4Yc=
+		T1Hn+hLFncXqQMg4NHWRb1a0WfM=
 		</data>
 		<key>armadillo_bits/Glue_bones.hpp</key>
 		<data>
-		dzwW0OGc+laEoM55hvoPFu/mRys=
+		M3BL9d579OsNgXcHUsD43jfIP6I=
 		</data>
 		<key>armadillo_bits/Glue_meat.hpp</key>
 		<data>
-		nNDVbS4Chgsv7dmrmYQkn6dtmUk=
+		9oaUWNkuCRFXI5aBMKAhozIUg8M=
 		</data>
 		<key>armadillo_bits/Mat_bones.hpp</key>
 		<data>
-		0ba0ZhzvjdZCG1/lt20YEA8RSHE=
+		m4Fdq3TjYwgLdycmOMaGkjv/9y8=
 		</data>
 		<key>armadillo_bits/Mat_meat.hpp</key>
 		<data>
-		L2LFhC1pKIJdY2mfdBLZk/kc7FE=
+		tTOi3K2N1qYs0sTP2iXlJ+uxQgo=
 		</data>
 		<key>armadillo_bits/OpCube_bones.hpp</key>
 		<data>
-		zGJsqSHLOd3xE98/eNEFPBhYfz0=
+		aJnKPLHO6nd96Qyf6qRdwNYB4mw=
 		</data>
 		<key>armadillo_bits/OpCube_meat.hpp</key>
 		<data>
-		zJeKWdLnVWoBfFDHXvf5+H/6mxQ=
+		uISETi7xyw9YMRHi3hrURKF0ppo=
 		</data>
 		<key>armadillo_bits/Op_bones.hpp</key>
 		<data>
-		UsN4uuN6fNfnxTRSmkJ/MqjmH1I=
+		+RHuUG3A+bYDiAcS/IeLDhp7geA=
 		</data>
 		<key>armadillo_bits/Op_meat.hpp</key>
 		<data>
-		W9bbAnkhwXmL+ydUjswNncYgG24=
+		CLu4oJy2H2KcP/juUXk1QE/oS6k=
 		</data>
 		<key>armadillo_bits/Proxy.hpp</key>
 		<data>
-		URNKwFKWbpWscCgNhvB+1IBnjc8=
+		0p5axB6wmQFDuDiP7gPUb7pTlaY=
 		</data>
 		<key>armadillo_bits/ProxyCube.hpp</key>
 		<data>
-		rrliwKT6I0Aj30oSsXVLS55GBtM=
+		5NnDtcLY2RjyFcpOGtS4CubKL/s=
 		</data>
 		<key>armadillo_bits/Row_bones.hpp</key>
 		<data>
-		1geOqzx1ccLkUlLsYSeOwQsvp5o=
+		o3RcrUeX2UseFVRv4GSL9yDL9CE=
 		</data>
 		<key>armadillo_bits/Row_meat.hpp</key>
 		<data>
-		l8RJVDZMHj1Yes1hxv9soRNgWOg=
+		0QQzinytiLCsDDWOS5w4OTkwovs=
 		</data>
 		<key>armadillo_bits/SizeCube_bones.hpp</key>
 		<data>
-		XEWMKC2DRShOItwxVTBF0ambLCc=
+		ZVWG5/o+p/miWlXOzPxZxQRjIyI=
 		</data>
 		<key>armadillo_bits/SizeCube_meat.hpp</key>
 		<data>
-		3YjpYuiAAs36Av6JJfA3QPltzBU=
+		CxzvjcPee1h4gnGWnDu+5n49fzc=
 		</data>
 		<key>armadillo_bits/SizeMat_bones.hpp</key>
 		<data>
-		GRefo4OpXB8OJn2whfgcM6X7axw=
+		bVC3A2W6+XUBGWVxukMYN2HlbvY=
 		</data>
 		<key>armadillo_bits/SizeMat_meat.hpp</key>
 		<data>
-		LT1BayjgJDGdg4Y3XMtYnpbWo8k=
+		WYsoFJ/CT+BVyBvBziHqiwZCd4k=
 		</data>
 		<key>armadillo_bits/SpBase_bones.hpp</key>
 		<data>
-		JhMXU9Ge+glWKuP3So7UQob47TM=
+		guD38HS3E8YNwqaBtUECUr2fAig=
 		</data>
 		<key>armadillo_bits/SpBase_meat.hpp</key>
 		<data>
-		Grg0/ggzAc8pvofWS7NcWoSX8LM=
+		FLuKtpMsAYasEWIcKgxW5Eg6gfg=
 		</data>
 		<key>armadillo_bits/SpCol_bones.hpp</key>
 		<data>
-		56Nyt4nvzA3Jkr2GQ02x0j5Lqrw=
+		cl5it3qK6XWWOmNdHrxdq7uRNI8=
 		</data>
 		<key>armadillo_bits/SpCol_meat.hpp</key>
 		<data>
-		pMEUKstYbbpRdeFys6cSlcy3/4o=
+		0vXPKLxi5wTToJTRsuX+/r4lXF4=
 		</data>
 		<key>armadillo_bits/SpGlue_bones.hpp</key>
 		<data>
-		AuVlrT6tEIPAfKh3TFtiDg+vuMw=
+		igaL2NXgEJqsRY0GZiZQJZEdQ+k=
 		</data>
 		<key>armadillo_bits/SpGlue_meat.hpp</key>
 		<data>
-		t9nwtwvcuQHrlxnWUUa3zBSX2jI=
+		OTK0QSku/Quf0pEZgCarTdqXotE=
 		</data>
 		<key>armadillo_bits/SpMat_bones.hpp</key>
 		<data>
-		Kok39Q65Rk1+f2nOzrfdT+NvEls=
+		tXGWTTOKt5VDMrbdC2ag/gOM69c=
 		</data>
 		<key>armadillo_bits/SpMat_iterators_meat.hpp</key>
 		<data>
-		MJyOEx/C/4BDu3+d4qkWYSMAtpA=
+		o5/VDQ9aNMjib+X1pXiR4Ihm9pI=
 		</data>
 		<key>armadillo_bits/SpMat_meat.hpp</key>
 		<data>
-		Ouko0s9vfKLRsKC01OmjereEXIA=
+		9uzVoc+OXUF+m99w1DvfVUfbQxo=
 		</data>
 		<key>armadillo_bits/SpOp_bones.hpp</key>
 		<data>
-		WTR6FDdF0JP9zaLMeKtfVo4I3no=
+		LsPLRr7bco1wMxreO2k11Z7aYBQ=
 		</data>
 		<key>armadillo_bits/SpOp_meat.hpp</key>
 		<data>
-		clw4SLBIy4dh/IurASsGWuMoSAw=
+		68pxrMcA3BtRxX5ZcFmQcTrdKiU=
 		</data>
 		<key>armadillo_bits/SpProxy.hpp</key>
 		<data>
-		5dtTuVwHW2r933WEncFjM7PFKqs=
+		o9HAP6drUOZb03lM/eWnhjLJFFw=
 		</data>
 		<key>armadillo_bits/SpRow_bones.hpp</key>
 		<data>
-		NpjPOgaqPTj0gbx35as9oJxJEP4=
+		qTEMN2QoV092K7P+UkDtdEWJ5WE=
 		</data>
 		<key>armadillo_bits/SpRow_meat.hpp</key>
 		<data>
-		7dxhD2HQuayP9RYvAHUniAfC5hg=
+		oi7k9g0q6fQ3ntrZE2BK9oTzC3c=
 		</data>
 		<key>armadillo_bits/SpSubview_bones.hpp</key>
 		<data>
-		Cvz8CYTF2X7yWKAbha4fvVHmfbo=
+		T7BXv5nFRQA9ApgiVoAxxmasHDs=
 		</data>
 		<key>armadillo_bits/SpSubview_iterators_meat.hpp</key>
 		<data>
-		rSz8rw7zwpnUC1p4f+8Ljgfw5JU=
+		6bekeuoFxbehj1fVjo8yBHsMd3E=
 		</data>
 		<key>armadillo_bits/SpSubview_meat.hpp</key>
 		<data>
-		qsu1NA5IXFxKbrjJPnSrmNEqjTs=
+		2aWhwaI8nBSOQ8bQOA6UTgeB9gA=
 		</data>
 		<key>armadillo_bits/SpValProxy_bones.hpp</key>
 		<data>
-		R2OxdWGV0NEvxPRrzZL9cEnLsmg=
+		sKLHGqve8s6SE80RaD9NG6b4DcM=
 		</data>
 		<key>armadillo_bits/SpValProxy_meat.hpp</key>
 		<data>
-		ZPFcQe2vztMPE0J5g9NEY22gDVs=
+		VuFsesbnnIzfCJr4cor6fFoxyjw=
 		</data>
 		<key>armadillo_bits/access.hpp</key>
 		<data>
-		Ft/LV6qW+XDZBNvbTwZ/8l6AzJA=
+		WOoiY0MpceCazAEv4JOklN0v57I=
 		</data>
 		<key>armadillo_bits/arma_boost.hpp</key>
 		<data>
-		dKv5puP6CoP2lcJpb366As8gmc8=
+		BSjnhg0/6AyWXb3jAAJOMAvIFJ8=
 		</data>
 		<key>armadillo_bits/arma_cmath.hpp</key>
 		<data>
-		yVWmdO041HDC1fW10jLlYfnLfv0=
+		xmPE14nZO4CYBvRLZJ1ErgWqWgc=
 		</data>
 		<key>armadillo_bits/arma_config.hpp</key>
 		<data>
-		75uQDzHWNSi0LlhHZmTmgdUBCf4=
+		FJ40jBUb1Dfv62JaeFYELqwWGB4=
+		</data>
+		<key>armadillo_bits/arma_forward.hpp</key>
+		<data>
+		ARs/jsiQuG128wHj6sOn38UzqEk=
 		</data>
 		<key>armadillo_bits/arma_ostream_bones.hpp</key>
 		<data>
-		Jt4DbcL4ocitCvKSdb7mq1K2AAM=
+		GSlr4Xc4bM83ttX1gaP8j/SbmdE=
 		</data>
 		<key>armadillo_bits/arma_ostream_meat.hpp</key>
 		<data>
-		Fv+QG2m369DsE+6vjvorUtWZC9k=
+		Ju3+tDyDktItHEgu21jOhzKVbos=
 		</data>
 		<key>armadillo_bits/arma_rng.hpp</key>
 		<data>
-		Xl9irNpPXZLQC0D2SqP6kIEKNxo=
+		sj5puUkMvreOLYiCQgdvJGaYwZ4=
 		</data>
 		<key>armadillo_bits/arma_rng_cxx11.hpp</key>
 		<data>
-		vwLsaoD4xP0TvdAJ2mCsuhX1Hmk=
+		Kz9oPRpchvJ33fY2Zs1fBBERFYI=
 		</data>
 		<key>armadillo_bits/arma_rng_cxx98.hpp</key>
 		<data>
-		q2P54fHwwA1eMPmmqnz7NsP1kRE=
+		sbhugqFnIL5RH3enFXEnvlr+Zrc=
 		</data>
 		<key>armadillo_bits/arma_static_check.hpp</key>
 		<data>
-		llIJSQIXsZq8pX0ASxVbk+SSFJk=
+		BA33kJKl2l4eDXMBkkelLHw3PeI=
 		</data>
 		<key>armadillo_bits/arma_version.hpp</key>
 		<data>
-		cmr5J/AFni2qeEwc9VuKgUoDRT4=
-		</data>
-		<key>armadillo_bits/arpack_bones.hpp</key>
-		<data>
-		u0knQjb2vUt0pkGcfVUtTLFud0c=
-		</data>
-		<key>armadillo_bits/arpack_wrapper.hpp</key>
-		<data>
-		cxwr9Z6sVID4Vy6g8HfRsq9bnqE=
+		AflCV0o/blKEW//XuqBvYdZshT0=
 		</data>
 		<key>armadillo_bits/arrayops_bones.hpp</key>
 		<data>
-		4Lj777fCW/gdy+3+pAP6pwbbeOQ=
+		7MkGpk/izL1dzkPRsd2CYrc3WJU=
 		</data>
 		<key>armadillo_bits/arrayops_meat.hpp</key>
 		<data>
-		IJ4JPKmhWNs/TwIb/5oskIpP0lw=
-		</data>
-		<key>armadillo_bits/atlas_bones.hpp</key>
-		<data>
-		XyLSVniA/oVU/2ZKF381aUOVXOE=
-		</data>
-		<key>armadillo_bits/atlas_wrapper.hpp</key>
-		<data>
-		C2yX0IMDHqjeSybUNPvE8oiP1iY=
+		dYmcHfAzPeCtsOvqC7oXsvD0r+g=
 		</data>
 		<key>armadillo_bits/auxlib_bones.hpp</key>
 		<data>
-		Ce8pCT80FxPAp5D3vsd0Z2otNvw=
+		5iULGn+3qTFD/ULGjPqEacCmbzs=
 		</data>
 		<key>armadillo_bits/auxlib_meat.hpp</key>
 		<data>
-		AzcTyPx2DsnoHL0uaeU5TTwED2I=
-		</data>
-		<key>armadillo_bits/blas_bones.hpp</key>
-		<data>
-		zObSLglHxSq+HEf7w2KpIrpMxC0=
-		</data>
-		<key>armadillo_bits/blas_wrapper.hpp</key>
-		<data>
-		3gSoK81D+zBHFm3HzFX3wIiyPZ0=
+		7+q0AxQujtC5atVf+PqTesYIiXA=
 		</data>
 		<key>armadillo_bits/compiler_setup.hpp</key>
 		<data>
-		OTQfNmbhdhhcAHKOzuA78uurIIM=
+		kda3dMHFVmJmcCBN+LyJ3Yk6OF8=
 		</data>
 		<key>armadillo_bits/compiler_setup_post.hpp</key>
 		<data>
-		fRDQDWz7bNvMZqiQK6YTgMATBLc=
+		Yp10dt1AkAw7CexeJTYq/mYy1hA=
 		</data>
 		<key>armadillo_bits/cond_rel_bones.hpp</key>
 		<data>
-		8PuIOtTRderglQIvBjb03/ruPbc=
+		BNrf+hlD2mVYH1rkcfIdRjU3fng=
 		</data>
 		<key>armadillo_bits/cond_rel_meat.hpp</key>
 		<data>
-		be5dyYtFwFmuzsd/K4Y/WdkhFUk=
+		N+/gAYPIaIqUgXfKjn27NuFmZxs=
 		</data>
 		<key>armadillo_bits/config.hpp</key>
 		<data>
-		+U7M8IYrjdthxqPvAIrKn/O59rA=
+		nWJaDIHsXWRwBBCf/3Mp+MxXXjk=
 		</data>
 		<key>armadillo_bits/config.hpp.cmake</key>
 		<data>
-		H9Sr5bNGkbzWKcrJpALDD9FFXEs=
+		erCfp0onX2hTJpqfDINHlmK/n/4=
 		</data>
 		<key>armadillo_bits/constants.hpp</key>
 		<data>
-		zWEt4TSEtYgpP0U5INLWsGxVjmU=
+		HQzoYXoJGE2os2oKcZPZrcp1U+E=
 		</data>
 		<key>armadillo_bits/constants_compat.hpp</key>
 		<data>
-		5bNxT21r3rU3+iOf8DvpVkxxY3E=
+		+HRFi5AfOT0Hf9aH5GAUu9KaygA=
 		</data>
 		<key>armadillo_bits/debug.hpp</key>
 		<data>
-		AWtgUheJt5Wa4Kmen+J+GVFZaWw=
+		yPraIMqRDdey8uas5goODR/oGuY=
+		</data>
+		<key>armadillo_bits/def_arpack.hpp</key>
+		<data>
+		jqIGdDCuD3uutI96vqxn8HgQnOo=
+		</data>
+		<key>armadillo_bits/def_atlas.hpp</key>
+		<data>
+		AXTChtnc8w8okwMNYdMIraG/Ak4=
+		</data>
+		<key>armadillo_bits/def_blas.hpp</key>
+		<data>
+		VbgaZMyTIjdgUFL7vVp0EEM4TmU=
+		</data>
+		<key>armadillo_bits/def_hdf5.hpp</key>
+		<data>
+		g2bRCFokphBn3+6cwnTJyHTaJoA=
+		</data>
+		<key>armadillo_bits/def_lapack.hpp</key>
+		<data>
+		W2u1LhqTELMC/+WxknoQGznJZjs=
+		</data>
+		<key>armadillo_bits/def_superlu.hpp</key>
+		<data>
+		5oANuhs9fxHl/JBNhs917q/mG1A=
 		</data>
 		<key>armadillo_bits/diagmat_proxy.hpp</key>
 		<data>
-		Vm7i5Bv7znEKuhiXoj+qKcyjY4g=
+		MSkyRKC146OeQ5C3Al5MYJkXgno=
 		</data>
 		<key>armadillo_bits/diagview_bones.hpp</key>
 		<data>
-		byuACgsWL+xqUMn5PJXHzz3a2sU=
+		eekZdDa8zbnEU/8firerFGUCKj0=
 		</data>
 		<key>armadillo_bits/diagview_meat.hpp</key>
 		<data>
-		nqmATJTx3igWIRAeX+do1LsPrjw=
+		q+OVnT0t1qrLOQbEzNZxLfJXk+c=
 		</data>
 		<key>armadillo_bits/diskio_bones.hpp</key>
 		<data>
-		Mh8Y5v8LGaZSIRkkPSVzjw3EnDI=
+		1vXLJsmT+rev5a8qRxUhNlEEU8M=
 		</data>
 		<key>armadillo_bits/diskio_meat.hpp</key>
 		<data>
-		K6Ah6GnGKeOSmvCPQZCgWzS42VQ=
+		UbXu1V9kX45NU4KZeVrXpkOeSes=
 		</data>
 		<key>armadillo_bits/distr_param.hpp</key>
 		<data>
-		lhW0GC61xlt8wc68Kf6pg5Wc4Wg=
+		sUVeg79nHOuQVaDCc3IEvm+3rS0=
 		</data>
 		<key>armadillo_bits/eGlueCube_bones.hpp</key>
 		<data>
-		SaPBEJ/Irbl0mKVtLhmm4XT1nwU=
+		0sSDK3DKTqG7XvRFrcn9q2kn7U8=
 		</data>
 		<key>armadillo_bits/eGlueCube_meat.hpp</key>
 		<data>
-		m8UGOWDISrC2adXaAMMr5TIADnk=
+		7ZxlMhpCwBJo7i5PuA8wlp432No=
 		</data>
 		<key>armadillo_bits/eGlue_bones.hpp</key>
 		<data>
-		1X6+cYZ6kkT6hgHoiy3vvsu5wjY=
+		WBgPOdUQ35ZSCZeKm7XAi9NdBZc=
 		</data>
 		<key>armadillo_bits/eGlue_meat.hpp</key>
 		<data>
-		H6+0dx+0B9lYEFlob3s6VdEsCNM=
+		KAFn8EMHxA1Qb8yd+sFAosDdBf4=
 		</data>
 		<key>armadillo_bits/eOpCube_bones.hpp</key>
 		<data>
-		YsU+VmYuPbjgnNVPpddjoz12G1w=
+		v/vwWuTbe56xtTqnyQgAEDAcctI=
 		</data>
 		<key>armadillo_bits/eOpCube_meat.hpp</key>
 		<data>
-		QnWnN349x99Ivnzc4uDYxoaUHFw=
+		uTN056yeSNJ/GyfGm4dsKZXd+GY=
 		</data>
 		<key>armadillo_bits/eOp_bones.hpp</key>
 		<data>
-		KXOoLs8oeSdZzJ5Y71J3FxBfVew=
+		V8HYDKH5s0xllUct+KIFplTsGWY=
 		</data>
 		<key>armadillo_bits/eOp_meat.hpp</key>
 		<data>
-		AFr476tM4UbdRVdpUmEQL7ZkojM=
+		DBWmOh8uogMp/totNVyuNNnzSxw=
 		</data>
 		<key>armadillo_bits/eglue_core_bones.hpp</key>
 		<data>
-		5uLfaa2sTUrh5+W5GvJfSqZxR6U=
+		rcEjcWkaaQwQz47g8uxzyZyp9Cc=
 		</data>
 		<key>armadillo_bits/eglue_core_meat.hpp</key>
 		<data>
-		AWpEtfzO07w9TMKz68wU1Okgt3M=
+		EGpk1Qee86FoqOZHG3RY/2UyDxE=
 		</data>
 		<key>armadillo_bits/eop_aux.hpp</key>
 		<data>
-		N0tUulOzoYypQaSSTMvxdBIlQXc=
+		2Hhzzq5On6DsRoRPj6UDfs+Dk5s=
 		</data>
 		<key>armadillo_bits/eop_core_bones.hpp</key>
 		<data>
-		R5sBQaiOyjDOMsORkjF+YakkvuU=
+		u8awh4+TnrC1h0la+e6j/DdCsY4=
 		</data>
 		<key>armadillo_bits/eop_core_meat.hpp</key>
 		<data>
-		2ZotcMp+eKUypbtSK7Uewjc4EgE=
+		7hnFRYKmwxwXwT64e6Ny1qj+Ogc=
 		</data>
 		<key>armadillo_bits/fft_engine.hpp</key>
 		<data>
-		mIpdQ6zf5sCPnssDieoa+JKHHtc=
+		QazRVCVZ6N4xbUIoRsVkClMD3xk=
 		</data>
 		<key>armadillo_bits/field_bones.hpp</key>
 		<data>
-		xp3UfuajYapYt9fA3Y65ZBDhvk8=
+		jehuGGpZQeUz0zB36eW2S2xd2HA=
 		</data>
 		<key>armadillo_bits/field_meat.hpp</key>
 		<data>
-		0d8OtiVmKGdDwAYTMVPrpOpshBc=
+		gyTJMblVOW5JgIxUFjbLFtS2HIM=
 		</data>
 		<key>armadillo_bits/fn_accu.hpp</key>
 		<data>
-		/Aj8n40QmXTuOkuvY6IFUJMkEeQ=
+		/dk1ejOpcXSBSW8D398z2cGmkzo=
 		</data>
 		<key>armadillo_bits/fn_all.hpp</key>
 		<data>
-		7efgU9e8Xs0tZXcjLNJXlAHX+A8=
+		FITZcRQ31VKr0ZuMylDx9YEl1Ok=
 		</data>
 		<key>armadillo_bits/fn_any.hpp</key>
 		<data>
-		IEoskkRG/KCWMY2XMEf1oE9q9wk=
+		IeT+MAdFRRNLXiQjQUywU1oehOs=
 		</data>
 		<key>armadillo_bits/fn_as_scalar.hpp</key>
 		<data>
-		Wn1kpsoEJDvfKlWlVUgcpsK9IgI=
+		tVtaykhxVK0mIL4VfJ1kaJyERcY=
 		</data>
 		<key>armadillo_bits/fn_chol.hpp</key>
 		<data>
-		DM8Y9VgiEnbhT7nWYmipJ8h6lUc=
+		2fWduAh7v5pYroxp09IINvpqg/A=
 		</data>
 		<key>armadillo_bits/fn_clamp.hpp</key>
 		<data>
-		rRVlJ+HNBiTkg32bOwSbfW2qgXo=
+		1TA8ORJ/GWJcamYLqEu0Kpl9xmo=
 		</data>
 		<key>armadillo_bits/fn_cond.hpp</key>
 		<data>
-		qnlFyjcHHw96QFAl51fQvic2VZ4=
+		ZEsteuAaSTMGVIl3rYcCnXE2JMc=
 		</data>
 		<key>armadillo_bits/fn_conv.hpp</key>
 		<data>
-		LM2HV3Xvkic8L8Lv6uL6MwHQLJM=
+		T5Rz0zCsn5y+wtu9nOstbizEIqc=
 		</data>
 		<key>armadillo_bits/fn_conv_to.hpp</key>
 		<data>
-		J7RMCmnNVg2yliASbmabH5bRuE0=
+		B1RIPr90AkfJgZKguqT7+Vpu9lw=
 		</data>
 		<key>armadillo_bits/fn_cor.hpp</key>
 		<data>
-		B950PXFTx9uTYbu078QxfMfCmW0=
+		kbbp96pjof76BMupRhnp2rIxuB0=
 		</data>
 		<key>armadillo_bits/fn_cov.hpp</key>
 		<data>
-		XFDiyTjsbfyfutA7MZzxbW/Ha08=
+		THX0VVXXsZ0vNvDkvJTeRoGR0X8=
 		</data>
 		<key>armadillo_bits/fn_cross.hpp</key>
 		<data>
-		OAlmDhULd2n3/gEnitXOpKucHp4=
+		N6d3galWJxfpOG1Zj/pd0dgzI0s=
 		</data>
 		<key>armadillo_bits/fn_cumprod.hpp</key>
 		<data>
-		GlvjdH+DSD9a+8gaBZU2sKDNjFI=
+		RLvae1Kw5B6V7rl52ftiGjJywFQ=
 		</data>
 		<key>armadillo_bits/fn_cumsum.hpp</key>
 		<data>
-		Ou0Slt/1IKqriBqJnMhXrDyEd7Q=
+		+qpcwtLyy3xNlfJA0ERzohXyh7w=
 		</data>
 		<key>armadillo_bits/fn_det.hpp</key>
 		<data>
-		f5FqnJl0exRzj1CX56Uhv/zOD80=
+		EEwqBMrLciNIRXe0NIAkq6ZzTz0=
 		</data>
 		<key>armadillo_bits/fn_diagmat.hpp</key>
 		<data>
-		PsaLCJiogcy7MfaOZ5uNYLQq3vs=
+		/7moIj7cGtlZDO2NfasKSUXfCAI=
 		</data>
 		<key>armadillo_bits/fn_diagvec.hpp</key>
 		<data>
-		ZHmi7WNWp62w9ENAet40JWZNxZ4=
+		IE7wdGbGsiWnQBFLEP6yIqysWCw=
 		</data>
 		<key>armadillo_bits/fn_diff.hpp</key>
 		<data>
-		0SbGU/JheODyx/Aha4ne8eF384g=
+		0sMdz0x/aFeKKPWUmOiBiAqiT1U=
 		</data>
 		<key>armadillo_bits/fn_dot.hpp</key>
 		<data>
-		ms7eNtZh55V8ZhUWII3IGazHP5w=
+		psA98vrkimbmJyGtd6OnTtzyz9M=
 		</data>
 		<key>armadillo_bits/fn_eig_gen.hpp</key>
 		<data>
-		tmICT16crHWrQg/sEFPFsM+q4Mk=
+		DRhBZaytmbc5yRTzUI7ppckLhF8=
 		</data>
 		<key>armadillo_bits/fn_eig_pair.hpp</key>
 		<data>
-		CMwgcPcUXe4ZyxzGD/RvyLdMVoE=
+		hipFnMRkDImdeiswSvKJ6cs8Nh4=
 		</data>
 		<key>armadillo_bits/fn_eig_sym.hpp</key>
 		<data>
-		lhzLRRZJmmRgZ+X78gdQjXxkrIA=
+		8gE5xMgIbPt4gG2Qxogo0E3TyN4=
 		</data>
 		<key>armadillo_bits/fn_eigs_gen.hpp</key>
 		<data>
-		X05l4SxMRZ8LpKou3LJ/sFxNYCM=
+		XsSK5koly/TlPZk05SBGnXyX+lI=
 		</data>
 		<key>armadillo_bits/fn_eigs_sym.hpp</key>
 		<data>
-		OiHOzgIWQNZfyTo8Hsv7JdnQpWE=
+		zZzVf2k5jnPL2BXcTMpzakxIOxU=
 		</data>
 		<key>armadillo_bits/fn_elem.hpp</key>
 		<data>
-		IaBYynbrDFHvMOguQ644bsYC1Lk=
+		WXPGNdshdH0WUBIHZK8P0plCgbk=
 		</data>
 		<key>armadillo_bits/fn_eps.hpp</key>
 		<data>
-		xgrgW4ezZ/Aa74IGosWfQnKn79Y=
+		Mp+DttDgu8zJniLVxEZBPHtJRig=
 		</data>
 		<key>armadillo_bits/fn_expmat.hpp</key>
 		<data>
-		fsHAdZu5840/pyYVe1l+C5PuZUQ=
+		UpQYO5W/r232yZ7VxYKG9qOrdXk=
 		</data>
 		<key>armadillo_bits/fn_eye.hpp</key>
 		<data>
-		T+Ppm6lc4Ty/+35rTBzlkQObFcs=
+		hfHs12qo8Wi6A+lhRMdIrWAyELg=
 		</data>
 		<key>armadillo_bits/fn_fft.hpp</key>
 		<data>
-		2J0jDNUxePI+8o5MfxOhEHjlcEo=
+		41PgOaXlvYnICKUZvQayXuceWpc=
 		</data>
 		<key>armadillo_bits/fn_fft2.hpp</key>
 		<data>
-		kQupNVcXZ6cbgV8FlzVlcbzuE5Y=
+		iXQ1BJWCj6y3XpNo1t/lc44yXZg=
 		</data>
 		<key>armadillo_bits/fn_find.hpp</key>
 		<data>
-		E/M4MRDYaLqX8LrED/Q5Un+ALyc=
+		OiaTFOyHO24DMgXlQdytyERVZwE=
 		</data>
 		<key>armadillo_bits/fn_find_unique.hpp</key>
 		<data>
-		RLIL9ROvRO2XhzdBVs+LpJggTYU=
+		IZrrLHp1/yKsO3DC6BICcA/jKZw=
 		</data>
 		<key>armadillo_bits/fn_flip.hpp</key>
 		<data>
-		q3FHF1k3ZTXtxLzlBGzk6GT8eIY=
+		ibr6hLWlykKtnTfBxqJ2W0SVsmU=
 		</data>
 		<key>armadillo_bits/fn_hist.hpp</key>
 		<data>
-		I6BCh5Y/EY4d7cOkbVHlWTRgwHM=
+		8FeNYC7CbMjdstzZ0U1uQ8BMaCU=
 		</data>
 		<key>armadillo_bits/fn_histc.hpp</key>
 		<data>
-		peIY0KvATQnkTjFKgSrX1pk+wm4=
+		u/Ru6OxQgwYQbrVKseTHZ6E3VZ0=
 		</data>
 		<key>armadillo_bits/fn_inplace_strans.hpp</key>
 		<data>
-		OlDUm4W5K5boBJgbLdyRJKpZfbs=
+		IfqeRRRsqUxfPn7lWSz6P0bLwxs=
 		</data>
 		<key>armadillo_bits/fn_inplace_trans.hpp</key>
 		<data>
-		IZOP0L3JiN+yBM32ZxbcJQxrl6U=
+		YtirGq0SSuPlcPaGjo/K3+1EmD0=
 		</data>
 		<key>armadillo_bits/fn_interp1.hpp</key>
 		<data>
-		YJLvg2CUfl6WAc8p271RxfMXFO0=
+		SnycRKnieNN+nUX70EacSJd0jhM=
 		</data>
 		<key>armadillo_bits/fn_inv.hpp</key>
 		<data>
-		jx+mL0kD9I/CCg9NF7IQZczL1Xg=
+		SIdTGABFCw9f8ia5+r1h7I+bapI=
 		</data>
 		<key>armadillo_bits/fn_join.hpp</key>
 		<data>
-		qQqxLkySOvZ46kCSnX1VP4ibR3E=
+		E7d/lo3gcPQD5pN9Banfuxn8ahw=
 		</data>
 		<key>armadillo_bits/fn_kron.hpp</key>
 		<data>
-		S1pJNdWkt00lE+ixovl5drYcMm0=
+		pC5v/0yB2m3vC2xiKHS4McEI8XY=
 		</data>
 		<key>armadillo_bits/fn_log_det.hpp</key>
 		<data>
-		a1BwWpFmkXGhkAmKbSgq5ozNRt4=
+		zorEhbszzC21nKd5QrpnifuXEdM=
 		</data>
 		<key>armadillo_bits/fn_lu.hpp</key>
 		<data>
-		BreAkkxnLXKm1FlvN3OEiPlrUKc=
+		yIo4Or/gyb960gHiLuWg1giPzQs=
 		</data>
 		<key>armadillo_bits/fn_max.hpp</key>
 		<data>
-		N/S+LM1RxZrPLzXolCB7M1CkwJ4=
+		ZB/vaVZlV1HC/gVljRdigMW8I7c=
 		</data>
 		<key>armadillo_bits/fn_mean.hpp</key>
 		<data>
-		+Fn4IoXl83cXEPIQ1v80wlWnnyw=
+		WdU5bj9UMScBCphZgY4asqTOSxU=
 		</data>
 		<key>armadillo_bits/fn_median.hpp</key>
 		<data>
-		XMsaEfG4qKc9KcipmMfWku+Y5L0=
+		KJM1+91uW6MPRUUUeA/VaSYPKF0=
 		</data>
 		<key>armadillo_bits/fn_min.hpp</key>
 		<data>
-		o7dgfMc10crkDa/EvY4XHeAjiIo=
+		sUoJYnhrpsI49janttXjTKecP4o=
 		</data>
 		<key>armadillo_bits/fn_misc.hpp</key>
 		<data>
-		ESIJWdqgFdnIHBOWyhGecnm6cVU=
+		Tac3n1OBPFdx5gAT1rNan/LBV9A=
 		</data>
 		<key>armadillo_bits/fn_n_unique.hpp</key>
 		<data>
-		SkuvyhjTSPZD0TwrmpQRGPp8U2k=
+		9APAnY2451EtXzZ7ZZTW2bsZVmY=
 		</data>
 		<key>armadillo_bits/fn_nonzeros.hpp</key>
 		<data>
-		cGvhmKIXdz+dyRv/mzkt1uhuoAM=
+		4BQRbKRZcmmHT4EZKth4WsyA7ys=
 		</data>
 		<key>armadillo_bits/fn_norm.hpp</key>
 		<data>
-		XE6+eirMaLb9OXgRyFmCROnFSWA=
-		</data>
-		<key>armadillo_bits/fn_norm_sparse.hpp</key>
-		<data>
-		pTXoAvtghymb3H6VoEtZF4M4sEo=
+		bLvrqrxEmvekZmVMnQL3oAVr9C4=
 		</data>
 		<key>armadillo_bits/fn_normalise.hpp</key>
 		<data>
-		BHuhqPLyZfQn2+qcNFP/fQ2etI8=
+		mwWw3mfJK0SyPFx+SffYqfHOmWA=
 		</data>
 		<key>armadillo_bits/fn_numel.hpp</key>
 		<data>
-		inXjuiI7p7KxWseX84BLHbFSZEY=
+		fNAUZ3ZbkycgXCmoPfa8T6nLN5A=
 		</data>
 		<key>armadillo_bits/fn_ones.hpp</key>
 		<data>
-		zerlLx9/vp62Io+3PZ1yH4l/too=
+		8yevjlz1xidzaqcyxzrIzuggK34=
 		</data>
 		<key>armadillo_bits/fn_pinv.hpp</key>
 		<data>
-		q3wBJWI+EjkQ2Vt66qkTeR1j+CA=
+		k3PP0KeLzq08GG6RRRuddzb9qo4=
 		</data>
 		<key>armadillo_bits/fn_princomp.hpp</key>
 		<data>
-		J0ykti910sbkFR8jMVtEgwc0JnM=
+		wwD8igD87OgtAy55MjNVNa7VAeY=
 		</data>
 		<key>armadillo_bits/fn_prod.hpp</key>
 		<data>
-		kENi8beuCePBfGjzgbvuWB1YVtY=
+		/iIF0QtukdaGoYr+nlXaKxovSZo=
 		</data>
 		<key>armadillo_bits/fn_qr.hpp</key>
 		<data>
-		1BAkHp5I/vEJVFuu71ia/MXxQgo=
+		MTlCbMzIkmc9Rc+aeO7JYNicHZk=
 		</data>
 		<key>armadillo_bits/fn_qz.hpp</key>
 		<data>
-		2DTfXIYkklhsNlEaN1Omx5nCLFM=
+		ktgb8kFxohfYdpIPUjxwEvgG60s=
 		</data>
 		<key>armadillo_bits/fn_randg.hpp</key>
 		<data>
-		pedP/Va6P9oKlpnbpoVuFQzAc1U=
+		0r2Da7sOiX+KljGKP7dJkNzUO1w=
 		</data>
 		<key>armadillo_bits/fn_randi.hpp</key>
 		<data>
-		x/GA7NzlzrdWiCcw3SYkR13JL0Q=
+		t43Hxhun81TK2E++unLuqgyRX3s=
 		</data>
 		<key>armadillo_bits/fn_randn.hpp</key>
 		<data>
-		RBeGK3zJUim4VXMc52vWfm3Kzc0=
+		NCzmhpLzU9n8holib4rplSU8qi0=
 		</data>
 		<key>armadillo_bits/fn_randu.hpp</key>
 		<data>
-		zwMfG8XyQ6UJPbzNbgsskMhwBZg=
+		rmRE3j+awQ4HY/b3yicl44mH8hA=
 		</data>
 		<key>armadillo_bits/fn_rank.hpp</key>
 		<data>
-		X3kNIrcrEm0dEd3G9DLOqim6N7U=
+		RMiZeMuIvHMIPt9AEmKJD4L9i18=
 		</data>
 		<key>armadillo_bits/fn_repmat.hpp</key>
 		<data>
-		QgjQd/J6t+YEc8WxYQ30d/Gl3ws=
+		JgZhpZL6D+7vzP9s9xXPj5xqLFo=
 		</data>
 		<key>armadillo_bits/fn_reshape.hpp</key>
 		<data>
-		6F02iRdWVPV18VPb2hlOLAmPJl8=
+		BLz22kAsJ+gmQGPF+8HzS3+ZZuY=
 		</data>
 		<key>armadillo_bits/fn_resize.hpp</key>
 		<data>
-		K5gkXV8ujVXJPJyA1tQEWDHSS4Q=
+		ag+EAmHx4UKIM1p8dSrWZZ8QtyM=
+		</data>
+		<key>armadillo_bits/fn_schur.hpp</key>
+		<data>
+		pLDpfDWF5Im6omh32SJrbW5EkVo=
 		</data>
 		<key>armadillo_bits/fn_shuffle.hpp</key>
 		<data>
-		C4jOvsk7hLNqtJae6dkq6nZE5/k=
+		+eNA55lX3G39g9M7UuBh6lgwDW8=
 		</data>
 		<key>armadillo_bits/fn_size.hpp</key>
 		<data>
-		p6vV/l/H3KOOpmqejx+1Tv7EISE=
+		UrCpk3rULXxpVB9Y2AsM+i9xEoo=
 		</data>
 		<key>armadillo_bits/fn_solve.hpp</key>
 		<data>
-		rMvybsl7pX89zWW53JmCRsIcJAI=
+		+/qFbYI9ioqrx7IhJRTlka8YqpU=
 		</data>
 		<key>armadillo_bits/fn_sort.hpp</key>
 		<data>
-		vWEX6xt5Z25Jv7oft7flSxlmr0A=
+		KJMPjqjdeRrcA7CgblaMTEs9IAE=
 		</data>
 		<key>armadillo_bits/fn_sort_index.hpp</key>
 		<data>
-		6clo3bUzM/wrHzh1EGQCZNKVFII=
+		o8tXRtlclFE3fnb/I3qY/e9A+Uk=
 		</data>
 		<key>armadillo_bits/fn_speye.hpp</key>
 		<data>
-		b1na0evxLWHp9i/go05syiyHjaI=
+		H3Imal6lybvIZ9l0Vjfyc4va5t4=
 		</data>
 		<key>armadillo_bits/fn_spones.hpp</key>
 		<data>
-		+vb6xhQjkV9sQ9qbzsrDNq8VaG4=
+		VzvodqLqmZHav63ZohJ+V2rFhbQ=
 		</data>
 		<key>armadillo_bits/fn_sprandn.hpp</key>
 		<data>
-		3E4Mj6fLZFJvQK1ZPs39d+USjMA=
+		VqqFuuJcN/zM876v0Djamwh9wYU=
 		</data>
 		<key>armadillo_bits/fn_sprandu.hpp</key>
 		<data>
-		DeVR3gBVXHv5eywH1utIkfS1LlE=
+		Q/B5OkZjwcFWiBxUcb54wuwchT8=
 		</data>
 		<key>armadillo_bits/fn_spsolve.hpp</key>
 		<data>
-		FXb2HY8CmtVA8mq1WUjuFgUCSn0=
+		rbRW5bXx8M5MFeNyVemS0twm6rQ=
 		</data>
 		<key>armadillo_bits/fn_stddev.hpp</key>
 		<data>
-		A8R7YqwdjUR6U09x/pKDySwwgwU=
+		9sQqbAxk8baYKPrZ5DPbHd0eN6w=
 		</data>
 		<key>armadillo_bits/fn_strans.hpp</key>
 		<data>
-		uBj8ik7Zg8XAbZVrRR0bz2m+z1M=
+		RCU88ENLXNLhXwceT9p0AmeQDoc=
 		</data>
 		<key>armadillo_bits/fn_sum.hpp</key>
 		<data>
-		Tw3zOB8OoFK/0/Rbfr+7mdWAgQo=
+		AfaPw4sZrc5IGvqPqusc031abhU=
 		</data>
 		<key>armadillo_bits/fn_svd.hpp</key>
 		<data>
-		s+ZPMHaAKpSn/Sryraeg/FXONrQ=
+		HGO2R7Okq+YhRB2PMDuw12ckz6s=
 		</data>
 		<key>armadillo_bits/fn_svds.hpp</key>
 		<data>
-		OMxGAFkn1CwGnBxNsahnkooHI4g=
+		LWXZ18P/IzMhL2iGroHh2RnJY+A=
 		</data>
 		<key>armadillo_bits/fn_syl_lyap.hpp</key>
 		<data>
-		LG/cJ276V8+0elPxHhwfnEysthU=
+		xtLrwQMJtBhUFLhWjaivs1+7+gY=
 		</data>
 		<key>armadillo_bits/fn_symmat.hpp</key>
 		<data>
-		NonJxpTM2t2bYmiVnogn8mR+oDQ=
+		MvQcqZlWXDL0aLqjpWwNCQXk3U8=
 		</data>
 		<key>armadillo_bits/fn_toeplitz.hpp</key>
 		<data>
-		k7a00nSBuQ9zqRior6HVa7wbLM0=
+		bv1xZqRWDm+eDj1fnKi8lhV8nKY=
 		</data>
 		<key>armadillo_bits/fn_trace.hpp</key>
 		<data>
-		lGQr3I4FjjeBSzrYa/Lq8pBD/7M=
+		+VSLVpu8QG6itLs9WMAJu6wKqkI=
 		</data>
 		<key>armadillo_bits/fn_trans.hpp</key>
 		<data>
-		CT1PV9RttNvFF/iCPGmOxUsB+b0=
+		ngAp8v1eX6+9yM6UCZMMvFyfHxs=
 		</data>
 		<key>armadillo_bits/fn_trig.hpp</key>
 		<data>
-		Wq4Y1YnnP+17bR5ZNLcVnEXLyRk=
+		SdBGka1HQet/ix4mbHju+nRKu8s=
 		</data>
 		<key>armadillo_bits/fn_trimat.hpp</key>
 		<data>
-		/NY7nANwiJdhsAmNAg2+2s3lSM0=
+		cXGjKZxSolbD8KbOtRA0uiS5kjQ=
 		</data>
 		<key>armadillo_bits/fn_trunc_exp.hpp</key>
 		<data>
-		dfw8qmT1cAS1J3EuPUjzJIKr4wk=
+		byugLvn5KT8T9Xc5mTf7ssc1XCc=
 		</data>
 		<key>armadillo_bits/fn_trunc_log.hpp</key>
 		<data>
-		hc8GcmKfGxJwSSwI0LZcYr5YoVI=
+		UIhR9FGZn8akSkHbbaSVnqBP5SI=
 		</data>
 		<key>armadillo_bits/fn_unique.hpp</key>
 		<data>
-		d/dtebVjv2M87j48OYamyFPk3eg=
+		upvpQkF7xPR5nRpj5t87s5wgiS8=
 		</data>
 		<key>armadillo_bits/fn_var.hpp</key>
 		<data>
-		kPxQ9QFaMeeWmSHsv7nq9tWRDro=
+		dtExJNsR8A097xxwRdkmy933WEc=
 		</data>
 		<key>armadillo_bits/fn_vectorise.hpp</key>
 		<data>
-		VWThVr/B1zx7tsNriVhZxwffLB0=
+		44fWLHXaBazXBFD56RyQUVG6jaI=
 		</data>
 		<key>armadillo_bits/fn_zeros.hpp</key>
 		<data>
-		gHbKr51AVcNWA6ULxrJwfhkmjbA=
-		</data>
-		<key>armadillo_bits/forward_bones.hpp</key>
-		<data>
-		f9iOjTVZ8j02789k28wBTIzdfAQ=
+		YY1qZ2J73EaVSvn1PSdr1Zw2GrA=
 		</data>
 		<key>armadillo_bits/glue_conv_bones.hpp</key>
 		<data>
-		eIwwd8oE6f17EircdBMQYcG7yc8=
+		JbcT65KtSPkdSoEfPd6d9w6/17A=
 		</data>
 		<key>armadillo_bits/glue_conv_meat.hpp</key>
 		<data>
-		N9BwiBXCyeT3A96vvcNybCT8loE=
+		vUIrn5B8CGpQNgjXoZtmLh3sPC4=
 		</data>
 		<key>armadillo_bits/glue_cor_bones.hpp</key>
 		<data>
-		7T0lgUNoCM2OOwID5eKm1xjp4Fs=
+		v0yhe5BS9jX0l+Cl6/ax5fv61xQ=
 		</data>
 		<key>armadillo_bits/glue_cor_meat.hpp</key>
 		<data>
-		MTB6/UQN/NLDNLpaovP+ED7z8tI=
+		vCHsrLhBe2I0yEawz0/zOWGoHU4=
 		</data>
 		<key>armadillo_bits/glue_cov_bones.hpp</key>
 		<data>
-		zgmal8PZIL3SLbxheOaTWaNuk6s=
+		xzGh9vtuHBPH/ZicsNNMm3OJ7+I=
 		</data>
 		<key>armadillo_bits/glue_cov_meat.hpp</key>
 		<data>
-		kV6z4i/q7ar4UzUJWpoiGiCEkBc=
+		0Oel9xqh1C6Vn2Wo282A/FN6sUQ=
 		</data>
 		<key>armadillo_bits/glue_cross_bones.hpp</key>
 		<data>
-		4P8z4RLXN5kb0hO6QhIDPzCX69s=
+		g5K8YI7IjSRIu/kvwGp8I+uyzw4=
 		</data>
 		<key>armadillo_bits/glue_cross_meat.hpp</key>
 		<data>
-		KpzKbBs5wIc+KWvMKCap4lwNYZY=
+		9a4j3tlZiL7tGLKRTRf/btJrKSY=
 		</data>
 		<key>armadillo_bits/glue_hist_bones.hpp</key>
 		<data>
-		KfQ9X5DU1jTxL6F2/448O2ONGJo=
+		86wA0C39dVTGxNlSYFUni9TKwrI=
 		</data>
 		<key>armadillo_bits/glue_hist_meat.hpp</key>
 		<data>
-		DM0V8ud0CbDWleq1CtI+IvkkLIo=
+		LBXWBqjP1xQTQikX0Mj9toq1OC0=
 		</data>
 		<key>armadillo_bits/glue_histc_bones.hpp</key>
 		<data>
-		XB2J0eJ5dni6eHvJox8gyV5uEAQ=
+		4nqvxPeys0nI7FdyxMj9qgpwqt8=
 		</data>
 		<key>armadillo_bits/glue_histc_meat.hpp</key>
 		<data>
-		joEs0Wxrt6idtJl5xQzg+/1aBGI=
+		+aPZh1CipQVEcqm0U/Cgi442c9Y=
 		</data>
 		<key>armadillo_bits/glue_join_bones.hpp</key>
 		<data>
-		2yQWFwgqxkDFCyZIku0Hg3tjFq8=
+		BbXmb7bD0kPe8lFCdgjlHCsFtZ0=
 		</data>
 		<key>armadillo_bits/glue_join_meat.hpp</key>
 		<data>
-		q6KC/yRWMI5wffMymsX9zfb/cxE=
+		65mfSmsHJjBdVgpY6h7k+vAub7U=
 		</data>
 		<key>armadillo_bits/glue_kron_bones.hpp</key>
 		<data>
-		YjSw4HOyLBmuqzoCx105I6cMjX4=
+		av3SpQbzIMjnrmKF7NQH/BTbbWQ=
 		</data>
 		<key>armadillo_bits/glue_kron_meat.hpp</key>
 		<data>
-		7e6X/loVd/qhWGCjd2vghpvF1FA=
+		jNKZ+rL7Ijd0U4vN85O/3lPzkJM=
 		</data>
 		<key>armadillo_bits/glue_max_bones.hpp</key>
 		<data>
-		uBCK4E8V/BwzT/24fI4huBCYshE=
+		/6WiSWx2h8iOC+pHPBScsLVqg5s=
 		</data>
 		<key>armadillo_bits/glue_max_meat.hpp</key>
 		<data>
-		Na72n8i74Golb3NLQUSVEQYpRTw=
+		BMq/x3Lt0sE8ZODoCRQ9kpfVzvo=
 		</data>
 		<key>armadillo_bits/glue_min_bones.hpp</key>
 		<data>
-		nvdT3eNouulEeHUvQoerqCf23dw=
+		dxugGb9+bROfwL5GN4vMZ4HTMMM=
 		</data>
 		<key>armadillo_bits/glue_min_meat.hpp</key>
 		<data>
-		P/smdAnIwCkMFTBfSZesuEc+NS8=
+		HEulPi8q4oSmlRIhaVMsjHzp8QU=
 		</data>
 		<key>armadillo_bits/glue_mixed_bones.hpp</key>
 		<data>
-		jRsKZ6cYxXPyvCkhC0BMQzVzxOQ=
+		dFXNsXee99YXQUO6WN7WlBOgJrk=
 		</data>
 		<key>armadillo_bits/glue_mixed_meat.hpp</key>
 		<data>
-		SLvANBQ/ovk8vWd/HiHQiTdI74Y=
+		ZVwUkt25T7dAiOVFzxGAJBQ0JZ4=
 		</data>
 		<key>armadillo_bits/glue_relational_bones.hpp</key>
 		<data>
-		xmISHBgHb539dZg9zvokNS9h2e4=
+		swGn+rANb/dLPOidvA4LSzUshH4=
 		</data>
 		<key>armadillo_bits/glue_relational_meat.hpp</key>
 		<data>
-		BGP4sfq0fXYNTM5TMYXGImB06Kw=
+		/UNrvm193nx72l3v9+7/RYl/9js=
 		</data>
 		<key>armadillo_bits/glue_solve_bones.hpp</key>
 		<data>
-		wIztzZg5qjuCFXcYeQh+Y1fjVXU=
+		4uhzax0DT+a+Gt88QotbI2C6iR4=
 		</data>
 		<key>armadillo_bits/glue_solve_meat.hpp</key>
 		<data>
-		3MR+zpjxYpnbMvXIFa4ebH2IB1I=
+		1GbFyHxD1M7NPPXvDMj0oAxeZ58=
 		</data>
 		<key>armadillo_bits/glue_times_bones.hpp</key>
 		<data>
-		qt4T+eLu6SMbmNi7zUuNOkVmB4k=
+		QUb31M1Bw6ll5DLTfiFwMGjtScU=
 		</data>
 		<key>armadillo_bits/glue_times_meat.hpp</key>
 		<data>
-		ehkeeTFl+ClkvMn8c6an8otC4WE=
+		OBu/np/UG8VBaY2tOd+0tSL08u0=
 		</data>
 		<key>armadillo_bits/glue_toeplitz_bones.hpp</key>
 		<data>
-		BUe4Usxq4CfgXP3APuh8gii1ebk=
+		fyGgPZcnRjpbobcrRo+Uon1tj4k=
 		</data>
 		<key>armadillo_bits/glue_toeplitz_meat.hpp</key>
 		<data>
-		wmMENCkNZcGZKQZ3F7cQ5gTpeWU=
+		Pj3BBO8UZKzIdzbNRwyrccbORvs=
 		</data>
 		<key>armadillo_bits/gmm_diag_bones.hpp</key>
 		<data>
-		BzbhhPB2UzBbZdQywLW3+QaWwCE=
+		2ppogLlVoIH7WWnpsY7ZT4MZLSw=
 		</data>
 		<key>armadillo_bits/gmm_diag_meat.hpp</key>
 		<data>
-		lmgZDbafDue9pgCwhmGj8FRQ0TU=
+		d0A3Ef5RvG9sf98nIMUe5IwCkU0=
 		</data>
 		<key>armadillo_bits/gmm_misc_bones.hpp</key>
 		<data>
-		Nznz1BkVOQk3pcNN/AFZYQcpEaU=
+		4IHPXnzFphu3plcDtMtpKA/j3is=
 		</data>
 		<key>armadillo_bits/gmm_misc_meat.hpp</key>
 		<data>
-		Xzj1JMIZvfBPc35eXd9uSM2oGFo=
-		</data>
-		<key>armadillo_bits/hdf5_bones.hpp</key>
-		<data>
-		fGg24swrdMXxR/mICrVsl1uKw18=
+		F9L2VbB3zI3wn9R6OLmiKsW2B/I=
 		</data>
 		<key>armadillo_bits/hdf5_misc.hpp</key>
 		<data>
-		PVc3Ckv53GwoHU2MN2Xn0WF5gys=
+		K4c+fulwE3hrF3XB13Ab8oKzNOs=
 		</data>
 		<key>armadillo_bits/include_atlas.hpp</key>
 		<data>
-		3OSigVI/O7G3A7Xmhkp1py8h/yc=
+		W3IxgGUxFqwp3yEWX8ZQuYh2vfw=
 		</data>
 		<key>armadillo_bits/include_hdf5.hpp</key>
 		<data>
-		wbQVTIK0dZARD5l5v8/Dm+MMsL4=
+		BXC26dPZx35WwmiB54ykuqq/db4=
 		</data>
 		<key>armadillo_bits/include_superlu.hpp</key>
 		<data>
-		e/7ENZabPBFPB/vRdueaO4SWgos=
+		tiIiDt0XVNwallwQ+IuolbHCic8=
 		</data>
 		<key>armadillo_bits/injector_bones.hpp</key>
 		<data>
-		gxZ+kob4kugMalGxc249WEt2F3c=
+		ENs7nGYytekxjbwJF2s5rYGgGzw=
 		</data>
 		<key>armadillo_bits/injector_meat.hpp</key>
 		<data>
-		qV6thtiX/NtVD6gTOTV+OjFipaM=
-		</data>
-		<key>armadillo_bits/lapack_bones.hpp</key>
-		<data>
-		Lcc12GTdpg7zjgMFDioC9p40mIs=
-		</data>
-		<key>armadillo_bits/lapack_wrapper.hpp</key>
-		<data>
-		XeiFYE7SjJIBwuu8moF3LL650BM=
+		MU98hVtjAUSNWqtEy14FwttHU8Q=
 		</data>
 		<key>armadillo_bits/memory.hpp</key>
 		<data>
-		Ar5GbehEtupGTzkwtgN1QceB2QY=
+		SdB5I+7RAg3XiQSLMU0oueiSi1A=
 		</data>
 		<key>armadillo_bits/mtGlueCube_bones.hpp</key>
 		<data>
-		75UduMmWsJJ8tjJJWM5Lc/OK5Tw=
+		kiXGwYdhu8hLFyqtcdKnyKBjsdc=
 		</data>
 		<key>armadillo_bits/mtGlueCube_meat.hpp</key>
 		<data>
-		UN54NCXVWNE1hWkD0n1BCh9+eb8=
+		GZLLITJ4xUgLwuR6fjHHiKAcgbQ=
 		</data>
 		<key>armadillo_bits/mtGlue_bones.hpp</key>
 		<data>
-		96oMYFePjQ7h3eOi9Bpn4eK6PDw=
+		DvxFXRMxZXidsEE9OycvjeKglfQ=
 		</data>
 		<key>armadillo_bits/mtGlue_meat.hpp</key>
 		<data>
-		NNDDPnWJPH9Rl52kzhq8ityrBDM=
+		JAx2re+DaL1Ol9L9EitzyqHdrb8=
 		</data>
 		<key>armadillo_bits/mtOpCube_bones.hpp</key>
 		<data>
-		6ByHM1Dn6zdQdDlBaFpNm8/SB0c=
+		dXiQK49ixst0jFc4o9KaHkohlWs=
 		</data>
 		<key>armadillo_bits/mtOpCube_meat.hpp</key>
 		<data>
-		n/+dqinRvQQv5I+2FDIX4VaIxus=
+		Kpiw2Gsx6UXdExIZvmt+BmRU4LI=
 		</data>
 		<key>armadillo_bits/mtOp_bones.hpp</key>
 		<data>
-		3i1WfQtpZHrdu9ybmmjServ/dGU=
+		6l2VhifslVgHUjBBHbPHzBo9Ldo=
 		</data>
 		<key>armadillo_bits/mtOp_meat.hpp</key>
 		<data>
-		BqJn2FkRFXlMjv8Q42Ggy2Al6M4=
+		j2KpHy9+9WSIPl/0hErTWWWhNFU=
 		</data>
 		<key>armadillo_bits/mtSpOp_bones.hpp</key>
 		<data>
-		BGdQv2l5ikbLkjO4C2mtboXrqTk=
+		KVpWEIXrakrRALX0uHanDm/qGZ4=
 		</data>
 		<key>armadillo_bits/mtSpOp_meat.hpp</key>
 		<data>
-		/JRcI7WoZ0kWFfeHr+TnNdgq5g4=
+		xfhV+fgatY/cMv2CKlfdXnOWcG0=
 		</data>
 		<key>armadillo_bits/mul_gemm.hpp</key>
 		<data>
-		pzR+rmKJ7hs4L3DojLp2C4Bcdo8=
+		9MwSNfCqIDg8lCflJUDLnuDiFlo=
 		</data>
 		<key>armadillo_bits/mul_gemm_mixed.hpp</key>
 		<data>
-		6vsES0MVupdhsxnfO8+ZVkJ+pLk=
+		mRft+XgXrLlt/r9DOAojvxAUL0g=
 		</data>
 		<key>armadillo_bits/mul_gemv.hpp</key>
 		<data>
-		T0PbGv7jczbLSSS3Bi43qOQIZr8=
+		U4J7ReSwP6kI6EI0txjtg05Bblo=
 		</data>
 		<key>armadillo_bits/mul_herk.hpp</key>
 		<data>
-		NWE7XmZM3S2ASQPbNLBaw5SYIlQ=
+		C8XRqvshWD34z68xi2yFV4z7cY8=
 		</data>
 		<key>armadillo_bits/mul_syrk.hpp</key>
 		<data>
-		QSbPW2a2IDkEf+Q2/ON9Qrxe46U=
+		7ge77tnCOPfgp7+k0Y0OrcNu+8o=
 		</data>
 		<key>armadillo_bits/op_all_bones.hpp</key>
 		<data>
-		rPOrLgR4tcbaeFn6XfX6HvzaL10=
+		qkpLO/8wWTr1BMO92LOVSZd1FIE=
 		</data>
 		<key>armadillo_bits/op_all_meat.hpp</key>
 		<data>
-		Ny6vIJDuVCS7WM2Rv6QAf3lOX5Q=
+		7EnxpcZjOPREMM629EV3AMe/1tM=
 		</data>
 		<key>armadillo_bits/op_any_bones.hpp</key>
 		<data>
-		4H+nX+q+3FrrUROHeH0uOoOc6uY=
+		YmXxcWUP/t9Yjmhk/dM/oFxraRI=
 		</data>
 		<key>armadillo_bits/op_any_meat.hpp</key>
 		<data>
-		FoMXqsjCanSD8Xbnx/RdNKelFts=
+		rD9f4M8G83aQRqG4262EfQtXB+I=
 		</data>
 		<key>armadillo_bits/op_chol_bones.hpp</key>
 		<data>
-		4+2psilBDLDdpIlUXQwnd121EX4=
+		lXrozovpWQHaGkwPMWJuVyP1B68=
 		</data>
 		<key>armadillo_bits/op_chol_meat.hpp</key>
 		<data>
-		/DBzRNVbvPbHfO9zsyIU/dLwDpE=
+		R4q6HiQccq9zrLx/6Zlnjw0pdzI=
 		</data>
 		<key>armadillo_bits/op_clamp_bones.hpp</key>
 		<data>
-		SuSauQLyswc3FKbqsQkIbNZADv8=
+		Ry2yXf6S+Z8KVtw3szw/mJ72eII=
 		</data>
 		<key>armadillo_bits/op_clamp_meat.hpp</key>
 		<data>
-		i388tjCl+NCjsEbou3qn6xvs+xA=
+		0k4DpXnp2JJeIzMSiZ2ydg5U7No=
 		</data>
 		<key>armadillo_bits/op_cor_bones.hpp</key>
 		<data>
-		YkQnwTnMu3XEBwT3+9UALlCsDyY=
+		Of/s9Pf3LW+BW0FAuiZHZSA7zKw=
 		</data>
 		<key>armadillo_bits/op_cor_meat.hpp</key>
 		<data>
-		OjylePlSovkm/SiQLd0RlVwUDkk=
+		0AYsYFsZY+KGf6GuzqnLXbX5PjQ=
 		</data>
 		<key>armadillo_bits/op_cov_bones.hpp</key>
 		<data>
-		oprVN6q8LUR5eiG9QxRB7ragMEs=
+		v4AjwjpNTASTKExPOmfgk2ug9pc=
 		</data>
 		<key>armadillo_bits/op_cov_meat.hpp</key>
 		<data>
-		G4JDtNWlQfoklMeHopUk8OGqkAI=
+		VyccvP0aqKGLoayx+ki+nxzudAc=
 		</data>
 		<key>armadillo_bits/op_cumprod_bones.hpp</key>
 		<data>
-		y22a/5Boloxl+mCTKHUavnslg0M=
+		9yXmh1N/hl0T9cx5lRpgy8JhG44=
 		</data>
 		<key>armadillo_bits/op_cumprod_meat.hpp</key>
 		<data>
-		aApidRN66S7fzPNkHVvdKqvTcfw=
+		/lwuv+9WT3cX+rag00uulxaIG7E=
 		</data>
 		<key>armadillo_bits/op_cumsum_bones.hpp</key>
 		<data>
-		dfrO2I1MM1HMYCiKSa2qL1p8QTY=
+		3FahATo8KaCGOtbEzB6GqxyEjOQ=
 		</data>
 		<key>armadillo_bits/op_cumsum_meat.hpp</key>
 		<data>
-		PCADxu+A1uEyFRD9t4OSHF0fOSQ=
+		q+zjhK4ty/qc/mjD4Z9w/1SxJxY=
 		</data>
 		<key>armadillo_bits/op_cx_scalar_bones.hpp</key>
 		<data>
-		X1ht9Gf4Bau9u4336tS7wobTslg=
+		3UT4+fYdOxs1KKxsetj5mdWV1rw=
 		</data>
 		<key>armadillo_bits/op_cx_scalar_meat.hpp</key>
 		<data>
-		Ph3Hxypow/KtdyIZz9YzUKZkwcs=
+		VJ4VKTC419ZpVDJSnjtTyc8IOi8=
 		</data>
 		<key>armadillo_bits/op_diagmat_bones.hpp</key>
 		<data>
-		bCC8XI4lxnnzhTW/fnH76O3/yEo=
+		23US6CjOGnaH+OlQUEuchhbNPpY=
 		</data>
 		<key>armadillo_bits/op_diagmat_meat.hpp</key>
 		<data>
-		OnAb1hpkDYdOFFhxdPWm6mARcNw=
+		reOWdo3z5DGsAATiIbAC9g1lHXw=
 		</data>
 		<key>armadillo_bits/op_diagvec_bones.hpp</key>
 		<data>
-		R7rti43iobnsR517zM4w/mSxq1I=
+		QWMzYPM4WqStq6jyS6arNqiwrgk=
 		</data>
 		<key>armadillo_bits/op_diagvec_meat.hpp</key>
 		<data>
-		g3jGRL3JZWuuND6F0kUCPj3aQRA=
+		9IpzWvrbNnq5OsA16k8ziECZI/8=
 		</data>
 		<key>armadillo_bits/op_diff_bones.hpp</key>
 		<data>
-		PSO2JPnYXwTyp5lJa3bJCLqbjlM=
+		hG3oHfP4emOlgPH0w3W7KabINRs=
 		</data>
 		<key>armadillo_bits/op_diff_meat.hpp</key>
 		<data>
-		NwA83IJj3MMUbM/5U+RIB8dmY3A=
+		3xJW4i+fnliiPBxItSBHMVG9D8U=
 		</data>
 		<key>armadillo_bits/op_dot_bones.hpp</key>
 		<data>
-		7eeN1guBkxIK8YFWYS1858bQ+kU=
+		FatOArUWsIYM7djL2PTKtuR9Kwo=
 		</data>
 		<key>armadillo_bits/op_dot_meat.hpp</key>
 		<data>
-		20s93lIBLnMSYc1QrQvoo+jVYWY=
+		DQuj0kxC58ZP2+hKNdBZW0mWNCw=
 		</data>
 		<key>armadillo_bits/op_dotext_bones.hpp</key>
 		<data>
-		mZWMcsv1hzNBSTV8duUT5VzYTUo=
+		95OsnURmBFkKMnm57m8Tomm1eaM=
 		</data>
 		<key>armadillo_bits/op_dotext_meat.hpp</key>
 		<data>
-		4t2M9J2Qzzy5wQBzdBsh3J3h93w=
+		sTL3/byyXti4fvXMI38kzl7Kqmo=
 		</data>
 		<key>armadillo_bits/op_expmat_bones.hpp</key>
 		<data>
-		+Nz865a/tDTmLL/cOCPc68pXXOg=
+		+oN+kRv5M2ta6Fn/AMn1vStMtlc=
 		</data>
 		<key>armadillo_bits/op_expmat_meat.hpp</key>
 		<data>
-		a7cqoSFI6Zr6YXTC0TAgoGUrFWM=
+		1Ez3+RzHv+0NnNyDvhP9rJXTMng=
 		</data>
 		<key>armadillo_bits/op_fft_bones.hpp</key>
 		<data>
-		Vi4ylH8J9zaP/4tWMQWlh9ohnwE=
+		NOmmTGzvn8ap3lh+H6B4jk+2dSo=
 		</data>
 		<key>armadillo_bits/op_fft_meat.hpp</key>
 		<data>
-		wmZTk7BrxOWpHrD6+PO+ts+4Fes=
+		mB+ksAh4nf/Lu5saW7XK9HH3MRg=
 		</data>
 		<key>armadillo_bits/op_find_bones.hpp</key>
 		<data>
-		HC8TJy+juBjH25XX784fbQkp38k=
+		AgyTNXwIkyFxFOJYtXizHL4KrLU=
 		</data>
 		<key>armadillo_bits/op_find_meat.hpp</key>
 		<data>
-		nrURNeVeKpEa1LeEvWhU+NxGSK4=
+		zNBxZ6vMS2cVPglbt1rg+qh4+wM=
 		</data>
 		<key>armadillo_bits/op_find_unique_bones.hpp</key>
 		<data>
-		UwOKOhXFLxrbQkKeH5Z5NjMcWPk=
+		n0Mposlxm9nttMkWNyGAlCCEqh4=
 		</data>
 		<key>armadillo_bits/op_find_unique_meat.hpp</key>
 		<data>
-		m2QKomEnI8OcWO+vW0EEeCRLta0=
+		cGN1Pxf84qoWTC2RY6UVvDAyt+o=
 		</data>
 		<key>armadillo_bits/op_flip_bones.hpp</key>
 		<data>
-		HdskoKdH9qiFeMAZrExoSLWMhrY=
+		YSSuZsOmySS/b7JhGnA09cb7M6A=
 		</data>
 		<key>armadillo_bits/op_flip_meat.hpp</key>
 		<data>
-		FgQGtCr3pWcE5J3MO3RtROzxSNk=
+		4NbdsdcD0jLlxZesFeubiB1MkfM=
 		</data>
 		<key>armadillo_bits/op_hist_bones.hpp</key>
 		<data>
-		i6GP073JFxeX6AU4toCpOyMiMHw=
+		OxC3oQ0ehkDBKhCqb8P967M6x4o=
 		</data>
 		<key>armadillo_bits/op_hist_meat.hpp</key>
 		<data>
-		gYHra/eiZCN0qtFQDBz2M2zHaUo=
+		J8aGNT2Ep7dKBn7A8e5d+vhZHRw=
 		</data>
 		<key>armadillo_bits/op_htrans_bones.hpp</key>
 		<data>
-		9G6QlD4Pkqu0olFW8ElAYoOLe88=
+		7A4w0qNIRtYRHmhViz8qMu/sKMc=
 		</data>
 		<key>armadillo_bits/op_htrans_meat.hpp</key>
 		<data>
-		7BKw1dohttIEYaVkcu/GCqscqTM=
+		Lnh2mCh7iS9ISHg1jLeDmIpHf/g=
 		</data>
 		<key>armadillo_bits/op_inv_bones.hpp</key>
 		<data>
-		nyp7MudfDIQ6+K2E8kPrLOcmxNI=
+		slb5dfUmFQV40RfTsfgfBuypXdM=
 		</data>
 		<key>armadillo_bits/op_inv_meat.hpp</key>
 		<data>
-		M5t2Dhwdno/Np1Z+dp0101ad6fY=
+		4DDzXg+qtRyTHN/pC+/p420ci9g=
 		</data>
 		<key>armadillo_bits/op_max_bones.hpp</key>
 		<data>
-		qTA7Rlm1JpFthlF4I4MVohf/JYU=
+		LHO+k+zhkkf/40t2fxJRx9/W6/k=
 		</data>
 		<key>armadillo_bits/op_max_meat.hpp</key>
 		<data>
-		kMG0ao+gtBckO8vhStMYbu393hU=
+		Pm3+/hCZtCOUIb7vV9EKHjjpEnY=
 		</data>
 		<key>armadillo_bits/op_mean_bones.hpp</key>
 		<data>
-		4JNmbnGG2Igyfnr0QocJ1Nk5flY=
+		17vEgJHRUXNp3hLx+MQ+jsLk1Us=
 		</data>
 		<key>armadillo_bits/op_mean_meat.hpp</key>
 		<data>
-		x/59ykibIMDBNu2avtUZR7jj1yw=
+		N6SVlXneSujtZECjpkY96gI1ueE=
 		</data>
 		<key>armadillo_bits/op_median_bones.hpp</key>
 		<data>
-		nFytxB+ABBXr7XUatxjVs/whbTI=
+		eJ1vzz5wsX1ckyGKq/k06SeTG40=
 		</data>
 		<key>armadillo_bits/op_median_meat.hpp</key>
 		<data>
-		anfCrvNw5LyACmxBKm7ONdGLqOo=
+		DdiKUCU1zHtvWkn/ptOMKtI+YV8=
 		</data>
 		<key>armadillo_bits/op_min_bones.hpp</key>
 		<data>
-		yAhqqPcQdtqBpqY7vqEBKN3lcnA=
+		87UkW2NwxKlTIwRB7Hw40ONcgcI=
 		</data>
 		<key>armadillo_bits/op_min_meat.hpp</key>
 		<data>
-		ELzh6HBtZ+3iFJQkb15baFTtZMc=
+		ZYdhNTDxnEgq/SbQ1kg7z6Yq34I=
 		</data>
 		<key>armadillo_bits/op_misc_bones.hpp</key>
 		<data>
-		+k3QrS3YwLzLC5H+qLETYw7CpmE=
+		1rMAUK/5vAWCcpiAqTCeiXqtiMs=
 		</data>
 		<key>armadillo_bits/op_misc_meat.hpp</key>
 		<data>
-		WvHm9HX5dG6XXFAj0HvmbzslxQ0=
+		EFe07SAe2relaFjCmKjDeLt3uKI=
 		</data>
 		<key>armadillo_bits/op_nonzeros_bones.hpp</key>
 		<data>
-		VljXrEIpYNsLLDsLlj/iX0OR+bQ=
+		iR27AHsvPjASst7Hat/qDT2hje8=
 		</data>
 		<key>armadillo_bits/op_nonzeros_meat.hpp</key>
 		<data>
-		1VeUgQOkINlVUxqLQuU6pxwlIxc=
+		wbGK5usVAK4ZmCRcdJGuHDM+naM=
+		</data>
+		<key>armadillo_bits/op_norm_bones.hpp</key>
+		<data>
+		M0Fg3AHxvIpj5PVrk7sD3YjWfn4=
+		</data>
+		<key>armadillo_bits/op_norm_meat.hpp</key>
+		<data>
+		5FcR3//QrTZTiuoMGkh38OIQa2M=
 		</data>
 		<key>armadillo_bits/op_normalise_bones.hpp</key>
 		<data>
-		bpiD95Dq+3oXQ3CUbxaGPKzv4zM=
+		gtNbUcly6XndN+g9Z7sNk1vTbG8=
 		</data>
 		<key>armadillo_bits/op_normalise_meat.hpp</key>
 		<data>
-		5yuv/LoA54VhhJPcQVJLI/hX3gk=
+		xBRFUfjrEJAFMiYo3vTk5BcOlkU=
 		</data>
 		<key>armadillo_bits/op_pinv_bones.hpp</key>
 		<data>
-		v7GyfDfm0BSGgjSE6qoeW1zgFiw=
+		7MWL/xkvd/iq4cHha52JXXq9/Fs=
 		</data>
 		<key>armadillo_bits/op_pinv_meat.hpp</key>
 		<data>
-		u4mS4SaTf9MYjvJZTpywFA31aoQ=
+		ynR6n9asvYHQbTYP8jC4hcyHU8Y=
 		</data>
 		<key>armadillo_bits/op_princomp_bones.hpp</key>
 		<data>
-		K45pmYUP/FQ2u6yuLiwS8Fbjrlc=
+		t1w29dO9W9QPxfI8L5i7j8vL1jA=
 		</data>
 		<key>armadillo_bits/op_princomp_meat.hpp</key>
 		<data>
-		4OqiwWPLkrznDZjs6Y/b3jrgrX4=
+		xjF8eHNvHTPFqhRJU9WA8nBr2SM=
 		</data>
 		<key>armadillo_bits/op_prod_bones.hpp</key>
 		<data>
-		7R6bXasqc+TosFFoDnpUMwgZvbc=
+		L7J/k+UHlJIcISGGzFbtIeieKoY=
 		</data>
 		<key>armadillo_bits/op_prod_meat.hpp</key>
 		<data>
-		9QbXZ3/kEsD1w0bfOCVbCDWvah0=
+		HzkZa3D2LMd6eKYMGhTTzPnAuf0=
 		</data>
 		<key>armadillo_bits/op_relational_bones.hpp</key>
 		<data>
-		4Js1dnkh6DMfj2dlOZqkIuWNSIo=
+		CWwt2LaLO0ZT/J9Q2rIGbrptGyQ=
 		</data>
 		<key>armadillo_bits/op_relational_meat.hpp</key>
 		<data>
-		Pf7i44SU4lxH34ZIVkjuhVkSdT8=
+		zqseCQQG3NTRCzq2DNoByGPXhaI=
 		</data>
 		<key>armadillo_bits/op_repmat_bones.hpp</key>
 		<data>
-		qsj6boM/B3285aKsIxfUGN/86cs=
+		bsZfTWNv7BBvWy+KvzxStcSEP/A=
 		</data>
 		<key>armadillo_bits/op_repmat_meat.hpp</key>
 		<data>
-		6tv1/LqhgG1VsLHw4+w/OVmpWG0=
+		3T27lCoB65mOjcwdarvgF0fVqRo=
 		</data>
 		<key>armadillo_bits/op_reshape_bones.hpp</key>
 		<data>
-		piNRzvUwr3AmvExhUgc1Epy4RD4=
+		RRQNfR2ymSJUEyBxG0sTDnHKKY4=
 		</data>
 		<key>armadillo_bits/op_reshape_meat.hpp</key>
 		<data>
-		Wk7s1zc/0VBtSC5v1Z87mzY4xkM=
+		I57HWowpSoP0xxoTfC9vn37HFaQ=
 		</data>
 		<key>armadillo_bits/op_resize_bones.hpp</key>
 		<data>
-		EDJsNVo2yM8IuAFzkOMEz7+/YCQ=
+		ozenhEJiet6iFrXJw/L7iENRKgg=
 		</data>
 		<key>armadillo_bits/op_resize_meat.hpp</key>
 		<data>
-		fLY6mlMtlO7j928qkatB0O2HKLk=
+		JBmBFNMFmHJwoS/Xe1TnlrIQwSc=
 		</data>
 		<key>armadillo_bits/op_shuffle_bones.hpp</key>
 		<data>
-		TxT3kTCxB0XN8D5ZuhUJIF1fiw4=
+		BcRtaEgKQXGff2BHjht2aULdp4o=
 		</data>
 		<key>armadillo_bits/op_shuffle_meat.hpp</key>
 		<data>
-		Jkl9aZh/H/eXZdZryjCzguUGLug=
+		i1TZ91SG2SQ7+e/RF9Ce5JUrpq8=
 		</data>
 		<key>armadillo_bits/op_sort_bones.hpp</key>
 		<data>
-		8ViFlhgKuGGRqBbm2+cbrrBqct4=
+		inLJXwWwh/FGAaCUpPIBOPyMD0c=
 		</data>
 		<key>armadillo_bits/op_sort_index_bones.hpp</key>
 		<data>
-		ZkS6+j7KeUzM+F4q0DCwuq6Esog=
+		Rv7AeV6Rkxud7nvx/xirQIKohO8=
 		</data>
 		<key>armadillo_bits/op_sort_index_meat.hpp</key>
 		<data>
-		+NyndPlYrlqZ6wAkz80jwBOfTVM=
+		1qh+9ceWxD6txBCX02uf6qPcOxg=
 		</data>
 		<key>armadillo_bits/op_sort_meat.hpp</key>
 		<data>
-		+/I4StS2DJerw7n5k/3JRA1xVvc=
+		PzvGhE6zdb6eSXf+ta4uYbCR/MU=
 		</data>
 		<key>armadillo_bits/op_stddev_bones.hpp</key>
 		<data>
-		zG0rT+UpvekSR3UaToJVLTtJeRs=
+		tc5fQ5KHvNZOABWWZYb5XYdYwKk=
 		</data>
 		<key>armadillo_bits/op_stddev_meat.hpp</key>
 		<data>
-		I1dBegDZH88K0WPvy166KAZul/Y=
+		Jo+lloNME1Kviu2cp6P7oN0q6jA=
 		</data>
 		<key>armadillo_bits/op_strans_bones.hpp</key>
 		<data>
-		rn4DInIbU3iHJkeUKK8CZ3N5NqU=
+		fEW2X/gal5WLIilJnMK2IS3sEMw=
 		</data>
 		<key>armadillo_bits/op_strans_meat.hpp</key>
 		<data>
-		Jig4c/t5hhlFMO0TNBixaNHejPA=
+		sTMpL0u+kdgfMyWSJahyVc2mfes=
 		</data>
 		<key>armadillo_bits/op_sum_bones.hpp</key>
 		<data>
-		PE6r2tcGmaWkibTMpkH9XlDpFxQ=
+		RnUeCLvZVERrplvOjLNkJtJkF+Y=
 		</data>
 		<key>armadillo_bits/op_sum_meat.hpp</key>
 		<data>
-		NoE3D1B9QPipu7iS5onUwqArgMY=
+		1zgHk/4+PHedrp2/nI/xujztu44=
 		</data>
 		<key>armadillo_bits/op_symmat_bones.hpp</key>
 		<data>
-		liglORtR/4yKyuVB4lImGEAMVb0=
+		vjRpjdRuNWJqlDc63UJHdBGR1KE=
 		</data>
 		<key>armadillo_bits/op_symmat_meat.hpp</key>
 		<data>
-		wN4i3xQkFxDhRUadwOzoYdhzrnA=
+		GTzAuPZjFeiiP7Y9TYwP32dK+NI=
 		</data>
 		<key>armadillo_bits/op_toeplitz_bones.hpp</key>
 		<data>
-		axfJPtDC4XNVryRjDHYpFLD2tvU=
+		Es3opmihqHvXmEvTNhfwlz3FfQ0=
 		</data>
 		<key>armadillo_bits/op_toeplitz_meat.hpp</key>
 		<data>
-		V2vkafGK4nLyO+Tgs1hBE3QgBvQ=
+		vZF20X/9XxZezFlLqZASZSR7M+k=
 		</data>
 		<key>armadillo_bits/op_trimat_bones.hpp</key>
 		<data>
-		C1aopcBsv3Eftyoo3G+vCo7hNlQ=
+		MzeLUF/0vWBZYBaDlkfg/UVbD5c=
 		</data>
 		<key>armadillo_bits/op_trimat_meat.hpp</key>
 		<data>
-		QbohA8qL8kumrykyqljhCqw8Wzk=
+		eKDaZzA8febzIoAWwxR0ARtvJLg=
 		</data>
 		<key>armadillo_bits/op_unique_bones.hpp</key>
 		<data>
-		bIL7pEzg+huiDsmX57c4wzisd3M=
+		hqnLiZ5vDOTbNJSdLIKpJRl6FhI=
 		</data>
 		<key>armadillo_bits/op_unique_meat.hpp</key>
 		<data>
-		L4netPzwiFYwzmNrhP70FpzRQ4Y=
+		UMt8oE8duijE8Fhk3hz92xbGTLY=
 		</data>
 		<key>armadillo_bits/op_var_bones.hpp</key>
 		<data>
-		FPn5CRAe/pDBt77cdBABkpUGpDo=
+		QGmShTyiR3e8kAcAkzNQH9QyqP8=
 		</data>
 		<key>armadillo_bits/op_var_meat.hpp</key>
 		<data>
-		GsJlSTWbU9aBaxe1eNti0kjKanE=
+		0DhT7vMDDc02az9uw0pk15dDp3M=
 		</data>
 		<key>armadillo_bits/op_vectorise_bones.hpp</key>
 		<data>
-		LPS6pgDi4vOi89G+axOPC2zX/+s=
+		AFFXpgn9+yWYsc02xI3JooXyN+c=
 		</data>
 		<key>armadillo_bits/op_vectorise_meat.hpp</key>
 		<data>
-		Bgx27kmKxSotXrVawEW4fm/Bk/I=
+		3JPBu0sYwV5Du6tanJmZZ0y9Sjs=
 		</data>
 		<key>armadillo_bits/operator_cube_div.hpp</key>
 		<data>
-		4m89t7gKSyjF2QMSac6LOyC5g6M=
+		1H0hZjVjGF+TqCOvHuwtCY5BH/c=
 		</data>
 		<key>armadillo_bits/operator_cube_minus.hpp</key>
 		<data>
-		TcdI8otuyuUs/Nakk9pJ4sPLbeA=
+		3eL42PiMQ4i4rBDxIliITD7OU+U=
 		</data>
 		<key>armadillo_bits/operator_cube_plus.hpp</key>
 		<data>
-		6GyzQ0mif2H310RR9WsNS+YQJZ4=
+		ebsMyDLWxeyBBKGrQ3LHNV3tpEc=
 		</data>
 		<key>armadillo_bits/operator_cube_relational.hpp</key>
 		<data>
-		4EJDoqG5iRiLQmfp9v7hNH3kDkA=
+		d17DaE42UVCuNjDj60rAfENZd4g=
 		</data>
 		<key>armadillo_bits/operator_cube_schur.hpp</key>
 		<data>
-		m/73KEes8d4IuEuejZwVk/PIyhc=
+		dNp56lEmroe9DtA2H32ZJbSjT3s=
 		</data>
 		<key>armadillo_bits/operator_cube_times.hpp</key>
 		<data>
-		Rl3XO7eTEmuwzoycjR6rXZiMjb8=
+		Lwm6KWmJozlJjQilF0gGNPW8xls=
 		</data>
 		<key>armadillo_bits/operator_div.hpp</key>
 		<data>
-		SaW/ZlG+/SxTFydpgXBB8sTjTE0=
+		x8zIRp26Y52m0QwlbmaAj8YCxdg=
 		</data>
 		<key>armadillo_bits/operator_minus.hpp</key>
 		<data>
-		hODs62U6ZVwihtHWwEsAEGa72eg=
+		r1j5fJCuapsGI+abLnDzLMHf6X8=
 		</data>
 		<key>armadillo_bits/operator_ostream.hpp</key>
 		<data>
-		rmymaI4GIrL6rDmHhjruE4fCgnA=
+		lR8pHv6RUFw7fS3xiFrSN726yr4=
 		</data>
 		<key>armadillo_bits/operator_plus.hpp</key>
 		<data>
-		T7pe7BJPPl0bO4EfnqBSjWGhkt0=
+		7SDxd2zqhTDMr+tctChcQljGzrY=
 		</data>
 		<key>armadillo_bits/operator_relational.hpp</key>
 		<data>
-		cWIfDP2zJz9UZoYWwzkMAeQAFR0=
+		aNtynnY1bP9x0aAoEpBYlRPoe5Y=
 		</data>
 		<key>armadillo_bits/operator_schur.hpp</key>
 		<data>
-		w1OjgyVX9VPZURuclzVbRpz1y+c=
+		XIcE2RAQuqWDdSt6HnX0Ri6I2I8=
 		</data>
 		<key>armadillo_bits/operator_times.hpp</key>
 		<data>
-		6qWTrFSKqNsB4N7b9hBAskFpo40=
+		rUakHFL2fmXZil2R77q84/i9sdw=
 		</data>
 		<key>armadillo_bits/podarray_bones.hpp</key>
 		<data>
-		DL6RgQ/sruOsdMbNJz3JkOeo30Y=
+		xHe94g1SLEp4drPdf5n7Df4aipA=
 		</data>
 		<key>armadillo_bits/podarray_meat.hpp</key>
 		<data>
-		L1sH7qTvzloBT4K6aJjaNiRf9rc=
+		HhTOmrjsxSA+vAbCcGP5IkxWvPY=
 		</data>
 		<key>armadillo_bits/promote_type.hpp</key>
 		<data>
-		FdnkCi+V+8Y9XZiOEFuPpbC12+4=
+		dTEA73M/c47aD0x3mBIJuUGvfrE=
 		</data>
 		<key>armadillo_bits/restrictors.hpp</key>
 		<data>
-		4BDX280Mfmy9W6EvegcO+hgWioU=
+		QFQiqCMBvfVHbT1/CVNgdgE1VHE=
 		</data>
 		<key>armadillo_bits/running_stat_bones.hpp</key>
 		<data>
-		D15bLmiR+SmZtsR8L7pU5ZA20W8=
+		/TJaQwu0ZdpREN7NGFQWrprP05Y=
 		</data>
 		<key>armadillo_bits/running_stat_meat.hpp</key>
 		<data>
-		75dr9zOY8ooe10c+5hWlkbo6xG8=
+		aXAXh8j6AHXr+5KsnPcXSRNjgCg=
 		</data>
 		<key>armadillo_bits/running_stat_vec_bones.hpp</key>
 		<data>
-		TBpGJjsIKe5D/qm/IQNyUFtZ9a8=
+		qLucBA2YO2afwCavHmRdoHxyAuM=
 		</data>
 		<key>armadillo_bits/running_stat_vec_meat.hpp</key>
 		<data>
-		orEFXN+NgLoR9Xkkw39v31KQl6s=
+		jtnMaWSxC6tX2Vr4Cyd8ZU9YVRA=
 		</data>
 		<key>armadillo_bits/sp_auxlib_bones.hpp</key>
 		<data>
-		tW6Q4tDYDuKN0JQr7prwtEM94S8=
+		CGUEMh5MA5WjP/v+WFHmQhio6RY=
 		</data>
 		<key>armadillo_bits/sp_auxlib_meat.hpp</key>
 		<data>
-		UxAwszlMFjFk6ZaDEhH4zPSah2M=
+		lgSS6MpcfSyWcCw6M844J1LyTto=
 		</data>
 		<key>armadillo_bits/span.hpp</key>
 		<data>
-		a1CLB9MoIz2aP/Si1vf7N0fZ86I=
+		cbGqRH2iR5mXt5RsA7KAXJEIBVo=
 		</data>
 		<key>armadillo_bits/spdiagview_bones.hpp</key>
 		<data>
-		c5GpEZ1Mtd8RPM4M4UETSW6Hj9c=
+		CZWZBfWaA2TgHUES8AZ0Ci1jdUY=
 		</data>
 		<key>armadillo_bits/spdiagview_meat.hpp</key>
 		<data>
-		4mAMaDWXvv3ujD9D2gCcoTMV1zk=
+		btswLMfRDaEbd1QP7FdOv4j0lws=
 		</data>
 		<key>armadillo_bits/spglue_join_bones.hpp</key>
 		<data>
-		j8meUoN8VpuZfOflccjltVXt6M8=
+		0fiwdrCG9ZKljICu4f57qObVTyM=
 		</data>
 		<key>armadillo_bits/spglue_join_meat.hpp</key>
 		<data>
-		8un09UVoA96vlJ92jc1MJnj95uc=
+		1EayL5PuBTIzdEEbSKFanV65z5o=
 		</data>
 		<key>armadillo_bits/spglue_minus_bones.hpp</key>
 		<data>
-		YN4+/CwhSgdRbzzBPzrdQMuQfmI=
+		nNTrwQuTYh0kMn1K3RxiTiuTt+I=
 		</data>
 		<key>armadillo_bits/spglue_minus_meat.hpp</key>
 		<data>
-		U78NlFSFSzJ7MKwylwFfbIGiA+4=
+		8FOWiNso56CazwX0zEheB77hEzY=
 		</data>
 		<key>armadillo_bits/spglue_plus_bones.hpp</key>
 		<data>
-		bX74lxKNAIUjqY8FDGr9E2yZqsM=
+		i5HEV5Y2I9HJl42TuS1u0VyvJeI=
 		</data>
 		<key>armadillo_bits/spglue_plus_meat.hpp</key>
 		<data>
-		gxOjtZKqaL7Hv9L0TRi7abG2HYg=
+		p56ZmlAW/uKdOFSQOPk64v8VTkw=
 		</data>
 		<key>armadillo_bits/spglue_times_bones.hpp</key>
 		<data>
-		28JlDT/lp3KjU0iB36Pcdy6dTsI=
+		zMQpnSsPd7eOvNjnEudN63w4tLo=
 		</data>
 		<key>armadillo_bits/spglue_times_meat.hpp</key>
 		<data>
-		ocGuJVbksJ6skq67SlqEpoYoVcA=
+		BppW63rrmyWA3p+rd00T+LwGRI0=
+		</data>
+		<key>armadillo_bits/spop_diagmat_bones.hpp</key>
+		<data>
+		4OVA8CjkA7y625aNf3jem069w90=
+		</data>
+		<key>armadillo_bits/spop_diagmat_meat.hpp</key>
+		<data>
+		Xwuukf1k4JFB4VrZPZw4iTaM2Ag=
 		</data>
 		<key>armadillo_bits/spop_htrans_bones.hpp</key>
 		<data>
-		yJygZJsEOH+ONe+syiOFS2G72AM=
+		Oe/4CzQEECccywZ31ib2CVhrd+o=
 		</data>
 		<key>armadillo_bits/spop_htrans_meat.hpp</key>
 		<data>
-		Zse+vkPXBFCdX2BX4VfqDpyq4UQ=
+		8rmZN4ipaQDJUoA2HUf7S4dwx0U=
 		</data>
 		<key>armadillo_bits/spop_max_bones.hpp</key>
 		<data>
-		4YfGH/pldlNCyeJL0+M5gUo8/s0=
+		q/0EcH2acEAuG4BrU+hG1DZZzYU=
 		</data>
 		<key>armadillo_bits/spop_max_meat.hpp</key>
 		<data>
-		06EnzNrT3OHmMeQlAvkpE/K5zqc=
+		lRXPjfrZR6cK0xjirhx9T/wY+L8=
 		</data>
 		<key>armadillo_bits/spop_mean_bones.hpp</key>
 		<data>
-		hK9Hw9/wS90yWVCjwZXSuNYEIv0=
+		C/LR8jld7JZRUgVWSF774R9n2sE=
 		</data>
 		<key>armadillo_bits/spop_mean_meat.hpp</key>
 		<data>
-		/Q1RxEGjo/FJ+ewOD2yoijHOuEs=
+		GJoghD5aASI4wZykkPBd17dwRl4=
 		</data>
 		<key>armadillo_bits/spop_min_bones.hpp</key>
 		<data>
-		r2EldEFzpreD5876z2N8uf0NQNw=
+		AO48eNUIFyFKX6KW9pUsncfuaLg=
 		</data>
 		<key>armadillo_bits/spop_min_meat.hpp</key>
 		<data>
-		5rLw6apkhbhTYabxNyPUHcbDEQ8=
+		w1GRn7ibcUH49AruxI3RS+aovlk=
 		</data>
 		<key>armadillo_bits/spop_misc_bones.hpp</key>
 		<data>
-		u3/8dnckxp1z4gKZaQjWelEPhow=
+		w/1PrKIhB72/3Cf0hVzFfzjibOQ=
 		</data>
 		<key>armadillo_bits/spop_misc_meat.hpp</key>
 		<data>
-		ZwaljD2HMxzk9ppiH2DKQ+G8aPM=
+		xU97Q0y2ByGAALm1oY4euEfvetY=
 		</data>
 		<key>armadillo_bits/spop_strans_bones.hpp</key>
 		<data>
-		GqnjBhJLk691a5XlrxFDhtsaHDU=
+		tyVpdPK/5c0jBBj0NnPJ+WM/0Xk=
 		</data>
 		<key>armadillo_bits/spop_strans_meat.hpp</key>
 		<data>
-		pMQHYzuFQDpAqMyhm2sNnjx2+Z4=
+		ohaqkiXOuTfOdn6AwjvqJNmCPuk=
 		</data>
 		<key>armadillo_bits/spop_sum_bones.hpp</key>
 		<data>
-		LOB7SNDtx6lOqqVEdwnozOFdrLg=
+		cL+UF8csAJ/bzdaEIxLw48V4eSg=
 		</data>
 		<key>armadillo_bits/spop_sum_meat.hpp</key>
 		<data>
-		YFdUDt86xs8yLxsqmYqzbdOeuj0=
+		jyupJCIb5YFsGJCZqSMaW5kD90U=
 		</data>
 		<key>armadillo_bits/spop_var_bones.hpp</key>
 		<data>
-		4U07/gFY2eEoF5oa/iWnawtEIvQ=
+		kDOx+1lYdRKRnzrh7zsYhnJfHbM=
 		</data>
 		<key>armadillo_bits/spop_var_meat.hpp</key>
 		<data>
-		HviPOegnC49CjLpnMTnYgGcL4ns=
+		X9TEAHbGZcFZrEZ0aN+dL2tvC48=
 		</data>
 		<key>armadillo_bits/strip.hpp</key>
 		<data>
-		QOGJfXbWdmL4UIzgDR7f6tk1+rk=
+		ZNjqvzm7Osp6bJglIJ8hSh8oB/o=
 		</data>
 		<key>armadillo_bits/subview_bones.hpp</key>
 		<data>
-		O+vl8Gusm8HvcIV7p9yz9pE2kMw=
+		GlP3TNN2+z/Bd3s3NCBLMU4B/Z4=
 		</data>
 		<key>armadillo_bits/subview_cube_bones.hpp</key>
 		<data>
-		PbKk6W3t8UswyzOhlxs05dtEYLQ=
+		94hubPdCJBP0osqJS7snutfKI6I=
 		</data>
 		<key>armadillo_bits/subview_cube_each_bones.hpp</key>
 		<data>
-		xSkAz58D14pPBjU2oDo82nkd9wE=
+		ubVr5pv/Q64WEmHyqe6rNR3NLMU=
 		</data>
 		<key>armadillo_bits/subview_cube_each_meat.hpp</key>
 		<data>
-		zoPz/h+U7iHQSeFBpmfjDf3v6ws=
+		OsS+huECL4Y2Y/ePdu4rjtItok4=
 		</data>
 		<key>armadillo_bits/subview_cube_meat.hpp</key>
 		<data>
-		B91Ld7hianX3e+IjL+2JMRgm96Q=
+		+UU60p+jzm7gL4sJjBTVf5rnsu8=
 		</data>
 		<key>armadillo_bits/subview_each_bones.hpp</key>
 		<data>
-		J/u8TgpEF0nHi8Ac3JjKDjCdOXc=
+		+gUthq5N+At0s9mw+pOrarx17vM=
 		</data>
 		<key>armadillo_bits/subview_each_meat.hpp</key>
 		<data>
-		k2V/ONhDrZqO0ET1qXS0ozxT048=
+		hk++xzcWvPYfakqaRBGklM/hgkw=
 		</data>
 		<key>armadillo_bits/subview_elem1_bones.hpp</key>
 		<data>
-		palZK2RLpLpmKmn1uzoQZPax7Rg=
+		TmHaJo2bgqeqZxj4oioBE1aBHq0=
 		</data>
 		<key>armadillo_bits/subview_elem1_meat.hpp</key>
 		<data>
-		kjYkRLC9OZAdx8bmgisFmwKe3ek=
+		bUU5/+ixRz8UMXP0tJRV9WKC7Fo=
 		</data>
 		<key>armadillo_bits/subview_elem2_bones.hpp</key>
 		<data>
-		obnwmutw3Q9/rjI2zRVxsWHkPgA=
+		tLTjklCeH9/Olp9baLjLeocqCLY=
 		</data>
 		<key>armadillo_bits/subview_elem2_meat.hpp</key>
 		<data>
-		HxiTKbf5YBR+QXs+Kjsq/uFcXtM=
+		RWr0dBq0ZChpAScF+xPfptEbsq4=
 		</data>
 		<key>armadillo_bits/subview_field_bones.hpp</key>
 		<data>
-		7jhqp4P67Yqh9sRbT7/ko491gQM=
+		ubvO7xYIfrLmGKl5pmbZYA4z8Kw=
 		</data>
 		<key>armadillo_bits/subview_field_meat.hpp</key>
 		<data>
-		qXzMi7MLBW/qBxJFFaMRfNOTGZ8=
+		OVcXpVbtqOs83zYMSQkWODXq22o=
 		</data>
 		<key>armadillo_bits/subview_meat.hpp</key>
 		<data>
-		dglqkn4QCJsqGgUHQhF4cKIU+58=
-		</data>
-		<key>armadillo_bits/superlu_bones.hpp</key>
-		<data>
-		NnIgnSjhUiOHUYHLMLINNcIXfjI=
-		</data>
-		<key>armadillo_bits/superlu_wrapper.hpp</key>
-		<data>
-		RirEzaGVIz3ak6Z4URGr9/V8ltA=
+		d2rvJ6eF984V1zFOK/QeIZKGCNY=
 		</data>
 		<key>armadillo_bits/traits.hpp</key>
 		<data>
-		5A/bIKKq/Md74tj7lSdJVN4jxfE=
+		FXWQVEJkLUjJ9bnUpcYr4PQ+2qo=
 		</data>
 		<key>armadillo_bits/typedef_elem.hpp</key>
 		<data>
-		EDpL1M2BVl6mcxJRcNg2Rc3VJXI=
+		tLOWI3arYUnk1aBQdMVBb7zScuY=
 		</data>
 		<key>armadillo_bits/typedef_elem_check.hpp</key>
 		<data>
-		QhplNmfUvOx1wYI1KNWNS0JyMqs=
+		PocuVI4H7t7vl9BE/pzcpKG67vc=
 		</data>
 		<key>armadillo_bits/typedef_mat.hpp</key>
 		<data>
-		RkljXSXGgnfJNc8Hm4Tc13uGKZU=
+		sq3+biK4wAgvDeOI2wtjcCDRNqE=
 		</data>
 		<key>armadillo_bits/typedef_mat_fixed.hpp</key>
 		<data>
-		VYBqkCIwYG1I0M8peCaKAQxARaU=
+		9WwN8Zp/GYnvQeSTWHoknOTtOas=
 		</data>
 		<key>armadillo_bits/unwrap.hpp</key>
 		<data>
-		kD1IrJe4lLJoqRwyYixCIaWJodE=
+		sCbEcE88JH5bwsY5CqXi4c8EETk=
 		</data>
 		<key>armadillo_bits/unwrap_cube.hpp</key>
 		<data>
-		/xAqcJTu45FCG6gJfN6VRnqZZZA=
+		j7OO+NgQsMfUQpW5k5IR2zZlffs=
 		</data>
 		<key>armadillo_bits/unwrap_spmat.hpp</key>
 		<data>
-		A+q81fxmusWXuMB5W9bXBgD6ji0=
+		AyG2Sh5CMLDqENY4XC45vIu79fs=
 		</data>
 		<key>armadillo_bits/upgrade_val.hpp</key>
 		<data>
-		BimSUL8iJAf/6bMlwQyHsehIYSw=
+		OMVs9cLDDRrIO83mqht884jRxV0=
 		</data>
 		<key>armadillo_bits/wall_clock_bones.hpp</key>
 		<data>
-		qPJMeZCxEhcBcZIiN0Um0yIxBNI=
+		2FNFr2PI1RFtLkSkoC/wXXCJb8o=
 		</data>
 		<key>armadillo_bits/wall_clock_meat.hpp</key>
 		<data>
-		wc0C3ZpwwqcRT5Tq83Pj3WBzCyg=
+		zvhAipIuBXcJhJ4CeVvXNbNMPiY=
+		</data>
+		<key>armadillo_bits/wrapper_arpack.hpp</key>
+		<data>
+		cWluvI7EBxemSJAA01v7QN1sX30=
+		</data>
+		<key>armadillo_bits/wrapper_atlas.hpp</key>
+		<data>
+		uRVmRU36T9VJmgmAVkviA3pz8kY=
+		</data>
+		<key>armadillo_bits/wrapper_blas.hpp</key>
+		<data>
+		TbCUxqLzY9CON812IxSsshHu3jc=
+		</data>
+		<key>armadillo_bits/wrapper_lapack.hpp</key>
+		<data>
+		vhLjiAO+xrD4Y38I/zYG73He0tA=
+		</data>
+		<key>armadillo_bits/wrapper_superlu.hpp</key>
+		<data>
+		QjPWS34StQ/TzkM649+M8iP4cKo=
 		</data>
 		<key>armadillo_bits/xtrans_mat_bones.hpp</key>
 		<data>
-		o5r9lg1MJ4wArUdlsexJkfGSkjE=
+		yYNTDczi+Tl4SAMdq6iUFblnnk8=
 		</data>
 		<key>armadillo_bits/xtrans_mat_meat.hpp</key>
 		<data>
-		4W6njAFBerm//VYPgGa3U2xLy4s=
+		Eafo6WwjBLroDVQtJCFtAa8Rl+Q=
 		</data>
 		<key>armadillo_bits/xvec_htrans_bones.hpp</key>
 		<data>
-		QW1l8Ey282Oa8mMB6fbbuodgUL4=
+		dy3HdMQZgVxCRON5ZLNJma3j9n8=
 		</data>
 		<key>armadillo_bits/xvec_htrans_meat.hpp</key>
 		<data>
-		fHdG10W8uxNeU7ct3rK/CFLf+HQ=
+		wCIiKgMFQyfYK31kxg1d/mwE1Fw=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		wxxYdSfDd/Aoh0fUzhd16f0cYJ4=
+		cKBDqrlZ08XLhq+RRm6SKEo+KfM=
+		</data>
+		<key>template.jpg</key>
+		<data>
+		Yw62S3Pn7GogGG6Hz5HVpWhpqo4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1833,7 +1853,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/8V3vtvQWUliqjF9ukT9y1FMwwU=
+			HhYHfQ6NTzVShWGx5guDimsKaoM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1851,7 +1871,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hnc4dWcd7rF/Dzcr4sYge/pBSWo=
+			D/xZW/aZvxMuA5T2wm1JlFVbzSw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1860,7 +1880,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5a/EIDzYbu+A0KlMnnxOLlM4p3A=
+			TjRHQcqoDkFxhC8jwoewFf9cYEs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1878,7 +1898,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lwc3LKPLDJcJujJgEryu1W56ilU=
+			ppG4tjTo8HBIIykzJroUeYjbuWE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1897,1751 +1917,1771 @@
 		</data>
 		<key>armadillo</key>
 		<data>
-		N+Wp6Y6+yhpuuVKGmJ0kBKbyzxA=
+		l3Bg0Y6xy6g/m5t3SmgD7Wi1wDM=
 		</data>
 		<key>armadillo_bits/BaseCube_bones.hpp</key>
 		<data>
-		AYHd1fmryf4LJHULLnztNOJ6aiA=
+		2LkrlGNd/usqUcRmmxPUEiYLSt4=
 		</data>
 		<key>armadillo_bits/BaseCube_meat.hpp</key>
 		<data>
-		DbahrXieVNi/uPVq58cq1nQqHEQ=
+		rdkS8eAj7yIhseNRYYDNpVuAXM8=
 		</data>
 		<key>armadillo_bits/Base_bones.hpp</key>
 		<data>
-		wByV60f65QlnBeGyVGoJXL7Ywuc=
+		G2Ad3nDXuij+WHX5x0PZH93r1nA=
 		</data>
 		<key>armadillo_bits/Base_meat.hpp</key>
 		<data>
-		vz2gYMtmuzqpN1RdeFF3ETrSff0=
+		6ITgxA12CQwYF5eahK8vPrG96HU=
 		</data>
 		<key>armadillo_bits/Col_bones.hpp</key>
 		<data>
-		Iy+oDmfBqDuvfVE2SmryY6OmxWA=
+		fiydGbWuTwjl/TOdjniqHogAnX8=
 		</data>
 		<key>armadillo_bits/Col_meat.hpp</key>
 		<data>
-		EDxEij08vmlMY1yNdW6s3lFSDfA=
+		T6rL/qEF/eRdXQ6uUOEBF8pDErI=
 		</data>
 		<key>armadillo_bits/Cube_bones.hpp</key>
 		<data>
-		Gj7FAVVtRMVAcGpZwtN0Ql60K6c=
+		CK6y6SyzSbw7e3MbztjSW/XToDs=
 		</data>
 		<key>armadillo_bits/Cube_meat.hpp</key>
 		<data>
-		7F3okK4A/7s6c6TwB0Ylp5K2gqg=
+		IY5r61aX5CStVeMTfu4SunVk7rY=
 		</data>
 		<key>armadillo_bits/GenCube_bones.hpp</key>
 		<data>
-		msvccAMa17SIQ78zV77XwTSdUDc=
+		Nbb1dmROQR5JOsRGirbAF9dDxmE=
 		</data>
 		<key>armadillo_bits/GenCube_meat.hpp</key>
 		<data>
-		4bngIjWS6gvD2fI7NYcu/FfLahc=
+		+9aU4UGjsOkbNfuJW4VEGBlfgUQ=
 		</data>
 		<key>armadillo_bits/Gen_bones.hpp</key>
 		<data>
-		Kg5zcHsNvj/RdoGedChEDYyK4L8=
+		UQ9VncDtd1T4djuH6tLyE0zP+60=
 		</data>
 		<key>armadillo_bits/Gen_meat.hpp</key>
 		<data>
-		7H5o3NvpWgTLOmXNQQ3TgX7+jVE=
+		AFgZx6y7LxYgGsvFwPXcKoTXfag=
 		</data>
 		<key>armadillo_bits/GlueCube_bones.hpp</key>
 		<data>
-		YlVY3K9sPRg4O9xkIo8iNywPEjQ=
+		FjJFnB0nEODPipdJJfwXq0ScrJo=
 		</data>
 		<key>armadillo_bits/GlueCube_meat.hpp</key>
 		<data>
-		pqmRN15b7gElpoYzkav5yjlo4Yc=
+		T1Hn+hLFncXqQMg4NHWRb1a0WfM=
 		</data>
 		<key>armadillo_bits/Glue_bones.hpp</key>
 		<data>
-		dzwW0OGc+laEoM55hvoPFu/mRys=
+		M3BL9d579OsNgXcHUsD43jfIP6I=
 		</data>
 		<key>armadillo_bits/Glue_meat.hpp</key>
 		<data>
-		nNDVbS4Chgsv7dmrmYQkn6dtmUk=
+		9oaUWNkuCRFXI5aBMKAhozIUg8M=
 		</data>
 		<key>armadillo_bits/Mat_bones.hpp</key>
 		<data>
-		0ba0ZhzvjdZCG1/lt20YEA8RSHE=
+		m4Fdq3TjYwgLdycmOMaGkjv/9y8=
 		</data>
 		<key>armadillo_bits/Mat_meat.hpp</key>
 		<data>
-		L2LFhC1pKIJdY2mfdBLZk/kc7FE=
+		tTOi3K2N1qYs0sTP2iXlJ+uxQgo=
 		</data>
 		<key>armadillo_bits/OpCube_bones.hpp</key>
 		<data>
-		zGJsqSHLOd3xE98/eNEFPBhYfz0=
+		aJnKPLHO6nd96Qyf6qRdwNYB4mw=
 		</data>
 		<key>armadillo_bits/OpCube_meat.hpp</key>
 		<data>
-		zJeKWdLnVWoBfFDHXvf5+H/6mxQ=
+		uISETi7xyw9YMRHi3hrURKF0ppo=
 		</data>
 		<key>armadillo_bits/Op_bones.hpp</key>
 		<data>
-		UsN4uuN6fNfnxTRSmkJ/MqjmH1I=
+		+RHuUG3A+bYDiAcS/IeLDhp7geA=
 		</data>
 		<key>armadillo_bits/Op_meat.hpp</key>
 		<data>
-		W9bbAnkhwXmL+ydUjswNncYgG24=
+		CLu4oJy2H2KcP/juUXk1QE/oS6k=
 		</data>
 		<key>armadillo_bits/Proxy.hpp</key>
 		<data>
-		URNKwFKWbpWscCgNhvB+1IBnjc8=
+		0p5axB6wmQFDuDiP7gPUb7pTlaY=
 		</data>
 		<key>armadillo_bits/ProxyCube.hpp</key>
 		<data>
-		rrliwKT6I0Aj30oSsXVLS55GBtM=
+		5NnDtcLY2RjyFcpOGtS4CubKL/s=
 		</data>
 		<key>armadillo_bits/Row_bones.hpp</key>
 		<data>
-		1geOqzx1ccLkUlLsYSeOwQsvp5o=
+		o3RcrUeX2UseFVRv4GSL9yDL9CE=
 		</data>
 		<key>armadillo_bits/Row_meat.hpp</key>
 		<data>
-		l8RJVDZMHj1Yes1hxv9soRNgWOg=
+		0QQzinytiLCsDDWOS5w4OTkwovs=
 		</data>
 		<key>armadillo_bits/SizeCube_bones.hpp</key>
 		<data>
-		XEWMKC2DRShOItwxVTBF0ambLCc=
+		ZVWG5/o+p/miWlXOzPxZxQRjIyI=
 		</data>
 		<key>armadillo_bits/SizeCube_meat.hpp</key>
 		<data>
-		3YjpYuiAAs36Av6JJfA3QPltzBU=
+		CxzvjcPee1h4gnGWnDu+5n49fzc=
 		</data>
 		<key>armadillo_bits/SizeMat_bones.hpp</key>
 		<data>
-		GRefo4OpXB8OJn2whfgcM6X7axw=
+		bVC3A2W6+XUBGWVxukMYN2HlbvY=
 		</data>
 		<key>armadillo_bits/SizeMat_meat.hpp</key>
 		<data>
-		LT1BayjgJDGdg4Y3XMtYnpbWo8k=
+		WYsoFJ/CT+BVyBvBziHqiwZCd4k=
 		</data>
 		<key>armadillo_bits/SpBase_bones.hpp</key>
 		<data>
-		JhMXU9Ge+glWKuP3So7UQob47TM=
+		guD38HS3E8YNwqaBtUECUr2fAig=
 		</data>
 		<key>armadillo_bits/SpBase_meat.hpp</key>
 		<data>
-		Grg0/ggzAc8pvofWS7NcWoSX8LM=
+		FLuKtpMsAYasEWIcKgxW5Eg6gfg=
 		</data>
 		<key>armadillo_bits/SpCol_bones.hpp</key>
 		<data>
-		56Nyt4nvzA3Jkr2GQ02x0j5Lqrw=
+		cl5it3qK6XWWOmNdHrxdq7uRNI8=
 		</data>
 		<key>armadillo_bits/SpCol_meat.hpp</key>
 		<data>
-		pMEUKstYbbpRdeFys6cSlcy3/4o=
+		0vXPKLxi5wTToJTRsuX+/r4lXF4=
 		</data>
 		<key>armadillo_bits/SpGlue_bones.hpp</key>
 		<data>
-		AuVlrT6tEIPAfKh3TFtiDg+vuMw=
+		igaL2NXgEJqsRY0GZiZQJZEdQ+k=
 		</data>
 		<key>armadillo_bits/SpGlue_meat.hpp</key>
 		<data>
-		t9nwtwvcuQHrlxnWUUa3zBSX2jI=
+		OTK0QSku/Quf0pEZgCarTdqXotE=
 		</data>
 		<key>armadillo_bits/SpMat_bones.hpp</key>
 		<data>
-		Kok39Q65Rk1+f2nOzrfdT+NvEls=
+		tXGWTTOKt5VDMrbdC2ag/gOM69c=
 		</data>
 		<key>armadillo_bits/SpMat_iterators_meat.hpp</key>
 		<data>
-		MJyOEx/C/4BDu3+d4qkWYSMAtpA=
+		o5/VDQ9aNMjib+X1pXiR4Ihm9pI=
 		</data>
 		<key>armadillo_bits/SpMat_meat.hpp</key>
 		<data>
-		Ouko0s9vfKLRsKC01OmjereEXIA=
+		9uzVoc+OXUF+m99w1DvfVUfbQxo=
 		</data>
 		<key>armadillo_bits/SpOp_bones.hpp</key>
 		<data>
-		WTR6FDdF0JP9zaLMeKtfVo4I3no=
+		LsPLRr7bco1wMxreO2k11Z7aYBQ=
 		</data>
 		<key>armadillo_bits/SpOp_meat.hpp</key>
 		<data>
-		clw4SLBIy4dh/IurASsGWuMoSAw=
+		68pxrMcA3BtRxX5ZcFmQcTrdKiU=
 		</data>
 		<key>armadillo_bits/SpProxy.hpp</key>
 		<data>
-		5dtTuVwHW2r933WEncFjM7PFKqs=
+		o9HAP6drUOZb03lM/eWnhjLJFFw=
 		</data>
 		<key>armadillo_bits/SpRow_bones.hpp</key>
 		<data>
-		NpjPOgaqPTj0gbx35as9oJxJEP4=
+		qTEMN2QoV092K7P+UkDtdEWJ5WE=
 		</data>
 		<key>armadillo_bits/SpRow_meat.hpp</key>
 		<data>
-		7dxhD2HQuayP9RYvAHUniAfC5hg=
+		oi7k9g0q6fQ3ntrZE2BK9oTzC3c=
 		</data>
 		<key>armadillo_bits/SpSubview_bones.hpp</key>
 		<data>
-		Cvz8CYTF2X7yWKAbha4fvVHmfbo=
+		T7BXv5nFRQA9ApgiVoAxxmasHDs=
 		</data>
 		<key>armadillo_bits/SpSubview_iterators_meat.hpp</key>
 		<data>
-		rSz8rw7zwpnUC1p4f+8Ljgfw5JU=
+		6bekeuoFxbehj1fVjo8yBHsMd3E=
 		</data>
 		<key>armadillo_bits/SpSubview_meat.hpp</key>
 		<data>
-		qsu1NA5IXFxKbrjJPnSrmNEqjTs=
+		2aWhwaI8nBSOQ8bQOA6UTgeB9gA=
 		</data>
 		<key>armadillo_bits/SpValProxy_bones.hpp</key>
 		<data>
-		R2OxdWGV0NEvxPRrzZL9cEnLsmg=
+		sKLHGqve8s6SE80RaD9NG6b4DcM=
 		</data>
 		<key>armadillo_bits/SpValProxy_meat.hpp</key>
 		<data>
-		ZPFcQe2vztMPE0J5g9NEY22gDVs=
+		VuFsesbnnIzfCJr4cor6fFoxyjw=
 		</data>
 		<key>armadillo_bits/access.hpp</key>
 		<data>
-		Ft/LV6qW+XDZBNvbTwZ/8l6AzJA=
+		WOoiY0MpceCazAEv4JOklN0v57I=
 		</data>
 		<key>armadillo_bits/arma_boost.hpp</key>
 		<data>
-		dKv5puP6CoP2lcJpb366As8gmc8=
+		BSjnhg0/6AyWXb3jAAJOMAvIFJ8=
 		</data>
 		<key>armadillo_bits/arma_cmath.hpp</key>
 		<data>
-		yVWmdO041HDC1fW10jLlYfnLfv0=
+		xmPE14nZO4CYBvRLZJ1ErgWqWgc=
 		</data>
 		<key>armadillo_bits/arma_config.hpp</key>
 		<data>
-		75uQDzHWNSi0LlhHZmTmgdUBCf4=
+		FJ40jBUb1Dfv62JaeFYELqwWGB4=
+		</data>
+		<key>armadillo_bits/arma_forward.hpp</key>
+		<data>
+		ARs/jsiQuG128wHj6sOn38UzqEk=
 		</data>
 		<key>armadillo_bits/arma_ostream_bones.hpp</key>
 		<data>
-		Jt4DbcL4ocitCvKSdb7mq1K2AAM=
+		GSlr4Xc4bM83ttX1gaP8j/SbmdE=
 		</data>
 		<key>armadillo_bits/arma_ostream_meat.hpp</key>
 		<data>
-		Fv+QG2m369DsE+6vjvorUtWZC9k=
+		Ju3+tDyDktItHEgu21jOhzKVbos=
 		</data>
 		<key>armadillo_bits/arma_rng.hpp</key>
 		<data>
-		Xl9irNpPXZLQC0D2SqP6kIEKNxo=
+		sj5puUkMvreOLYiCQgdvJGaYwZ4=
 		</data>
 		<key>armadillo_bits/arma_rng_cxx11.hpp</key>
 		<data>
-		vwLsaoD4xP0TvdAJ2mCsuhX1Hmk=
+		Kz9oPRpchvJ33fY2Zs1fBBERFYI=
 		</data>
 		<key>armadillo_bits/arma_rng_cxx98.hpp</key>
 		<data>
-		q2P54fHwwA1eMPmmqnz7NsP1kRE=
+		sbhugqFnIL5RH3enFXEnvlr+Zrc=
 		</data>
 		<key>armadillo_bits/arma_static_check.hpp</key>
 		<data>
-		llIJSQIXsZq8pX0ASxVbk+SSFJk=
+		BA33kJKl2l4eDXMBkkelLHw3PeI=
 		</data>
 		<key>armadillo_bits/arma_version.hpp</key>
 		<data>
-		cmr5J/AFni2qeEwc9VuKgUoDRT4=
-		</data>
-		<key>armadillo_bits/arpack_bones.hpp</key>
-		<data>
-		u0knQjb2vUt0pkGcfVUtTLFud0c=
-		</data>
-		<key>armadillo_bits/arpack_wrapper.hpp</key>
-		<data>
-		cxwr9Z6sVID4Vy6g8HfRsq9bnqE=
+		AflCV0o/blKEW//XuqBvYdZshT0=
 		</data>
 		<key>armadillo_bits/arrayops_bones.hpp</key>
 		<data>
-		4Lj777fCW/gdy+3+pAP6pwbbeOQ=
+		7MkGpk/izL1dzkPRsd2CYrc3WJU=
 		</data>
 		<key>armadillo_bits/arrayops_meat.hpp</key>
 		<data>
-		IJ4JPKmhWNs/TwIb/5oskIpP0lw=
-		</data>
-		<key>armadillo_bits/atlas_bones.hpp</key>
-		<data>
-		XyLSVniA/oVU/2ZKF381aUOVXOE=
-		</data>
-		<key>armadillo_bits/atlas_wrapper.hpp</key>
-		<data>
-		C2yX0IMDHqjeSybUNPvE8oiP1iY=
+		dYmcHfAzPeCtsOvqC7oXsvD0r+g=
 		</data>
 		<key>armadillo_bits/auxlib_bones.hpp</key>
 		<data>
-		Ce8pCT80FxPAp5D3vsd0Z2otNvw=
+		5iULGn+3qTFD/ULGjPqEacCmbzs=
 		</data>
 		<key>armadillo_bits/auxlib_meat.hpp</key>
 		<data>
-		AzcTyPx2DsnoHL0uaeU5TTwED2I=
-		</data>
-		<key>armadillo_bits/blas_bones.hpp</key>
-		<data>
-		zObSLglHxSq+HEf7w2KpIrpMxC0=
-		</data>
-		<key>armadillo_bits/blas_wrapper.hpp</key>
-		<data>
-		3gSoK81D+zBHFm3HzFX3wIiyPZ0=
+		7+q0AxQujtC5atVf+PqTesYIiXA=
 		</data>
 		<key>armadillo_bits/compiler_setup.hpp</key>
 		<data>
-		OTQfNmbhdhhcAHKOzuA78uurIIM=
+		kda3dMHFVmJmcCBN+LyJ3Yk6OF8=
 		</data>
 		<key>armadillo_bits/compiler_setup_post.hpp</key>
 		<data>
-		fRDQDWz7bNvMZqiQK6YTgMATBLc=
+		Yp10dt1AkAw7CexeJTYq/mYy1hA=
 		</data>
 		<key>armadillo_bits/cond_rel_bones.hpp</key>
 		<data>
-		8PuIOtTRderglQIvBjb03/ruPbc=
+		BNrf+hlD2mVYH1rkcfIdRjU3fng=
 		</data>
 		<key>armadillo_bits/cond_rel_meat.hpp</key>
 		<data>
-		be5dyYtFwFmuzsd/K4Y/WdkhFUk=
+		N+/gAYPIaIqUgXfKjn27NuFmZxs=
 		</data>
 		<key>armadillo_bits/config.hpp</key>
 		<data>
-		+U7M8IYrjdthxqPvAIrKn/O59rA=
+		nWJaDIHsXWRwBBCf/3Mp+MxXXjk=
 		</data>
 		<key>armadillo_bits/config.hpp.cmake</key>
 		<data>
-		H9Sr5bNGkbzWKcrJpALDD9FFXEs=
+		erCfp0onX2hTJpqfDINHlmK/n/4=
 		</data>
 		<key>armadillo_bits/constants.hpp</key>
 		<data>
-		zWEt4TSEtYgpP0U5INLWsGxVjmU=
+		HQzoYXoJGE2os2oKcZPZrcp1U+E=
 		</data>
 		<key>armadillo_bits/constants_compat.hpp</key>
 		<data>
-		5bNxT21r3rU3+iOf8DvpVkxxY3E=
+		+HRFi5AfOT0Hf9aH5GAUu9KaygA=
 		</data>
 		<key>armadillo_bits/debug.hpp</key>
 		<data>
-		AWtgUheJt5Wa4Kmen+J+GVFZaWw=
+		yPraIMqRDdey8uas5goODR/oGuY=
+		</data>
+		<key>armadillo_bits/def_arpack.hpp</key>
+		<data>
+		jqIGdDCuD3uutI96vqxn8HgQnOo=
+		</data>
+		<key>armadillo_bits/def_atlas.hpp</key>
+		<data>
+		AXTChtnc8w8okwMNYdMIraG/Ak4=
+		</data>
+		<key>armadillo_bits/def_blas.hpp</key>
+		<data>
+		VbgaZMyTIjdgUFL7vVp0EEM4TmU=
+		</data>
+		<key>armadillo_bits/def_hdf5.hpp</key>
+		<data>
+		g2bRCFokphBn3+6cwnTJyHTaJoA=
+		</data>
+		<key>armadillo_bits/def_lapack.hpp</key>
+		<data>
+		W2u1LhqTELMC/+WxknoQGznJZjs=
+		</data>
+		<key>armadillo_bits/def_superlu.hpp</key>
+		<data>
+		5oANuhs9fxHl/JBNhs917q/mG1A=
 		</data>
 		<key>armadillo_bits/diagmat_proxy.hpp</key>
 		<data>
-		Vm7i5Bv7znEKuhiXoj+qKcyjY4g=
+		MSkyRKC146OeQ5C3Al5MYJkXgno=
 		</data>
 		<key>armadillo_bits/diagview_bones.hpp</key>
 		<data>
-		byuACgsWL+xqUMn5PJXHzz3a2sU=
+		eekZdDa8zbnEU/8firerFGUCKj0=
 		</data>
 		<key>armadillo_bits/diagview_meat.hpp</key>
 		<data>
-		nqmATJTx3igWIRAeX+do1LsPrjw=
+		q+OVnT0t1qrLOQbEzNZxLfJXk+c=
 		</data>
 		<key>armadillo_bits/diskio_bones.hpp</key>
 		<data>
-		Mh8Y5v8LGaZSIRkkPSVzjw3EnDI=
+		1vXLJsmT+rev5a8qRxUhNlEEU8M=
 		</data>
 		<key>armadillo_bits/diskio_meat.hpp</key>
 		<data>
-		K6Ah6GnGKeOSmvCPQZCgWzS42VQ=
+		UbXu1V9kX45NU4KZeVrXpkOeSes=
 		</data>
 		<key>armadillo_bits/distr_param.hpp</key>
 		<data>
-		lhW0GC61xlt8wc68Kf6pg5Wc4Wg=
+		sUVeg79nHOuQVaDCc3IEvm+3rS0=
 		</data>
 		<key>armadillo_bits/eGlueCube_bones.hpp</key>
 		<data>
-		SaPBEJ/Irbl0mKVtLhmm4XT1nwU=
+		0sSDK3DKTqG7XvRFrcn9q2kn7U8=
 		</data>
 		<key>armadillo_bits/eGlueCube_meat.hpp</key>
 		<data>
-		m8UGOWDISrC2adXaAMMr5TIADnk=
+		7ZxlMhpCwBJo7i5PuA8wlp432No=
 		</data>
 		<key>armadillo_bits/eGlue_bones.hpp</key>
 		<data>
-		1X6+cYZ6kkT6hgHoiy3vvsu5wjY=
+		WBgPOdUQ35ZSCZeKm7XAi9NdBZc=
 		</data>
 		<key>armadillo_bits/eGlue_meat.hpp</key>
 		<data>
-		H6+0dx+0B9lYEFlob3s6VdEsCNM=
+		KAFn8EMHxA1Qb8yd+sFAosDdBf4=
 		</data>
 		<key>armadillo_bits/eOpCube_bones.hpp</key>
 		<data>
-		YsU+VmYuPbjgnNVPpddjoz12G1w=
+		v/vwWuTbe56xtTqnyQgAEDAcctI=
 		</data>
 		<key>armadillo_bits/eOpCube_meat.hpp</key>
 		<data>
-		QnWnN349x99Ivnzc4uDYxoaUHFw=
+		uTN056yeSNJ/GyfGm4dsKZXd+GY=
 		</data>
 		<key>armadillo_bits/eOp_bones.hpp</key>
 		<data>
-		KXOoLs8oeSdZzJ5Y71J3FxBfVew=
+		V8HYDKH5s0xllUct+KIFplTsGWY=
 		</data>
 		<key>armadillo_bits/eOp_meat.hpp</key>
 		<data>
-		AFr476tM4UbdRVdpUmEQL7ZkojM=
+		DBWmOh8uogMp/totNVyuNNnzSxw=
 		</data>
 		<key>armadillo_bits/eglue_core_bones.hpp</key>
 		<data>
-		5uLfaa2sTUrh5+W5GvJfSqZxR6U=
+		rcEjcWkaaQwQz47g8uxzyZyp9Cc=
 		</data>
 		<key>armadillo_bits/eglue_core_meat.hpp</key>
 		<data>
-		AWpEtfzO07w9TMKz68wU1Okgt3M=
+		EGpk1Qee86FoqOZHG3RY/2UyDxE=
 		</data>
 		<key>armadillo_bits/eop_aux.hpp</key>
 		<data>
-		N0tUulOzoYypQaSSTMvxdBIlQXc=
+		2Hhzzq5On6DsRoRPj6UDfs+Dk5s=
 		</data>
 		<key>armadillo_bits/eop_core_bones.hpp</key>
 		<data>
-		R5sBQaiOyjDOMsORkjF+YakkvuU=
+		u8awh4+TnrC1h0la+e6j/DdCsY4=
 		</data>
 		<key>armadillo_bits/eop_core_meat.hpp</key>
 		<data>
-		2ZotcMp+eKUypbtSK7Uewjc4EgE=
+		7hnFRYKmwxwXwT64e6Ny1qj+Ogc=
 		</data>
 		<key>armadillo_bits/fft_engine.hpp</key>
 		<data>
-		mIpdQ6zf5sCPnssDieoa+JKHHtc=
+		QazRVCVZ6N4xbUIoRsVkClMD3xk=
 		</data>
 		<key>armadillo_bits/field_bones.hpp</key>
 		<data>
-		xp3UfuajYapYt9fA3Y65ZBDhvk8=
+		jehuGGpZQeUz0zB36eW2S2xd2HA=
 		</data>
 		<key>armadillo_bits/field_meat.hpp</key>
 		<data>
-		0d8OtiVmKGdDwAYTMVPrpOpshBc=
+		gyTJMblVOW5JgIxUFjbLFtS2HIM=
 		</data>
 		<key>armadillo_bits/fn_accu.hpp</key>
 		<data>
-		/Aj8n40QmXTuOkuvY6IFUJMkEeQ=
+		/dk1ejOpcXSBSW8D398z2cGmkzo=
 		</data>
 		<key>armadillo_bits/fn_all.hpp</key>
 		<data>
-		7efgU9e8Xs0tZXcjLNJXlAHX+A8=
+		FITZcRQ31VKr0ZuMylDx9YEl1Ok=
 		</data>
 		<key>armadillo_bits/fn_any.hpp</key>
 		<data>
-		IEoskkRG/KCWMY2XMEf1oE9q9wk=
+		IeT+MAdFRRNLXiQjQUywU1oehOs=
 		</data>
 		<key>armadillo_bits/fn_as_scalar.hpp</key>
 		<data>
-		Wn1kpsoEJDvfKlWlVUgcpsK9IgI=
+		tVtaykhxVK0mIL4VfJ1kaJyERcY=
 		</data>
 		<key>armadillo_bits/fn_chol.hpp</key>
 		<data>
-		DM8Y9VgiEnbhT7nWYmipJ8h6lUc=
+		2fWduAh7v5pYroxp09IINvpqg/A=
 		</data>
 		<key>armadillo_bits/fn_clamp.hpp</key>
 		<data>
-		rRVlJ+HNBiTkg32bOwSbfW2qgXo=
+		1TA8ORJ/GWJcamYLqEu0Kpl9xmo=
 		</data>
 		<key>armadillo_bits/fn_cond.hpp</key>
 		<data>
-		qnlFyjcHHw96QFAl51fQvic2VZ4=
+		ZEsteuAaSTMGVIl3rYcCnXE2JMc=
 		</data>
 		<key>armadillo_bits/fn_conv.hpp</key>
 		<data>
-		LM2HV3Xvkic8L8Lv6uL6MwHQLJM=
+		T5Rz0zCsn5y+wtu9nOstbizEIqc=
 		</data>
 		<key>armadillo_bits/fn_conv_to.hpp</key>
 		<data>
-		J7RMCmnNVg2yliASbmabH5bRuE0=
+		B1RIPr90AkfJgZKguqT7+Vpu9lw=
 		</data>
 		<key>armadillo_bits/fn_cor.hpp</key>
 		<data>
-		B950PXFTx9uTYbu078QxfMfCmW0=
+		kbbp96pjof76BMupRhnp2rIxuB0=
 		</data>
 		<key>armadillo_bits/fn_cov.hpp</key>
 		<data>
-		XFDiyTjsbfyfutA7MZzxbW/Ha08=
+		THX0VVXXsZ0vNvDkvJTeRoGR0X8=
 		</data>
 		<key>armadillo_bits/fn_cross.hpp</key>
 		<data>
-		OAlmDhULd2n3/gEnitXOpKucHp4=
+		N6d3galWJxfpOG1Zj/pd0dgzI0s=
 		</data>
 		<key>armadillo_bits/fn_cumprod.hpp</key>
 		<data>
-		GlvjdH+DSD9a+8gaBZU2sKDNjFI=
+		RLvae1Kw5B6V7rl52ftiGjJywFQ=
 		</data>
 		<key>armadillo_bits/fn_cumsum.hpp</key>
 		<data>
-		Ou0Slt/1IKqriBqJnMhXrDyEd7Q=
+		+qpcwtLyy3xNlfJA0ERzohXyh7w=
 		</data>
 		<key>armadillo_bits/fn_det.hpp</key>
 		<data>
-		f5FqnJl0exRzj1CX56Uhv/zOD80=
+		EEwqBMrLciNIRXe0NIAkq6ZzTz0=
 		</data>
 		<key>armadillo_bits/fn_diagmat.hpp</key>
 		<data>
-		PsaLCJiogcy7MfaOZ5uNYLQq3vs=
+		/7moIj7cGtlZDO2NfasKSUXfCAI=
 		</data>
 		<key>armadillo_bits/fn_diagvec.hpp</key>
 		<data>
-		ZHmi7WNWp62w9ENAet40JWZNxZ4=
+		IE7wdGbGsiWnQBFLEP6yIqysWCw=
 		</data>
 		<key>armadillo_bits/fn_diff.hpp</key>
 		<data>
-		0SbGU/JheODyx/Aha4ne8eF384g=
+		0sMdz0x/aFeKKPWUmOiBiAqiT1U=
 		</data>
 		<key>armadillo_bits/fn_dot.hpp</key>
 		<data>
-		ms7eNtZh55V8ZhUWII3IGazHP5w=
+		psA98vrkimbmJyGtd6OnTtzyz9M=
 		</data>
 		<key>armadillo_bits/fn_eig_gen.hpp</key>
 		<data>
-		tmICT16crHWrQg/sEFPFsM+q4Mk=
+		DRhBZaytmbc5yRTzUI7ppckLhF8=
 		</data>
 		<key>armadillo_bits/fn_eig_pair.hpp</key>
 		<data>
-		CMwgcPcUXe4ZyxzGD/RvyLdMVoE=
+		hipFnMRkDImdeiswSvKJ6cs8Nh4=
 		</data>
 		<key>armadillo_bits/fn_eig_sym.hpp</key>
 		<data>
-		lhzLRRZJmmRgZ+X78gdQjXxkrIA=
+		8gE5xMgIbPt4gG2Qxogo0E3TyN4=
 		</data>
 		<key>armadillo_bits/fn_eigs_gen.hpp</key>
 		<data>
-		X05l4SxMRZ8LpKou3LJ/sFxNYCM=
+		XsSK5koly/TlPZk05SBGnXyX+lI=
 		</data>
 		<key>armadillo_bits/fn_eigs_sym.hpp</key>
 		<data>
-		OiHOzgIWQNZfyTo8Hsv7JdnQpWE=
+		zZzVf2k5jnPL2BXcTMpzakxIOxU=
 		</data>
 		<key>armadillo_bits/fn_elem.hpp</key>
 		<data>
-		IaBYynbrDFHvMOguQ644bsYC1Lk=
+		WXPGNdshdH0WUBIHZK8P0plCgbk=
 		</data>
 		<key>armadillo_bits/fn_eps.hpp</key>
 		<data>
-		xgrgW4ezZ/Aa74IGosWfQnKn79Y=
+		Mp+DttDgu8zJniLVxEZBPHtJRig=
 		</data>
 		<key>armadillo_bits/fn_expmat.hpp</key>
 		<data>
-		fsHAdZu5840/pyYVe1l+C5PuZUQ=
+		UpQYO5W/r232yZ7VxYKG9qOrdXk=
 		</data>
 		<key>armadillo_bits/fn_eye.hpp</key>
 		<data>
-		T+Ppm6lc4Ty/+35rTBzlkQObFcs=
+		hfHs12qo8Wi6A+lhRMdIrWAyELg=
 		</data>
 		<key>armadillo_bits/fn_fft.hpp</key>
 		<data>
-		2J0jDNUxePI+8o5MfxOhEHjlcEo=
+		41PgOaXlvYnICKUZvQayXuceWpc=
 		</data>
 		<key>armadillo_bits/fn_fft2.hpp</key>
 		<data>
-		kQupNVcXZ6cbgV8FlzVlcbzuE5Y=
+		iXQ1BJWCj6y3XpNo1t/lc44yXZg=
 		</data>
 		<key>armadillo_bits/fn_find.hpp</key>
 		<data>
-		E/M4MRDYaLqX8LrED/Q5Un+ALyc=
+		OiaTFOyHO24DMgXlQdytyERVZwE=
 		</data>
 		<key>armadillo_bits/fn_find_unique.hpp</key>
 		<data>
-		RLIL9ROvRO2XhzdBVs+LpJggTYU=
+		IZrrLHp1/yKsO3DC6BICcA/jKZw=
 		</data>
 		<key>armadillo_bits/fn_flip.hpp</key>
 		<data>
-		q3FHF1k3ZTXtxLzlBGzk6GT8eIY=
+		ibr6hLWlykKtnTfBxqJ2W0SVsmU=
 		</data>
 		<key>armadillo_bits/fn_hist.hpp</key>
 		<data>
-		I6BCh5Y/EY4d7cOkbVHlWTRgwHM=
+		8FeNYC7CbMjdstzZ0U1uQ8BMaCU=
 		</data>
 		<key>armadillo_bits/fn_histc.hpp</key>
 		<data>
-		peIY0KvATQnkTjFKgSrX1pk+wm4=
+		u/Ru6OxQgwYQbrVKseTHZ6E3VZ0=
 		</data>
 		<key>armadillo_bits/fn_inplace_strans.hpp</key>
 		<data>
-		OlDUm4W5K5boBJgbLdyRJKpZfbs=
+		IfqeRRRsqUxfPn7lWSz6P0bLwxs=
 		</data>
 		<key>armadillo_bits/fn_inplace_trans.hpp</key>
 		<data>
-		IZOP0L3JiN+yBM32ZxbcJQxrl6U=
+		YtirGq0SSuPlcPaGjo/K3+1EmD0=
 		</data>
 		<key>armadillo_bits/fn_interp1.hpp</key>
 		<data>
-		YJLvg2CUfl6WAc8p271RxfMXFO0=
+		SnycRKnieNN+nUX70EacSJd0jhM=
 		</data>
 		<key>armadillo_bits/fn_inv.hpp</key>
 		<data>
-		jx+mL0kD9I/CCg9NF7IQZczL1Xg=
+		SIdTGABFCw9f8ia5+r1h7I+bapI=
 		</data>
 		<key>armadillo_bits/fn_join.hpp</key>
 		<data>
-		qQqxLkySOvZ46kCSnX1VP4ibR3E=
+		E7d/lo3gcPQD5pN9Banfuxn8ahw=
 		</data>
 		<key>armadillo_bits/fn_kron.hpp</key>
 		<data>
-		S1pJNdWkt00lE+ixovl5drYcMm0=
+		pC5v/0yB2m3vC2xiKHS4McEI8XY=
 		</data>
 		<key>armadillo_bits/fn_log_det.hpp</key>
 		<data>
-		a1BwWpFmkXGhkAmKbSgq5ozNRt4=
+		zorEhbszzC21nKd5QrpnifuXEdM=
 		</data>
 		<key>armadillo_bits/fn_lu.hpp</key>
 		<data>
-		BreAkkxnLXKm1FlvN3OEiPlrUKc=
+		yIo4Or/gyb960gHiLuWg1giPzQs=
 		</data>
 		<key>armadillo_bits/fn_max.hpp</key>
 		<data>
-		N/S+LM1RxZrPLzXolCB7M1CkwJ4=
+		ZB/vaVZlV1HC/gVljRdigMW8I7c=
 		</data>
 		<key>armadillo_bits/fn_mean.hpp</key>
 		<data>
-		+Fn4IoXl83cXEPIQ1v80wlWnnyw=
+		WdU5bj9UMScBCphZgY4asqTOSxU=
 		</data>
 		<key>armadillo_bits/fn_median.hpp</key>
 		<data>
-		XMsaEfG4qKc9KcipmMfWku+Y5L0=
+		KJM1+91uW6MPRUUUeA/VaSYPKF0=
 		</data>
 		<key>armadillo_bits/fn_min.hpp</key>
 		<data>
-		o7dgfMc10crkDa/EvY4XHeAjiIo=
+		sUoJYnhrpsI49janttXjTKecP4o=
 		</data>
 		<key>armadillo_bits/fn_misc.hpp</key>
 		<data>
-		ESIJWdqgFdnIHBOWyhGecnm6cVU=
+		Tac3n1OBPFdx5gAT1rNan/LBV9A=
 		</data>
 		<key>armadillo_bits/fn_n_unique.hpp</key>
 		<data>
-		SkuvyhjTSPZD0TwrmpQRGPp8U2k=
+		9APAnY2451EtXzZ7ZZTW2bsZVmY=
 		</data>
 		<key>armadillo_bits/fn_nonzeros.hpp</key>
 		<data>
-		cGvhmKIXdz+dyRv/mzkt1uhuoAM=
+		4BQRbKRZcmmHT4EZKth4WsyA7ys=
 		</data>
 		<key>armadillo_bits/fn_norm.hpp</key>
 		<data>
-		XE6+eirMaLb9OXgRyFmCROnFSWA=
-		</data>
-		<key>armadillo_bits/fn_norm_sparse.hpp</key>
-		<data>
-		pTXoAvtghymb3H6VoEtZF4M4sEo=
+		bLvrqrxEmvekZmVMnQL3oAVr9C4=
 		</data>
 		<key>armadillo_bits/fn_normalise.hpp</key>
 		<data>
-		BHuhqPLyZfQn2+qcNFP/fQ2etI8=
+		mwWw3mfJK0SyPFx+SffYqfHOmWA=
 		</data>
 		<key>armadillo_bits/fn_numel.hpp</key>
 		<data>
-		inXjuiI7p7KxWseX84BLHbFSZEY=
+		fNAUZ3ZbkycgXCmoPfa8T6nLN5A=
 		</data>
 		<key>armadillo_bits/fn_ones.hpp</key>
 		<data>
-		zerlLx9/vp62Io+3PZ1yH4l/too=
+		8yevjlz1xidzaqcyxzrIzuggK34=
 		</data>
 		<key>armadillo_bits/fn_pinv.hpp</key>
 		<data>
-		q3wBJWI+EjkQ2Vt66qkTeR1j+CA=
+		k3PP0KeLzq08GG6RRRuddzb9qo4=
 		</data>
 		<key>armadillo_bits/fn_princomp.hpp</key>
 		<data>
-		J0ykti910sbkFR8jMVtEgwc0JnM=
+		wwD8igD87OgtAy55MjNVNa7VAeY=
 		</data>
 		<key>armadillo_bits/fn_prod.hpp</key>
 		<data>
-		kENi8beuCePBfGjzgbvuWB1YVtY=
+		/iIF0QtukdaGoYr+nlXaKxovSZo=
 		</data>
 		<key>armadillo_bits/fn_qr.hpp</key>
 		<data>
-		1BAkHp5I/vEJVFuu71ia/MXxQgo=
+		MTlCbMzIkmc9Rc+aeO7JYNicHZk=
 		</data>
 		<key>armadillo_bits/fn_qz.hpp</key>
 		<data>
-		2DTfXIYkklhsNlEaN1Omx5nCLFM=
+		ktgb8kFxohfYdpIPUjxwEvgG60s=
 		</data>
 		<key>armadillo_bits/fn_randg.hpp</key>
 		<data>
-		pedP/Va6P9oKlpnbpoVuFQzAc1U=
+		0r2Da7sOiX+KljGKP7dJkNzUO1w=
 		</data>
 		<key>armadillo_bits/fn_randi.hpp</key>
 		<data>
-		x/GA7NzlzrdWiCcw3SYkR13JL0Q=
+		t43Hxhun81TK2E++unLuqgyRX3s=
 		</data>
 		<key>armadillo_bits/fn_randn.hpp</key>
 		<data>
-		RBeGK3zJUim4VXMc52vWfm3Kzc0=
+		NCzmhpLzU9n8holib4rplSU8qi0=
 		</data>
 		<key>armadillo_bits/fn_randu.hpp</key>
 		<data>
-		zwMfG8XyQ6UJPbzNbgsskMhwBZg=
+		rmRE3j+awQ4HY/b3yicl44mH8hA=
 		</data>
 		<key>armadillo_bits/fn_rank.hpp</key>
 		<data>
-		X3kNIrcrEm0dEd3G9DLOqim6N7U=
+		RMiZeMuIvHMIPt9AEmKJD4L9i18=
 		</data>
 		<key>armadillo_bits/fn_repmat.hpp</key>
 		<data>
-		QgjQd/J6t+YEc8WxYQ30d/Gl3ws=
+		JgZhpZL6D+7vzP9s9xXPj5xqLFo=
 		</data>
 		<key>armadillo_bits/fn_reshape.hpp</key>
 		<data>
-		6F02iRdWVPV18VPb2hlOLAmPJl8=
+		BLz22kAsJ+gmQGPF+8HzS3+ZZuY=
 		</data>
 		<key>armadillo_bits/fn_resize.hpp</key>
 		<data>
-		K5gkXV8ujVXJPJyA1tQEWDHSS4Q=
+		ag+EAmHx4UKIM1p8dSrWZZ8QtyM=
+		</data>
+		<key>armadillo_bits/fn_schur.hpp</key>
+		<data>
+		pLDpfDWF5Im6omh32SJrbW5EkVo=
 		</data>
 		<key>armadillo_bits/fn_shuffle.hpp</key>
 		<data>
-		C4jOvsk7hLNqtJae6dkq6nZE5/k=
+		+eNA55lX3G39g9M7UuBh6lgwDW8=
 		</data>
 		<key>armadillo_bits/fn_size.hpp</key>
 		<data>
-		p6vV/l/H3KOOpmqejx+1Tv7EISE=
+		UrCpk3rULXxpVB9Y2AsM+i9xEoo=
 		</data>
 		<key>armadillo_bits/fn_solve.hpp</key>
 		<data>
-		rMvybsl7pX89zWW53JmCRsIcJAI=
+		+/qFbYI9ioqrx7IhJRTlka8YqpU=
 		</data>
 		<key>armadillo_bits/fn_sort.hpp</key>
 		<data>
-		vWEX6xt5Z25Jv7oft7flSxlmr0A=
+		KJMPjqjdeRrcA7CgblaMTEs9IAE=
 		</data>
 		<key>armadillo_bits/fn_sort_index.hpp</key>
 		<data>
-		6clo3bUzM/wrHzh1EGQCZNKVFII=
+		o8tXRtlclFE3fnb/I3qY/e9A+Uk=
 		</data>
 		<key>armadillo_bits/fn_speye.hpp</key>
 		<data>
-		b1na0evxLWHp9i/go05syiyHjaI=
+		H3Imal6lybvIZ9l0Vjfyc4va5t4=
 		</data>
 		<key>armadillo_bits/fn_spones.hpp</key>
 		<data>
-		+vb6xhQjkV9sQ9qbzsrDNq8VaG4=
+		VzvodqLqmZHav63ZohJ+V2rFhbQ=
 		</data>
 		<key>armadillo_bits/fn_sprandn.hpp</key>
 		<data>
-		3E4Mj6fLZFJvQK1ZPs39d+USjMA=
+		VqqFuuJcN/zM876v0Djamwh9wYU=
 		</data>
 		<key>armadillo_bits/fn_sprandu.hpp</key>
 		<data>
-		DeVR3gBVXHv5eywH1utIkfS1LlE=
+		Q/B5OkZjwcFWiBxUcb54wuwchT8=
 		</data>
 		<key>armadillo_bits/fn_spsolve.hpp</key>
 		<data>
-		FXb2HY8CmtVA8mq1WUjuFgUCSn0=
+		rbRW5bXx8M5MFeNyVemS0twm6rQ=
 		</data>
 		<key>armadillo_bits/fn_stddev.hpp</key>
 		<data>
-		A8R7YqwdjUR6U09x/pKDySwwgwU=
+		9sQqbAxk8baYKPrZ5DPbHd0eN6w=
 		</data>
 		<key>armadillo_bits/fn_strans.hpp</key>
 		<data>
-		uBj8ik7Zg8XAbZVrRR0bz2m+z1M=
+		RCU88ENLXNLhXwceT9p0AmeQDoc=
 		</data>
 		<key>armadillo_bits/fn_sum.hpp</key>
 		<data>
-		Tw3zOB8OoFK/0/Rbfr+7mdWAgQo=
+		AfaPw4sZrc5IGvqPqusc031abhU=
 		</data>
 		<key>armadillo_bits/fn_svd.hpp</key>
 		<data>
-		s+ZPMHaAKpSn/Sryraeg/FXONrQ=
+		HGO2R7Okq+YhRB2PMDuw12ckz6s=
 		</data>
 		<key>armadillo_bits/fn_svds.hpp</key>
 		<data>
-		OMxGAFkn1CwGnBxNsahnkooHI4g=
+		LWXZ18P/IzMhL2iGroHh2RnJY+A=
 		</data>
 		<key>armadillo_bits/fn_syl_lyap.hpp</key>
 		<data>
-		LG/cJ276V8+0elPxHhwfnEysthU=
+		xtLrwQMJtBhUFLhWjaivs1+7+gY=
 		</data>
 		<key>armadillo_bits/fn_symmat.hpp</key>
 		<data>
-		NonJxpTM2t2bYmiVnogn8mR+oDQ=
+		MvQcqZlWXDL0aLqjpWwNCQXk3U8=
 		</data>
 		<key>armadillo_bits/fn_toeplitz.hpp</key>
 		<data>
-		k7a00nSBuQ9zqRior6HVa7wbLM0=
+		bv1xZqRWDm+eDj1fnKi8lhV8nKY=
 		</data>
 		<key>armadillo_bits/fn_trace.hpp</key>
 		<data>
-		lGQr3I4FjjeBSzrYa/Lq8pBD/7M=
+		+VSLVpu8QG6itLs9WMAJu6wKqkI=
 		</data>
 		<key>armadillo_bits/fn_trans.hpp</key>
 		<data>
-		CT1PV9RttNvFF/iCPGmOxUsB+b0=
+		ngAp8v1eX6+9yM6UCZMMvFyfHxs=
 		</data>
 		<key>armadillo_bits/fn_trig.hpp</key>
 		<data>
-		Wq4Y1YnnP+17bR5ZNLcVnEXLyRk=
+		SdBGka1HQet/ix4mbHju+nRKu8s=
 		</data>
 		<key>armadillo_bits/fn_trimat.hpp</key>
 		<data>
-		/NY7nANwiJdhsAmNAg2+2s3lSM0=
+		cXGjKZxSolbD8KbOtRA0uiS5kjQ=
 		</data>
 		<key>armadillo_bits/fn_trunc_exp.hpp</key>
 		<data>
-		dfw8qmT1cAS1J3EuPUjzJIKr4wk=
+		byugLvn5KT8T9Xc5mTf7ssc1XCc=
 		</data>
 		<key>armadillo_bits/fn_trunc_log.hpp</key>
 		<data>
-		hc8GcmKfGxJwSSwI0LZcYr5YoVI=
+		UIhR9FGZn8akSkHbbaSVnqBP5SI=
 		</data>
 		<key>armadillo_bits/fn_unique.hpp</key>
 		<data>
-		d/dtebVjv2M87j48OYamyFPk3eg=
+		upvpQkF7xPR5nRpj5t87s5wgiS8=
 		</data>
 		<key>armadillo_bits/fn_var.hpp</key>
 		<data>
-		kPxQ9QFaMeeWmSHsv7nq9tWRDro=
+		dtExJNsR8A097xxwRdkmy933WEc=
 		</data>
 		<key>armadillo_bits/fn_vectorise.hpp</key>
 		<data>
-		VWThVr/B1zx7tsNriVhZxwffLB0=
+		44fWLHXaBazXBFD56RyQUVG6jaI=
 		</data>
 		<key>armadillo_bits/fn_zeros.hpp</key>
 		<data>
-		gHbKr51AVcNWA6ULxrJwfhkmjbA=
-		</data>
-		<key>armadillo_bits/forward_bones.hpp</key>
-		<data>
-		f9iOjTVZ8j02789k28wBTIzdfAQ=
+		YY1qZ2J73EaVSvn1PSdr1Zw2GrA=
 		</data>
 		<key>armadillo_bits/glue_conv_bones.hpp</key>
 		<data>
-		eIwwd8oE6f17EircdBMQYcG7yc8=
+		JbcT65KtSPkdSoEfPd6d9w6/17A=
 		</data>
 		<key>armadillo_bits/glue_conv_meat.hpp</key>
 		<data>
-		N9BwiBXCyeT3A96vvcNybCT8loE=
+		vUIrn5B8CGpQNgjXoZtmLh3sPC4=
 		</data>
 		<key>armadillo_bits/glue_cor_bones.hpp</key>
 		<data>
-		7T0lgUNoCM2OOwID5eKm1xjp4Fs=
+		v0yhe5BS9jX0l+Cl6/ax5fv61xQ=
 		</data>
 		<key>armadillo_bits/glue_cor_meat.hpp</key>
 		<data>
-		MTB6/UQN/NLDNLpaovP+ED7z8tI=
+		vCHsrLhBe2I0yEawz0/zOWGoHU4=
 		</data>
 		<key>armadillo_bits/glue_cov_bones.hpp</key>
 		<data>
-		zgmal8PZIL3SLbxheOaTWaNuk6s=
+		xzGh9vtuHBPH/ZicsNNMm3OJ7+I=
 		</data>
 		<key>armadillo_bits/glue_cov_meat.hpp</key>
 		<data>
-		kV6z4i/q7ar4UzUJWpoiGiCEkBc=
+		0Oel9xqh1C6Vn2Wo282A/FN6sUQ=
 		</data>
 		<key>armadillo_bits/glue_cross_bones.hpp</key>
 		<data>
-		4P8z4RLXN5kb0hO6QhIDPzCX69s=
+		g5K8YI7IjSRIu/kvwGp8I+uyzw4=
 		</data>
 		<key>armadillo_bits/glue_cross_meat.hpp</key>
 		<data>
-		KpzKbBs5wIc+KWvMKCap4lwNYZY=
+		9a4j3tlZiL7tGLKRTRf/btJrKSY=
 		</data>
 		<key>armadillo_bits/glue_hist_bones.hpp</key>
 		<data>
-		KfQ9X5DU1jTxL6F2/448O2ONGJo=
+		86wA0C39dVTGxNlSYFUni9TKwrI=
 		</data>
 		<key>armadillo_bits/glue_hist_meat.hpp</key>
 		<data>
-		DM0V8ud0CbDWleq1CtI+IvkkLIo=
+		LBXWBqjP1xQTQikX0Mj9toq1OC0=
 		</data>
 		<key>armadillo_bits/glue_histc_bones.hpp</key>
 		<data>
-		XB2J0eJ5dni6eHvJox8gyV5uEAQ=
+		4nqvxPeys0nI7FdyxMj9qgpwqt8=
 		</data>
 		<key>armadillo_bits/glue_histc_meat.hpp</key>
 		<data>
-		joEs0Wxrt6idtJl5xQzg+/1aBGI=
+		+aPZh1CipQVEcqm0U/Cgi442c9Y=
 		</data>
 		<key>armadillo_bits/glue_join_bones.hpp</key>
 		<data>
-		2yQWFwgqxkDFCyZIku0Hg3tjFq8=
+		BbXmb7bD0kPe8lFCdgjlHCsFtZ0=
 		</data>
 		<key>armadillo_bits/glue_join_meat.hpp</key>
 		<data>
-		q6KC/yRWMI5wffMymsX9zfb/cxE=
+		65mfSmsHJjBdVgpY6h7k+vAub7U=
 		</data>
 		<key>armadillo_bits/glue_kron_bones.hpp</key>
 		<data>
-		YjSw4HOyLBmuqzoCx105I6cMjX4=
+		av3SpQbzIMjnrmKF7NQH/BTbbWQ=
 		</data>
 		<key>armadillo_bits/glue_kron_meat.hpp</key>
 		<data>
-		7e6X/loVd/qhWGCjd2vghpvF1FA=
+		jNKZ+rL7Ijd0U4vN85O/3lPzkJM=
 		</data>
 		<key>armadillo_bits/glue_max_bones.hpp</key>
 		<data>
-		uBCK4E8V/BwzT/24fI4huBCYshE=
+		/6WiSWx2h8iOC+pHPBScsLVqg5s=
 		</data>
 		<key>armadillo_bits/glue_max_meat.hpp</key>
 		<data>
-		Na72n8i74Golb3NLQUSVEQYpRTw=
+		BMq/x3Lt0sE8ZODoCRQ9kpfVzvo=
 		</data>
 		<key>armadillo_bits/glue_min_bones.hpp</key>
 		<data>
-		nvdT3eNouulEeHUvQoerqCf23dw=
+		dxugGb9+bROfwL5GN4vMZ4HTMMM=
 		</data>
 		<key>armadillo_bits/glue_min_meat.hpp</key>
 		<data>
-		P/smdAnIwCkMFTBfSZesuEc+NS8=
+		HEulPi8q4oSmlRIhaVMsjHzp8QU=
 		</data>
 		<key>armadillo_bits/glue_mixed_bones.hpp</key>
 		<data>
-		jRsKZ6cYxXPyvCkhC0BMQzVzxOQ=
+		dFXNsXee99YXQUO6WN7WlBOgJrk=
 		</data>
 		<key>armadillo_bits/glue_mixed_meat.hpp</key>
 		<data>
-		SLvANBQ/ovk8vWd/HiHQiTdI74Y=
+		ZVwUkt25T7dAiOVFzxGAJBQ0JZ4=
 		</data>
 		<key>armadillo_bits/glue_relational_bones.hpp</key>
 		<data>
-		xmISHBgHb539dZg9zvokNS9h2e4=
+		swGn+rANb/dLPOidvA4LSzUshH4=
 		</data>
 		<key>armadillo_bits/glue_relational_meat.hpp</key>
 		<data>
-		BGP4sfq0fXYNTM5TMYXGImB06Kw=
+		/UNrvm193nx72l3v9+7/RYl/9js=
 		</data>
 		<key>armadillo_bits/glue_solve_bones.hpp</key>
 		<data>
-		wIztzZg5qjuCFXcYeQh+Y1fjVXU=
+		4uhzax0DT+a+Gt88QotbI2C6iR4=
 		</data>
 		<key>armadillo_bits/glue_solve_meat.hpp</key>
 		<data>
-		3MR+zpjxYpnbMvXIFa4ebH2IB1I=
+		1GbFyHxD1M7NPPXvDMj0oAxeZ58=
 		</data>
 		<key>armadillo_bits/glue_times_bones.hpp</key>
 		<data>
-		qt4T+eLu6SMbmNi7zUuNOkVmB4k=
+		QUb31M1Bw6ll5DLTfiFwMGjtScU=
 		</data>
 		<key>armadillo_bits/glue_times_meat.hpp</key>
 		<data>
-		ehkeeTFl+ClkvMn8c6an8otC4WE=
+		OBu/np/UG8VBaY2tOd+0tSL08u0=
 		</data>
 		<key>armadillo_bits/glue_toeplitz_bones.hpp</key>
 		<data>
-		BUe4Usxq4CfgXP3APuh8gii1ebk=
+		fyGgPZcnRjpbobcrRo+Uon1tj4k=
 		</data>
 		<key>armadillo_bits/glue_toeplitz_meat.hpp</key>
 		<data>
-		wmMENCkNZcGZKQZ3F7cQ5gTpeWU=
+		Pj3BBO8UZKzIdzbNRwyrccbORvs=
 		</data>
 		<key>armadillo_bits/gmm_diag_bones.hpp</key>
 		<data>
-		BzbhhPB2UzBbZdQywLW3+QaWwCE=
+		2ppogLlVoIH7WWnpsY7ZT4MZLSw=
 		</data>
 		<key>armadillo_bits/gmm_diag_meat.hpp</key>
 		<data>
-		lmgZDbafDue9pgCwhmGj8FRQ0TU=
+		d0A3Ef5RvG9sf98nIMUe5IwCkU0=
 		</data>
 		<key>armadillo_bits/gmm_misc_bones.hpp</key>
 		<data>
-		Nznz1BkVOQk3pcNN/AFZYQcpEaU=
+		4IHPXnzFphu3plcDtMtpKA/j3is=
 		</data>
 		<key>armadillo_bits/gmm_misc_meat.hpp</key>
 		<data>
-		Xzj1JMIZvfBPc35eXd9uSM2oGFo=
-		</data>
-		<key>armadillo_bits/hdf5_bones.hpp</key>
-		<data>
-		fGg24swrdMXxR/mICrVsl1uKw18=
+		F9L2VbB3zI3wn9R6OLmiKsW2B/I=
 		</data>
 		<key>armadillo_bits/hdf5_misc.hpp</key>
 		<data>
-		PVc3Ckv53GwoHU2MN2Xn0WF5gys=
+		K4c+fulwE3hrF3XB13Ab8oKzNOs=
 		</data>
 		<key>armadillo_bits/include_atlas.hpp</key>
 		<data>
-		3OSigVI/O7G3A7Xmhkp1py8h/yc=
+		W3IxgGUxFqwp3yEWX8ZQuYh2vfw=
 		</data>
 		<key>armadillo_bits/include_hdf5.hpp</key>
 		<data>
-		wbQVTIK0dZARD5l5v8/Dm+MMsL4=
+		BXC26dPZx35WwmiB54ykuqq/db4=
 		</data>
 		<key>armadillo_bits/include_superlu.hpp</key>
 		<data>
-		e/7ENZabPBFPB/vRdueaO4SWgos=
+		tiIiDt0XVNwallwQ+IuolbHCic8=
 		</data>
 		<key>armadillo_bits/injector_bones.hpp</key>
 		<data>
-		gxZ+kob4kugMalGxc249WEt2F3c=
+		ENs7nGYytekxjbwJF2s5rYGgGzw=
 		</data>
 		<key>armadillo_bits/injector_meat.hpp</key>
 		<data>
-		qV6thtiX/NtVD6gTOTV+OjFipaM=
-		</data>
-		<key>armadillo_bits/lapack_bones.hpp</key>
-		<data>
-		Lcc12GTdpg7zjgMFDioC9p40mIs=
-		</data>
-		<key>armadillo_bits/lapack_wrapper.hpp</key>
-		<data>
-		XeiFYE7SjJIBwuu8moF3LL650BM=
+		MU98hVtjAUSNWqtEy14FwttHU8Q=
 		</data>
 		<key>armadillo_bits/memory.hpp</key>
 		<data>
-		Ar5GbehEtupGTzkwtgN1QceB2QY=
+		SdB5I+7RAg3XiQSLMU0oueiSi1A=
 		</data>
 		<key>armadillo_bits/mtGlueCube_bones.hpp</key>
 		<data>
-		75UduMmWsJJ8tjJJWM5Lc/OK5Tw=
+		kiXGwYdhu8hLFyqtcdKnyKBjsdc=
 		</data>
 		<key>armadillo_bits/mtGlueCube_meat.hpp</key>
 		<data>
-		UN54NCXVWNE1hWkD0n1BCh9+eb8=
+		GZLLITJ4xUgLwuR6fjHHiKAcgbQ=
 		</data>
 		<key>armadillo_bits/mtGlue_bones.hpp</key>
 		<data>
-		96oMYFePjQ7h3eOi9Bpn4eK6PDw=
+		DvxFXRMxZXidsEE9OycvjeKglfQ=
 		</data>
 		<key>armadillo_bits/mtGlue_meat.hpp</key>
 		<data>
-		NNDDPnWJPH9Rl52kzhq8ityrBDM=
+		JAx2re+DaL1Ol9L9EitzyqHdrb8=
 		</data>
 		<key>armadillo_bits/mtOpCube_bones.hpp</key>
 		<data>
-		6ByHM1Dn6zdQdDlBaFpNm8/SB0c=
+		dXiQK49ixst0jFc4o9KaHkohlWs=
 		</data>
 		<key>armadillo_bits/mtOpCube_meat.hpp</key>
 		<data>
-		n/+dqinRvQQv5I+2FDIX4VaIxus=
+		Kpiw2Gsx6UXdExIZvmt+BmRU4LI=
 		</data>
 		<key>armadillo_bits/mtOp_bones.hpp</key>
 		<data>
-		3i1WfQtpZHrdu9ybmmjServ/dGU=
+		6l2VhifslVgHUjBBHbPHzBo9Ldo=
 		</data>
 		<key>armadillo_bits/mtOp_meat.hpp</key>
 		<data>
-		BqJn2FkRFXlMjv8Q42Ggy2Al6M4=
+		j2KpHy9+9WSIPl/0hErTWWWhNFU=
 		</data>
 		<key>armadillo_bits/mtSpOp_bones.hpp</key>
 		<data>
-		BGdQv2l5ikbLkjO4C2mtboXrqTk=
+		KVpWEIXrakrRALX0uHanDm/qGZ4=
 		</data>
 		<key>armadillo_bits/mtSpOp_meat.hpp</key>
 		<data>
-		/JRcI7WoZ0kWFfeHr+TnNdgq5g4=
+		xfhV+fgatY/cMv2CKlfdXnOWcG0=
 		</data>
 		<key>armadillo_bits/mul_gemm.hpp</key>
 		<data>
-		pzR+rmKJ7hs4L3DojLp2C4Bcdo8=
+		9MwSNfCqIDg8lCflJUDLnuDiFlo=
 		</data>
 		<key>armadillo_bits/mul_gemm_mixed.hpp</key>
 		<data>
-		6vsES0MVupdhsxnfO8+ZVkJ+pLk=
+		mRft+XgXrLlt/r9DOAojvxAUL0g=
 		</data>
 		<key>armadillo_bits/mul_gemv.hpp</key>
 		<data>
-		T0PbGv7jczbLSSS3Bi43qOQIZr8=
+		U4J7ReSwP6kI6EI0txjtg05Bblo=
 		</data>
 		<key>armadillo_bits/mul_herk.hpp</key>
 		<data>
-		NWE7XmZM3S2ASQPbNLBaw5SYIlQ=
+		C8XRqvshWD34z68xi2yFV4z7cY8=
 		</data>
 		<key>armadillo_bits/mul_syrk.hpp</key>
 		<data>
-		QSbPW2a2IDkEf+Q2/ON9Qrxe46U=
+		7ge77tnCOPfgp7+k0Y0OrcNu+8o=
 		</data>
 		<key>armadillo_bits/op_all_bones.hpp</key>
 		<data>
-		rPOrLgR4tcbaeFn6XfX6HvzaL10=
+		qkpLO/8wWTr1BMO92LOVSZd1FIE=
 		</data>
 		<key>armadillo_bits/op_all_meat.hpp</key>
 		<data>
-		Ny6vIJDuVCS7WM2Rv6QAf3lOX5Q=
+		7EnxpcZjOPREMM629EV3AMe/1tM=
 		</data>
 		<key>armadillo_bits/op_any_bones.hpp</key>
 		<data>
-		4H+nX+q+3FrrUROHeH0uOoOc6uY=
+		YmXxcWUP/t9Yjmhk/dM/oFxraRI=
 		</data>
 		<key>armadillo_bits/op_any_meat.hpp</key>
 		<data>
-		FoMXqsjCanSD8Xbnx/RdNKelFts=
+		rD9f4M8G83aQRqG4262EfQtXB+I=
 		</data>
 		<key>armadillo_bits/op_chol_bones.hpp</key>
 		<data>
-		4+2psilBDLDdpIlUXQwnd121EX4=
+		lXrozovpWQHaGkwPMWJuVyP1B68=
 		</data>
 		<key>armadillo_bits/op_chol_meat.hpp</key>
 		<data>
-		/DBzRNVbvPbHfO9zsyIU/dLwDpE=
+		R4q6HiQccq9zrLx/6Zlnjw0pdzI=
 		</data>
 		<key>armadillo_bits/op_clamp_bones.hpp</key>
 		<data>
-		SuSauQLyswc3FKbqsQkIbNZADv8=
+		Ry2yXf6S+Z8KVtw3szw/mJ72eII=
 		</data>
 		<key>armadillo_bits/op_clamp_meat.hpp</key>
 		<data>
-		i388tjCl+NCjsEbou3qn6xvs+xA=
+		0k4DpXnp2JJeIzMSiZ2ydg5U7No=
 		</data>
 		<key>armadillo_bits/op_cor_bones.hpp</key>
 		<data>
-		YkQnwTnMu3XEBwT3+9UALlCsDyY=
+		Of/s9Pf3LW+BW0FAuiZHZSA7zKw=
 		</data>
 		<key>armadillo_bits/op_cor_meat.hpp</key>
 		<data>
-		OjylePlSovkm/SiQLd0RlVwUDkk=
+		0AYsYFsZY+KGf6GuzqnLXbX5PjQ=
 		</data>
 		<key>armadillo_bits/op_cov_bones.hpp</key>
 		<data>
-		oprVN6q8LUR5eiG9QxRB7ragMEs=
+		v4AjwjpNTASTKExPOmfgk2ug9pc=
 		</data>
 		<key>armadillo_bits/op_cov_meat.hpp</key>
 		<data>
-		G4JDtNWlQfoklMeHopUk8OGqkAI=
+		VyccvP0aqKGLoayx+ki+nxzudAc=
 		</data>
 		<key>armadillo_bits/op_cumprod_bones.hpp</key>
 		<data>
-		y22a/5Boloxl+mCTKHUavnslg0M=
+		9yXmh1N/hl0T9cx5lRpgy8JhG44=
 		</data>
 		<key>armadillo_bits/op_cumprod_meat.hpp</key>
 		<data>
-		aApidRN66S7fzPNkHVvdKqvTcfw=
+		/lwuv+9WT3cX+rag00uulxaIG7E=
 		</data>
 		<key>armadillo_bits/op_cumsum_bones.hpp</key>
 		<data>
-		dfrO2I1MM1HMYCiKSa2qL1p8QTY=
+		3FahATo8KaCGOtbEzB6GqxyEjOQ=
 		</data>
 		<key>armadillo_bits/op_cumsum_meat.hpp</key>
 		<data>
-		PCADxu+A1uEyFRD9t4OSHF0fOSQ=
+		q+zjhK4ty/qc/mjD4Z9w/1SxJxY=
 		</data>
 		<key>armadillo_bits/op_cx_scalar_bones.hpp</key>
 		<data>
-		X1ht9Gf4Bau9u4336tS7wobTslg=
+		3UT4+fYdOxs1KKxsetj5mdWV1rw=
 		</data>
 		<key>armadillo_bits/op_cx_scalar_meat.hpp</key>
 		<data>
-		Ph3Hxypow/KtdyIZz9YzUKZkwcs=
+		VJ4VKTC419ZpVDJSnjtTyc8IOi8=
 		</data>
 		<key>armadillo_bits/op_diagmat_bones.hpp</key>
 		<data>
-		bCC8XI4lxnnzhTW/fnH76O3/yEo=
+		23US6CjOGnaH+OlQUEuchhbNPpY=
 		</data>
 		<key>armadillo_bits/op_diagmat_meat.hpp</key>
 		<data>
-		OnAb1hpkDYdOFFhxdPWm6mARcNw=
+		reOWdo3z5DGsAATiIbAC9g1lHXw=
 		</data>
 		<key>armadillo_bits/op_diagvec_bones.hpp</key>
 		<data>
-		R7rti43iobnsR517zM4w/mSxq1I=
+		QWMzYPM4WqStq6jyS6arNqiwrgk=
 		</data>
 		<key>armadillo_bits/op_diagvec_meat.hpp</key>
 		<data>
-		g3jGRL3JZWuuND6F0kUCPj3aQRA=
+		9IpzWvrbNnq5OsA16k8ziECZI/8=
 		</data>
 		<key>armadillo_bits/op_diff_bones.hpp</key>
 		<data>
-		PSO2JPnYXwTyp5lJa3bJCLqbjlM=
+		hG3oHfP4emOlgPH0w3W7KabINRs=
 		</data>
 		<key>armadillo_bits/op_diff_meat.hpp</key>
 		<data>
-		NwA83IJj3MMUbM/5U+RIB8dmY3A=
+		3xJW4i+fnliiPBxItSBHMVG9D8U=
 		</data>
 		<key>armadillo_bits/op_dot_bones.hpp</key>
 		<data>
-		7eeN1guBkxIK8YFWYS1858bQ+kU=
+		FatOArUWsIYM7djL2PTKtuR9Kwo=
 		</data>
 		<key>armadillo_bits/op_dot_meat.hpp</key>
 		<data>
-		20s93lIBLnMSYc1QrQvoo+jVYWY=
+		DQuj0kxC58ZP2+hKNdBZW0mWNCw=
 		</data>
 		<key>armadillo_bits/op_dotext_bones.hpp</key>
 		<data>
-		mZWMcsv1hzNBSTV8duUT5VzYTUo=
+		95OsnURmBFkKMnm57m8Tomm1eaM=
 		</data>
 		<key>armadillo_bits/op_dotext_meat.hpp</key>
 		<data>
-		4t2M9J2Qzzy5wQBzdBsh3J3h93w=
+		sTL3/byyXti4fvXMI38kzl7Kqmo=
 		</data>
 		<key>armadillo_bits/op_expmat_bones.hpp</key>
 		<data>
-		+Nz865a/tDTmLL/cOCPc68pXXOg=
+		+oN+kRv5M2ta6Fn/AMn1vStMtlc=
 		</data>
 		<key>armadillo_bits/op_expmat_meat.hpp</key>
 		<data>
-		a7cqoSFI6Zr6YXTC0TAgoGUrFWM=
+		1Ez3+RzHv+0NnNyDvhP9rJXTMng=
 		</data>
 		<key>armadillo_bits/op_fft_bones.hpp</key>
 		<data>
-		Vi4ylH8J9zaP/4tWMQWlh9ohnwE=
+		NOmmTGzvn8ap3lh+H6B4jk+2dSo=
 		</data>
 		<key>armadillo_bits/op_fft_meat.hpp</key>
 		<data>
-		wmZTk7BrxOWpHrD6+PO+ts+4Fes=
+		mB+ksAh4nf/Lu5saW7XK9HH3MRg=
 		</data>
 		<key>armadillo_bits/op_find_bones.hpp</key>
 		<data>
-		HC8TJy+juBjH25XX784fbQkp38k=
+		AgyTNXwIkyFxFOJYtXizHL4KrLU=
 		</data>
 		<key>armadillo_bits/op_find_meat.hpp</key>
 		<data>
-		nrURNeVeKpEa1LeEvWhU+NxGSK4=
+		zNBxZ6vMS2cVPglbt1rg+qh4+wM=
 		</data>
 		<key>armadillo_bits/op_find_unique_bones.hpp</key>
 		<data>
-		UwOKOhXFLxrbQkKeH5Z5NjMcWPk=
+		n0Mposlxm9nttMkWNyGAlCCEqh4=
 		</data>
 		<key>armadillo_bits/op_find_unique_meat.hpp</key>
 		<data>
-		m2QKomEnI8OcWO+vW0EEeCRLta0=
+		cGN1Pxf84qoWTC2RY6UVvDAyt+o=
 		</data>
 		<key>armadillo_bits/op_flip_bones.hpp</key>
 		<data>
-		HdskoKdH9qiFeMAZrExoSLWMhrY=
+		YSSuZsOmySS/b7JhGnA09cb7M6A=
 		</data>
 		<key>armadillo_bits/op_flip_meat.hpp</key>
 		<data>
-		FgQGtCr3pWcE5J3MO3RtROzxSNk=
+		4NbdsdcD0jLlxZesFeubiB1MkfM=
 		</data>
 		<key>armadillo_bits/op_hist_bones.hpp</key>
 		<data>
-		i6GP073JFxeX6AU4toCpOyMiMHw=
+		OxC3oQ0ehkDBKhCqb8P967M6x4o=
 		</data>
 		<key>armadillo_bits/op_hist_meat.hpp</key>
 		<data>
-		gYHra/eiZCN0qtFQDBz2M2zHaUo=
+		J8aGNT2Ep7dKBn7A8e5d+vhZHRw=
 		</data>
 		<key>armadillo_bits/op_htrans_bones.hpp</key>
 		<data>
-		9G6QlD4Pkqu0olFW8ElAYoOLe88=
+		7A4w0qNIRtYRHmhViz8qMu/sKMc=
 		</data>
 		<key>armadillo_bits/op_htrans_meat.hpp</key>
 		<data>
-		7BKw1dohttIEYaVkcu/GCqscqTM=
+		Lnh2mCh7iS9ISHg1jLeDmIpHf/g=
 		</data>
 		<key>armadillo_bits/op_inv_bones.hpp</key>
 		<data>
-		nyp7MudfDIQ6+K2E8kPrLOcmxNI=
+		slb5dfUmFQV40RfTsfgfBuypXdM=
 		</data>
 		<key>armadillo_bits/op_inv_meat.hpp</key>
 		<data>
-		M5t2Dhwdno/Np1Z+dp0101ad6fY=
+		4DDzXg+qtRyTHN/pC+/p420ci9g=
 		</data>
 		<key>armadillo_bits/op_max_bones.hpp</key>
 		<data>
-		qTA7Rlm1JpFthlF4I4MVohf/JYU=
+		LHO+k+zhkkf/40t2fxJRx9/W6/k=
 		</data>
 		<key>armadillo_bits/op_max_meat.hpp</key>
 		<data>
-		kMG0ao+gtBckO8vhStMYbu393hU=
+		Pm3+/hCZtCOUIb7vV9EKHjjpEnY=
 		</data>
 		<key>armadillo_bits/op_mean_bones.hpp</key>
 		<data>
-		4JNmbnGG2Igyfnr0QocJ1Nk5flY=
+		17vEgJHRUXNp3hLx+MQ+jsLk1Us=
 		</data>
 		<key>armadillo_bits/op_mean_meat.hpp</key>
 		<data>
-		x/59ykibIMDBNu2avtUZR7jj1yw=
+		N6SVlXneSujtZECjpkY96gI1ueE=
 		</data>
 		<key>armadillo_bits/op_median_bones.hpp</key>
 		<data>
-		nFytxB+ABBXr7XUatxjVs/whbTI=
+		eJ1vzz5wsX1ckyGKq/k06SeTG40=
 		</data>
 		<key>armadillo_bits/op_median_meat.hpp</key>
 		<data>
-		anfCrvNw5LyACmxBKm7ONdGLqOo=
+		DdiKUCU1zHtvWkn/ptOMKtI+YV8=
 		</data>
 		<key>armadillo_bits/op_min_bones.hpp</key>
 		<data>
-		yAhqqPcQdtqBpqY7vqEBKN3lcnA=
+		87UkW2NwxKlTIwRB7Hw40ONcgcI=
 		</data>
 		<key>armadillo_bits/op_min_meat.hpp</key>
 		<data>
-		ELzh6HBtZ+3iFJQkb15baFTtZMc=
+		ZYdhNTDxnEgq/SbQ1kg7z6Yq34I=
 		</data>
 		<key>armadillo_bits/op_misc_bones.hpp</key>
 		<data>
-		+k3QrS3YwLzLC5H+qLETYw7CpmE=
+		1rMAUK/5vAWCcpiAqTCeiXqtiMs=
 		</data>
 		<key>armadillo_bits/op_misc_meat.hpp</key>
 		<data>
-		WvHm9HX5dG6XXFAj0HvmbzslxQ0=
+		EFe07SAe2relaFjCmKjDeLt3uKI=
 		</data>
 		<key>armadillo_bits/op_nonzeros_bones.hpp</key>
 		<data>
-		VljXrEIpYNsLLDsLlj/iX0OR+bQ=
+		iR27AHsvPjASst7Hat/qDT2hje8=
 		</data>
 		<key>armadillo_bits/op_nonzeros_meat.hpp</key>
 		<data>
-		1VeUgQOkINlVUxqLQuU6pxwlIxc=
+		wbGK5usVAK4ZmCRcdJGuHDM+naM=
+		</data>
+		<key>armadillo_bits/op_norm_bones.hpp</key>
+		<data>
+		M0Fg3AHxvIpj5PVrk7sD3YjWfn4=
+		</data>
+		<key>armadillo_bits/op_norm_meat.hpp</key>
+		<data>
+		5FcR3//QrTZTiuoMGkh38OIQa2M=
 		</data>
 		<key>armadillo_bits/op_normalise_bones.hpp</key>
 		<data>
-		bpiD95Dq+3oXQ3CUbxaGPKzv4zM=
+		gtNbUcly6XndN+g9Z7sNk1vTbG8=
 		</data>
 		<key>armadillo_bits/op_normalise_meat.hpp</key>
 		<data>
-		5yuv/LoA54VhhJPcQVJLI/hX3gk=
+		xBRFUfjrEJAFMiYo3vTk5BcOlkU=
 		</data>
 		<key>armadillo_bits/op_pinv_bones.hpp</key>
 		<data>
-		v7GyfDfm0BSGgjSE6qoeW1zgFiw=
+		7MWL/xkvd/iq4cHha52JXXq9/Fs=
 		</data>
 		<key>armadillo_bits/op_pinv_meat.hpp</key>
 		<data>
-		u4mS4SaTf9MYjvJZTpywFA31aoQ=
+		ynR6n9asvYHQbTYP8jC4hcyHU8Y=
 		</data>
 		<key>armadillo_bits/op_princomp_bones.hpp</key>
 		<data>
-		K45pmYUP/FQ2u6yuLiwS8Fbjrlc=
+		t1w29dO9W9QPxfI8L5i7j8vL1jA=
 		</data>
 		<key>armadillo_bits/op_princomp_meat.hpp</key>
 		<data>
-		4OqiwWPLkrznDZjs6Y/b3jrgrX4=
+		xjF8eHNvHTPFqhRJU9WA8nBr2SM=
 		</data>
 		<key>armadillo_bits/op_prod_bones.hpp</key>
 		<data>
-		7R6bXasqc+TosFFoDnpUMwgZvbc=
+		L7J/k+UHlJIcISGGzFbtIeieKoY=
 		</data>
 		<key>armadillo_bits/op_prod_meat.hpp</key>
 		<data>
-		9QbXZ3/kEsD1w0bfOCVbCDWvah0=
+		HzkZa3D2LMd6eKYMGhTTzPnAuf0=
 		</data>
 		<key>armadillo_bits/op_relational_bones.hpp</key>
 		<data>
-		4Js1dnkh6DMfj2dlOZqkIuWNSIo=
+		CWwt2LaLO0ZT/J9Q2rIGbrptGyQ=
 		</data>
 		<key>armadillo_bits/op_relational_meat.hpp</key>
 		<data>
-		Pf7i44SU4lxH34ZIVkjuhVkSdT8=
+		zqseCQQG3NTRCzq2DNoByGPXhaI=
 		</data>
 		<key>armadillo_bits/op_repmat_bones.hpp</key>
 		<data>
-		qsj6boM/B3285aKsIxfUGN/86cs=
+		bsZfTWNv7BBvWy+KvzxStcSEP/A=
 		</data>
 		<key>armadillo_bits/op_repmat_meat.hpp</key>
 		<data>
-		6tv1/LqhgG1VsLHw4+w/OVmpWG0=
+		3T27lCoB65mOjcwdarvgF0fVqRo=
 		</data>
 		<key>armadillo_bits/op_reshape_bones.hpp</key>
 		<data>
-		piNRzvUwr3AmvExhUgc1Epy4RD4=
+		RRQNfR2ymSJUEyBxG0sTDnHKKY4=
 		</data>
 		<key>armadillo_bits/op_reshape_meat.hpp</key>
 		<data>
-		Wk7s1zc/0VBtSC5v1Z87mzY4xkM=
+		I57HWowpSoP0xxoTfC9vn37HFaQ=
 		</data>
 		<key>armadillo_bits/op_resize_bones.hpp</key>
 		<data>
-		EDJsNVo2yM8IuAFzkOMEz7+/YCQ=
+		ozenhEJiet6iFrXJw/L7iENRKgg=
 		</data>
 		<key>armadillo_bits/op_resize_meat.hpp</key>
 		<data>
-		fLY6mlMtlO7j928qkatB0O2HKLk=
+		JBmBFNMFmHJwoS/Xe1TnlrIQwSc=
 		</data>
 		<key>armadillo_bits/op_shuffle_bones.hpp</key>
 		<data>
-		TxT3kTCxB0XN8D5ZuhUJIF1fiw4=
+		BcRtaEgKQXGff2BHjht2aULdp4o=
 		</data>
 		<key>armadillo_bits/op_shuffle_meat.hpp</key>
 		<data>
-		Jkl9aZh/H/eXZdZryjCzguUGLug=
+		i1TZ91SG2SQ7+e/RF9Ce5JUrpq8=
 		</data>
 		<key>armadillo_bits/op_sort_bones.hpp</key>
 		<data>
-		8ViFlhgKuGGRqBbm2+cbrrBqct4=
+		inLJXwWwh/FGAaCUpPIBOPyMD0c=
 		</data>
 		<key>armadillo_bits/op_sort_index_bones.hpp</key>
 		<data>
-		ZkS6+j7KeUzM+F4q0DCwuq6Esog=
+		Rv7AeV6Rkxud7nvx/xirQIKohO8=
 		</data>
 		<key>armadillo_bits/op_sort_index_meat.hpp</key>
 		<data>
-		+NyndPlYrlqZ6wAkz80jwBOfTVM=
+		1qh+9ceWxD6txBCX02uf6qPcOxg=
 		</data>
 		<key>armadillo_bits/op_sort_meat.hpp</key>
 		<data>
-		+/I4StS2DJerw7n5k/3JRA1xVvc=
+		PzvGhE6zdb6eSXf+ta4uYbCR/MU=
 		</data>
 		<key>armadillo_bits/op_stddev_bones.hpp</key>
 		<data>
-		zG0rT+UpvekSR3UaToJVLTtJeRs=
+		tc5fQ5KHvNZOABWWZYb5XYdYwKk=
 		</data>
 		<key>armadillo_bits/op_stddev_meat.hpp</key>
 		<data>
-		I1dBegDZH88K0WPvy166KAZul/Y=
+		Jo+lloNME1Kviu2cp6P7oN0q6jA=
 		</data>
 		<key>armadillo_bits/op_strans_bones.hpp</key>
 		<data>
-		rn4DInIbU3iHJkeUKK8CZ3N5NqU=
+		fEW2X/gal5WLIilJnMK2IS3sEMw=
 		</data>
 		<key>armadillo_bits/op_strans_meat.hpp</key>
 		<data>
-		Jig4c/t5hhlFMO0TNBixaNHejPA=
+		sTMpL0u+kdgfMyWSJahyVc2mfes=
 		</data>
 		<key>armadillo_bits/op_sum_bones.hpp</key>
 		<data>
-		PE6r2tcGmaWkibTMpkH9XlDpFxQ=
+		RnUeCLvZVERrplvOjLNkJtJkF+Y=
 		</data>
 		<key>armadillo_bits/op_sum_meat.hpp</key>
 		<data>
-		NoE3D1B9QPipu7iS5onUwqArgMY=
+		1zgHk/4+PHedrp2/nI/xujztu44=
 		</data>
 		<key>armadillo_bits/op_symmat_bones.hpp</key>
 		<data>
-		liglORtR/4yKyuVB4lImGEAMVb0=
+		vjRpjdRuNWJqlDc63UJHdBGR1KE=
 		</data>
 		<key>armadillo_bits/op_symmat_meat.hpp</key>
 		<data>
-		wN4i3xQkFxDhRUadwOzoYdhzrnA=
+		GTzAuPZjFeiiP7Y9TYwP32dK+NI=
 		</data>
 		<key>armadillo_bits/op_toeplitz_bones.hpp</key>
 		<data>
-		axfJPtDC4XNVryRjDHYpFLD2tvU=
+		Es3opmihqHvXmEvTNhfwlz3FfQ0=
 		</data>
 		<key>armadillo_bits/op_toeplitz_meat.hpp</key>
 		<data>
-		V2vkafGK4nLyO+Tgs1hBE3QgBvQ=
+		vZF20X/9XxZezFlLqZASZSR7M+k=
 		</data>
 		<key>armadillo_bits/op_trimat_bones.hpp</key>
 		<data>
-		C1aopcBsv3Eftyoo3G+vCo7hNlQ=
+		MzeLUF/0vWBZYBaDlkfg/UVbD5c=
 		</data>
 		<key>armadillo_bits/op_trimat_meat.hpp</key>
 		<data>
-		QbohA8qL8kumrykyqljhCqw8Wzk=
+		eKDaZzA8febzIoAWwxR0ARtvJLg=
 		</data>
 		<key>armadillo_bits/op_unique_bones.hpp</key>
 		<data>
-		bIL7pEzg+huiDsmX57c4wzisd3M=
+		hqnLiZ5vDOTbNJSdLIKpJRl6FhI=
 		</data>
 		<key>armadillo_bits/op_unique_meat.hpp</key>
 		<data>
-		L4netPzwiFYwzmNrhP70FpzRQ4Y=
+		UMt8oE8duijE8Fhk3hz92xbGTLY=
 		</data>
 		<key>armadillo_bits/op_var_bones.hpp</key>
 		<data>
-		FPn5CRAe/pDBt77cdBABkpUGpDo=
+		QGmShTyiR3e8kAcAkzNQH9QyqP8=
 		</data>
 		<key>armadillo_bits/op_var_meat.hpp</key>
 		<data>
-		GsJlSTWbU9aBaxe1eNti0kjKanE=
+		0DhT7vMDDc02az9uw0pk15dDp3M=
 		</data>
 		<key>armadillo_bits/op_vectorise_bones.hpp</key>
 		<data>
-		LPS6pgDi4vOi89G+axOPC2zX/+s=
+		AFFXpgn9+yWYsc02xI3JooXyN+c=
 		</data>
 		<key>armadillo_bits/op_vectorise_meat.hpp</key>
 		<data>
-		Bgx27kmKxSotXrVawEW4fm/Bk/I=
+		3JPBu0sYwV5Du6tanJmZZ0y9Sjs=
 		</data>
 		<key>armadillo_bits/operator_cube_div.hpp</key>
 		<data>
-		4m89t7gKSyjF2QMSac6LOyC5g6M=
+		1H0hZjVjGF+TqCOvHuwtCY5BH/c=
 		</data>
 		<key>armadillo_bits/operator_cube_minus.hpp</key>
 		<data>
-		TcdI8otuyuUs/Nakk9pJ4sPLbeA=
+		3eL42PiMQ4i4rBDxIliITD7OU+U=
 		</data>
 		<key>armadillo_bits/operator_cube_plus.hpp</key>
 		<data>
-		6GyzQ0mif2H310RR9WsNS+YQJZ4=
+		ebsMyDLWxeyBBKGrQ3LHNV3tpEc=
 		</data>
 		<key>armadillo_bits/operator_cube_relational.hpp</key>
 		<data>
-		4EJDoqG5iRiLQmfp9v7hNH3kDkA=
+		d17DaE42UVCuNjDj60rAfENZd4g=
 		</data>
 		<key>armadillo_bits/operator_cube_schur.hpp</key>
 		<data>
-		m/73KEes8d4IuEuejZwVk/PIyhc=
+		dNp56lEmroe9DtA2H32ZJbSjT3s=
 		</data>
 		<key>armadillo_bits/operator_cube_times.hpp</key>
 		<data>
-		Rl3XO7eTEmuwzoycjR6rXZiMjb8=
+		Lwm6KWmJozlJjQilF0gGNPW8xls=
 		</data>
 		<key>armadillo_bits/operator_div.hpp</key>
 		<data>
-		SaW/ZlG+/SxTFydpgXBB8sTjTE0=
+		x8zIRp26Y52m0QwlbmaAj8YCxdg=
 		</data>
 		<key>armadillo_bits/operator_minus.hpp</key>
 		<data>
-		hODs62U6ZVwihtHWwEsAEGa72eg=
+		r1j5fJCuapsGI+abLnDzLMHf6X8=
 		</data>
 		<key>armadillo_bits/operator_ostream.hpp</key>
 		<data>
-		rmymaI4GIrL6rDmHhjruE4fCgnA=
+		lR8pHv6RUFw7fS3xiFrSN726yr4=
 		</data>
 		<key>armadillo_bits/operator_plus.hpp</key>
 		<data>
-		T7pe7BJPPl0bO4EfnqBSjWGhkt0=
+		7SDxd2zqhTDMr+tctChcQljGzrY=
 		</data>
 		<key>armadillo_bits/operator_relational.hpp</key>
 		<data>
-		cWIfDP2zJz9UZoYWwzkMAeQAFR0=
+		aNtynnY1bP9x0aAoEpBYlRPoe5Y=
 		</data>
 		<key>armadillo_bits/operator_schur.hpp</key>
 		<data>
-		w1OjgyVX9VPZURuclzVbRpz1y+c=
+		XIcE2RAQuqWDdSt6HnX0Ri6I2I8=
 		</data>
 		<key>armadillo_bits/operator_times.hpp</key>
 		<data>
-		6qWTrFSKqNsB4N7b9hBAskFpo40=
+		rUakHFL2fmXZil2R77q84/i9sdw=
 		</data>
 		<key>armadillo_bits/podarray_bones.hpp</key>
 		<data>
-		DL6RgQ/sruOsdMbNJz3JkOeo30Y=
+		xHe94g1SLEp4drPdf5n7Df4aipA=
 		</data>
 		<key>armadillo_bits/podarray_meat.hpp</key>
 		<data>
-		L1sH7qTvzloBT4K6aJjaNiRf9rc=
+		HhTOmrjsxSA+vAbCcGP5IkxWvPY=
 		</data>
 		<key>armadillo_bits/promote_type.hpp</key>
 		<data>
-		FdnkCi+V+8Y9XZiOEFuPpbC12+4=
+		dTEA73M/c47aD0x3mBIJuUGvfrE=
 		</data>
 		<key>armadillo_bits/restrictors.hpp</key>
 		<data>
-		4BDX280Mfmy9W6EvegcO+hgWioU=
+		QFQiqCMBvfVHbT1/CVNgdgE1VHE=
 		</data>
 		<key>armadillo_bits/running_stat_bones.hpp</key>
 		<data>
-		D15bLmiR+SmZtsR8L7pU5ZA20W8=
+		/TJaQwu0ZdpREN7NGFQWrprP05Y=
 		</data>
 		<key>armadillo_bits/running_stat_meat.hpp</key>
 		<data>
-		75dr9zOY8ooe10c+5hWlkbo6xG8=
+		aXAXh8j6AHXr+5KsnPcXSRNjgCg=
 		</data>
 		<key>armadillo_bits/running_stat_vec_bones.hpp</key>
 		<data>
-		TBpGJjsIKe5D/qm/IQNyUFtZ9a8=
+		qLucBA2YO2afwCavHmRdoHxyAuM=
 		</data>
 		<key>armadillo_bits/running_stat_vec_meat.hpp</key>
 		<data>
-		orEFXN+NgLoR9Xkkw39v31KQl6s=
+		jtnMaWSxC6tX2Vr4Cyd8ZU9YVRA=
 		</data>
 		<key>armadillo_bits/sp_auxlib_bones.hpp</key>
 		<data>
-		tW6Q4tDYDuKN0JQr7prwtEM94S8=
+		CGUEMh5MA5WjP/v+WFHmQhio6RY=
 		</data>
 		<key>armadillo_bits/sp_auxlib_meat.hpp</key>
 		<data>
-		UxAwszlMFjFk6ZaDEhH4zPSah2M=
+		lgSS6MpcfSyWcCw6M844J1LyTto=
 		</data>
 		<key>armadillo_bits/span.hpp</key>
 		<data>
-		a1CLB9MoIz2aP/Si1vf7N0fZ86I=
+		cbGqRH2iR5mXt5RsA7KAXJEIBVo=
 		</data>
 		<key>armadillo_bits/spdiagview_bones.hpp</key>
 		<data>
-		c5GpEZ1Mtd8RPM4M4UETSW6Hj9c=
+		CZWZBfWaA2TgHUES8AZ0Ci1jdUY=
 		</data>
 		<key>armadillo_bits/spdiagview_meat.hpp</key>
 		<data>
-		4mAMaDWXvv3ujD9D2gCcoTMV1zk=
+		btswLMfRDaEbd1QP7FdOv4j0lws=
 		</data>
 		<key>armadillo_bits/spglue_join_bones.hpp</key>
 		<data>
-		j8meUoN8VpuZfOflccjltVXt6M8=
+		0fiwdrCG9ZKljICu4f57qObVTyM=
 		</data>
 		<key>armadillo_bits/spglue_join_meat.hpp</key>
 		<data>
-		8un09UVoA96vlJ92jc1MJnj95uc=
+		1EayL5PuBTIzdEEbSKFanV65z5o=
 		</data>
 		<key>armadillo_bits/spglue_minus_bones.hpp</key>
 		<data>
-		YN4+/CwhSgdRbzzBPzrdQMuQfmI=
+		nNTrwQuTYh0kMn1K3RxiTiuTt+I=
 		</data>
 		<key>armadillo_bits/spglue_minus_meat.hpp</key>
 		<data>
-		U78NlFSFSzJ7MKwylwFfbIGiA+4=
+		8FOWiNso56CazwX0zEheB77hEzY=
 		</data>
 		<key>armadillo_bits/spglue_plus_bones.hpp</key>
 		<data>
-		bX74lxKNAIUjqY8FDGr9E2yZqsM=
+		i5HEV5Y2I9HJl42TuS1u0VyvJeI=
 		</data>
 		<key>armadillo_bits/spglue_plus_meat.hpp</key>
 		<data>
-		gxOjtZKqaL7Hv9L0TRi7abG2HYg=
+		p56ZmlAW/uKdOFSQOPk64v8VTkw=
 		</data>
 		<key>armadillo_bits/spglue_times_bones.hpp</key>
 		<data>
-		28JlDT/lp3KjU0iB36Pcdy6dTsI=
+		zMQpnSsPd7eOvNjnEudN63w4tLo=
 		</data>
 		<key>armadillo_bits/spglue_times_meat.hpp</key>
 		<data>
-		ocGuJVbksJ6skq67SlqEpoYoVcA=
+		BppW63rrmyWA3p+rd00T+LwGRI0=
+		</data>
+		<key>armadillo_bits/spop_diagmat_bones.hpp</key>
+		<data>
+		4OVA8CjkA7y625aNf3jem069w90=
+		</data>
+		<key>armadillo_bits/spop_diagmat_meat.hpp</key>
+		<data>
+		Xwuukf1k4JFB4VrZPZw4iTaM2Ag=
 		</data>
 		<key>armadillo_bits/spop_htrans_bones.hpp</key>
 		<data>
-		yJygZJsEOH+ONe+syiOFS2G72AM=
+		Oe/4CzQEECccywZ31ib2CVhrd+o=
 		</data>
 		<key>armadillo_bits/spop_htrans_meat.hpp</key>
 		<data>
-		Zse+vkPXBFCdX2BX4VfqDpyq4UQ=
+		8rmZN4ipaQDJUoA2HUf7S4dwx0U=
 		</data>
 		<key>armadillo_bits/spop_max_bones.hpp</key>
 		<data>
-		4YfGH/pldlNCyeJL0+M5gUo8/s0=
+		q/0EcH2acEAuG4BrU+hG1DZZzYU=
 		</data>
 		<key>armadillo_bits/spop_max_meat.hpp</key>
 		<data>
-		06EnzNrT3OHmMeQlAvkpE/K5zqc=
+		lRXPjfrZR6cK0xjirhx9T/wY+L8=
 		</data>
 		<key>armadillo_bits/spop_mean_bones.hpp</key>
 		<data>
-		hK9Hw9/wS90yWVCjwZXSuNYEIv0=
+		C/LR8jld7JZRUgVWSF774R9n2sE=
 		</data>
 		<key>armadillo_bits/spop_mean_meat.hpp</key>
 		<data>
-		/Q1RxEGjo/FJ+ewOD2yoijHOuEs=
+		GJoghD5aASI4wZykkPBd17dwRl4=
 		</data>
 		<key>armadillo_bits/spop_min_bones.hpp</key>
 		<data>
-		r2EldEFzpreD5876z2N8uf0NQNw=
+		AO48eNUIFyFKX6KW9pUsncfuaLg=
 		</data>
 		<key>armadillo_bits/spop_min_meat.hpp</key>
 		<data>
-		5rLw6apkhbhTYabxNyPUHcbDEQ8=
+		w1GRn7ibcUH49AruxI3RS+aovlk=
 		</data>
 		<key>armadillo_bits/spop_misc_bones.hpp</key>
 		<data>
-		u3/8dnckxp1z4gKZaQjWelEPhow=
+		w/1PrKIhB72/3Cf0hVzFfzjibOQ=
 		</data>
 		<key>armadillo_bits/spop_misc_meat.hpp</key>
 		<data>
-		ZwaljD2HMxzk9ppiH2DKQ+G8aPM=
+		xU97Q0y2ByGAALm1oY4euEfvetY=
 		</data>
 		<key>armadillo_bits/spop_strans_bones.hpp</key>
 		<data>
-		GqnjBhJLk691a5XlrxFDhtsaHDU=
+		tyVpdPK/5c0jBBj0NnPJ+WM/0Xk=
 		</data>
 		<key>armadillo_bits/spop_strans_meat.hpp</key>
 		<data>
-		pMQHYzuFQDpAqMyhm2sNnjx2+Z4=
+		ohaqkiXOuTfOdn6AwjvqJNmCPuk=
 		</data>
 		<key>armadillo_bits/spop_sum_bones.hpp</key>
 		<data>
-		LOB7SNDtx6lOqqVEdwnozOFdrLg=
+		cL+UF8csAJ/bzdaEIxLw48V4eSg=
 		</data>
 		<key>armadillo_bits/spop_sum_meat.hpp</key>
 		<data>
-		YFdUDt86xs8yLxsqmYqzbdOeuj0=
+		jyupJCIb5YFsGJCZqSMaW5kD90U=
 		</data>
 		<key>armadillo_bits/spop_var_bones.hpp</key>
 		<data>
-		4U07/gFY2eEoF5oa/iWnawtEIvQ=
+		kDOx+1lYdRKRnzrh7zsYhnJfHbM=
 		</data>
 		<key>armadillo_bits/spop_var_meat.hpp</key>
 		<data>
-		HviPOegnC49CjLpnMTnYgGcL4ns=
+		X9TEAHbGZcFZrEZ0aN+dL2tvC48=
 		</data>
 		<key>armadillo_bits/strip.hpp</key>
 		<data>
-		QOGJfXbWdmL4UIzgDR7f6tk1+rk=
+		ZNjqvzm7Osp6bJglIJ8hSh8oB/o=
 		</data>
 		<key>armadillo_bits/subview_bones.hpp</key>
 		<data>
-		O+vl8Gusm8HvcIV7p9yz9pE2kMw=
+		GlP3TNN2+z/Bd3s3NCBLMU4B/Z4=
 		</data>
 		<key>armadillo_bits/subview_cube_bones.hpp</key>
 		<data>
-		PbKk6W3t8UswyzOhlxs05dtEYLQ=
+		94hubPdCJBP0osqJS7snutfKI6I=
 		</data>
 		<key>armadillo_bits/subview_cube_each_bones.hpp</key>
 		<data>
-		xSkAz58D14pPBjU2oDo82nkd9wE=
+		ubVr5pv/Q64WEmHyqe6rNR3NLMU=
 		</data>
 		<key>armadillo_bits/subview_cube_each_meat.hpp</key>
 		<data>
-		zoPz/h+U7iHQSeFBpmfjDf3v6ws=
+		OsS+huECL4Y2Y/ePdu4rjtItok4=
 		</data>
 		<key>armadillo_bits/subview_cube_meat.hpp</key>
 		<data>
-		B91Ld7hianX3e+IjL+2JMRgm96Q=
+		+UU60p+jzm7gL4sJjBTVf5rnsu8=
 		</data>
 		<key>armadillo_bits/subview_each_bones.hpp</key>
 		<data>
-		J/u8TgpEF0nHi8Ac3JjKDjCdOXc=
+		+gUthq5N+At0s9mw+pOrarx17vM=
 		</data>
 		<key>armadillo_bits/subview_each_meat.hpp</key>
 		<data>
-		k2V/ONhDrZqO0ET1qXS0ozxT048=
+		hk++xzcWvPYfakqaRBGklM/hgkw=
 		</data>
 		<key>armadillo_bits/subview_elem1_bones.hpp</key>
 		<data>
-		palZK2RLpLpmKmn1uzoQZPax7Rg=
+		TmHaJo2bgqeqZxj4oioBE1aBHq0=
 		</data>
 		<key>armadillo_bits/subview_elem1_meat.hpp</key>
 		<data>
-		kjYkRLC9OZAdx8bmgisFmwKe3ek=
+		bUU5/+ixRz8UMXP0tJRV9WKC7Fo=
 		</data>
 		<key>armadillo_bits/subview_elem2_bones.hpp</key>
 		<data>
-		obnwmutw3Q9/rjI2zRVxsWHkPgA=
+		tLTjklCeH9/Olp9baLjLeocqCLY=
 		</data>
 		<key>armadillo_bits/subview_elem2_meat.hpp</key>
 		<data>
-		HxiTKbf5YBR+QXs+Kjsq/uFcXtM=
+		RWr0dBq0ZChpAScF+xPfptEbsq4=
 		</data>
 		<key>armadillo_bits/subview_field_bones.hpp</key>
 		<data>
-		7jhqp4P67Yqh9sRbT7/ko491gQM=
+		ubvO7xYIfrLmGKl5pmbZYA4z8Kw=
 		</data>
 		<key>armadillo_bits/subview_field_meat.hpp</key>
 		<data>
-		qXzMi7MLBW/qBxJFFaMRfNOTGZ8=
+		OVcXpVbtqOs83zYMSQkWODXq22o=
 		</data>
 		<key>armadillo_bits/subview_meat.hpp</key>
 		<data>
-		dglqkn4QCJsqGgUHQhF4cKIU+58=
-		</data>
-		<key>armadillo_bits/superlu_bones.hpp</key>
-		<data>
-		NnIgnSjhUiOHUYHLMLINNcIXfjI=
-		</data>
-		<key>armadillo_bits/superlu_wrapper.hpp</key>
-		<data>
-		RirEzaGVIz3ak6Z4URGr9/V8ltA=
+		d2rvJ6eF984V1zFOK/QeIZKGCNY=
 		</data>
 		<key>armadillo_bits/traits.hpp</key>
 		<data>
-		5A/bIKKq/Md74tj7lSdJVN4jxfE=
+		FXWQVEJkLUjJ9bnUpcYr4PQ+2qo=
 		</data>
 		<key>armadillo_bits/typedef_elem.hpp</key>
 		<data>
-		EDpL1M2BVl6mcxJRcNg2Rc3VJXI=
+		tLOWI3arYUnk1aBQdMVBb7zScuY=
 		</data>
 		<key>armadillo_bits/typedef_elem_check.hpp</key>
 		<data>
-		QhplNmfUvOx1wYI1KNWNS0JyMqs=
+		PocuVI4H7t7vl9BE/pzcpKG67vc=
 		</data>
 		<key>armadillo_bits/typedef_mat.hpp</key>
 		<data>
-		RkljXSXGgnfJNc8Hm4Tc13uGKZU=
+		sq3+biK4wAgvDeOI2wtjcCDRNqE=
 		</data>
 		<key>armadillo_bits/typedef_mat_fixed.hpp</key>
 		<data>
-		VYBqkCIwYG1I0M8peCaKAQxARaU=
+		9WwN8Zp/GYnvQeSTWHoknOTtOas=
 		</data>
 		<key>armadillo_bits/unwrap.hpp</key>
 		<data>
-		kD1IrJe4lLJoqRwyYixCIaWJodE=
+		sCbEcE88JH5bwsY5CqXi4c8EETk=
 		</data>
 		<key>armadillo_bits/unwrap_cube.hpp</key>
 		<data>
-		/xAqcJTu45FCG6gJfN6VRnqZZZA=
+		j7OO+NgQsMfUQpW5k5IR2zZlffs=
 		</data>
 		<key>armadillo_bits/unwrap_spmat.hpp</key>
 		<data>
-		A+q81fxmusWXuMB5W9bXBgD6ji0=
+		AyG2Sh5CMLDqENY4XC45vIu79fs=
 		</data>
 		<key>armadillo_bits/upgrade_val.hpp</key>
 		<data>
-		BimSUL8iJAf/6bMlwQyHsehIYSw=
+		OMVs9cLDDRrIO83mqht884jRxV0=
 		</data>
 		<key>armadillo_bits/wall_clock_bones.hpp</key>
 		<data>
-		qPJMeZCxEhcBcZIiN0Um0yIxBNI=
+		2FNFr2PI1RFtLkSkoC/wXXCJb8o=
 		</data>
 		<key>armadillo_bits/wall_clock_meat.hpp</key>
 		<data>
-		wc0C3ZpwwqcRT5Tq83Pj3WBzCyg=
+		zvhAipIuBXcJhJ4CeVvXNbNMPiY=
+		</data>
+		<key>armadillo_bits/wrapper_arpack.hpp</key>
+		<data>
+		cWluvI7EBxemSJAA01v7QN1sX30=
+		</data>
+		<key>armadillo_bits/wrapper_atlas.hpp</key>
+		<data>
+		uRVmRU36T9VJmgmAVkviA3pz8kY=
+		</data>
+		<key>armadillo_bits/wrapper_blas.hpp</key>
+		<data>
+		TbCUxqLzY9CON812IxSsshHu3jc=
+		</data>
+		<key>armadillo_bits/wrapper_lapack.hpp</key>
+		<data>
+		vhLjiAO+xrD4Y38I/zYG73He0tA=
+		</data>
+		<key>armadillo_bits/wrapper_superlu.hpp</key>
+		<data>
+		QjPWS34StQ/TzkM649+M8iP4cKo=
 		</data>
 		<key>armadillo_bits/xtrans_mat_bones.hpp</key>
 		<data>
-		o5r9lg1MJ4wArUdlsexJkfGSkjE=
+		yYNTDczi+Tl4SAMdq6iUFblnnk8=
 		</data>
 		<key>armadillo_bits/xtrans_mat_meat.hpp</key>
 		<data>
-		4W6njAFBerm//VYPgGa3U2xLy4s=
+		Eafo6WwjBLroDVQtJCFtAa8Rl+Q=
 		</data>
 		<key>armadillo_bits/xvec_htrans_bones.hpp</key>
 		<data>
-		QW1l8Ey282Oa8mMB6fbbuodgUL4=
+		dy3HdMQZgVxCRON5ZLNJma3j9n8=
 		</data>
 		<key>armadillo_bits/xvec_htrans_meat.hpp</key>
 		<data>
-		fHdG10W8uxNeU7ct3rK/CFLf+HQ=
+		wCIiKgMFQyfYK31kxg1d/mwE1Fw=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		wxxYdSfDd/Aoh0fUzhd16f0cYJ4=
+		cKBDqrlZ08XLhq+RRm6SKEo+KfM=
+		</data>
+		<key>template.jpg</key>
+		<data>
+		Yw62S3Pn7GogGG6Hz5HVpWhpqo4=
 		</data>
 	</dict>
 	<key>rules</key>

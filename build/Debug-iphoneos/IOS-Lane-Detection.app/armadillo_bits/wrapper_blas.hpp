@@ -1,9 +1,11 @@
-// Copyright (C) 2008-2013 Conrad Sanderson
-// Copyright (C) 2008-2013 NICTA (www.nicta.com.au)
+// Copyright (C) 2008-2015 National ICT Australia (NICTA)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
+// -------------------------------------------------------------------
+// 
+// Written by Conrad Sanderson - http://conradsanderson.id.au
 
 
 
@@ -169,7 +171,7 @@ namespace blas
         blas_int inc = 1;
         
         typedef float T;
-        return arma_fortran(arma_sdot)(&n, (const T*)x, &inc, (const T*)y, &inc);
+        return eT( arma_fortran(arma_sdot)(&n, (const T*)x, &inc, (const T*)y, &inc) );
         }
       #endif
       }
@@ -180,7 +182,7 @@ namespace blas
       blas_int inc = 1;
       
       typedef double T;
-      return arma_fortran(arma_ddot)(&n, (const T*)x, &inc, (const T*)y, &inc);
+      return eT( arma_fortran(arma_ddot)(&n, (const T*)x, &inc, (const T*)y, &inc) );
       }
     else
     if( (is_supported_complex_float<eT>::value) || (is_supported_complex_double<eT>::value) )
@@ -205,6 +207,70 @@ namespace blas
       blas::gemv(&trans, &m, &n, &alpha, x, &m, y, &inc, &beta, &result[0], &inc);
       
       return result[0];
+      }
+    else
+      {
+      return eT(0);
+      }
+    }
+  
+  
+  
+  template<typename eT>
+  arma_inline
+  eT
+  asum(const uword n_elem, const eT* x)
+    {
+    arma_type_check((is_supported_blas_type<eT>::value == false));
+    
+    if(is_float<eT>::value)
+      {
+      blas_int n   = blas_int(n_elem);
+      blas_int inc = 1;
+      
+      typedef float T;
+      return arma_fortran(arma_sasum)(&n, (const T*)x, &inc);
+      }
+    else
+    if(is_double<eT>::value)
+      {
+      blas_int n   = blas_int(n_elem);
+      blas_int inc = 1;
+      
+      typedef double T;
+      return arma_fortran(arma_dasum)(&n, (const T*)x, &inc);
+      }
+    else
+      {
+      return eT(0);
+      }
+    }
+  
+  
+  
+  template<typename eT>
+  arma_inline
+  eT
+  nrm2(const uword n_elem, const eT* x)
+    {
+    arma_type_check((is_supported_blas_type<eT>::value == false));
+    
+    if(is_float<eT>::value)
+      {
+      blas_int n   = blas_int(n_elem);
+      blas_int inc = 1;
+      
+      typedef float T;
+      return arma_fortran(arma_snrm2)(&n, (const T*)x, &inc);
+      }
+    else
+    if(is_double<eT>::value)
+      {
+      blas_int n   = blas_int(n_elem);
+      blas_int inc = 1;
+      
+      typedef double T;
+      return arma_fortran(arma_dnrm2)(&n, (const T*)x, &inc);
       }
     else
       {

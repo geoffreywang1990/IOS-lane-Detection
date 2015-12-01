@@ -1,10 +1,12 @@
-// Copyright (C) 2008-2015 Conrad Sanderson
-// Copyright (C) 2008-2015 NICTA (www.nicta.com.au)
-// Copyright (C) 2009-2010 Ian Cullinan
+// Copyright (C) 2008-2015 National ICT Australia (NICTA)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
+// -------------------------------------------------------------------
+// 
+// Written by Conrad Sanderson - http://conradsanderson.id.au
+// Written by Ian Cullinan
 
 
 //! \addtogroup field
@@ -29,16 +31,16 @@ class field
   
   typedef oT object_type;
   
-  const uword n_rows;     //!< number of rows in the field (read-only)
-  const uword n_cols;     //!< number of columns in the field (read-only)
-  const uword n_slices;   //!< number of slices in the field (read-only)
-  const uword n_elem;     //!< number of elements in the field (read-only)
+  const uword n_rows;     //!< number of rows     (read-only)
+  const uword n_cols;     //!< number of columns  (read-only)
+  const uword n_slices;   //!< number of slices   (read-only)
+  const uword n_elem;     //!< number of elements (read-only)
   
   
   private:
   
-  arma_aligned oT** mem;                                     //!< pointer to memory used by the object
-  arma_aligned oT*  mem_local[ field_prealloc_n_elem::val ]; //!< Internal memory, to avoid calling the 'new' operator for small amounts of memory
+  arma_aligned oT** mem;                                     //!< pointers to stored objects
+  arma_aligned oT*  mem_local[ field_prealloc_n_elem::val ]; //!< local storage, for small fields
   
   
   public:

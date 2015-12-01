@@ -1,12 +1,10 @@
-// Copyright (C) 2009-2015 National ICT Australia (NICTA)
+// Copyright (C) 2009-2013 Conrad Sanderson
+// Copyright (C) 2009-2013 NICTA (www.nicta.com.au)
+// Copyright (C) 2009-2010 Dimitrios Bouzas
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
-// -------------------------------------------------------------------
-// 
-// Written by Conrad Sanderson - http://conradsanderson.id.au
-// Written by Dimitrios Bouzas
 
 
 
@@ -15,14 +13,23 @@
 
 
 
-template<typename eT>
+template<typename T1>
 inline
 void
-op_shuffle::apply_direct(Mat<eT>& out, const Mat<eT>& X, const uword dim)
+op_shuffle::apply(Mat<typename T1::elem_type>& out, const Op<T1,op_shuffle>& in)
   {
   arma_extra_debug_sigprint();
   
+  typedef typename T1::elem_type eT;
+  
+  const unwrap<T1>   tmp(in.m);
+  const Mat<eT>& X = tmp.M;
+  
   if(X.is_empty()) { out.copy_size(X); return; }
+  
+  const uword dim = in.aux_uword_a;
+  
+  arma_debug_check( (dim > 1), "shuffle(): parameter 'dim' must be 0 or 1" );
   
   const uword N = (dim == 0) ? X.n_rows : X.n_cols;
   
@@ -185,41 +192,6 @@ op_shuffle::apply_direct(Mat<eT>& out, const Mat<eT>& X, const uword dim)
     }
   
   }
-
-
-
-template<typename T1>
-inline
-void
-op_shuffle::apply(Mat<typename T1::elem_type>& out, const Op<T1,op_shuffle>& in)
-  {
-  arma_extra_debug_sigprint();
-  
-  const unwrap<T1> U(in.m);
-  
-  const uword dim = in.aux_uword_a;
-  
-  arma_debug_check( (dim > 1), "shuffle(): parameter 'dim' must be 0 or 1" );
-  
-  op_shuffle::apply_direct(out, U.M, dim);
-  }
-
-
-
-template<typename T1>
-inline
-void
-op_shuffle_default::apply(Mat<typename T1::elem_type>& out, const Op<T1,op_shuffle_default>& in)
-  {
-  arma_extra_debug_sigprint();
-  
-  const unwrap<T1> U(in.m);
-  
-  const uword dim = (T1::is_row) ? 1 : 0;
-  
-  op_shuffle::apply_direct(out, U.M, dim);
-  }
-
 
 
 //! @}

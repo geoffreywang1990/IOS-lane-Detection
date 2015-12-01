@@ -1,11 +1,9 @@
-// Copyright (C) 2008-2015 National ICT Australia (NICTA)
+// Copyright (C) 2008-2015 Conrad Sanderson
+// Copyright (C) 2008-2015 NICTA (www.nicta.com.au)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
-// -------------------------------------------------------------------
-// 
-// Written by Conrad Sanderson - http://conradsanderson.id.au
 
 
 //! \addtogroup Cube
@@ -29,29 +27,27 @@ class Cube : public BaseCube< eT, Cube<eT> >
   public:
   
   typedef eT                                elem_type; //!< the type of elements stored in the cube
-  typedef typename get_pod_type<eT>::result  pod_type; //!< if eT is std::complex<T>, pod_type is T; otherwise pod_type is eT
+  typedef typename get_pod_type<eT>::result pod_type;  //!< if eT is non-complex, pod_type is same as eT. otherwise, pod_type is the underlying type used by std::complex
   
-  const uword  n_rows;       //!< number of rows     in each slice (read-only)
-  const uword  n_cols;       //!< number of columns  in each slice (read-only)
+  const uword  n_rows;       //!< number of rows in each slice (read-only)
+  const uword  n_cols;       //!< number of columns in each slice (read-only)
   const uword  n_elem_slice; //!< number of elements in each slice (read-only)
-  const uword  n_slices;     //!< number of slices   in the cube   (read-only)
-  const uword  n_elem;       //!< number of elements in the cube   (read-only)
+  const uword  n_slices;     //!< number of slices in the cube (read-only)
+  const uword  n_elem;       //!< number of elements in the cube (read-only)
   const uword  mem_state;
   
-  // mem_state = 0: normal cube which manages its own memory
-  // mem_state = 1: use auxiliary memory until a size change
-  // mem_state = 2: use auxiliary memory and don't allow the number of elements to be changed
-  // mem_state = 3: fixed size (eg. via template based size specification)
+  // mem_state = 0: normal cube that can be resized; 
+  // mem_state = 1: use auxiliary memory until change in the number of elements is requested;  
+  // mem_state = 2: use auxiliary memory and don't allow the number of elements to be changed; 
+  // mem_state = 3: fixed size (e.g. via template based size specification).
   
-  arma_aligned const eT* const mem;  //!< pointer to the memory used for storing elements (memory is read-only)
   
+  arma_aligned const Mat<eT>** const mat_ptrs; //!< WARNING: DO NOT USE! mat_ptrs will be private in version 6.0
+  arma_aligned const eT*       const mem;      //!< pointer to the memory used by the cube (memory is read-only)
   
   protected:
-  
-  arma_aligned const Mat<eT>** const mat_ptrs;
-  
   arma_align_mem Mat<eT>* mat_ptrs_local[ Cube_prealloc::mat_ptrs_size ];
-  arma_align_mem eT            mem_local[ Cube_prealloc::mem_n_elem    ];  // local storage, for small cubes
+  arma_align_mem eT            mem_local[ Cube_prealloc::mem_n_elem    ];
   
   
   public:
@@ -70,7 +66,7 @@ class Cube : public BaseCube< eT, Cube<eT> >
   inline const Cube& operator=(Cube&& m);
   #endif
   
-  inline Cube(      eT* aux_mem, const uword aux_n_rows, const uword aux_n_cols, const uword aux_n_slices, const bool copy_aux_mem = true, const bool strict = false, const bool prealloc_mat = false);
+  inline Cube(      eT* aux_mem, const uword aux_n_rows, const uword aux_n_cols, const uword aux_n_slices, const bool copy_aux_mem = true, const bool strict = true, const bool prealloc_mat = true);
   inline Cube(const eT* aux_mem, const uword aux_n_rows, const uword aux_n_cols, const uword aux_n_slices);
   
   arma_inline const Cube&  operator=(const eT val);
@@ -356,19 +352,18 @@ class Cube : public BaseCube< eT, Cube<eT> >
   
   protected:
   
-  inline void init_cold();
+  inline void init_cold(const bool prealloc_mat = true);
   inline void init_warm(const uword in_rows, const uword in_cols, const uword in_slices);
   
   template<typename T1, typename T2>
   inline void init(const BaseCube<pod_type,T1>& A, const BaseCube<pod_type,T2>& B);
   
   inline void delete_mat();
-  inline void create_mat();
+  inline void create_mat(const bool prealloc_mat = true);
   
   friend class glue_join;
   friend class op_reshape;
   friend class op_resize;
-  friend class subview_cube<eT>;
   
   
   public:

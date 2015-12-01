@@ -1,12 +1,10 @@
-// Copyright (C) 2008-2014 National ICT Australia (NICTA)
+// Copyright (C) 2008-2014 Conrad Sanderson
+// Copyright (C) 2008-2014 NICTA (www.nicta.com.au)
+// Copyright (C) 2009-2010 Ian Cullinan
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
-// -------------------------------------------------------------------
-// 
-// Written by Conrad Sanderson - http://conradsanderson.id.au
-// Written by Ian Cullinan
 
 
 //! \addtogroup field
@@ -1468,11 +1466,11 @@ field<oT>::save(const std::string name, const file_type type, const bool print_s
     {
     if(err_msg.length() > 0)
       {
-      arma_debug_warn("field::save(): ", err_msg, name);
+      arma_warn(true, "field::save(): ", err_msg, name);
       }
     else
       {
-      arma_debug_warn("field::save(): couldn't write to ", name);
+      arma_warn(true, "field::save(): couldn't write to ", name);
       }
     }
   
@@ -1495,11 +1493,11 @@ field<oT>::save(std::ostream& os, const file_type type, const bool print_status)
     {
     if(err_msg.length() > 0)
       {
-      arma_debug_warn("field::save(): ", err_msg, "[ostream]");
+      arma_warn(true, "field::save(): ", err_msg, "[ostream]");
       }
     else
       {
-      arma_debug_warn("field::save(): couldn't write to [ostream]");
+      arma_warn(true, "field::save(): couldn't write to [ostream]");
       }
     }
   
@@ -1522,11 +1520,11 @@ field<oT>::load(const std::string name, const file_type type, const bool print_s
     {
     if(err_msg.length() > 0)
       {
-      arma_debug_warn("field::load(): ", err_msg, name);
+      arma_warn(true, "field::load(): ", err_msg, name);
       }
     else
       {
-      arma_debug_warn("field::load(): couldn't read from ", name);
+      arma_warn(true, "field::load(): couldn't read from ", name);
       }
     }
   
@@ -1554,11 +1552,11 @@ field<oT>::load(std::istream& is, const file_type type, const bool print_status)
     {
     if(err_msg.length() > 0)
       {
-      arma_debug_warn("field::load(): ", err_msg, "[istream]");
+      arma_warn(true, "field::load(): ", err_msg, "[istream]");
       }
     else
       {
-      arma_debug_warn("field::load(): couldn't read from [istream]");
+      arma_warn(true, "field::load(): couldn't read from [istream]");
       }
     }
   
@@ -1670,6 +1668,7 @@ field<oT>::init(const uword n_rows_in, const uword n_cols_in)
 
 
 
+//! internal field construction; if the requested size is small enough, memory from the stack is used. otherwise memory is allocated via 'new'
 template<typename oT>
 inline
 void

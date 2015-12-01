@@ -1,18 +1,13 @@
-// Copyright (C) 2008-2015 National ICT Australia (NICTA)
+// Copyright (C) 2011-2015 Ryan Curtin
+// Copyright (C) 2012-2015 Conrad Sanderson
+// Copyright (C) 2011 Matthew Amidon
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
-// -------------------------------------------------------------------
-// 
-// Written by Conrad Sanderson - http://conradsanderson.id.au
-// Written by Ryan Curtin
-// Written by Matthew Amidon
-
 
 //! \addtogroup SpMat
 //! @{
-
 
 /**
  * Initialize a sparse matrix with size 0x0 (empty).
@@ -3678,11 +3673,11 @@ SpMat<eT>::save(const std::string name, const file_type type, const bool print_s
       break;
     
     default:
-      if(print_status)  { arma_debug_warn("SpMat::save(): unsupported file type"); }
+      arma_warn(print_status, "SpMat::save(): unsupported file type");
       save_okay = false;
     }
   
-  if(print_status && (save_okay == false))  { arma_debug_warn("SpMat::save(): couldn't write to ", name); }
+  arma_warn( print_status && (save_okay == false), "SpMat::save(): couldn't write to ", name);
   
   return save_okay;
   }
@@ -3718,11 +3713,11 @@ SpMat<eT>::save(std::ostream& os, const file_type type, const bool print_status)
       break;
     
     default:
-      if(print_status)  { arma_debug_warn("SpMat::save(): unsupported file type"); }
+      arma_warn(print_status, "SpMat::save(): unsupported file type");
       save_okay = false;
     }
   
-  if(print_status && (save_okay == false))  { arma_debug_warn("SpMat::save(): couldn't write to the given stream"); }
+  arma_warn( print_status && (save_okay == false), "SpMat::save(): couldn't write to the given stream");
   
   return save_okay;
   }
@@ -3763,19 +3758,19 @@ SpMat<eT>::load(const std::string name, const file_type type, const bool print_s
       break;
     
     default:
-      if(print_status)  { arma_debug_warn("SpMat::load(): unsupported file type"); }
+      arma_warn(print_status, "SpMat::load(): unsupported file type");
       load_okay = false;
     }
   
-  if(print_status && (load_okay == false))
+  if(load_okay == false)
     {
     if(err_msg.length() > 0)
       {
-      arma_debug_warn("SpMat::load(): ", err_msg, name);
+      arma_warn(print_status, "SpMat::load(): ", err_msg, name);
       }
     else
       {
-      arma_debug_warn("SpMat::load(): couldn't read ", name);
+      arma_warn(print_status, "SpMat::load(): couldn't read ", name);
       }
     }
   
@@ -3823,19 +3818,20 @@ SpMat<eT>::load(std::istream& is, const file_type type, const bool print_status)
       break;
     
     default:
-      if(print_status)  { arma_debug_warn("SpMat::load(): unsupported file type"); }
+      arma_warn(print_status, "SpMat::load(): unsupported file type");
       load_okay = false;
     }
   
-  if(print_status && (load_okay == false))
+  
+  if(load_okay == false)
     {
     if(err_msg.length() > 0)
       {
-      arma_debug_warn("SpMat::load(): ", err_msg, "the given stream");
+      arma_warn(print_status, "SpMat::load(): ", err_msg, "the given stream");
       }
     else
       {
-      arma_debug_warn("SpMat::load(): couldn't load from the given stream");
+      arma_warn(print_status, "SpMat::load(): couldn't load from the given stream");
       }
     }
   

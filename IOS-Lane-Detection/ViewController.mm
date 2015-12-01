@@ -37,14 +37,14 @@ using namespace std;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    /*currentMaxAccelX = 0;
+    currentMaxAccelX = 0;
     currentMaxAccelY = 0;
     currentMaxAccelZ = 0;
     
     currentMaxRotX = 0;
     currentMaxRotY = 0;
     currentMaxRotZ = 0;
-    */
+    
     self.motionManager = [[CMMotionManager alloc] init];
     self.motionManager.deviceMotionUpdateInterval=1/60; //frequnence to update,60 Hz
     [self.motionManager startDeviceMotionUpdates];
@@ -80,8 +80,6 @@ using namespace std;
     self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationLandscapeRight;
     self.videoCamera.defaultFPS = 30;
     isCapturing = NO;
-    
-    
 }
 - (NSInteger)supportedInterfaceOrientations
 {
@@ -169,29 +167,9 @@ using namespace std;
     cv::Mat gray;
     cv::cvtColor(inputFrame, gray,CV_RGB2GRAY);
     
-   // BOOL lines ;
     cv::Mat finalFrame;
     finalFrame = getLines(gray);
-   
-    
-    //If detect more then two lanes, do lk to determine the correct lane
-
-        cv::Mat templateImage = cv::imread("template.jpg",0);
-        cv::Mat H = lk(gray,templateImage);
-       // arma::fmat lanepts_1, lanepts_2, warp_lane_1, warp_lane_2;
-        arma::fmat warp = Cv2Arma(H);
-        //warp_lane_1 = myproj_affine(lanepts_1, warp);
-        //warp_lane_2 = myproj_affine(lanepts_2, warp);
-        cv::Mat dst;
-        cv::Size dsize = cv::Size(320, 480);
-        cv::warpPerspective(templateImage,dst, H, dsize,CV_INTER_LINEAR+CV_WARP_INVERSE_MAP+CV_WARP_FILL_OUTLIERS);
-
-    
-
-    
-
-    
-    dst.copyTo(image);
+    finalFrame.copyTo(image);
 
     
     

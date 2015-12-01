@@ -1,11 +1,9 @@
-// Copyright (C) 2008-2015 National ICT Australia (NICTA)
+// Copyright (C) 2008-2013 Conrad Sanderson
+// Copyright (C) 2008-2013 NICTA (www.nicta.com.au)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
-// -------------------------------------------------------------------
-// 
-// Written by Conrad Sanderson - http://conradsanderson.id.au
 
 
 //! \addtogroup fn_det
@@ -76,9 +74,7 @@ det
   
   const diagmat_proxy<T1> A(X.m);
   
-  arma_debug_check( (A.n_rows != A.n_cols), "det(): given matrix must be square sized" );
-  
-  const uword N = (std::min)(A.n_rows, A.n_cols);
+  const uword N = A.n_elem;
   
   eT val1 = eT(1);
   eT val2 = eT(1);
@@ -142,7 +138,7 @@ det
   
   const uword N = P.get_n_rows();
   
-  arma_debug_check( (N != P.get_n_cols()), "det(): given matrix must be square sized" );
+  arma_debug_check( (N != P.get_n_cols()), "det(): matrix is not square" );
   
   eT val1 = eT(1);
   eT val2 = eT(1);
@@ -204,7 +200,7 @@ det
   
   const eT tmp = det(X.m, slow);
   
-  if(tmp == eT(0))  { arma_debug_warn("det(): denominator is zero" ); }
+  arma_debug_warn( (tmp == eT(0)), "det(): warning: denominator is zero" );
   
   return eT(1) / tmp;
   }

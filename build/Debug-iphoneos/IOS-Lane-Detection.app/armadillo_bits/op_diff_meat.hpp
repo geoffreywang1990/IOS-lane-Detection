@@ -1,11 +1,9 @@
-// Copyright (C) 2015 National ICT Australia (NICTA)
+// Copyright (C) 2015 Conrad Sanderson
+// Copyright (C) 2015 NICTA (www.nicta.com.au)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
-// -------------------------------------------------------------------
-// 
-// Written by Conrad Sanderson - http://conradsanderson.id.au
 
 
 //! \addtogroup op_diff
@@ -182,32 +180,13 @@ op_diff::apply(Mat<typename T1::elem_type>& out, const Op<T1,op_diff>& in)
 template<typename T1>
 inline
 void
-op_diff_default::apply(Mat<typename T1::elem_type>& out, const Op<T1,op_diff_default>& in)
+op_diff_simple::apply(Mat<typename T1::elem_type>& out, const Op<T1,op_diff_simple>& in)
   {
   arma_extra_debug_sigprint();
   
-  typedef typename T1::elem_type eT;
+  const Op<T1,op_diff> tmp(in.m, in.aux_uword_a, in.aux_uword_b);
   
-  const uword k = in.aux_uword_a;
-  
-  if(k == 0)  { out = in.m; return; }
-  
-  const quasi_unwrap<T1> U(in.m);
-  
-  const uword dim = (T1::is_row) ? 1 : 0;
-  
-  if(U.is_alias(out))
-    {
-    Mat<eT> tmp;
-    
-    op_diff::apply_noalias(tmp, U.M, k, dim);
-    
-    out.steal_mem(tmp);
-    }
-  else
-    {
-    op_diff::apply_noalias(out, U.M, k, dim);
-    }
+  op_diff::apply(out, tmp);
   }
 
 

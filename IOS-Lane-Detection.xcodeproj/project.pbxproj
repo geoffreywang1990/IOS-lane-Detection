@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		105268401C0D3C6D002ADFD8 /* template.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1052683F1C0D3C6D002ADFD8 /* template.jpg */; };
 		10DF52B41C03CCCD003361ED /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DF52B31C03CCCD003361ED /* CoreMotion.framework */; };
 		8F06A1221C0D616400BAAD24 /* detectLane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F06A1201C0D616400BAAD24 /* detectLane.cpp */; };
 		8F5319FB1BFE4C8D00DC249C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5319FA1BFE4C8D00DC249C /* main.m */; };
@@ -45,7 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1052683F1C0D3C6D002ADFD8 /* template.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = template.jpg; sourceTree = "<group>"; };
 		10DF52B31C03CCCD003361ED /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		8F06A1201C0D616400BAAD24 /* detectLane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = detectLane.cpp; sourceTree = "<group>"; };
 		8F06A1211C0D616400BAAD24 /* detectLane.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = detectLane.hpp; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 		8F5319ED1BFE4C8D00DC249C = {
 			isa = PBXGroup;
 			children = (
-				1052683F1C0D3C6D002ADFD8 /* template.jpg */,
 				10DF52B31C03CCCD003361ED /* CoreMotion.framework */,
 				8F8C73B21C03A0D1009DC381 /* opencv2.framework */,
 				8F8C73B01C03A053009DC381 /* CoreGraphics.framework */,
@@ -264,7 +261,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F531A0C1BFE4C8D00DC249C /* LaunchScreen.storyboard in Resources */,
-				105268401C0D3C6D002ADFD8 /* template.jpg in Resources */,
 				8F9CA93A1C0BA835008D203B /* armadillo_bits in Resources */,
 				8F531A091BFE4C8D00DC249C /* Assets.xcassets in Resources */,
 				8F9CA9391C0BA835008D203B /* armadillo in Resources */,
@@ -430,11 +426,7 @@
 				);
 				INFOPLIST_FILE = "IOS-Lane-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-<<<<<<< Updated upstream
 				PRODUCT_BUNDLE_IDENTIFIER = "-16423";
-=======
-				PRODUCT_BUNDLE_IDENTIFIER = geoffery;
->>>>>>> Stashed changes
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -453,11 +445,7 @@
 				);
 				INFOPLIST_FILE = "IOS-Lane-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-<<<<<<< Updated upstream
 				PRODUCT_BUNDLE_IDENTIFIER = "-16423";
-=======
-				PRODUCT_BUNDLE_IDENTIFIER = geoffery;
->>>>>>> Stashed changes
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

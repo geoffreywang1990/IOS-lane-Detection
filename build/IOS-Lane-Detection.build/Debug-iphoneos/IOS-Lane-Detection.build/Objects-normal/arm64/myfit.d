@@ -7,7 +7,7 @@ dependencies: \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/include_atlas.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/include_hdf5.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/include_superlu.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/arma_forward.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/forward_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/arma_static_check.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/typedef_elem.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/typedef_elem_check.hpp \
@@ -30,17 +30,17 @@ dependencies: \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/Base_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/BaseCube_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/SpBase_bones.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/def_blas.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/def_lapack.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/def_atlas.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/def_arpack.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/def_superlu.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/def_hdf5.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/wrapper_blas.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/wrapper_lapack.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/wrapper_atlas.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/wrapper_arpack.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/wrapper_superlu.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/blas_bones.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/lapack_bones.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/atlas_bones.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/arpack_bones.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/superlu_bones.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/hdf5_bones.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/blas_wrapper.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/lapack_wrapper.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/atlas_wrapper.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/arpack_wrapper.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/superlu_wrapper.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/cond_rel_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/arrayops_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/podarray_bones.hpp \
@@ -142,7 +142,6 @@ dependencies: \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/op_expmat_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/op_nonzeros_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/op_diff_bones.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/op_norm_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/glue_times_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/glue_mixed_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/glue_cov_bones.hpp \
@@ -164,7 +163,6 @@ dependencies: \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spop_strans_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spop_htrans_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spop_misc_bones.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spop_diagmat_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spop_mean_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spop_var_bones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spglue_plus_bones.hpp \
@@ -231,8 +229,8 @@ dependencies: \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_trans.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_det.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_log_det.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_eig_gen.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_eig_sym.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_eig_gen.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_eig_pair.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_lu.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_zeros.hpp \
@@ -305,13 +303,13 @@ dependencies: \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_interp1.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_qz.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_diff.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_schur.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_speye.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_spones.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_sprandn.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_sprandu.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_eigs_sym.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_eigs_gen.hpp \
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_norm_sparse.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_spsolve.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/fn_svds.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/hdf5_misc.hpp \
@@ -410,7 +408,6 @@ dependencies: \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/op_expmat_meat.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/op_nonzeros_meat.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/op_diff_meat.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/op_norm_meat.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/glue_times_meat.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/glue_mixed_meat.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/glue_cov_meat.hpp \
@@ -432,39 +429,10 @@ dependencies: \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spop_strans_meat.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spop_htrans_meat.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spop_misc_meat.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spop_diagmat_meat.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spop_mean_meat.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spop_var_meat.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spglue_plus_meat.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spglue_minus_meat.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spglue_times_meat.hpp \
   /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/spglue_join_meat.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/compiler_setup_post.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/opencv.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/core/core_c.h \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/core/types_c.h \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/core/core.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/core/version.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/core/operations.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/core/mat.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/flann/miniflann.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/flann/defines.h \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/flann/config.h \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/imgproc/imgproc_c.h \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/imgproc/types_c.h \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/imgproc/imgproc.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/photo/photo.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/photo/photo_c.h \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/video/video.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/video/tracking.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/video/background_segm.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/features2d/features2d.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/objdetect/objdetect.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/calib3d/calib3d.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/core/affine.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/ml/ml.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/highgui/highgui_c.h \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/highgui/highgui.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/contrib/contrib.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/contrib/retina.hpp \
-  /Users/juedoul/Downloads/IOS-lane-Detection/opencv2.framework/Headers/contrib/openfabmap.hpp
+  /Users/juedoul/Downloads/IOS-lane-Detection/IOS-Lane-Detection/armadillo_bits/compiler_setup_post.hpp

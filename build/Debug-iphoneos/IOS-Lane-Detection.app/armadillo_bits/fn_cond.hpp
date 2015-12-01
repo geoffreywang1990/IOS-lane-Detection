@@ -1,11 +1,9 @@
-// Copyright (C) 2013 National ICT Australia (NICTA)
+// Copyright (C) 2013 Conrad Sanderson
+// Copyright (C) 2013 NICTA (www.nicta.com.au)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
-// -------------------------------------------------------------------
-// 
-// Written by Conrad Sanderson - http://conradsanderson.id.au
 
 
 //! \addtogroup fn_cond
@@ -28,7 +26,7 @@ cond(const Base<typename T1::elem_type, T1>& X)
   
   if(status == false)
     {
-    arma_debug_warn("cond(): svd failed");
+    arma_bad("cond(): failed to converge", false);
     
     return T(0);
     }

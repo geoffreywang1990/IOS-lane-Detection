@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>NGZY4R4V3W.geoffery</string>
+	<string>NGZY4R4V3W.juedou</string>
 	<key>com.apple.developer.team-identifier</key>
 	<string>NGZY4R4V3W</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>NGZY4R4V3W.geoffery</string>
+		<string>NGZY4R4V3W.juedou</string>
 	</array>
 </dict>
 </plist>

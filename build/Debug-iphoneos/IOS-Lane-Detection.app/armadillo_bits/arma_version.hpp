@@ -1,11 +1,9 @@
-// Copyright (C) 2009-2015 National ICT Australia (NICTA)
+// Copyright (C) 2009-2015 Conrad Sanderson
+// Copyright (C) 2009-2015 NICTA (www.nicta.com.au)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
-// -------------------------------------------------------------------
-// 
-// Written by Conrad Sanderson - http://conradsanderson.id.au
 
 
 //! \addtogroup arma_version
@@ -13,10 +11,10 @@
 
 
 
-#define ARMA_VERSION_MAJOR 6
-#define ARMA_VERSION_MINOR 200
-#define ARMA_VERSION_PATCH 4
-#define ARMA_VERSION_NAME  "Midnight Blue Deluxe"
+#define ARMA_VERSION_MAJOR 5
+#define ARMA_VERSION_MINOR 600
+#define ARMA_VERSION_PATCH 2
+#define ARMA_VERSION_NAME  "Molotov Cocktail Deluxe"
 
 
 

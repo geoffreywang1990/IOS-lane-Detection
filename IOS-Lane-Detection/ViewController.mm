@@ -80,6 +80,8 @@ using namespace std;
     self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationLandscapeRight;
     self.videoCamera.defaultFPS = 30;
     isCapturing = NO;
+    videoCamera.recordVideo = YES;
+    
     
     
 }
@@ -99,6 +101,18 @@ using namespace std;
 
 - (IBAction)stopCaptureButtonPressed:(id)sender {
     [videoCamera stop];
+
+    NSString* relativePath = [videoCamera.videoFileURL relativePath];
+    UISaveVideoAtPathToSavedPhotosAlbum(relativePath, nil, NULL, NULL);
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Status"
+                                                                   message:@"Saved to the Gallery!"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
     isCapturing = NO;
     std::cout<<"stop"<<std::endl;
 }
@@ -169,7 +183,8 @@ using namespace std;
     cv::Mat gray;
     cv::cvtColor(inputFrame, gray,CV_RGB2GRAY);
     
-   // BOOL lines ;
+    bool lines;
+    
     cv::Mat finalFrame;
     finalFrame = getLines(gray);
    

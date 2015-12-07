@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101737351C15127100812128 /* calculate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 101737311C15127100812128 /* calculate.cpp */; };
+		101737361C15127100812128 /* cannyHough.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 101737331C15127100812128 /* cannyHough.cpp */; };
 		10DF52B41C03CCCD003361ED /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DF52B31C03CCCD003361ED /* CoreMotion.framework */; };
 		8F06A1221C0D616400BAAD24 /* detectLane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F06A1201C0D616400BAAD24 /* detectLane.cpp */; };
 		8F06A1261C0D678000BAAD24 /* template.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F06A1251C0D678000BAAD24 /* template.jpg */; };
@@ -45,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		101737311C15127100812128 /* calculate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = calculate.cpp; sourceTree = "<group>"; };
+		101737321C15127100812128 /* calculate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = calculate.hpp; sourceTree = "<group>"; };
+		101737331C15127100812128 /* cannyHough.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cannyHough.cpp; sourceTree = "<group>"; };
+		101737341C15127100812128 /* cannyHough.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cannyHough.hpp; sourceTree = "<group>"; };
 		10DF52B31C03CCCD003361ED /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		8F06A1201C0D616400BAAD24 /* detectLane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = detectLane.cpp; sourceTree = "<group>"; };
 		8F06A1211C0D616400BAAD24 /* detectLane.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = detectLane.hpp; sourceTree = "<group>"; };
@@ -144,6 +150,10 @@
 		8F5319F81BFE4C8D00DC249C /* IOS-Lane-Detection */ = {
 			isa = PBXGroup;
 			children = (
+				101737311C15127100812128 /* calculate.cpp */,
+				101737321C15127100812128 /* calculate.hpp */,
+				101737331C15127100812128 /* cannyHough.cpp */,
+				101737341C15127100812128 /* cannyHough.hpp */,
 				8F06A1201C0D616400BAAD24 /* detectLane.cpp */,
 				8F06A1211C0D616400BAAD24 /* detectLane.hpp */,
 				8F9CA9351C0BA835008D203B /* armadillo */,
@@ -289,7 +299,9 @@
 				8F531A011BFE4C8D00DC249C /* ViewController.mm in Sources */,
 				8F5319FE1BFE4C8D00DC249C /* AppDelegate.m in Sources */,
 				8F06A1221C0D616400BAAD24 /* detectLane.cpp in Sources */,
+				101737361C15127100812128 /* cannyHough.cpp in Sources */,
 				8F5319FB1BFE4C8D00DC249C /* main.m in Sources */,
+				101737351C15127100812128 /* calculate.cpp in Sources */,
 				8F531A071BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodeld in Sources */,
 				8F9CA93B1C0BA835008D203B /* myfit.cpp in Sources */,
 			);

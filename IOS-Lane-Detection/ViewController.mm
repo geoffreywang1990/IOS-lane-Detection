@@ -10,6 +10,7 @@
 //#import "armadillo"
 #import "myfit.h"
 #import "detectLane.hpp"
+#import "cannyHough.hpp"
 #import <opencv2/opencv.hpp>        // Includes the opencv library
 #import "opencv2/highgui/ios.h"
 
@@ -46,7 +47,7 @@ using namespace std;
     currentMaxRotZ = 0;
     */
     self.motionManager = [[CMMotionManager alloc] init];
-    self.motionManager.deviceMotionUpdateInterval=1/60; //frequnence to update,60 Hz
+    self.motionManager.deviceMotionUpdateInterval=1/5; //frequnence to update,60 Hz
     [self.motionManager startDeviceMotionUpdates];
     
     self.motionManager.accelerometerUpdateInterval = .1;
@@ -186,11 +187,12 @@ using namespace std;
     bool lines;
     
     cv::Mat finalFrame;
-    finalFrame = getLines(gray);
-   
+    
+    //finalFrame = getLines(gray);
+    finalFrame =  houghdetect(gray);
     
     //If detect more then two lanes, do lk to determine the correct lane
-    UIImage* templateImg = [UIImage imageNamed:@"template.jpg"];;
+    /*UIImage* templateImg = [UIImage imageNamed:@"template.jpg"];;
     cv::Mat templateImage;
     UIImageToMat(templateImg, templateImage);
     cv::Mat H = lk(finalFrame,templateImage);
@@ -203,7 +205,7 @@ using namespace std;
     cv::Size dsize = cv::Size(240, 640);
     cv::warpPerspective(templateImage,imgRoi, H, dsize,CV_INTER_LINEAR+CV_WARP_INVERSE_MAP+CV_WARP_FILL_OUTLIERS);
 
-    
+    */
     finalFrame.copyTo(image);
 
     

@@ -207,34 +207,16 @@ CvPoint half_point(CvPoint pointA, CvPoint pointB)
     return point;
 }
 
-Mat houghdetect(Mat inputImage)
-{
-    Mat  frame;
-    cv::Size size = inputImage.size() ;
-    frame = inputImage;
-    Mat img;
-    cv::Size desize = frame.size();
-    resize(frame, img, desize);
+
+void getTrueLane(Mat img,Mat edgeMap, vector<Vec4i> linesdetected){
+    //colne orginal frame to src;
     Mat src;
-         src = img.clone();
+    src = img.clone();
     
     Mat dst, color_dst;
-    int i;
-    //x and y gradient
- //   Sobel(src,src,CV_8UC1, 1, 1);
- //   Canny(src, dst, 50, 200);
-    //x gradient after canny
-//    Sobel(dst,dst,CV_8UC1,1,0);
-    //canny again
-    Canny(src,dst,100,150);
+    dst = edgeMap.clone();
     cvtColor(dst, color_dst, CV_GRAY2BGR);
 
-    
-    //Houghp to get lines
-    vector<Vec4i> linesdetected;
-  
-    HoughLinesP(dst, linesdetected, 1,CV_PI/180, 115, 10, 70);
-    
     
     Line *angleFilt = hough_link_list_create(linesdetected);
     if ((angleFilt != NULL)){
@@ -255,17 +237,16 @@ Mat houghdetect(Mat inputImage)
                 Line *pTemp = angleFilt;
                 int lineNum = MIN(listLengGet(angleFilt),10);
                 Line *pLines = NULL;
-    
+                
                 pLines = (Line *)malloc(lineNum * sizeof(Line));
                 //	IF_PTR_NULL(pLines,false);
                 memset(pLines,0,(lineNum * sizeof(Line)));
-    
+                
                 CvPoint center;
-                center = cvPoint(src.size().width/1.8,src.size().height/1.5);
-                int positionMax,positionMin;
+                center = cv::Point(src.size().width/1.8,src.size().height/1.5);
                 
                 for (int j=0; j< lineNum; j++){
-        
+                    
                     line(color_dst, pTemp->p1, pTemp->p2, Scalar(0,0,0));
                     pLines[j].p1 = pTemp->p1;
                     pLines[j].p2 = pTemp->p2;
@@ -306,47 +287,72 @@ Mat houghdetect(Mat inputImage)
                         maxLine1 = &pLines[j];
                         valMax1 = pLines[j].roadVal;
                     }
-        
+                    
                     if ((pLines[j].roadVal > valMax2) && (1 == pLines[j].lefOrright))
                     {
                         maxLine2 = &pLines[j];
                         valMax2 = pLines[j].roadVal;
                     }
-        
+                    
                 }
-    
+                
                 Line line1,line2,line3;
-                line1.p1 = cvPoint(0,0);
-                line1.p2 = cvPoint(0,src.size().height);
-                line2.p1 = cvPoint(0,0);
-                line2.p2 = cvPoint(src.size().width,0);
-                line3.p1 = cvPoint(src.size().width,0);
-                line3.p2 = cvPoint(src.size().width,src.size().height);
+                line1.p1 = cv::Point(0,0);
+                line1.p2 = cv::Point(0,src.size().height);
+                line2.p1 = cv::Point(0,0);
+                line2.p2 = cv::Point(src.size().width,0);
+                line3.p1 = cv::Point(src.size().width,0);
+                line3.p2 = cv::Point(src.size().width,src.size().height);
                 CrossPoint point1,point2;
-    
+                
                 if (NULL != maxLine1)
                 {
                     if ((true == get_cross_point( *maxLine1,line1,point1)) && (true == get_cross_point( *maxLine1,line2,point2)))
                     {
-                        cvLine(&img,cvPoint(point1.x,point1.y),cvPoint(point2.x,point2.y),CV_RGB(0,128,192),2,CV_AA);
+                        line(img, cv::Point(point1.x,point1.y), cv::Point(point2.x,point2.y), Scalar(0,128,192));
+                        
                     }
-        
+                    
                 }
                 if (NULL != maxLine2)
                 {
                     if ((true == get_cross_point(*maxLine2,line3,point1)) && (true == get_cross_point(*maxLine2,line2,point2)))
                     {
-                        //cvLine(color_dst,cvPoint(point1.x,point1.y),cvPoint(point2.x,point2.y),CV_RGB(0,128,192),2,CV_AA);
-                        cvLine(&img,cvPoint(point1.x,point1.y),cvPoint(point2.x,point2.y),CV_RGB(0,128,192),2,CV_AA);
+                        
+                        line(img, cv::Point(point1.x,point1.y), cv::Point(point2.x,point2.y), Scalar(0,128,192));
+                        
                     }
                 }
-    
-              //  PTR_FREE(pLines);
-
+                
+                //  PTR_FREE(pLines);
+                
             }
         }
     }
-
-    return img;
     
+}
+
+Mat houghDetect(Mat img)
+{
+    
+    Mat src;
+         src = img.clone();
+    
+    Mat dst, color_dst;
+    //x and y gradient
+    Sobel(src,src,CV_8UC1, 1, 1);
+    Canny(src, dst, 50, 200);
+    //x gradient after canny
+    Sobel(dst,dst,CV_8UC1,1,0);
+    //canny again
+    Canny(src,dst,100,150);
+    cvtColor(dst, color_dst, CV_GRAY2BGR);
+
+    
+    //Houghp to get lines
+    vector<Vec4i> linesdetected;
+  
+    HoughLinesP(dst, linesdetected, 1,CV_PI/180, 115, 10, 70);
+    getTrueLane(img, dst, linesdetected);
+    return img;
 }

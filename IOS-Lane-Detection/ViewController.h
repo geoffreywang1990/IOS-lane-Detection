@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 
+
 double currentMaxAccelX;
 double currentMaxAccelY;
 double currentMaxAccelZ;
@@ -26,6 +27,9 @@ using namespace std;
     CvVideoCamera* videoCamera;
     BOOL isCapturing;
     cv::Size framesize;
+    uint64_t prevTime;
+    BOOL IsNew ;
+
 }
 @property (nonatomic, strong) CvVideoCamera* videoCamera;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -36,7 +40,12 @@ using namespace std;
 
 - (IBAction)stopCaptureButtonPressed:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *changToNewMethod;
+@property (weak, nonatomic) IBOutlet UIButton *changeToOldMethod;
+- (IBAction)newMethodPressed:(id)sender;
+- (IBAction)oldMethodPressed:(id)sender;
 
 @property (strong, nonatomic) CMMotionManager *motionManager;
+
 @end
 

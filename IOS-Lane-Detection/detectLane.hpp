@@ -13,14 +13,11 @@
 #include <opencv2/core/core.hpp>
 #include "opencv2/imgproc/imgproc.hpp"
 #include <vector>
-
+#include "cannyHough.hpp"
 
 
 #endif /* detectLane_hpp */
 
 cv::Mat getLines(cv::Mat frame);
 cv::Mat deNoise(cv::Mat lane,cv::Mat newFrame);
-
-
-
-    
+cv::vector<cv::Vec4i> outputLines( cv::Mat lane,cv::Mat frame);

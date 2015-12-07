@@ -35,8 +35,11 @@ cv::Mat getLines(cv::Mat frame)
         
     }
    
-    cv::Mat lane =deNoise(temp, newFrame);  //eliminate lines we do not want
-    return lane;
+    //cv::Mat lane =deNoise(temp, newFrame);  //eliminate lines we do not want
+    cv::vector<cv::Vec4i> lines;
+    lines = outputLines(temp, newFrame);
+    getTrueLane(newFrame, temp, lines);
+    return newFrame;
 }
 
 cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
@@ -55,6 +58,9 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
     
     cv::vector< cv::vector<cv::Point> > contours;
     cv::vector<cv::Vec4i> hierarchy;
+    cv::vector<cv::Vec4f> Lines;
+    cv::vector<cv::Vec4i> outputLines;
+    
     
     
     // find all contours in image
@@ -67,16 +73,20 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
     {
         for (int i=0; i<contours.size(); ++i)
         {
+            
+            
             float contour_area = contourArea(contours[i]) ;
          
             
             //find lines larger than threshold.
             if(contour_area > minRegionSize)
             {
+    
                 cv::RotatedRect rotated_rect = minAreaRect(contours[i]);
                 cv::Size2f sz = rotated_rect.size;
                 float contour_width  = sz.width;
                 float contour_length = sz.height;
+                
                 //adjust data according to opencv
                 float blob_angle_deg = rotated_rect.angle;
                 if (contour_width < contour_length)
@@ -107,6 +117,82 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
     return temp;
 
 };
+
+
+
+cv::vector<cv::Vec4i> outputLines( cv::Mat lane,cv::Mat frame)
+{
+    cv::Mat temp = cv::Mat(frame.rows, frame.cols, CV_8UC1,0.0);//stores finally selected lane marks
+    cv::Mat binaryImage; //used for blob removal
+    int minRegionSize  = 0.002 * (frame.cols*frame.rows);  //min size of any region to be selected as lane
+
+  
+    
+    cv::vector< cv::vector<cv::Point> > contours;
+    cv::vector<cv::Vec4i> hierarchy;
+    cv::vector<cv::Vec4f> Lines;
+    cv::vector<cv::Vec4i> outputLines;
+    
+    
+    
+    // find all contours in image
+    lane.copyTo(binaryImage);
+    findContours(binaryImage, contours,hierarchy, CV_RETR_CCOMP,CV_CHAIN_APPROX_SIMPLE);
+    
+    
+    //  get real lines
+    if (!contours.empty())
+    {
+        for (int i=0; i<contours.size(); ++i)
+        {
+            
+            
+            float contour_area = contourArea(contours[i]) ;
+            
+            
+            //find lines larger than threshold.
+            if(contour_area > minRegionSize)
+            {
+                
+                cv::fitLine(contours[i], Lines[i], CV_DIST_L2, 0, 0.01, 0.01);
+                float vx,vy,k;
+                vx = Lines[i][0];
+                vy = Lines[i][1];
+                k = vy/vx;
+                cv::RotatedRect rotated_rect = minAreaRect(contours[i]);
+                cv::Size2f sz = rotated_rect.size;
+                float contour_width  = sz.width;
+                float contour_length = sz.height;
+                
+                
+                float x,y;
+                x= rotated_rect.center.x;
+                y = rotated_rect.center.y;
+                float height;
+                if(contour_length>=contour_width)
+                    height= contour_length;
+                else{
+                    height = contour_width;
+                }
+
+                
+                
+                int leftx = int((-sqrt(height / (2 * k * k + 2)) + x));
+                int lefty = int(-sqrt(height / (2 * k * k + 2))*k + y);
+                
+                int rightx = int((sqrt(height / (2 * k * k + 2)) + x));
+                int righty = int(sqrt(height / (2 * k * k + 2))*k + y);
+
+                outputLines[i][0] = leftx;
+                outputLines[i][1] = lefty;
+                outputLines[i][2] = rightx;
+                outputLines[i][3] = righty;
+            }
+        }
+    }
+    return outputLines;
+}
+
 
 
 

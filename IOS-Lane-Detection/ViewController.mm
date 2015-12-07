@@ -13,7 +13,7 @@
 #import "cannyHough.hpp"
 #import <opencv2/opencv.hpp>        // Includes the opencv library
 #import "opencv2/highgui/ios.h"
-
+#import <mach/mach_time.h>
 #import <stdlib.h>
 #import <stdio.h>
 #import <iostream>
@@ -35,6 +35,17 @@ using namespace std;
 
 @synthesize videoCamera;
 
+
+
+
+
+static double matchTimeToSecs(uint64_t time){
+    mach_timebase_info_data_t timebase;
+    mach_timebase_info(&timebase);
+    return (double)time * (double)timebase.numer / (double)timebase.denom / 1e9 ;
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -46,8 +57,12 @@ using namespace std;
     currentMaxRotY = 0;
     currentMaxRotZ = 0;
     */
+    prevTime = mach_absolute_time();
+    IsNew = true;
+        
+    
     self.motionManager = [[CMMotionManager alloc] init];
-    self.motionManager.deviceMotionUpdateInterval=1/5; //frequnence to update,60 Hz
+    self.motionManager.deviceMotionUpdateInterval=1/60; //frequnence to update,60 Hz
     [self.motionManager startDeviceMotionUpdates];
     
     self.motionManager.accelerometerUpdateInterval = .1;
@@ -92,6 +107,14 @@ using namespace std;
     return UIInterfaceOrientationMaskLandscapeRight;
 }
 
+
+- (IBAction)newMethodPressed:(id)sender {
+    IsNew = true;
+}
+
+- (IBAction)oldMethodPressed:(id)sender {
+    IsNew = false;
+}
 - (IBAction)startCaptureButtonPressed:(id)sender {
     [videoCamera start];
     isCapturing = YES;
@@ -131,7 +154,7 @@ using namespace std;
     if (isNeedRotation)
         inputFrame = inputFrame.t();
 
- 
+    
     
    /*  // Apply filter
     cv::Mat finalFrame;
@@ -178,57 +201,76 @@ using namespace std;
      <<-sin(thetaZ)<<cos(thetaZ)<<0<<endr
      <<0<<0<<1;
      Rotation=Rz*Ry*Rx;*/
+    //If detect more then two lanes, do lk to determine the correct lane
+    /*UIImage* templateImg = [UIImage imageNamed:@"template.jpg"];;
+     cv::Mat templateImage;
+     UIImageToMat(templateImg, templateImage);
+     cv::Mat H = lk(finalFrame,templateImage);
+     // arma::fmat lanepts_1, lanepts_2, warp_lane_1, warp_lane_2;
+     //arma::fmat warp = Cv2Arma(H);
+     //warp_lane_1 = myproj_affine(lanepts_1, warp);
+     //warp_lane_2 = myproj_affine(lanepts_2, warp);
+     cv::Mat imgRoi = finalFrame(cv::Rect(0,0,240-1,639));
+     
+     cv::Size dsize = cv::Size(240, 640);
+     cv::warpPerspective(templateImage,imgRoi, H, dsize,CV_INTER_LINEAR+CV_WARP_INVERSE_MAP+CV_WARP_FILL_OUTLIERS);
+     
+     */
+    /*
+     
+     
+     arma::fmat Rotation;
+     Rotation = getRotationMatrix(currentMaxAccelX,currentMaxAccelY,currentMaxAccelZ);
+     
+     std::cout<<Rotation;
+     
+     
+     cv::Mat cvR = Arma2Cv(Rotation);
+     
+     //  cv::warpPerspective(finalFrame,finalFrame,cvR, framesize);
+     
+     arma::fmat birdView = Cv2Arma(finalFrame);
+     //  LineDetection(birdView);*/
+
+    
+    
     
     
     //cvt to gray
     cv::Mat gray;
     cv::cvtColor(inputFrame, gray,CV_RGB2GRAY);
+
     
-    bool lines;
+    
     
     cv::Mat finalFrame;
     
-    //finalFrame = getLines(gray);
-    finalFrame =  houghdetect(gray);
     
-    //If detect more then two lanes, do lk to determine the correct lane
-    /*UIImage* templateImg = [UIImage imageNamed:@"template.jpg"];;
-    cv::Mat templateImage;
-    UIImageToMat(templateImg, templateImage);
-    cv::Mat H = lk(finalFrame,templateImage);
-    // arma::fmat lanepts_1, lanepts_2, warp_lane_1, warp_lane_2;
-    //arma::fmat warp = Cv2Arma(H);
-    //warp_lane_1 = myproj_affine(lanepts_1, warp);
-    //warp_lane_2 = myproj_affine(lanepts_2, warp);
-    cv::Mat imgRoi = finalFrame(cv::Rect(0,0,240-1,639));
-
-    cv::Size dsize = cv::Size(240, 640);
-    cv::warpPerspective(templateImage,imgRoi, H, dsize,CV_INTER_LINEAR+CV_WARP_INVERSE_MAP+CV_WARP_FILL_OUTLIERS);
-
-    */
+    if(IsNew)
+    finalFrame = getLines(gray);
+    else{
+        finalFrame = houghDetect(gray);}
+    
+    
+    
+    
+    //_________________________________________________________________
+    //show fps on frame
+    uint64_t currTime;
+    double timeInSeconds = matchTimeToSecs(currTime-prevTime);
+    prevTime = currTime;
+    double fps = 1.0/timeInSeconds;
     finalFrame.copyTo(image);
+    NSString *fpsString = [NSString stringWithFormat:@"FPS = %3.2f",fps];
+    cv::putText(finalFrame, [fpsString UTF8String], cv::Point(30,30), cv::FONT_HERSHEY_COMPLEX_SMALL, 0.8, cv::Scalar::all(255));
+    //______________________________________________________________________________________________________________
+    
+    
 
-    
-    
-   /*
-    
-    
-   arma::fmat Rotation;
-    Rotation = getRotationMatrix(currentMaxAccelX,currentMaxAccelY,currentMaxAccelZ);
-    
-    std::cout<<Rotation;
-    
-    
-    cv::Mat cvR = Arma2Cv(Rotation);
-    
-  //  cv::warpPerspective(finalFrame,finalFrame,cvR, framesize);
-    
-    arma::fmat birdView = Cv2Arma(finalFrame);
-  //  LineDetection(birdView);
 
     finalFrame.copyTo(image);
     
-   */
+
     
     
     

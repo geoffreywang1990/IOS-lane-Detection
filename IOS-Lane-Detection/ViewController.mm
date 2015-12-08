@@ -239,19 +239,12 @@ static double matchTimeToSecs(uint64_t time){
     //cvt to gray
     cv::Mat gray;
     cv::cvtColor(inputFrame, gray,CV_RGB2GRAY);
-
-    
-    
     
     cv::Mat finalFrame;
-    
-    
     if(IsNew)
     finalFrame = getLines(gray);
     else{
         finalFrame = houghDetect(gray);}
-    
-    
     
     
     //_________________________________________________________________

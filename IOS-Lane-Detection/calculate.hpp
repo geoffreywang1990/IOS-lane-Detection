@@ -31,10 +31,6 @@ typedef struct _Line
     _Line * next;
 }Line;
 
-
-
-CvPoint pointMultiply( CvPoint point,double num );
-CvPoint pointAdd( CvPoint point1,CvPoint point2 );
 double getAngle(CvPoint pointO,CvPoint pointA);
 double getDistance (CvPoint pointO,CvPoint pointA );
 Line * linkListCreat(int num, Line * pcornerPair);

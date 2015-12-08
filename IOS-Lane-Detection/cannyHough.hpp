@@ -15,7 +15,7 @@
 #endif /* cannyHough_hpp */
 struct CrossPoint
 {
-    Line  line;
+    Line  *line;
     int x;
     int y;
     double sad;

@@ -147,9 +147,9 @@ bool find_road_line(Mat src, Mat dst, Mat color_dst,CvPoint center, Line *pLines
             
             if ((temp->x < maxP) && (temp->x > minP))
             {
-                temp->line = pLines[j];
+                temp->line = &pLines[j];
 
-                circle(color_dst, cvPoint(temp->x, temp->y), 4, Scalar(0,255,255));
+                //circle(color_dst, cvPoint(temp->x, temp->y), 4, Scalar(0,255,255));
                 lineNum ++;
                 temp++;
             }
@@ -159,14 +159,14 @@ bool find_road_line(Mat src, Mat dst, Mat color_dst,CvPoint center, Line *pLines
     point_quick_sort(pPoints,0,(lineNum-1));
     Line *maxLine1 = NULL, *maxLine2 = NULL;
     double sadMax=0,MaxSad = 0;
-    maxLine1 = &pPoints[0].line;
-    for (int j=0; j< lineNum; j++)
+    maxLine1 = pPoints[0].line;
+    for (int j = 0; j< lineNum; j++)
     {
         sad = cal_block(src, center,cvPoint(pPoints[j].x,pPoints[j].y),3);
         pPoints[j].sad = sad;
         if (sad > sadMax)
         {
-            maxLine1 = &pPoints[j].line;
+            maxLine1 = pPoints[j].line;
             sadMax = sad;
         }
     }
@@ -178,7 +178,7 @@ bool find_road_line(Mat src, Mat dst, Mat color_dst,CvPoint center, Line *pLines
     {
         if ((pPoints[j].sad > MaxSad) && (pPoints[j].sad != sadMax))
         {
-            maxLine2 = &pPoints[j].line;
+            maxLine2 = pPoints[j].line;
             MaxSad = sad;
         }
     }
@@ -193,7 +193,7 @@ bool find_road_line(Mat src, Mat dst, Mat color_dst,CvPoint center, Line *pLines
         maxLine2->roadVal++;
     }
     
-    //PTR_FREE(pPoints);
+    PTR_FREE(pPoints);
     return true;
 }
 
@@ -208,9 +208,11 @@ CvPoint half_point(CvPoint pointA, CvPoint pointB)
 }
 
 
-void getTrueLane(Mat img,Mat edgeMap, vector<Vec4i> linesdetected){
+void getTrueLane(Mat img, Mat edgeMap, vector<Vec4i> linesdetected)
+{
     //colne orginal frame to src;
     Mat src;
+    
     src = img.clone();
     
     Mat dst, color_dst;
@@ -219,117 +221,92 @@ void getTrueLane(Mat img,Mat edgeMap, vector<Vec4i> linesdetected){
 
     
     Line *angleFilt = hough_link_list_create(linesdetected);
-    if ((angleFilt != NULL)){
-        angleFilt = angleThresh(angleFilt, 75);
-        if (angleFilt == NULL)
+    angleFilt = angleThresh(angleFilt, 75);
+    angleFilt = linklenthSort(angleFilt);
+    Line *pTemp = angleFilt;
+    int lineNum = MIN(listLengGet(angleFilt),10);
+    Line *pLines = NULL;
+    pLines = (Line *)malloc(lineNum * sizeof(Line));
+    //IF_PTR_NULL(pLines,false);
+    memset(pLines,0,(lineNum * sizeof(Line)));
+    CvPoint center;
+    center = cv::Point(src.size().width/1.8,src.size().height/1.5);
+                
+    for (int j=0; j< lineNum; j++)
+    {
+                    
+        //line(color_dst, pTemp->p1, pTemp->p2, Scalar(0,0,0));
+        pLines[j].p1 = pTemp->p1;
+        pLines[j].p2 = pTemp->p2;
+        //angle of the lines, revise to angle between 0 and 180
+        if ((pTemp->angle < 180) || (180 == pTemp->angle))
         {
-            img = dst;
+            pLines[j].angle = pTemp->angle;
         }
         else
         {
-            angleFilt = linklenthSort(angleFilt);
-            if( angleFilt == NULL )
-            {
-                img = dst;
-            }
-            else
-            {
-                Line *pTemp = angleFilt;
-                int lineNum = MIN(listLengGet(angleFilt),10);
-                Line *pLines = NULL;
-                
-                pLines = (Line *)malloc(lineNum * sizeof(Line));
-                //	IF_PTR_NULL(pLines,false);
-                memset(pLines,0,(lineNum * sizeof(Line)));
-                
-                CvPoint center;
-                center = cv::Point(src.size().width/1.8,src.size().height/1.5);
-                
-                for (int j=0; j< lineNum; j++){
-                    
-                    line(color_dst, pTemp->p1, pTemp->p2, Scalar(0,0,0));
-                    pLines[j].p1 = pTemp->p1;
-                    pLines[j].p2 = pTemp->p2;
-                    //angle of the lines, revise to angle between 0 and 180
-                    if ((pTemp->angle < 180) || (180 == pTemp->angle))
-                    {
-                        pLines[j].angle = pTemp->angle;
-                    }
-                    else
-                    {
-                        pLines[j].angle = pTemp->angle - 180;
-                    }
-                    // determine the line's position, it's on the left or the right
-                    if(half_point(pLines[j].p1, pLines[j].p2).x < center.x)
-                    {
-                        pLines[j].lefOrright = 0;
-                    }
-                    else
-                    {
-                        pLines[j].lefOrright = 1;
-                    }
-                    pTemp = pTemp->next;
-                }
-                //again color_dst hough
-                Line scalLine;
-                for(int i=0;i<src.size().height;i++)
-                {
-                    scalLine.p1 = cvPoint(0,i);
-                    scalLine.p2 = cvPoint(src.size().width,i);
-                    find_road_line(src,dst,color_dst,center,pLines,scalLine, lineNum);
-                }
-                Line  *maxLine1 = NULL, *maxLine2 = NULL;
-                double valMax1=0,valMax2 = 0;
-                for (int j=0; j< lineNum; j++)
-                {
-                    if ((pLines[j].roadVal > valMax1) && (0 == pLines[j].lefOrright))
-                    {
-                        maxLine1 = &pLines[j];
-                        valMax1 = pLines[j].roadVal;
-                    }
-                    
-                    if ((pLines[j].roadVal > valMax2) && (1 == pLines[j].lefOrright))
-                    {
-                        maxLine2 = &pLines[j];
-                        valMax2 = pLines[j].roadVal;
-                    }
-                    
-                }
-                
-                Line line1,line2,line3;
-                line1.p1 = cv::Point(0,0);
-                line1.p2 = cv::Point(0,src.size().height);
-                line2.p1 = cv::Point(0,0);
-                line2.p2 = cv::Point(src.size().width,0);
-                line3.p1 = cv::Point(src.size().width,0);
-                line3.p2 = cv::Point(src.size().width,src.size().height);
-                CrossPoint point1,point2;
-                
-                if (NULL != maxLine1)
-                {
-                    if ((true == get_cross_point( *maxLine1,line1,point1)) && (true == get_cross_point( *maxLine1,line2,point2)))
-                    {
-                        line(img, cv::Point(point1.x,point1.y), cv::Point(point2.x,point2.y), Scalar(0,128,192));
-                        
-                    }
-                    
-                }
-                if (NULL != maxLine2)
-                {
-                    if ((true == get_cross_point(*maxLine2,line3,point1)) && (true == get_cross_point(*maxLine2,line2,point2)))
-                    {
-                        
-                        line(img, cv::Point(point1.x,point1.y), cv::Point(point2.x,point2.y), Scalar(0,128,192));
-                        
-                    }
-                }
-                
-                //  PTR_FREE(pLines);
-                
-            }
+            pLines[j].angle = pTemp->angle - 180;
+        }
+        // determine the line's position, it's on the left or the right
+        if(half_point(pLines[j].p1, pLines[j].p2).x < center.x)
+        {
+            pLines[j].lefOrright = 0;
+        }
+        else
+        {
+            pLines[j].lefOrright = 1;
+        }
+        pTemp = pTemp->next;
+    }
+
+    Line scalLine;
+    for(int i=0;i<src.size().height;i++)
+    {
+        scalLine.p1 = cvPoint(0,i);
+        scalLine.p2 = cvPoint(src.size().width,i);
+        find_road_line(src,dst,color_dst,center,pLines,scalLine, lineNum);
+    }
+    Line  *maxLine1 = NULL, *maxLine2 = NULL;
+    double valMax1=0,valMax2 = 0;
+    for (int j=0; j< lineNum; j++)
+    {
+        if ((pLines[j].roadVal > valMax1) && (0 == pLines[j].lefOrright))
+        {
+            maxLine1 = &pLines[j];
+            valMax1 = pLines[j].roadVal;
+        }
+        if ((pLines[j].roadVal > valMax2) && (1 == pLines[j].lefOrright))
+        {
+            maxLine2 = &pLines[j];
+            valMax2 = pLines[j].roadVal;
         }
     }
-    
+    Line line1,line2,line3;
+    line1.p1 = cv::Point(0,0);
+    line1.p2 = cv::Point(0,src.size().height);
+    line2.p1 = cv::Point(0,0);
+    line2.p2 = cv::Point(src.size().width,0);
+    line3.p1 = cv::Point(src.size().width,0);
+    line3.p2 = cv::Point(src.size().width,src.size().height);
+    CrossPoint point1,point2;
+    if (NULL != maxLine1)
+    {
+        if ((true == get_cross_point( *maxLine1,line1,point1)) && (true == get_cross_point( *maxLine1,line2,point2)))
+        {
+            line(img, cv::Point(point1.x,point1.y), cv::Point(point2.x,point2.y), Scalar(0,128,192));
+        }
+    }
+    if (NULL != maxLine2)
+    {
+        if ((true == get_cross_point(*maxLine2,line3,point1)) && (true == get_cross_point(*maxLine2,line2,point2)))
+        {
+            line(img, cv::Point(point1.x,point1.y), cv::Point(point2.x,point2.y), Scalar(0,128,192));
+        
+        }
+    }
+                
+    //  PTR_FREE(pLines);
+                
 }
 
 Mat houghDetect(Mat img)
@@ -352,7 +329,7 @@ Mat houghDetect(Mat img)
     //Houghp to get lines
     vector<Vec4i> linesdetected;
   
-    HoughLinesP(dst, linesdetected, 1,CV_PI/180, 115, 10, 70);
+    HoughLinesP(dst, linesdetected, 1,CV_PI/180, 50, 40, 5);
     getTrueLane(img, dst, linesdetected);
     return img;
 }

@@ -159,7 +159,11 @@ bool find_road_line(Mat src, Mat dst, Mat color_dst,CvPoint center, Line *pLines
     point_quick_sort(pPoints,0,(lineNum-1));
     Line *maxLine1 = NULL, *maxLine2 = NULL;
     double sadMax=0,MaxSad = 0;
+<<<<<<< HEAD
+    maxLine1 = pPoints[0].line;
+=======
     maxLine1 = &pPoints[0].line;
+>>>>>>> parent of fc360b1... debug canny
     for (int j=0; j< lineNum; j++)
     {
         sad = cal_block(src, center,cvPoint(pPoints[j].x,pPoints[j].y),3);
@@ -324,7 +328,12 @@ void getTrueLane(Mat img,Mat edgeMap, vector<Vec4i> linesdetected){
                     }
                 }
                 
+<<<<<<< HEAD
+                
+                PTR_FREE(pLines);
+=======
                 //  PTR_FREE(pLines);
+>>>>>>> parent of fc360b1... debug canny
                 
             }
         }
@@ -336,17 +345,17 @@ Mat houghDetect(Mat img)
 {
     
     Mat src;
-         src = img.clone();
+    cvtColor(img, src, CV_RGB2GRAY);
     
-    Mat dst, color_dst;
+    Mat dst;
     //x and y gradient
-    Sobel(src,src,CV_8UC1, 1, 1);
+    Sobel(src,src,CV_8UC1, 1, 0);
     Canny(src, dst, 50, 200);
     //x gradient after canny
     Sobel(dst,dst,CV_8UC1,1,0);
     //canny again
     Canny(src,dst,100,150);
-    cvtColor(dst, color_dst, CV_GRAY2BGR);
+
 
     
     //Houghp to get lines

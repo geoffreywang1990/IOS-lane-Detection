@@ -7,16 +7,17 @@
 //
 
 #include "detectLane.hpp"
-
+#include "iostream"
 
 cv::Mat getLines(cv::Mat frame)
 {
     
-    cv::Mat newFrame = cv::Mat(640,480,CV_8UC1,0.0);
-    cv::resize(frame, newFrame, newFrame.size());
+    cv::Mat newFrame;
+    cv::cvtColor(frame, newFrame, CV_RGB2GRAY);
+    
     cv::Mat temp = cv::Mat(newFrame.rows, newFrame.cols, CV_8UC1,0.0);//stores possible lane markings
     int halfRows = newFrame.rows - newFrame.rows/2;          //rows in region of interest
-    float maxLaneWidth = 0.04 * newFrame.cols;
+    float maxLaneWidth = 0.03 * newFrame.cols;
 
    // process ROI(bottom half)
 //detect lines. pixes on line should be whitter than left and right pixs
@@ -37,10 +38,23 @@ cv::Mat getLines(cv::Mat frame)
    
     //cv::Mat lane =deNoise(temp, newFrame);  //eliminate lines we do not want
     cv::vector<cv::Vec4i> lines;
-    lines = outputLines(temp, newFrame);
-    getTrueLane(newFrame, temp, lines);
-    return newFrame;
+    lines = outputLines(temp, frame);
+    
+    //std::cout<<lines.size()<<std::endl;
+    
+   /* cv::cvtColor(newFrame, newFrame, CV_GRAY2BGR);
+    for(int i =0;i < lines.size();i++){
+        cv::line(newFrame, cv::Point(lines[i][0],lines[i][1]), cv::Point(lines[i][2],lines[i][3]), cv::Scalar(0,255,0));
+    }*/
+    getTrueLane(frame, temp, lines);
+    return frame;
 }
+
+
+
+
+
+
 
 cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
 {
@@ -124,13 +138,12 @@ cv::vector<cv::Vec4i> outputLines( cv::Mat lane,cv::Mat frame)
 {
     cv::Mat temp = cv::Mat(frame.rows, frame.cols, CV_8UC1,0.0);//stores finally selected lane marks
     cv::Mat binaryImage; //used for blob removal
-    int minRegionSize  = 0.002 * (frame.cols*frame.rows);  //min size of any region to be selected as lane
+    int minRegionSize  = 0.0005 * (frame.cols*frame.rows);  //min size of any region to be selected as lane
 
   
     
     cv::vector< cv::vector<cv::Point> > contours;
     cv::vector<cv::Vec4i> hierarchy;
-    cv::vector<cv::Vec4f> Lines;
     cv::vector<cv::Vec4i> outputLines;
     
     
@@ -146,20 +159,22 @@ cv::vector<cv::Vec4i> outputLines( cv::Mat lane,cv::Mat frame)
         for (int i=0; i<contours.size(); ++i)
         {
             
-            
-            float contour_area = contourArea(contours[i]) ;
+            cv::vector<cv::Point> cnt = contours[i];
+            cv::Vec4f line;
+            float contour_area = contourArea(cnt) ;
             
             
             //find lines larger than threshold.
             if(contour_area > minRegionSize)
             {
                 
-                cv::fitLine(contours[i], Lines[i], CV_DIST_L2, 0, 0.01, 0.01);
+                cv::fitLine(cnt, line, CV_DIST_L2, 0, 0.01, 0.01);
+                
                 float vx,vy,k;
-                vx = Lines[i][0];
-                vy = Lines[i][1];
+                vx = line[0];
+                vy = line[1];
                 k = vy/vx;
-                cv::RotatedRect rotated_rect = minAreaRect(contours[i]);
+                cv::RotatedRect rotated_rect = minAreaRect(cnt);
                 cv::Size2f sz = rotated_rect.size;
                 float contour_width  = sz.width;
                 float contour_length = sz.height;
@@ -169,7 +184,7 @@ cv::vector<cv::Vec4i> outputLines( cv::Mat lane,cv::Mat frame)
                 x= rotated_rect.center.x;
                 y = rotated_rect.center.y;
                 float height;
-                if(contour_length>=contour_width)
+                if(contour_length >= contour_width)
                     height= contour_length;
                 else{
                     height = contour_width;
@@ -177,20 +192,29 @@ cv::vector<cv::Vec4i> outputLines( cv::Mat lane,cv::Mat frame)
 
                 
                 
-                int leftx = int((-sqrt(height / (2 * k * k + 2)) + x));
-                int lefty = int(-sqrt(height / (2 * k * k + 2))*k + y);
+                int leftx = int((-sqrt(height * height / (4 * k * k + 4)) + x));
+                int lefty = int(-sqrt(height * height / (4 * k * k + 4)) * k + y);
                 
-                int rightx = int((sqrt(height / (2 * k * k + 2)) + x));
-                int righty = int(sqrt(height / (2 * k * k + 2))*k + y);
-
-                outputLines[i][0] = leftx;
-                outputLines[i][1] = lefty;
-                outputLines[i][2] = rightx;
-                outputLines[i][3] = righty;
+                int rightx = int((sqrt(height * height / (4 * k * k + 4)) + x));
+                int righty = int(sqrt(height * height / (4 * k * k + 4)) * k + y);
+                
+                float a = sqrt((leftx-rightx)*(leftx-rightx) + (lefty-righty)*(lefty-righty));
+            //    std::cout<<"ping fang cha : "<<a<<std::endl;
+                cv::Vec4i output;
+                output[0] = leftx;
+                output[1] = lefty;
+                output[2] = rightx;
+                output[3] = righty;
+                outputLines.push_back(output);
+                
+                drawContours(frame, contours,i, cv::Scalar::all(0), CV_FILLED, 8);
+ 
             }
         }
     }
+
     return outputLines;
+    
 }
 
 

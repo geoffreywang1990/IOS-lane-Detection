@@ -226,7 +226,7 @@ Line * delnode(Line * h , Line * maxp)
         t=h;
         while(t->next!=maxp ) {t=t->next;}   //find the node before the maxp
         t->next = maxp->next ;                //delete maxp, link maxp->next to the node
-        //free(maxp);
+        free(maxp);
         maxp = NULL;
         return h;							  //return head
     }

@@ -237,25 +237,23 @@ static double matchTimeToSecs(uint64_t time){
     
     
     //cvt to gray
-<<<<<<< HEAD
+
     cv::Mat resizedImage;
     cv::resize(inputFrame, resizedImage, cv::Size(640,480));
-=======
-    cv::Mat gray;
-    cv::cvtColor(inputFrame, gray,CV_RGB2GRAY);
-<<<<<<< HEAD
->>>>>>> parent of fc360b1... debug canny
+
 
     
     
-=======
->>>>>>> origin/master
     
     cv::Mat finalFrame;
+    
+    
     if(IsNew)
     finalFrame = getLines(resizedImage);
     else{
         finalFrame = houghDetect(resizedImage);}
+    
+    
     
     
     

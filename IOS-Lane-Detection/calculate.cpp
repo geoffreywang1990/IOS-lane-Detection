@@ -20,6 +20,37 @@
     }\
 }
 
+
+
+/************************************************************************
+ multiply cvpoints and number
+ return cvpoints
+ **************************************************************************/
+CvPoint pointMultiply( CvPoint point,double num )
+{
+    CvPoint pointOut;
+    
+    pointOut.x = (int)(num * point.x);
+    pointOut.y = (int)(num * point.y);
+    
+    return pointOut;
+}
+
+
+/************************************************************************
+ add 2 cvpoints
+ return cvpoint
+ **************************************************************************/
+CvPoint pointAdd( CvPoint point1,CvPoint point2 )
+{
+    CvPoint pointOut;
+    
+    pointOut.x = point1.x + point2.x;
+    pointOut.y = point1.y + point2.y;
+    
+    return pointOut;
+}
+
 /************************************************************************
  getAngle
  according to the 2 points of a line, get the angle of the line,

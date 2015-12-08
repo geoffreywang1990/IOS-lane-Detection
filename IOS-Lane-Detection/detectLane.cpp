@@ -198,7 +198,7 @@ cv::vector<cv::Vec4i> outputLines( cv::Mat lane,cv::Mat frame)
                 int rightx = int((sqrt(height * height / (4 * k * k + 4)) + x));
                 int righty = int(sqrt(height * height / (4 * k * k + 4)) * k + y);
                 
-                float a = sqrt((leftx-rightx)*(leftx-rightx) + (lefty-righty)*(lefty-righty));
+             //   float a = sqrt((leftx-rightx)*(leftx-rightx) + (lefty-righty)*(lefty-righty));
             //    std::cout<<"ping fang cha : "<<a<<std::endl;
                 cv::Vec4i output;
                 output[0] = leftx;

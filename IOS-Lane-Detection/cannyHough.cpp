@@ -136,6 +136,7 @@ bool find_road_line(Mat src, Mat dst, Mat color_dst,CvPoint center, Line *pLines
     pPoints = (CrossPoint *)malloc(num * sizeof(CrossPoint));
     IF_PTR_NULL(pPoints,false);
     memset(pPoints,0,(num  * sizeof(CrossPoint)));
+
     double sad = cal_block(src, center,center,3);
     CrossPoint *temp = pPoints;
     for (int j=0; j< num; j++)
@@ -312,7 +313,7 @@ void getTrueLane(Mat img,Mat edgeMap, vector<Vec4i> linesdetected){
                 {
                     if ((true == get_cross_point( *maxLine1,line1,point1)) && (true == get_cross_point( *maxLine1,line2,point2)))
                     {
-                        line(img, cv::Point(point1.x,point1.y), cv::Point(point2.x,point2.y), Scalar(0,128,192));
+                        line(img, cv::Point(point1.x,point1.y), cv::Point(point2.x,point2.y), Scalar(255,0,0),8);
                         
                     }
                     
@@ -322,7 +323,7 @@ void getTrueLane(Mat img,Mat edgeMap, vector<Vec4i> linesdetected){
                     if ((true == get_cross_point(*maxLine2,line3,point1)) && (true == get_cross_point(*maxLine2,line2,point2)))
                     {
                         
-                        line(img, cv::Point(point1.x,point1.y), cv::Point(point2.x,point2.y), Scalar(0,128,192));
+                        line(img, cv::Point(point1.x,point1.y), cv::Point(point2.x,point2.y), Scalar(0,0,255),8);
                         
                     }
                 }
@@ -335,7 +336,9 @@ void getTrueLane(Mat img,Mat edgeMap, vector<Vec4i> linesdetected){
             }
         }
     }
-    
+    src.release();
+    dst.release();
+    color_dst.release();
 }
 
 Mat houghDetect(Mat img)
@@ -346,19 +349,22 @@ Mat houghDetect(Mat img)
     
     Mat dst;
     //x and y gradient
-    Sobel(src,src,CV_8UC1, 1, 0);
-    Canny(src, dst, 50, 200);
+    Sobel(src,dst,CV_8UC1,1,0);
+    Canny(dst, dst, 200, 300);
     //x gradient after canny
     Sobel(dst,dst,CV_8UC1,1,0);
     //canny again
-    Canny(src,dst,100,150);
-
-
+    Canny(dst,dst,250,400);
     
     //Houghp to get lines
     vector<Vec4i> linesdetected;
   
-    HoughLinesP(dst, linesdetected, 1,CV_PI/180, 115, 10, 70);
+    HoughLinesP(dst, linesdetected, 1,CV_PI/180, 60, 40, 70);
+    
     getTrueLane(img, dst, linesdetected);
+    src.release();
+    dst.release();
+    
+    
     return img;
 }

@@ -8,7 +8,7 @@
 
 #ifdef __cplusplus
 //#import "armadillo"
-#import "myfit.h"
+//#import "myfit.h"
 #import "detectLane.hpp"
 #import "cannyHough.hpp"
 #import <opencv2/opencv.hpp>        // Includes the opencv library
@@ -42,8 +42,8 @@ using namespace std;
 static double matchTimeToSecs(uint64_t time){
     mach_timebase_info_data_t timebase;
     mach_timebase_info(&timebase);
-    return (double)time * (double)timebase.numer / (double)timebase.denom / 1e9 ;
-    
+    return (double)time * (double)timebase.numer /
+    (double)timebase.denom / 1e9;
 }
 
 - (void)viewDidLoad {
@@ -96,7 +96,7 @@ static double matchTimeToSecs(uint64_t time){
     self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationLandscapeRight;
     self.videoCamera.defaultFPS = 30;
     isCapturing = NO;
-    videoCamera.recordVideo = YES;
+   // videoCamera.recordVideo = YES;
     
     
     
@@ -126,7 +126,8 @@ static double matchTimeToSecs(uint64_t time){
 - (IBAction)stopCaptureButtonPressed:(id)sender {
     [videoCamera stop];
 
-    NSString* relativePath = [videoCamera.videoFileURL relativePath];
+    
+ /*   NSString* relativePath = [videoCamera.videoFileURL relativePath];
     UISaveVideoAtPathToSavedPhotosAlbum(relativePath, nil, NULL, NULL);
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Status"
                                                                    message:@"Saved to the Gallery!"
@@ -138,7 +139,9 @@ static double matchTimeToSecs(uint64_t time){
     [self presentViewController:alert animated:YES completion:nil];
     
     isCapturing = NO;
-    std::cout<<"stop"<<std::endl;
+   // std::cout<<"stop"<<std::endl;
+
+   */
 }
 
 
@@ -260,10 +263,10 @@ static double matchTimeToSecs(uint64_t time){
     
     //_________________________________________________________________
     //show fps on frame
-    uint64_t currTime;
-    double timeInSeconds = matchTimeToSecs(currTime-prevTime);
+    uint64_t currTime = mach_absolute_time();
+    double timeInSeconds = matchTimeToSecs(currTime - prevTime);
     prevTime = currTime;
-    double fps = 1.0/timeInSeconds;
+    double fps = 1.0 / timeInSeconds;
     finalFrame.copyTo(image);
     NSString *fpsString = [NSString stringWithFormat:@"FPS = %3.2f",fps];
     cv::putText(finalFrame, [fpsString UTF8String], cv::Point(30,30), cv::FONT_HERSHEY_COMPLEX_SMALL, 0.8, cv::Scalar::all(255));
@@ -305,8 +308,9 @@ static double matchTimeToSecs(uint64_t time){
 }
 
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+    
     // Dispose of any resources that can be recreated.
+
 }
 - (void)viewDidDisappear:(BOOL)animated
 {

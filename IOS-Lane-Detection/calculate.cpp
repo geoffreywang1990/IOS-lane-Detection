@@ -280,7 +280,7 @@ Line * angleThresh(Line* head, double angThresh)
             
             while(NULL != p)
             {
-                std::cout<<p->angle<<std::endl;
+                //std::cout<<p->angle<<std::endl;
                 
                 if (angle_ok(p->angle,angThresh) == true)
                 {

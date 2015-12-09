@@ -12,6 +12,9 @@
 		10DF52B41C03CCCD003361ED /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DF52B31C03CCCD003361ED /* CoreMotion.framework */; };
 		8F06A1221C0D616400BAAD24 /* detectLane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F06A1201C0D616400BAAD24 /* detectLane.cpp */; };
 		8F06A1261C0D678000BAAD24 /* template.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F06A1251C0D678000BAAD24 /* template.jpg */; };
+		8F0D665C1C17F0F6009C310B /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0D665B1C17F0F6009C310B /* opencv2.framework */; };
+		8F0D665F1C17FE49009C310B /* armadillo in Resources */ = {isa = PBXBuildFile; fileRef = 8F0D665D1C17FE49009C310B /* armadillo */; };
+		8F0D66601C17FE49009C310B /* armadillo_bits in Resources */ = {isa = PBXBuildFile; fileRef = 8F0D665E1C17FE49009C310B /* armadillo_bits */; };
 		8F5319FB1BFE4C8D00DC249C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5319FA1BFE4C8D00DC249C /* main.m */; };
 		8F5319FE1BFE4C8D00DC249C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5319FD1BFE4C8D00DC249C /* AppDelegate.m */; };
 		8F531A011BFE4C8D00DC249C /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8F531A001BFE4C8D00DC249C /* ViewController.mm */; };
@@ -30,10 +33,6 @@
 		8F8C73AD1C03A042009DC381 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73AC1C03A042009DC381 /* UIKit.framework */; };
 		8F8C73AF1C03A04B009DC381 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73AE1C03A04B009DC381 /* Foundation.framework */; };
 		8F8C73B11C03A053009DC381 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73B01C03A053009DC381 /* CoreGraphics.framework */; };
-		8F8C73B31C03A0D1009DC381 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C73B21C03A0D1009DC381 /* opencv2.framework */; };
-		8F9CA9391C0BA835008D203B /* armadillo in Resources */ = {isa = PBXBuildFile; fileRef = 8F9CA9351C0BA835008D203B /* armadillo */; };
-		8F9CA93A1C0BA835008D203B /* armadillo_bits in Resources */ = {isa = PBXBuildFile; fileRef = 8F9CA9361C0BA835008D203B /* armadillo_bits */; };
-		8F9CA93B1C0BA835008D203B /* myfit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CA9371C0BA835008D203B /* myfit.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +54,9 @@
 		8F06A1201C0D616400BAAD24 /* detectLane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = detectLane.cpp; sourceTree = "<group>"; };
 		8F06A1211C0D616400BAAD24 /* detectLane.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = detectLane.hpp; sourceTree = "<group>"; };
 		8F06A1251C0D678000BAAD24 /* template.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = template.jpg; path = "IOS-Lane-Detection/template.jpg"; sourceTree = "<group>"; };
+		8F0D665B1C17F0F6009C310B /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		8F0D665D1C17FE49009C310B /* armadillo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = armadillo; sourceTree = "<group>"; };
+		8F0D665E1C17FE49009C310B /* armadillo_bits */ = {isa = PBXFileReference; lastKnownFileType = folder; path = armadillo_bits; sourceTree = "<group>"; };
 		8F5319F61BFE4C8D00DC249C /* IOS-Lane-Detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Lane-Detection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5319FA1BFE4C8D00DC249C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8F5319FC1BFE4C8D00DC249C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,11 +81,6 @@
 		8F8C73AC1C03A042009DC381 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8F8C73AE1C03A04B009DC381 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8F8C73B01C03A053009DC381 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8F8C73B21C03A0D1009DC381 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
-		8F9CA9351C0BA835008D203B /* armadillo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = armadillo; sourceTree = "<group>"; };
-		8F9CA9361C0BA835008D203B /* armadillo_bits */ = {isa = PBXFileReference; lastKnownFileType = folder; path = armadillo_bits; sourceTree = "<group>"; };
-		8F9CA9371C0BA835008D203B /* myfit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = myfit.cpp; sourceTree = "<group>"; };
-		8F9CA9381C0BA835008D203B /* myfit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myfit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0D665C1C17F0F6009C310B /* opencv2.framework in Frameworks */,
 				10DF52B41C03CCCD003361ED /* CoreMotion.framework in Frameworks */,
-				8F8C73B31C03A0D1009DC381 /* opencv2.framework in Frameworks */,
 				8F8C73B11C03A053009DC381 /* CoreGraphics.framework in Frameworks */,
 				8F8C73AF1C03A04B009DC381 /* Foundation.framework in Frameworks */,
 				8F8C73AD1C03A042009DC381 /* UIKit.framework in Frameworks */,
@@ -119,9 +116,9 @@
 		8F5319ED1BFE4C8D00DC249C = {
 			isa = PBXGroup;
 			children = (
+				8F0D665B1C17F0F6009C310B /* opencv2.framework */,
 				8F06A1251C0D678000BAAD24 /* template.jpg */,
 				10DF52B31C03CCCD003361ED /* CoreMotion.framework */,
-				8F8C73B21C03A0D1009DC381 /* opencv2.framework */,
 				8F8C73B01C03A053009DC381 /* CoreGraphics.framework */,
 				8F8C73AE1C03A04B009DC381 /* Foundation.framework */,
 				8F8C73AC1C03A042009DC381 /* UIKit.framework */,
@@ -150,16 +147,14 @@
 		8F5319F81BFE4C8D00DC249C /* IOS-Lane-Detection */ = {
 			isa = PBXGroup;
 			children = (
+				8F0D665D1C17FE49009C310B /* armadillo */,
+				8F0D665E1C17FE49009C310B /* armadillo_bits */,
 				101737311C15127100812128 /* calculate.cpp */,
 				101737321C15127100812128 /* calculate.hpp */,
 				101737331C15127100812128 /* cannyHough.cpp */,
 				101737341C15127100812128 /* cannyHough.hpp */,
 				8F06A1201C0D616400BAAD24 /* detectLane.cpp */,
 				8F06A1211C0D616400BAAD24 /* detectLane.hpp */,
-				8F9CA9351C0BA835008D203B /* armadillo */,
-				8F9CA9361C0BA835008D203B /* armadillo_bits */,
-				8F9CA9371C0BA835008D203B /* myfit.cpp */,
-				8F9CA9381C0BA835008D203B /* myfit.h */,
 				8F5319FC1BFE4C8D00DC249C /* AppDelegate.h */,
 				8F5319FD1BFE4C8D00DC249C /* AppDelegate.m */,
 				8F5319FF1BFE4C8D00DC249C /* ViewController.h */,
@@ -273,11 +268,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0D66601C17FE49009C310B /* armadillo_bits in Resources */,
 				8F531A0C1BFE4C8D00DC249C /* LaunchScreen.storyboard in Resources */,
+				8F0D665F1C17FE49009C310B /* armadillo in Resources */,
 				8F06A1261C0D678000BAAD24 /* template.jpg in Resources */,
-				8F9CA93A1C0BA835008D203B /* armadillo_bits in Resources */,
 				8F531A091BFE4C8D00DC249C /* Assets.xcassets in Resources */,
-				8F9CA9391C0BA835008D203B /* armadillo in Resources */,
 				8F531A041BFE4C8D00DC249C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +298,6 @@
 				8F5319FB1BFE4C8D00DC249C /* main.m in Sources */,
 				101737351C15127100812128 /* calculate.cpp in Sources */,
 				8F531A071BFE4C8D00DC249C /* IOS_Lane_Detection.xcdatamodeld in Sources */,
-				8F9CA93B1C0BA835008D203B /* myfit.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +436,7 @@
 				);
 				INFOPLIST_FILE = "IOS-Lane-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "-16423";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -461,6 +456,7 @@
 				);
 				INFOPLIST_FILE = "IOS-Lane-Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "-16423";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

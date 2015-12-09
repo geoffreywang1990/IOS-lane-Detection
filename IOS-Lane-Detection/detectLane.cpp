@@ -8,34 +8,93 @@
 
 #include "detectLane.hpp"
 #include "iostream"
+//#include "armadillo"
+
+arma::fmat Cv2Arma(cv::Mat &cvX)
+{
+    arma::fmat X(cvX.ptr<float>(0), cvX.cols, cvX.rows, false); // This is the transpose of the OpenCV X_
+    return X; // Return the new matrix (no new memory allocated)
+}
+//==============================================================================
+// Quick function to convert to OpenCV (floating point) matrix header
+cv::Mat Arma2Cv( arma::fmat &X)
+{
+    cv::Mat cvX = cv::Mat(X.n_cols, X.n_rows,CV_32F, X.memptr()).clone();
+    return cvX; // Return the new matrix (new memory allocated)
+}
 
 cv::Mat getLines(cv::Mat frame)
 {
     
     cv::Mat newFrame;
     cv::cvtColor(frame, newFrame, CV_RGB2GRAY);
+    cv::Mat temp;
+   
     
-    cv::Mat temp = cv::Mat(newFrame.rows, newFrame.cols, CV_8UC1,0.0);//stores possible lane markings
-    int halfRows = newFrame.rows - newFrame.rows/2;          //rows in region of interest
-    float maxLaneWidth = 0.03 * newFrame.cols;
+    int halfRows = frame.rows - frame.rows/2;          //rows in region of interest
+    float maxLaneWidth = 0.05 * frame.cols;
 
-   // process ROI(bottom half)
-//detect lines. pixes on line should be whitter than left and right pixs
-    
-    for(int i=newFrame.rows/2; i<newFrame.rows; i++){
-        int laneWidth = 5+ maxLaneWidth*(i-newFrame.rows/2)/halfRows;
-        for(int j=laneWidth; j<newFrame.cols- laneWidth; j++){
-            int leftDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j-laneWidth);
-            int rightDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j+laneWidth);
+    // process ROI(bottom half)
+    //detect lines. pixes on line should be whitter than left and right pixs
+ 
+    for(int i=frame.rows/2; i<frame.rows; i++){
+        int laneWidth = 8+ maxLaneWidth*(i-frame.rows/2)/halfRows;
+        for(int j=laneWidth; j<frame.cols- laneWidth; j++){
+            int leftDiff = frame.at<uchar>(i,j) - frame.at<uchar>(i,j-laneWidth);
+            int rightDiff = frame.at<uchar>(i,j) - frame.at<uchar>(i,j+laneWidth);
             int diff  =  leftDiff + rightDiff - abs(leftDiff-rightDiff);
-            int diffThresh = newFrame.at<uchar>(i,j)/2;
+            int diffThresh = frame.at<uchar>(i,j)/2;
             if (leftDiff>0 && rightDiff >0 && diff>5)
                 if(diff>=diffThresh)
                     temp.at<uchar>(i,j)=255;
         }
-        
     }
    
+    
+    /*
+     cv::Mat temp1(frame.rows, frame.cols, CV_32FC1);//stores possible lane markings
+     newFrame.convertTo(temp1, CV_32FC1, 1.0/255.0);
+    arma::fmat left,right,orginal;
+    
+    orginal = Cv2Arma(temp1);
+    left.set_size(orginal.n_cols,orginal.n_rows);
+    right.set_size(orginal.n_cols,orginal.n_rows);
+    
+    arma::fvec leftconv,rightconv;
+    leftconv.zeros(20);
+    rightconv.zeros(20);
+    leftconv[0] = -1;leftconv[19] = 1;
+    rightconv[0] = 1;rightconv[19] = -1;
+    for(int i =frame.rows/2-1;i<frame.rows;i++){
+        arma::fvec rowi =  arma::conv_to< arma::fcolvec >::from(orginal.row(i));
+        arma::fvec lefti = arma::conv(rowi, leftconv);
+        arma::fvec righti = arma::conv(rowi, rightconv);
+        left.row(i) = lefti;
+        right.row(i) = righti;
+    }
+    
+    arma::uvec ql = find(left>0);
+    arma::uvec qr = find(right>0);
+    
+    arma::fmat diff = left+right-arma::abs(left-right);
+    arma::uvec qd = find(diff>100);
+    
+    
+    arma::uvec q = find(ql = qr);
+    q = find(q = qd);
+    
+    arma::fmat result;
+    result.zeros(frame.rows,frame.cols);
+    result.elem(q).ones();
+    result = result*255;
+    
+    temp = Arma2Cv(result);
+    
+    
+    */
+    
+    
+    
     //cv::Mat lane =deNoise(temp, newFrame);  //eliminate lines we do not want
     cv::vector<cv::Vec4i> lines;
     lines = outputLines(temp, frame);
@@ -47,6 +106,10 @@ cv::Mat getLines(cv::Mat frame)
         cv::line(newFrame, cv::Point(lines[i][0],lines[i][1]), cv::Point(lines[i][2],lines[i][3]), cv::Scalar(0,255,0));
     }*/
     getTrueLane(frame, temp, lines);
+   // temp = deNoise(temp,frame);
+    newFrame.release();
+    temp.release();
+    
     return frame;
 }
 
@@ -110,6 +173,22 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
                 if(contour_length>longLane || contour_width >longLane)
                 {
                     drawContours(frame, contours,i, cvScalar(0), CV_FILLED, 8);
+                    cv::Vec4f line;
+                    cv::fitLine(contours[i], line, CV_DIST_L2, 0, 0.01, 0.01);
+                    
+                    float vx,vy,x,y;
+                    vx = line[0];
+                    vy = line[1];
+                    x =line[2];
+                    y=line[3];
+                    int lefty,righty;
+                    
+                    lefty = int((-x*vy/vx) + y);
+                    righty = int(((frame.cols-x)*vy/vx)+y);
+                    cv::line(frame,cv::Point(frame.cols-1,righty),cv::Point(0,lefty),cv::Scalar(192,128,0));
+                    
+                    
+               
                     drawContours(temp, contours,i, cvScalar(255), CV_FILLED, 8);
                 }
 
@@ -120,6 +199,20 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
                     if ((contour_length/contour_width)>=ratio || (contour_width/contour_length)>=ratio ||(contour_area< smallLaneArea &&  ((contour_area/(contour_width*contour_length)) > .75) && ((contour_length/contour_width)>=3 || (contour_width/contour_length)>=3)))
                     {
                         drawContours(frame, contours,i, cvScalar(0), CV_FILLED, 8);
+                        cv::Vec4f line;
+                        cv::fitLine(contours[i], line, CV_DIST_L2, 0, 0.01, 0.01);
+                        
+                        float vx,vy,x,y;
+                        vx = line[0];
+                        vy = line[1];
+                        x =line[2];
+                        y=line[3];
+                        int lefty,righty;
+                        
+                        lefty = int((-x*vy/vx) + y);
+                        righty = int(((frame.cols-x)*vy/vx)+y);
+                        cv::line(frame,cv::Point(frame.cols-1,righty),cv::Point(0,lefty),cv::Scalar(192,128,0));
+
                         drawContours(temp, contours,i, cvScalar(255), CV_FILLED, 8);
                     }
                 }
@@ -127,7 +220,8 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
         }
     }
     
-
+    binaryImage.release();
+    
     return temp;
 
 };
@@ -136,9 +230,9 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
 
 cv::vector<cv::Vec4i> outputLines( cv::Mat lane,cv::Mat frame)
 {
-    cv::Mat temp = cv::Mat(frame.rows, frame.cols, CV_8UC1,0.0);//stores finally selected lane marks
+    
     cv::Mat binaryImage; //used for blob removal
-    int minRegionSize  = 0.0005 * (frame.cols*frame.rows);  //min size of any region to be selected as lane
+    int minRegionSize  = 0.002 * (frame.cols*frame.rows);  //min size of any region to be selected as lane
 
   
     
@@ -212,7 +306,7 @@ cv::vector<cv::Vec4i> outputLines( cv::Mat lane,cv::Mat frame)
             }
         }
     }
-
+    binaryImage.release();
     return outputLines;
     
 }

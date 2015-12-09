@@ -149,6 +149,8 @@ Line * linkListCreat(int num, Line * pcornerPair)
     if(num ==0){
         head->next = NULL;
         head->nextIsNull = 1;
+        head = NULL;
+        return(head);
     }
     p = head;
     for( int i = 0; i < num; i++ )
@@ -176,7 +178,10 @@ Line * hough_link_list_create(cv::vector<cv::Vec4i> lines)
     head = (Line*)malloc(sizeof(Line));
     if(num == 0){
         head->next = NULL;
-        head->nextIsNull = 1;}
+        head->nextIsNull = 1;
+        head = NULL;
+        return(head);
+    }
  //   IF_PTR_NULL(head,NULL);
     p = head;
     for( int i = 0; i < num; i++ )

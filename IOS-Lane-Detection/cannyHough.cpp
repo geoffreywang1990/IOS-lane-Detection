@@ -225,12 +225,9 @@ void getTrueLane(Mat img,Mat edgeMap, vector<Vec4i> linesdetected){
     Line *angleFilt = hough_link_list_create(linesdetected);
     if ((angleFilt != NULL)){
         angleFilt = angleThresh(angleFilt, 75);
-        if (angleFilt == NULL)
+        if (angleFilt != NULL)
         {
-            img = dst;
-        }
-        else
-        {
+
             angleFilt = linklenthSort(angleFilt);
             if( angleFilt == NULL )
             {
@@ -336,9 +333,7 @@ void getTrueLane(Mat img,Mat edgeMap, vector<Vec4i> linesdetected){
             }
         }
     }
-    src.release();
-    dst.release();
-    color_dst.release();
+
 }
 
 Mat houghDetect(Mat img)
@@ -362,8 +357,8 @@ Mat houghDetect(Mat img)
     HoughLinesP(dst, linesdetected, 1,CV_PI/180, 60, 40, 70);
     
     getTrueLane(img, dst, linesdetected);
-    src.release();
-    dst.release();
+   // src.release();
+  //  dst.release();
     
     
     return img;

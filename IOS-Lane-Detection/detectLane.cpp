@@ -8,49 +8,52 @@
 
 #include "detectLane.hpp"
 #include "iostream"
-//#include "armadillo"
 
-arma::fmat Cv2Arma(cv::Mat &cvX)
-{
-    arma::fmat X(cvX.ptr<float>(0), cvX.cols, cvX.rows, false); // This is the transpose of the OpenCV X_
-    return X; // Return the new matrix (no new memory allocated)
-}
-//==============================================================================
-// Quick function to convert to OpenCV (floating point) matrix header
-cv::Mat Arma2Cv( arma::fmat &X)
-{
-    cv::Mat cvX = cv::Mat(X.n_cols, X.n_rows,CV_32F, X.memptr()).clone();
-    return cvX; // Return the new matrix (new memory allocated)
-}
+
 
 cv::Mat getLines(cv::Mat frame)
 {
     
     cv::Mat newFrame;
     cv::cvtColor(frame, newFrame, CV_RGB2GRAY);
-    cv::Mat temp;
+    cv::Mat temp(newFrame.rows, newFrame.cols, CV_8UC1);
    
     
-    int halfRows = frame.rows - frame.rows/2;          //rows in region of interest
+    int halfRows = frame.rows/2;          //rows in region of interest
     float maxLaneWidth = 0.05 * frame.cols;
-
-    // process ROI(bottom half)
-    //detect lines. pixes on line should be whitter than left and right pixs
- 
-    for(int i=frame.rows/2; i<frame.rows; i++){
-        int laneWidth = 8+ maxLaneWidth*(i-frame.rows/2)/halfRows;
-        for(int j=laneWidth; j<frame.cols- laneWidth; j++){
-            int leftDiff = frame.at<uchar>(i,j) - frame.at<uchar>(i,j-laneWidth);
-            int rightDiff = frame.at<uchar>(i,j) - frame.at<uchar>(i,j+laneWidth);
+    int a  =newFrame.rows;
+    
+    for(int i = halfRows*0.3; i < halfRows; i++){
+        int laneWidth = 8+maxLaneWidth*i/newFrame.rows;
+        for(int j=0.3*newFrame.cols+laneWidth; j<0.7*newFrame.cols-laneWidth; j++){
+            int leftDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j-laneWidth);
+            int rightDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j+laneWidth);
             int diff  =  leftDiff + rightDiff - abs(leftDiff-rightDiff);
-            int diffThresh = frame.at<uchar>(i,j)/2;
+            int diffThresh = newFrame.at<uchar>(i,j)/2;
             if (leftDiff>0 && rightDiff >0 && diff>5)
                 if(diff>=diffThresh)
                     temp.at<uchar>(i,j)=255;
         }
     }
-   
+
+    // process ROI(bottom half)
+    //detect lines. pixes on line should be whitter than left and right pixs
+ 
+    for(int i=newFrame.rows/2; i<newFrame.rows; i++){
+        int laneWidth = 8+ maxLaneWidth*(i-newFrame.rows/2)/halfRows;
+        for(int j=0.1*newFrame.cols+laneWidth; j<0.9*newFrame.cols- laneWidth; j++){
+            int leftDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j-laneWidth);
+            int rightDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j+laneWidth);
+            int diff  =  leftDiff + rightDiff - abs(leftDiff-rightDiff);
+            int diffThresh = newFrame.at<uchar>(i,j)/2;
+            if (leftDiff>0 && rightDiff >0 && diff>5)
+                if(diff>=diffThresh)
+                    temp.at<uchar>(i,j)=255;
+        }
+    }
+ 
     
+
     /*
      cv::Mat temp1(frame.rows, frame.cols, CV_32FC1);//stores possible lane markings
      newFrame.convertTo(temp1, CV_32FC1, 1.0/255.0);
@@ -107,8 +110,8 @@ cv::Mat getLines(cv::Mat frame)
     }*/
     getTrueLane(frame, temp, lines);
    // temp = deNoise(temp,frame);
-    newFrame.release();
-    temp.release();
+  //  newFrame.release();
+   // temp.release();
     
     return frame;
 }
@@ -220,7 +223,7 @@ cv::Mat deNoise( cv::Mat lane,cv::Mat frame)
         }
     }
     
-    binaryImage.release();
+   // binaryImage.release();
     
     return temp;
 
@@ -306,7 +309,7 @@ cv::vector<cv::Vec4i> outputLines( cv::Mat lane,cv::Mat frame)
             }
         }
     }
-    binaryImage.release();
+   // binaryImage.release();
     return outputLines;
     
 }

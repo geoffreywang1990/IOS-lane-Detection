@@ -25,7 +25,7 @@ cv::Mat getLines(cv::Mat frame)
     
     for(int i = halfRows*0.3; i < halfRows; i++){
         int laneWidth = 8+maxLaneWidth*i/newFrame.rows;
-        for(int j=0.3*newFrame.cols+laneWidth; j<0.7*newFrame.cols-laneWidth; j++){
+        for(int j=0.25*newFrame.cols+laneWidth; j<0.75*newFrame.cols-laneWidth; j++){
             int leftDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j-laneWidth);
             int rightDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j+laneWidth);
             int diff  =  leftDiff + rightDiff - abs(leftDiff-rightDiff);
@@ -39,9 +39,9 @@ cv::Mat getLines(cv::Mat frame)
     // process ROI(bottom half)
     //detect lines. pixes on line should be whitter than left and right pixs
  
-    for(int i=newFrame.rows/2; i<newFrame.rows; i++){
+    for(int i=newFrame.rows/2-30; i<newFrame.rows-30; i++){
         int laneWidth = 8+ maxLaneWidth*(i-newFrame.rows/2)/halfRows;
-        for(int j=0.1*newFrame.cols+laneWidth; j<0.9*newFrame.cols- laneWidth; j++){
+        for(int j=0*newFrame.cols+laneWidth; j<newFrame.cols- laneWidth; j++){
             int leftDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j-laneWidth);
             int rightDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j+laneWidth);
             int diff  =  leftDiff + rightDiff - abs(leftDiff-rightDiff);

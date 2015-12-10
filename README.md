@@ -41,3 +41,6 @@ Program app UIview, Delegate and Storyboard.
 Code the Computer Vision part algroithm.
 ####Fourth Week:
 Finalize the app.
+
+##Youtube Clip:
+https://www.youtube.com/watch?v=tXhUFzwJxJ0

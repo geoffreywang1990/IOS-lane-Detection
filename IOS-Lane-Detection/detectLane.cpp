@@ -40,7 +40,7 @@ cv::Mat getLines(cv::Mat frame)
     //detect lines. pixes on line should be whitter than left and right pixs
  
     for(int i=newFrame.rows/2-30; i<newFrame.rows-30; i++){
-        int laneWidth = 8+ maxLaneWidth*(i-newFrame.rows/2)/halfRows;
+        int laneWidth = 7+ maxLaneWidth*(i-newFrame.rows/2)/halfRows;
         for(int j=0*newFrame.cols+laneWidth; j<newFrame.cols- laneWidth; j++){
             int leftDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j-laneWidth);
             int rightDiff = newFrame.at<uchar>(i,j) - newFrame.at<uchar>(i,j+laneWidth);
